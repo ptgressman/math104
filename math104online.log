@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 NOV 2019 20:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 NOV 2019 21:44
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1026,24 +1026,33 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <10> not available
 ] (./volumes/choosewarm.tex) [9
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 23.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 23.
+(./volumes/washerpractice.tex) [10
 
-(./math104online.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 23.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 23.
-Package rerunfilecheck Info: File `math104online.out' has not changed.
-(rerunfilecheck)             Checksum: C09402C72AFA77489E573E8F01360C95;393.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 23.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
+ (./math104online.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+
+
+Package rerunfilecheck Warning: File `math104online.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `math104online.out':
+(rerunfilecheck)             Before: C09402C72AFA77489E573E8F01360C95;393
+(rerunfilecheck)             After:  97B1B6E3C85E83C7859AF9FFC80FE8BC;469.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
  ) 
 Here is how much of TeX's memory you used:
- 28816 strings out of 493014
- 669305 string characters out of 6133351
- 829930 words of memory out of 5000000
- 31781 multiletter control sequences out of 15000+600000
- 11116 words of font info for 42 fonts, out of 8000000 for 9000
+ 29368 strings out of 493014
+ 685406 string characters out of 6133351
+ 872939 words of memory out of 5000000
+ 32327 multiletter control sequences out of 15000+600000
+ 11284 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,10n,81p,742b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,11n,109p,742b,2113s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
@@ -1057,11 +1066,12 @@ cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/loc
 al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on math104online.pdf (9 pages, 161327 bytes).
+l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on math104online.pdf (10 pages, 178181 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
