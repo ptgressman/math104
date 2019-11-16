@@ -1,8 +1,9 @@
 \contentsline {section}{\textbf {1\hspace {1em}Computing Volume}}{3}{section*.1}
 \contentsline {subsection}{1.1\hspace {1em}Volume By General Cross Sections}{4}{section*.2}
-\contentsline {subsection}{1.2\hspace {1em}Testing answer}{6}{section*.3}
-\contentsline {subsection}{1.3\hspace {1em}Testing answer}{7}{section*.4}
-\contentsline {subsection}{1.4\hspace {1em}Testing answer}{8}{section*.5}
-\contentsline {subsection}{1.5\hspace {1em}Testing answer}{9}{section*.6}
-\contentsline {subsection}{1.6\hspace {1em}Exercises: Disks and Washers}{10}{section*.7}
+\contentsline {subsection}{1.2\hspace {1em}Exercises: General Slicing}{6}{section*.3}
+\contentsline {subsection}{1.3\hspace {1em}The Disk and Washer Methods}{7}{section*.4}
+\contentsline {subsection}{1.4\hspace {1em}Exercises: Disks and Washers}{9}{section*.5}
+\contentsline {subsection}{1.5\hspace {1em}The Shell Method}{12}{section*.6}
+\contentsline {subsection}{1.6\hspace {1em}Exercises: Shell Method}{15}{section*.7}
+\contentsline {subsection}{1.7\hspace {1em}Testing answer}{16}{section*.8}
 \contentsfinish 
