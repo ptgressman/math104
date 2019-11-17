@@ -1,4 +1,4 @@
-\BOOKMARK [1][-]{section*.1}{1 Computing Volume}{}% 1
+\BOOKMARK [1][-]{section*.1}{1 Applications of Integration}{}% 1
 \BOOKMARK [2][-]{section*.2}{1.1 Volume By General Cross Sections}{section*.1}% 2
 \BOOKMARK [2][-]{section*.3}{1.2 Exercises: General Slicing}{section*.1}% 3
 \BOOKMARK [2][-]{section*.4}{1.3 The Disk and Washer Methods}{section*.1}% 4
@@ -7,62 +7,59 @@
 \BOOKMARK [2][-]{section*.7}{1.6 Exercises: Shell Method}{section*.1}% 7
 \BOOKMARK [2][-]{section*.8}{1.7 Synthesis: Choose Your Method}{section*.1}% 8
 \BOOKMARK [2][-]{section*.9}{1.8 Exercises: Choose Your Method}{section*.1}% 9
-\BOOKMARK [1][-]{section*.10}{2 Computing Arc Length and Surface Area}{}% 10
-\BOOKMARK [2][-]{section*.11}{2.1 Arc Length}{section*.10}% 11
-\BOOKMARK [2][-]{section*.12}{2.2 Exercises: Arc Length}{section*.10}% 12
-\BOOKMARK [2][-]{section*.13}{2.3 Surface Area}{section*.10}% 13
-\BOOKMARK [2][-]{section*.14}{2.4 Exercises: Surface Area}{section*.10}% 14
-\BOOKMARK [1][-]{section*.15}{3 Centers of Mass and Centroids}{}% 15
-\BOOKMARK [2][-]{section*.16}{3.1 Centers of Mass and Centroids}{section*.15}% 16
-\BOOKMARK [2][-]{section*.17}{3.2 Exercises: Centers of Mass and Centroids}{section*.15}% 17
-\BOOKMARK [1][-]{section*.18}{4 Integration Techniques}{}% 18
-\BOOKMARK [2][-]{section*.19}{4.1 Substitution and Tables}{section*.18}% 19
-\BOOKMARK [2][-]{section*.20}{4.2 Exercises: Substitution and Tables}{section*.18}% 20
-\BOOKMARK [2][-]{section*.21}{4.3 Integration by Parts}{section*.18}% 21
-\BOOKMARK [2][-]{section*.22}{4.4 Exercises: Integration by Parts}{section*.18}% 22
-\BOOKMARK [2][-]{section*.23}{4.5 Trigonometric Integrals}{section*.18}% 23
-\BOOKMARK [2][-]{section*.24}{4.6 Exercises: Trigonometric Integral}{section*.18}% 24
-\BOOKMARK [2][-]{section*.25}{4.7 Trigonometric Substitions}{section*.18}% 25
-\BOOKMARK [2][-]{section*.26}{4.8 Exercises: Trigonometric Substitions}{section*.18}% 26
-\BOOKMARK [2][-]{section*.27}{4.9 Partial Fractions}{section*.18}% 27
-\BOOKMARK [2][-]{section*.28}{4.10 Exercises: Partial Fractions}{section*.18}% 28
-\BOOKMARK [1][-]{section*.29}{5 Additional Applications}{}% 29
-\BOOKMARK [2][-]{section*.30}{5.1 Numerical Integration}{section*.29}% 30
-\BOOKMARK [2][-]{section*.31}{5.2 Exercises: Numerical Integration}{section*.29}% 31
-\BOOKMARK [2][-]{section*.32}{5.3 Orders of Growth}{section*.29}% 32
-\BOOKMARK [2][-]{section*.33}{5.4 Exercises: Orders of Growth}{section*.29}% 33
-\BOOKMARK [2][-]{section*.34}{5.5 Improper Integrals}{section*.29}% 34
-\BOOKMARK [2][-]{section*.35}{5.6 Exercises: Improper Integrals}{section*.29}% 35
-\BOOKMARK [2][-]{section*.36}{5.7 Probability}{section*.29}% 36
-\BOOKMARK [2][-]{section*.37}{5.8 Exercises: Probability}{section*.29}% 37
-\BOOKMARK [1][-]{section*.38}{6 Sequences and Series}{}% 38
-\BOOKMARK [2][-]{section*.39}{6.1 Sequences}{section*.38}% 39
-\BOOKMARK [2][-]{section*.40}{6.2 Exercises: Sequences}{section*.38}% 40
-\BOOKMARK [2][-]{section*.41}{6.3 Series}{section*.38}% 41
-\BOOKMARK [2][-]{section*.42}{6.4 Exercises: Series}{section*.38}% 42
-\BOOKMARK [2][-]{section*.43}{6.5 Series Comparison Tests}{section*.38}% 43
-\BOOKMARK [2][-]{section*.44}{6.6 Exercises: Series Comparison Tests}{section*.38}% 44
-\BOOKMARK [2][-]{section*.45}{6.7 The Ratio and Root Tests}{section*.38}% 45
-\BOOKMARK [2][-]{section*.46}{6.8 Exercises: Ratio and Root Tests}{section*.38}% 46
-\BOOKMARK [2][-]{section*.47}{6.9 The Integral Test}{section*.38}% 47
-\BOOKMARK [2][-]{section*.48}{6.10 Exercises: The Integral Test}{section*.38}% 48
-\BOOKMARK [2][-]{section*.49}{6.11 Alternating Series}{section*.38}% 49
-\BOOKMARK [2][-]{section*.50}{6.12 Exercises: Alternating Series}{section*.38}% 50
-\BOOKMARK [2][-]{section*.51}{6.13 Exercises: Cumulative}{section*.38}% 51
-\BOOKMARK [1][-]{section*.52}{7 Power Series}{}% 52
-\BOOKMARK [2][-]{section*.53}{7.1 Power Series}{section*.52}% 53
-\BOOKMARK [2][-]{section*.54}{7.2 Exercises: Power Series and Convergence}{section*.52}% 54
-\BOOKMARK [2][-]{section*.55}{7.3 Power Series Manipulation}{section*.52}% 55
-\BOOKMARK [2][-]{section*.56}{7.4 Exercises: Power Series Manipulation}{section*.52}% 56
-\BOOKMARK [2][-]{section*.57}{7.5 Taylor Series}{section*.52}% 57
-\BOOKMARK [2][-]{section*.58}{7.6 Exercises: Taylor Series}{section*.52}% 58
-\BOOKMARK [2][-]{section*.59}{7.7 Taylor Series Applications}{section*.52}% 59
-\BOOKMARK [2][-]{section*.60}{7.8 Exercises: Taylor Series Applications}{section*.52}% 60
-\BOOKMARK [2][-]{section*.61}{7.9 Exercises: Cumulative}{section*.52}% 61
-\BOOKMARK [1][-]{section*.62}{8 Ordinary Differential Equations}{}% 62
-\BOOKMARK [2][-]{section*.63}{8.1 ODEs: Foundations}{section*.62}% 63
-\BOOKMARK [2][-]{section*.64}{8.2 Exercises: ODEs}{section*.62}% 64
-\BOOKMARK [2][-]{section*.65}{8.3 Separable and Linear ODEs}{section*.62}% 65
-\BOOKMARK [2][-]{section*.66}{8.4 Exercises: Linear and Separable ODEs}{section*.62}% 66
-\BOOKMARK [2][-]{section*.67}{8.5 Applications of ODEs}{section*.62}% 67
-\BOOKMARK [2][-]{section*.68}{8.6 Exercises: ODE Applications}{section*.62}% 68
+\BOOKMARK [2][-]{section*.10}{1.9 Arc Length}{section*.1}% 10
+\BOOKMARK [2][-]{section*.11}{1.10 Exercises: Arc Length}{section*.1}% 11
+\BOOKMARK [2][-]{section*.12}{1.11 Surface Area}{section*.1}% 12
+\BOOKMARK [2][-]{section*.13}{1.12 Exercises: Surface Area}{section*.1}% 13
+\BOOKMARK [2][-]{section*.14}{1.13 Centers of Mass and Centroids}{section*.1}% 14
+\BOOKMARK [2][-]{section*.15}{1.14 Exercises: Centers of Mass and Centroids}{section*.1}% 15
+\BOOKMARK [1][-]{section*.16}{2 Integration Techniques}{}% 16
+\BOOKMARK [2][-]{section*.17}{2.1 Substitution and Tables}{section*.16}% 17
+\BOOKMARK [2][-]{section*.18}{2.2 Exercises: Substitution and Tables}{section*.16}% 18
+\BOOKMARK [2][-]{section*.19}{2.3 Integration by Parts}{section*.16}% 19
+\BOOKMARK [2][-]{section*.20}{2.4 Exercises: Integration by Parts}{section*.16}% 20
+\BOOKMARK [2][-]{section*.21}{2.5 Trigonometric Integrals}{section*.16}% 21
+\BOOKMARK [2][-]{section*.22}{2.6 Exercises: Trigonometric Integral}{section*.16}% 22
+\BOOKMARK [2][-]{section*.23}{2.7 Trigonometric Substitions}{section*.16}% 23
+\BOOKMARK [2][-]{section*.24}{2.8 Exercises: Trigonometric Substitions}{section*.16}% 24
+\BOOKMARK [2][-]{section*.25}{2.9 Partial Fractions}{section*.16}% 25
+\BOOKMARK [2][-]{section*.26}{2.10 Exercises: Partial Fractions}{section*.16}% 26
+\BOOKMARK [2][-]{section*.27}{2.11 Exercises: Cumulative}{section*.16}% 27
+\BOOKMARK [1][-]{section*.28}{3 Further Topics in Integration}{}% 28
+\BOOKMARK [2][-]{section*.29}{3.1 Numerical Integration}{section*.28}% 29
+\BOOKMARK [2][-]{section*.30}{3.2 Exercises: Numerical Integration}{section*.28}% 30
+\BOOKMARK [2][-]{section*.31}{3.3 Orders of Growth}{section*.28}% 31
+\BOOKMARK [2][-]{section*.32}{3.4 Exercises: Orders of Growth}{section*.28}% 32
+\BOOKMARK [2][-]{section*.33}{3.5 Improper Integrals}{section*.28}% 33
+\BOOKMARK [2][-]{section*.34}{3.6 Exercises: Improper Integrals}{section*.28}% 34
+\BOOKMARK [2][-]{section*.35}{3.7 Probability}{section*.28}% 35
+\BOOKMARK [2][-]{section*.36}{3.8 Exercises: Probability}{section*.28}% 36
+\BOOKMARK [1][-]{section*.37}{4 Sequences and Series}{}% 37
+\BOOKMARK [2][-]{section*.38}{4.1 Sequences}{section*.37}% 38
+\BOOKMARK [2][-]{section*.39}{4.2 Exercises: Sequences}{section*.37}% 39
+\BOOKMARK [2][-]{section*.40}{4.3 Series}{section*.37}% 40
+\BOOKMARK [2][-]{section*.41}{4.4 Exercises: Series}{section*.37}% 41
+\BOOKMARK [2][-]{section*.42}{4.5 Series Comparison Tests}{section*.37}% 42
+\BOOKMARK [2][-]{section*.43}{4.6 Exercises: Series Comparison Tests}{section*.37}% 43
+\BOOKMARK [2][-]{section*.44}{4.7 The Ratio and Root Tests}{section*.37}% 44
+\BOOKMARK [2][-]{section*.45}{4.8 Exercises: Ratio and Root Tests}{section*.37}% 45
+\BOOKMARK [2][-]{section*.46}{4.9 The Integral Test}{section*.37}% 46
+\BOOKMARK [2][-]{section*.47}{4.10 Exercises: The Integral Test}{section*.37}% 47
+\BOOKMARK [2][-]{section*.48}{4.11 Alternating Series}{section*.37}% 48
+\BOOKMARK [2][-]{section*.49}{4.12 Exercises: Alternating Series}{section*.37}% 49
+\BOOKMARK [2][-]{section*.50}{4.13 Exercises: Cumulative}{section*.37}% 50
+\BOOKMARK [1][-]{section*.51}{5 Power Series}{}% 51
+\BOOKMARK [2][-]{section*.52}{5.1 Power Series}{section*.51}% 52
+\BOOKMARK [2][-]{section*.53}{5.2 Exercises: Power Series and Convergence}{section*.51}% 53
+\BOOKMARK [2][-]{section*.54}{5.3 Taylor Series}{section*.51}% 54
+\BOOKMARK [2][-]{section*.55}{5.4 Exercises: Taylor Series}{section*.51}% 55
+\BOOKMARK [2][-]{section*.56}{5.5 Taylor Series Applications}{section*.51}% 56
+\BOOKMARK [2][-]{section*.57}{5.6 Exercises: Taylor Series Applications}{section*.51}% 57
+\BOOKMARK [2][-]{section*.58}{5.7 Exercises: Cumulative}{section*.51}% 58
+\BOOKMARK [1][-]{section*.59}{6 Ordinary Differential Equations}{}% 59
+\BOOKMARK [2][-]{section*.60}{6.1 ODEs: Foundations}{section*.59}% 60
+\BOOKMARK [2][-]{section*.61}{6.2 Exercises: ODEs}{section*.59}% 61
+\BOOKMARK [2][-]{section*.62}{6.3 Separable and Linear ODEs}{section*.59}% 62
+\BOOKMARK [2][-]{section*.63}{6.4 Exercises: Linear and Separable ODEs}{section*.59}% 63
+\BOOKMARK [2][-]{section*.64}{6.5 Applications of ODEs}{section*.59}% 64
+\BOOKMARK [2][-]{section*.65}{6.6 Exercises: ODE Applications}{section*.59}% 65
