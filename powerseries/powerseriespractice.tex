@@ -11,10 +11,8 @@ Exercises relating to power series and their convergence properties.
 
 
 \section*{Sample Quiz Questions}
-\begin{question}[PowerSerInterval001]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[PowerSerInterval001]
+
 Find the full interval of convergence for the power series \[\sum_{m=2}^{\infty} \frac{(-3)^mm^2(x - 5)^m }{\ln m}.\]
 \begin{multiplechoice}
 \choice[correct]{\(\displaystyle \left(\frac{14}{3},\frac{16}{3}\right)\)}
@@ -33,15 +31,11 @@ First observe that
 because \[\lim_{m \rightarrow \infty} \frac{(m+1)^2 \ln m}{m^2 \ln (m+1)} = \lim_{m \rightarrow \infty} \frac{(m+1)^2}{m^2} \lim_{m \rightarrow \infty} \frac{\ln m}{\ln (m+1)} = 1\] by virtue of l'Hospital's rule applied to both limits on the right-hand side.
 This means that the radius equals \(1/3\). At the endpoint \(x=14/3\), the series equals \[\sum_{m=2}^{\infty} \frac{m^2 }{\ln m },\] which diverges by the \(n\)-th term divergence test because \(\lim_{m \rightarrow \infty} m^{2} / \ln m = \infty \neq 0\). At the endpoint \(x=16/3\), the series equals \[\sum_{m=2}^{\infty} (-1)^m\frac{m^2 }{\ln m },\] which diverges for the same reason as the other endpoint, i.e., the terms do not go to zero.
 \end{feedback}
-\begin{keywords}
-power series,interval of convergence,generation2
-\end{keywords}
+
 \end{question}
 
-\begin{question}[PowerSerInterval003]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[PowerSerInterval003]
+
 Find the full interval of convergence for the power series \[\sum_{m=2}^{\infty} \frac{(-4)^m(\ln m)(x - 1)^m }{(-2)^mm}.\]
 \begin{multiplechoice}
 \choice{\(\displaystyle \left(\frac{1}{2},\frac{3}{2}\right)\)}
@@ -60,15 +54,11 @@ First observe that
 because \[\lim_{m \rightarrow \infty} \frac{m\ln (m+1)}{(m+1) \ln m} = \lim_{m \rightarrow \infty} \frac{m}{m+1} \lim_{m \rightarrow \infty} \frac{\ln (m+1)}{\ln m} = 1\] by virtue of l'Hospital's rule applied to both limits on the right-hand side.
 This means that the radius equals \(1/2\). At the endpoint \(x=3/2\), the series equals \[\sum_{m=2}^{\infty} \frac{(\ln m) }{m },\] which diverges by direct comparison to the harmonic series, i.e., the \(p\)-series with \(p = 1\). At the endpoint \(x=1/2\), the series equals \[\sum_{m=2}^{\infty} (-1)^m\frac{(\ln m) }{m },\] which converges by the alternating series test because the sign of the terms alternates and \(\ln m / m\) decreases to zero as \(m \rightarrow \infty\).
 \end{feedback}
-\begin{keywords}
-power series,interval of convergence,generation2
-\end{keywords}
+
 \end{question}
 
-\begin{question}[PowerSerInterval004]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[PowerSerInterval004]
+
 Find the full interval of convergence for the power series \[\sum_{m=2}^{\infty} \frac{(-2)^m(\ln m)(x + 4)^m }{6^mm}.\]
 \begin{multiplechoice}
 \choice{\(\displaystyle \left(-\frac{13}{3},-\frac{11}{3}\right)\)}
@@ -87,15 +77,11 @@ First observe that
 because \[\lim_{m \rightarrow \infty} \frac{m\ln (m+1)}{(m+1) \ln m} = \lim_{m \rightarrow \infty} \frac{m}{m+1} \lim_{m \rightarrow \infty} \frac{\ln (m+1)}{\ln m} = 1\] by virtue of l'Hospital's rule applied to both limits on the right-hand side.
 This means that the radius equals \(3\). At the endpoint \(x=-7\), the series equals \[\sum_{m=2}^{\infty} \frac{(\ln m) }{m },\] which diverges by direct comparison to the harmonic series, i.e., the \(p\)-series with \(p = 1\). At the endpoint \(x=-1\), the series equals \[\sum_{m=2}^{\infty} (-1)^m\frac{(\ln m) }{m },\] which converges by the alternating series test because the sign of the terms alternates and \(\ln m / m\) decreases to zero as \(m \rightarrow \infty\).
 \end{feedback}
-\begin{keywords}
-power series,interval of convergence,generation2
-\end{keywords}
+
 \end{question}
 
-\begin{question}[PowerSerInterval005]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[PowerSerInterval005]
+
 Find the full interval of convergence for the power series \[\sum_{m=1}^{\infty} \frac{\sqrt[3]{m}(x - 2)^m }{m!}.\]
 \begin{multiplechoice}
 \choice{\(\displaystyle \left(1,3\right)\)}
@@ -114,17 +100,13 @@ First observe that
 because \(m+1\) in the denominator tends to \(\infty\) and \[\lim_{m \rightarrow \infty} \frac{\sqrt[3]{m+1}}{\sqrt[3]{m}} = \lim_{m \rightarrow \infty} \left( 1 + m^{-1} \right)^{1/3} = \left( 1 + \lim_{m \rightarrow \infty} m^{-1} \right)^{1/3} = 1.\]
 This means that the radius is infinite and the interval of convergence is \((-\infty,\infty)\).
 \end{feedback}
-\begin{keywords}
-power series,interval of convergence,generation2
-\end{keywords}
+
 \end{question}
 
 \section*{Sample Exam Questions}
 
-\begin{question}[2015C.03]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[2015C.03]
+
 For which values of \(x\) does the series \(\displaystyle \sum_{n=1}^\infty \frac{(-1)^{n+1}(x-1)^n}{n 4^n}\) converge?
 \begin{multiplechoice}
 \choice{\(-3 < x < 5\)}
@@ -134,15 +116,11 @@ For which values of \(x\) does the series \(\displaystyle \sum_{n=1}^\infty \fra
 \choice{\(-5 \leq x < 3\)}
 \choice{\(-5 \leq x \leq 3\)}
 \end{multiplechoice}
-\begin{keywords}
-power series,interval of convergence
-\end{keywords}
+
 \end{question}
 
-\begin{question}[2016C.11]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[2016C.11]
+
 Find the interval of convergence of the power series below.
 \[ \sum_{n=1}^\infty \frac{(4x-1)^n}{n^\frac{3}{4} (n^2+2)} \]
 \begin{multiplechoice}
@@ -153,15 +131,11 @@ Find the interval of convergence of the power series below.
 \choice{\(\displaystyle \left( -\frac{1}{2} , 0\right]\)}
 \choice{\(\left( - \infty, \infty \right)\)}
 \end{multiplechoice}
-\begin{keywords}
-power series,interval of convergence
-\end{keywords}
+
 \end{question}
 
-\begin{question}[2017C.13]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[2017C.13]
+
 Find the interval of convergence of the power series \(\displaystyle \sum_{n=2}^\infty \frac{2^n (x+5)^n}{\sqrt[3]{n}}\).
 \begin{multiplechoice}
 \choice{\(\displaystyle \left[ -\frac{11}{2}, -\frac{9}{2} \right]\)}
@@ -171,9 +145,7 @@ Find the interval of convergence of the power series \(\displaystyle \sum_{n=2}^
 \choice{\(\displaystyle \left( \frac{9}{2}, \frac{11}{2} \right)\)}
 \choice{\(\displaystyle \left[ \frac{9}{2}, \frac{11}{2} \right]\)}
 \end{multiplechoice}
-\begin{keywords}
-power series,interval of convergence
-\end{keywords}
+
 \end{question}
 
 

@@ -11,10 +11,8 @@ Various exercises relating to probability.
 
 
 \section*{Sample Quiz Questions}
-\begin{question}[ProbabAssort001]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[ProbabAssort001]
+
 Find the value of \(c\) which makes the function
 \[f(x) = \frac{1}{2}e^{-x} - ce^{-2x}\]
 a probability density function on the interval \([0, \infty)\). 
@@ -22,7 +20,7 @@ What is the value of the mean \(\mu\) of the corresponding random variable?
 \begin{multiplechoice}
 \choice{\(\displaystyle c = 1, ~ \mu = \frac{1}{2}\)}
 \choice[correct]{\(\displaystyle c = -1, ~ \mu = \frac{3}{4}\)}
-\choice{\(\displaystyle c = 1, ~ \mu = 1\)} \choicebreak
+\choice{\(\displaystyle c = 1, ~ \mu = 1\)} 
 \choice{\(\displaystyle c = -1, ~ \mu = \frac{5}{4}\)}
 \choice{\(\displaystyle c = 1, ~ \mu = \frac{3}{2}\)}
 \choice{\(\displaystyle c = -1, ~ \mu = \frac{7}{4}\)}
@@ -35,15 +33,11 @@ which then implies that \(c = -1\). To compute the mean \(\mu\), we use the form
 \[ \mu = \int_{0}^{\infty} x \left( \frac{1}{2}e^{-x} + e^{-2x} \right) ~ dx.\]
  Calculating the integral gives \(\mu = 3/4.\)
 \end{feedback}
-\begin{keywords}
-probability,generation2
-\end{keywords}
+
 \end{question}
 
-\begin{question}[ProbEVsinibp001]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[ProbEVsinibp001]
+
 A certain random variable \(X\) takes values in the interval \(\left[2 \pi , \frac{5}{2} \pi \right]\).
 If the probability density function is given by
 \[ A \sin {x} \]
@@ -73,9 +67,7 @@ Therefore
 Therefore the expected value is the ratio of the integrals, i.e.,
 \[ \begin{aligned} \mu & = \frac{1 + 2 \pi}{1} = 1 + 2 \pi. \end{aligned} \]
 \end{feedback}
-\begin{keywords}
-probability,expected value,integration by parts,generation3
-\end{keywords}
+
 \end{question}
 
 \section*{Sample Exam Questions}
@@ -87,7 +79,7 @@ for every $a > 1$. Compute the value of $C$ and determine whether the expected v
 \begin{multipleChoice}
 \choice{$C = \ln 2$ and $\mu < \infty$}
 \choice{$C = 1$ and $\mu < \infty$} 
-\choice[correct]{$C = (\ln 2)^{-1}$ and $\mu < \infty$} \choicebreak
+\choice[correct]{$C = (\ln 2)^{-1}$ and $\mu < \infty$} 
 \choice{$C = \ln 2$ and $\mu = \infty$}
 \choice{$C = 1$ and $\mu  = \infty$}
 \choice{$C = (\ln 2)^{-1}$ and $\mu = \infty$}
@@ -109,10 +101,8 @@ This integral will be finite by direct comparison to the convergent integral $\i
 \end{feedback}
 \end{question}
 
-\begin{question}[2015C.08]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[2015C.08]
+
 The function 
 \[ f(x) = \begin{cases} \displaystyle \frac{k}{x^3} & 1 \leq x < \infty \\ 0 & \text{otherwise} \end{cases} \]
 is a probability density function for a certain value of \(k\). For that probability density function, find the probability that \(x > 2\).
@@ -124,15 +114,11 @@ is a probability density function for a certain value of \(k\). For that probabi
 \choice{\(\displaystyle \frac{1}{5}\)}
 \choice{\(\displaystyle \frac{1}{6}\)}
 \end{multiplechoice}
-\begin{keywords}
-probability,improper integrals
-\end{keywords}
+
 \end{question}
 
-\begin{question}[2016C.07]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[2016C.07]
+
 For a certain real number \(k\), the function
 \[ f(X) = \begin{cases} \displaystyle \frac{k}{X^2+1} & \text{if } X \geq 0 \\ 0 & \text{otherwise} \end{cases} \]
 is a probability density function for a continuous random variable \(X\). For this value of \(k\), find the probability that \(X > 1\).
@@ -144,28 +130,22 @@ is a probability density function for a continuous random variable \(X\). For th
 \choice[correct]{\(\displaystyle \frac{1}{2}\)}
 \choice{\(\displaystyle \frac{1}{4}\)}
 \end{multiplechoice}
-\begin{keywords}
-probability
-\end{keywords}
+
 \end{question}
 
-\begin{question}[2017C.09]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[2017C.09]
+
 Let \[ f(r) = \begin{cases} C r^2 e^{-2r/b} & r \geq 0 \\ 0 & r < 0 \end{cases}. \]
 Find \(C\) so that this is a probability density function (pdf) for the random variable \(r\). Here \(b\) is a positive constant. This function is used to model the distance between the nucleus and the electron in a hydrogen atom. The constant \(b\) is called the \textit{Bohr length}. Find the mean of the pdf.
 \begin{multiplechoice}
 \choice{\(\displaystyle C = \frac{b^3}{4}\), mean \(\displaystyle = b\)}
 \choice{\(\displaystyle C = \frac{4}{b^2}\), mean \(\displaystyle = b\)}
-\choice{\(\displaystyle C = \frac{4}{b}\), mean \(\displaystyle = b^2\)} \choicebreak
+\choice{\(\displaystyle C = \frac{4}{b}\), mean \(\displaystyle = b^2\)} 
 \choice[correct]{\(\displaystyle C = \frac{4}{b^3}\), mean \(\displaystyle = \frac{3}{2}b\)}
 \choice{\(\displaystyle C = \frac{4}{b^2}\), mean \(\displaystyle = \frac{3}{2}b^2\)}
 \choice{\(\displaystyle C = \frac{4}{b}\), mean \(\displaystyle = \frac{3}{2}b^3\)}
 \end{multiplechoice}
-\begin{keywords}
-probability,integration by parts,hard
-\end{keywords}
+
 \end{question}
 
 

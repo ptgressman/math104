@@ -12,10 +12,8 @@ Exercises relating to sequences.
 
 \section*{Sample Quiz Questions}
 
-\begin{question}[SeqConvSQRT01]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[SeqConvSQRT01]
+
 Find the limit of the sequence
 \[\lim_{n \rightarrow \infty} \sqrt{\frac{2n-2}{2n^2-4n+3}}.\] \offline{Justify your response.}
 \begin{multiplechoice}
@@ -33,15 +31,11 @@ Find the limit of the sequence
  & = \sqrt{\frac{0}{2}} = 0. 
 \end{aligned}\]
 \end{feedback}
-\begin{keywords}
-sequence convergence,generation2
-\end{keywords}
+
 \end{question}
 
-\begin{question}[SeqConvORDER19]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[SeqConvORDER19]
+
 Determine whether the limit below exists. If it exists, find its value.
 \[\lim_{n \rightarrow \infty} \frac{(-1)^{n+1}n^2 - 2^{-n-1}}{(-1)^{n}n^2 + 4^{-n}}.\] \offline{Justify your response.}
 \begin{multiplechoice}
@@ -55,15 +49,11 @@ Determine whether the limit below exists. If it exists, find its value.
 \begin{feedback}
 Comparing the orders of growth of the terms in the numerator, the first term dominates because \(|-1|>|1/2|\). Likewise the first term dominates in the denominator because  \(|-1|>|1/4|\). Neglecting non-dominant terms leads to the limit \[\lim_{n \rightarrow \infty} \frac{(-1)^{n+1}n^2}{(-1)^{n}n^2}\] which simply equals \(-1\).
 \end{feedback}
-\begin{keywords}
-sequence convergence,generation2
-\end{keywords}
+
 \end{question}
 
-\begin{question}[SeqConvEXPN43]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[SeqConvEXPN43]
+
 Determine whether the limit below exists. If it exists, find its value.
 \[\lim_{n \rightarrow \infty} \left(\frac{4n - 3}{4n + 1}\right)^{n}.\] \offline{Justify your response.}
 \begin{multiplechoice}
@@ -79,15 +69,11 @@ First observe that
 \[\frac{4n - 3}{4n + 1} = 1 - \frac{4}{4n + 1} \rightarrow 1\]
 as \(n \rightarrow \infty\). Next, in light of the known limit \((1+x/k)^{k} \rightarrow e^x\) as \(k \rightarrow \infty\), manipulate exponents to see that  \[\left(1 - \frac{4}{4n + 1}\right)^n = \left( \left(1 - \frac{4}{4n + 1}\right)^{4n + 1} \right)^{ 1/4} \left(1 - \frac{4}{4n + 1}\right)^{-1/4}. \] As \(n \rightarrow \infty\), the first term on the right-hand side tends to \(e^{-1}\) and the second term tends to \(1\). Thus the original sequence tends to \(e^{-1}\) as well.
 \end{feedback}
-\begin{keywords}
-sequence convergence,generation2
-\end{keywords}
+
 \end{question}
 
-\begin{question}[SeqConvEXPN39]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[SeqConvEXPN39]
+
 Determine whether the limit below exists. If it exists, find its value.
 \[\lim_{n \rightarrow \infty} \left(\frac{n + 3}{2n - 2}\right)^{n^2}.\] \offline{Justify your response.}
 \begin{multiplechoice}
@@ -103,17 +89,13 @@ First observe that
 \[\frac{n + 3}{2n - 2} = \frac{1}{2} + \frac{2}{n - 1} \rightarrow \frac{1}{2}\]
 as \(n \rightarrow \infty\). Since the limit is positive and less than one, raising this expression to increasingly large powers generates a sequence which converges rapidly to zero.
 \end{feedback}
-\begin{keywords}
-sequence convergence,generation2
-\end{keywords}
+
 \end{question}
 
 \section*{Sample Exam Questions}
 
-\begin{question}[2016C.08]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[2016C.08]
+
 Determine whether the sequence \(\displaystyle a_n = (-1)^{n-1} \frac{n^2}{1 + n^2 + n^3}\) converges or diverges. If it converges, find its limit.
 \begin{multiplechoice}
 \choice{divergent, \(\displaystyle \lim_{n \rightarrow \infty} a_n = 0\)}
@@ -123,9 +105,7 @@ Determine whether the sequence \(\displaystyle a_n = (-1)^{n-1} \frac{n^2}{1 + n
 \choice{divergent, \(\displaystyle \lim_{n \rightarrow \infty} a_n = \infty\)}
 \choice{divergent, limit doesn't exist}
 \end{multiplechoice}
-\begin{keywords}
-sequence convergence
-\end{keywords}
+
 \end{question}
 
 

@@ -11,10 +11,8 @@ Exercises relating to the integral test.
 
 \section*{Sample Quiz Questions}
 
-\begin{question}[2019IntegTestErr1]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[2019IntegTestErr1]
+
 When approximating the sum of the infinite series
 \[ \sum_{n=1}^\infty \frac{1}{n^3} \]
 by the sum of the first \(N\) terms, how large must \(N\) be to ensure that the approximation error is less than \(1/200\)? Choose the smallest correct bound among those listed.
@@ -31,9 +29,7 @@ Because the terms \(n^{-3}\) are positive and decreasing, we know that the parti
 \[ \sum_{n=1}^\infty \frac{1}{n^3} - \sum_{n=1}^N \frac{1}{n^3} \leq \int_N^\infty \frac{1}{x^3} dx  = \frac{1}{2N^2}.\]
 To be certain that the error is less than \(1/200\), we set \((2 N^2)^{-1} < 1/200\), which gives \(N > 10\).
 \end{feedback}
-\begin{keywords}
-handwritten,integral test,series estimation
-\end{keywords}
+
 \end{question}
 
 \end{document}

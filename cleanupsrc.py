@@ -5,6 +5,7 @@ def cleansourcefile(srctxt):
     returntxt = srctxt
 
     returntxt = re.sub(r"\\begin{question} *(\[.*\])",r"\\begin{question}%%%%%\1",returntxt)
+    returntxt = re.sub(r"\\choicebreak","",returntxt)
     envstohide = ['type','keywords','notes']
 
     for envname in envstohide:
@@ -44,8 +45,9 @@ def cleansourcefile(srctxt):
 
 for (root,dirs,files) in os.walk('.'):
     for filename in files:
-        if filename.endswith('.tex'):
+        if (filename.endswith('.tex')) and (filename != 'preamble.tex'):
             fullname = os.path.join(root,filename)
             text = open(fullname,"r").read()
             out = cleansourcefile(text)
-            open(fullname,"w").write(out).close()
+            if text != out:
+                open(fullname,"w").write(out)

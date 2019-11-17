@@ -11,17 +11,15 @@ Various exercises relating to orders of growth.
 
 \section*{Sample Quiz Questions}
 
-\begin{question}[GrowthOrdINF001]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[GrowthOrdINF001]
+
 Arrange the functions 
 \[ x^{x} \qquad \frac{e^{x}}{\ln{x}} \qquad \ln{x} \]
 in order from least rate of growth to greatest rate of growth as \(x \rightarrow \infty\). Compare on the basis of magnitude rather than sign, i.e., if a function is negative, take its absolute value first.
 \begin{multiplechoice}
 \choice{\(\displaystyle x^{x} < \! \! < \frac{e^{x}}{\ln{x}} < \! \! < \ln{x}\)}
 \choice{\(\displaystyle \ln{x} < \! \! < x^{x} < \! \! < \frac{e^{x}}{\ln{x}}\)}
-\choice{\(\displaystyle \frac{e^{x}}{\ln{x}} < \! \! < \ln{x} < \! \! < x^{x}\)} \choicebreak
+\choice{\(\displaystyle \frac{e^{x}}{\ln{x}} < \! \! < \ln{x} < \! \! < x^{x}\)} 
 \choice{\(\displaystyle x^{x} < \! \! < \ln{x} < \! \! < \frac{e^{x}}{\ln{x}}\)}
 \choice{\(\displaystyle \frac{e^{x}}{\ln{x}} < \! \! < x^{x} < \! \! < \ln{x}\)}
 \choice[correct]{\(\displaystyle \ln{x} < \! \! < \frac{e^{x}}{\ln{x}} < \! \! < x^{x}\)}
@@ -34,22 +32,18 @@ General Remarks:
 \item As \(x \rightarrow \infty\), \(x^x\) goes to infinity faster than any exponential of the form \(e^{cx}\) for any constant \(c\).
 \end{itemize}
 \end{feedback}
-\begin{keywords}
-orders of growth,conceptual,generation3
-\end{keywords}
+
 \end{question}
 
-\begin{question}[GrowthOrdINF002]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[GrowthOrdINF002]
+
 Arrange the functions 
 \[ \frac{e^{- x}}{\ln{x}} \qquad x^{3} \ln{x} \qquad e^{x} \]
 in order from least rate of growth to greatest rate of growth as \(x \rightarrow \infty\). Compare on the basis of magnitude rather than sign, i.e., if a function is negative, take its absolute value first.
 \begin{multiplechoice}
 \choice[correct]{\(\displaystyle \frac{e^{- x}}{\ln{x}} < \! \! < x^{3} \ln{x} < \! \! < e^{x}\)}
 \choice{\(\displaystyle e^{x} < \! \! < \frac{e^{- x}}{\ln{x}} < \! \! < x^{3} \ln{x}\)}
-\choice{\(\displaystyle x^{3} \ln{x} < \! \! < e^{x} < \! \! < \frac{e^{- x}}{\ln{x}}\)} \choicebreak
+\choice{\(\displaystyle x^{3} \ln{x} < \! \! < e^{x} < \! \! < \frac{e^{- x}}{\ln{x}}\)} 
 \choice{\(\displaystyle \frac{e^{- x}}{\ln{x}} < \! \! < e^{x} < \! \! < x^{3} \ln{x}\)}
 \choice{\(\displaystyle x^{3} \ln{x} < \! \! < \frac{e^{- x}}{\ln{x}} < \! \! < e^{x}\)}
 \choice{\(\displaystyle e^{x} < \! \! < x^{3} \ln{x} < \! \! < \frac{e^{- x}}{\ln{x}}\)}
@@ -61,23 +55,19 @@ General Remarks:
 \item As \(x \rightarrow \infty\), \(e^x\) goes to infinity faster than \(x^n\) for any (presumably large) positive constant \(n\).
 \end{itemize}
 \end{feedback}
-\begin{keywords}
-orders of growth,conceptual,generation3
-\end{keywords}
+
 \end{question}
 
 
-\begin{question}[GrowthOrdZERO001]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[GrowthOrdZERO001]
+
 Arrange the functions 
 \[ \left( \ln \frac{1}{x} \right)^2 \qquad \frac{e^{- x}}{x^{3}} \ln{x} \qquad x^{3} e^{x} \]
 in order from least rate of growth to greatest rate of growth as \(x \rightarrow 0^+\). Compare on the basis of magnitude rather than sign, i.e., if a function is negative, take its absolute value first.
 \begin{multiplechoice}
 \choice{\(\displaystyle \left( \ln \frac{1}{x} \right)^2 < \! \! < \frac{e^{- x}}{x^{3}} \ln{x} < \! \! < x^{3} e^{x}\)}
 \choice[correct]{\(\displaystyle x^{3} e^{x} < \! \! < \left( \ln \frac{1}{x} \right)^2 < \! \! < \frac{e^{- x}}{x^{3}} \ln{x}\)}
-\choice{\(\displaystyle \frac{e^{- x}}{x^{3}} \ln{x} < \! \! < x^{3} e^{x} < \! \! < \left( \ln \frac{1}{x} \right)^2\)} \choicebreak
+\choice{\(\displaystyle \frac{e^{- x}}{x^{3}} \ln{x} < \! \! < x^{3} e^{x} < \! \! < \left( \ln \frac{1}{x} \right)^2\)} 
 \choice{\(\displaystyle \left( \ln \frac{1}{x} \right)^2 < \! \! < x^{3} e^{x} < \! \! < \frac{e^{- x}}{x^{3}} \ln{x}\)}
 \choice{\(\displaystyle \frac{e^{- x}}{x^{3}} \ln{x} < \! \! < \left( \ln \frac{1}{x} \right)^2 < \! \! < x^{3} e^{x}\)}
 \choice{\(\displaystyle x^{3} e^{x} < \! \! < \frac{e^{- x}}{x^{3}} \ln{x} < \! \! < \left( \ln \frac{1}{x} \right)^2\)}
@@ -90,22 +80,18 @@ General Remarks:
 \item As \(x \rightarrow 0^+\), \(e^{-x} \rightarrow 1\) and so does not influence the growth rate.
 \end{itemize}
 \end{feedback}
-\begin{keywords}
-orders of growth,conceptual,generation3
-\end{keywords}
+
 \end{question}
 
-\begin{question}[GrowthOrdZERO005]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[GrowthOrdZERO005]
+
 Arrange the functions 
 \[ \frac{x^{3} e^{x}}{\ln{x}} \qquad \frac{e^{- x}}{x^{3}} \qquad \frac{e^{- x}}{x^{3} \ln{x}} \]
 in order from least rate of growth to greatest rate of growth as \(x \rightarrow 0^+\). Compare on the basis of magnitude rather than sign, i.e., if a function is negative, take its absolute value first.
 \begin{multiplechoice}
 \choice{\(\displaystyle \frac{x^{3} e^{x}}{\ln{x}} < \! \! < \frac{e^{- x}}{x^{3}} < \! \! < \frac{e^{- x}}{x^{3} \ln{x}}\)}
 \choice{\(\displaystyle \frac{e^{- x}}{x^{3} \ln{x}} < \! \! < \frac{x^{3} e^{x}}{\ln{x}} < \! \! < \frac{e^{- x}}{x^{3}}\)}
-\choice{\(\displaystyle \frac{e^{- x}}{x^{3}} < \! \! < \frac{e^{- x}}{x^{3} \ln{x}} < \! \! < \frac{x^{3} e^{x}}{\ln{x}}\)} \choicebreak
+\choice{\(\displaystyle \frac{e^{- x}}{x^{3}} < \! \! < \frac{e^{- x}}{x^{3} \ln{x}} < \! \! < \frac{x^{3} e^{x}}{\ln{x}}\)} 
 \choice[correct]{\(\displaystyle \frac{x^{3} e^{x}}{\ln{x}} < \! \! < \frac{e^{- x}}{x^{3} \ln{x}} < \! \! < \frac{e^{- x}}{x^{3}}\)}
 \choice{\(\displaystyle \frac{e^{- x}}{x^{3}} < \! \! < \frac{x^{3} e^{x}}{\ln{x}} < \! \! < \frac{e^{- x}}{x^{3} \ln{x}}\)}
 \choice{\(\displaystyle \frac{e^{- x}}{x^{3} \ln{x}} < \! \! < \frac{e^{- x}}{x^{3}} < \! \! < \frac{x^{3} e^{x}}{\ln{x}}\)}
@@ -118,9 +104,7 @@ General Remarks:
 \item As \(x \rightarrow 0^+\), \(e^{-x} \rightarrow 1\) and so does not influence the growth rate.
 \end{itemize}
 \end{feedback}
-\begin{keywords}
-orders of growth,conceptual,generation3
-\end{keywords}
+
 \end{question}
 
 

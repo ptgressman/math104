@@ -11,16 +11,14 @@ Exercises relating to Taylor series and their computation.
 
 \section*{Sample Exam Questions}
 
-\begin{question}[2015C.01]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[2015C.01]
+
 The first few nonzero terms of the Maclaurin series for \(f(x) = \ln ( 1 + \sin x)\) are:
 \begin{multiplechoice}
 \choice{\(\displaystyle 1 + \frac{1}{2} x - \frac{1}{8} x^2 + \frac{1}{24} x^3 + \cdots\)}
-\choice{\(\displaystyle 1 + \frac{1}{2} x - \frac{1}{8} x^2 - \frac{1}{48} x^3 + \cdots\)} \choicebreak
+\choice{\(\displaystyle 1 + \frac{1}{2} x - \frac{1}{8} x^2 - \frac{1}{48} x^3 + \cdots\)} 
 \choice{\(\displaystyle x - \frac{1}{2} x^2 + \frac{1}{8} x^3 - \frac{1}{24} x^4 + \cdots\)}
-\choice{\(\displaystyle 1 + x + \frac{1}{2} x^2 + \frac{1}{3} x^3 + \frac{1}{6} x^4 \cdots\)} \choicebreak
+\choice{\(\displaystyle 1 + x + \frac{1}{2} x^2 + \frac{1}{3} x^3 + \frac{1}{6} x^4 \cdots\)} 
 \choice[correct]{\(\displaystyle x - \frac{1}{2} x^2 + \frac{1}{6} x^3 - \frac{1}{12} x^4 + \cdots\)}
 \choice{\(\displaystyle 1 + x + \frac{1}{2} x^2 + \frac{1}{3} x^3 - \frac{1}{12} x^4 + \cdots\)}
 \end{multiplechoice}
@@ -34,33 +32,25 @@ f'''(x) & = - \frac{\cos x}{1 + \sin x} + \frac{\sin x \cos x}{(1 + \sin x)^2} -
 \end{aligned}\]
 Evaluating at \(x = 0\) gives \(f(0) = \ln 1 = 0\), \(f'(0) = 1\), \(f''(0) = -1\), and \(f'''(0) = 1\). Therefore the series starts with the terms \(x - \frac{1}{2} x^2 + \frac{1}{6} x^3 + \cdots\).
 \end{feedback}
-\begin{keywords}
-Taylor series,Taylor series computation
-\end{keywords}
+
 \end{question}
 
-\begin{question}[2016C.12]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[2016C.12]
+
 Find the Taylor polynomial of degree 2 for \(f(x) = \sqrt{x+16}\) centered at \(x=9\).
 \begin{multiplechoice}
 \choice{\(\displaystyle 5 + \frac{4}{5} x + \frac{9}{250} x^2\)}
 \choice{\(\displaystyle 5 - \frac{3}{5} (x-5) + \frac{1}{125} (x-5)^2\)}
-\choice[correct]{\(\displaystyle 5 + \frac{1}{10} (x-9) - \frac{1}{1000} (x-9)^2\)} \choicebreak
+\choice[correct]{\(\displaystyle 5 + \frac{1}{10} (x-9) - \frac{1}{1000} (x-9)^2\)} 
 \choice{\(\displaystyle 5 + \frac{3}{5} (x-5) + \frac{8}{125} (x-5)^2\)}
 \choice{\(\displaystyle 5 + \frac{1}{5} (x-9) + \frac{16}{125} (x-9)^2\)}
 \choice{none of these}
 \end{multiplechoice}
-\begin{keywords}
-Taylor polynomials
-\end{keywords}
+
 \end{question}
 
-\begin{question}[2017C.14]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[2017C.14]
+
 Use the Taylor polynomial of degree \(3\) for \(f(x) = \ln (1+x)\) centered at \(x_0 = 0\) to approximate the value of \(\displaystyle \ln \left( \frac{3}{2} \right)\).
 \begin{multiplechoice}
 \choice{\(\displaystyle \frac{2}{3}\)}
@@ -70,27 +60,21 @@ Use the Taylor polynomial of degree \(3\) for \(f(x) = \ln (1+x)\) centered at \
 \choice{\(\displaystyle \frac{9}{24}\)}
 \choice{\(\displaystyle \frac{11}{24}\)}
 \end{multiplechoice}
-\begin{keywords}
-Taylor series approximation
-\end{keywords}
+
 \end{question}
 
-\begin{question}[2017C.15]
-\begin{type}
-multiplechoice
-\end{type}
+\begin{question}%%%%%[2017C.15]
+
 Let \(F(x)\) be the unique function that satisfies \(F(0) = 0\), \(F'(0) = 0\), and \(F'(x) = \frac{1}{x} \sin x^3\) for all \(x \neq 0\). Find the Taylor Series of \(F(x)\) centered at \(x_0 = 0\).
 \begin{multiplechoice}
 \choice{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n x^{6n+3}}{(2n+1)!}\)}
 \choice{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n (6n+3) x^{6n+2}}{(2n+1)!}\)}
-\choice[correct]{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n x^{6n+3}}{(6n+3)(2n+1)!}\)} \choicebreak
+\choice[correct]{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n x^{6n+3}}{(6n+3)(2n+1)!}\)} 
 \choice{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n x^{6n+2}}{(2n+1)!}\)}
 \choice{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n (6n+2) x^{6n+2}}{(2n+1)!}\)}
 \choice{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n x^{2n+3}}{(6n+3)(2n+1)!}\)}
 \end{multiplechoice}
-\begin{keywords}
-Taylor series computation
-\end{keywords}
+
 \end{question}
 
 
