@@ -9,26 +9,98 @@ Various questions relating to centers of mass and centroids.
 \end{abstract}
 \maketitle
 
-\begin{example}
-The base of a solid region is bounded by the curves $x = 0$, $y= 0$, and $y = \sqrt{1-x^2}$. The cross sections perpendicular to the $x$ axis are squares. Compute the volume of the region.
-\begin{solution}
-Lines in the $xy$-plane which are perpendicular to the $x$-axis are vertical, so the base of a typical $x$ cross section will extend from $y=0$ to $y = \sqrt{1-x^2}$. Since each cross section will have area
-\[ A(x) = \left( \sqrt{1-x^2} - 0 \right)^2 = 1-x^2. \]
-To compute volume, we integrate $dV = A(x) dx$ between $x=0$ and $x=1$, since these are the most extreme values of $x$ found in our region. Therefore
-\[ V = \int_0^1 ( 1 -x^2) dx = \left. x - \frac{x^3}{3} \right|_0^1 = 1 - \frac{1}{3} = \frac{2}{3}. \]
-\end{solution}
-\end{example}
 
-\begin{example}
-The base of a solid region is bounded by the curves $y = 0$, $x = \sqrt{y}$, and $x = 1$. The cross sections perpendicular to the $y$-axis are squares. Compute the volume of the region.
-\begin{solution}
-Lines in the $xy$-plane which are perpendicular to the $y$-axis are \wordChoice{\choice[correct]{horizontal}\choice{vertical}}, so the base of a typical $y$ cross section will extend from the graph $x=\answer{\sqrt{y}}$ to the graph $x = \answer{1}$. The length of the base is the difference of $x$-coordinates (since all points on a slice have the same $y$-coordinate), so the length of the base is $\answer{1 - \sqrt{y}}$, giving the square an area of 
-\[ A(y) = \answer{(1-\sqrt{y})^2} \]
-(note that the answer is a function of $y$ because different $y$ cross sections will generally have different areas).
-To compute volume, we integrate $dV = A(y) dy$ between $y=0$ and $y=1$, since these are the most extreme values of $y$ found in our region (note that we can find the upper value $y=1$ by solving for the intersection of the curves $x = \sqrt{y}$ and $x=1$). Therefore we integrate $A(y) dy$ to conclude
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{(1-\sqrt{y})^2} dy = \answer{\frac{1}{6}}. \]
-\end{solution}
-\end{example}
+\section*{Sample Quiz Questions}
+\begin{question}[CentroidQuad01]
+\begin{type}
+multiplechoice
+\end{type}
+Compute the centroid of the region bounded by the inequalities \[-2 \leq x \leq 0 \qquad \text{ and } \qquad {3x^2-\frac{13}{2}} \leq y \leq {3x^2-\frac{11}{2}}.\]
+\begin{multiplechoice}
+\choice{\(\displaystyle \left(-\frac{3}{2},-3 \right)\)}
+\choice{\(\displaystyle \left(-1,-3 \right)\)}
+\choice{\(\displaystyle \left(-\frac{1}{2},-3 \right)\)}
+\choice{\(\displaystyle \left(-\frac{3}{2},-2 \right)\)}
+\choice[correct]{\(\displaystyle \left(-1,-2 \right)\)}
+\choice{\(\displaystyle \left(-\frac{1}{2},-2 \right)\)}
+\end{multiplechoice}
+\begin{feedback}
+The key calculations are as follows: 
+\[ \begin{aligned}
+M & = \int_{-2}^{0} \left[ \left({3x^2-\frac{11}{2}}\right) - \left({3x^2-\frac{13}{2}}\right) \right] dx = \int_{-2}^{0} \left[{1}\right] dx = 2, \\
+M_y & = \int_{-2}^{0} x \left[ \left({3x^2-\frac{11}{2}}\right) - \left({3x^2-\frac{13}{2}}\right) \right] dx = \int_{-2}^{0} x \left[{1}\right] dx = -2, \\
+M_x & = \frac{1}{2} \int_{-2}^{0} \left[ \left({3x^2-\frac{11}{2}}\right)^2 - \left({3x^2-\frac{13}{2}}\right)^2 \right] dx = \int_{-2}^{0} \left[{3x^2-6}\right] = -4, \\
+ \overline{x} &  = \frac{M_y}{M} = -1, \\
+ \overline{y} &  = \frac{M_x}{M} = -2.\end{aligned}\]
+\end{feedback}
+\begin{keywords}
+center of mass,quadratic,polynomial,generation2
+\end{keywords}
+\end{question}
 
+\section*{Sample Exam Questions}
+
+\begin{question}
+Which of the following is  the centroid of the region given by $x^2 + y^2 \leq 1$, $x \geq 0$, and $y \geq 0$? Justify your response.  {\bf Without doing the calculation,} is $\overline{x}$ greater than or less than $\frac{1}{2}$? Give a brief geometric explanation.
+\begin{multipleChoice}
+\choice[correct]{\bigmath{\left(\frac{4}{3 \pi},\frac{4}{3 \pi}\right)}}
+\choice{\bigmath{\left(\frac{1}{2},\frac{4}{3 \pi}\right)}}
+\choice{\bigmath{\left(\frac{4}{3 \pi}, \frac{1}{2}\right)}}
+\choice{\bigmath{\left(\frac{4}{3 \pi} ,\frac{5}{3 \pi}\right)}}
+\choice{\bigmath{\left(\frac{1}{2},\frac{1}{2}\right)}}
+\choice{\bigmath{\left(\frac{5}{3 \pi},\frac{4}{3 \pi}\right)}}
+\end{multipleChoice}
+
+ \begin{feedback}\[ M = \frac{\pi}{4} \]
+\[ \int_0^1 x \sqrt{1-x^2} dx = \left. - \frac{1}{3} (1-x^2)^\frac{3}{2} \right|_{0}^1 \]
+The value of $\overline{x}$ should be less than $\frac{1}{2}$ since, when compared symmetrically about the axis $x=\frac{1}{2}$, the quarter circle has longer slices to the left of the axis than it does to the right.
+\end{feedback}
+\end{question}
+
+\begin{question}[2015C.12]
+\begin{type}
+multiplechoice
+\end{type}
+Find the \(y\)-coordinate of the centroid of the region bounded by the \(x\)-axis, the \(y\)-axis, and the graph of \(y = \cos x\) for \(0 \leq x \leq \pi/2\) if the density is constant.
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{\pi}{18}\)}
+\choice{\(\displaystyle \frac{\pi}{12}\)}
+\choice[correct]{\(\displaystyle \frac{\pi}{8}\)}
+\choice{\(\displaystyle \frac{\pi}{6}\)}
+\choice{\(\displaystyle \frac{\pi}{4}\)}
+\choice{\(\displaystyle \frac{\pi}{2}\)}
+\end{multiplechoice}
+\begin{feedback}
+The area of the region is given by
+\[ M = \int_0^{\frac{\pi}{2}} \cos x~dx = 1 \]
+and 
+\[\begin{aligned}
+ M_x & = \int_0^{\frac{\pi}{2}} \frac{0 + \cos x}{2} \cos x~ dx = \frac{1}{2} \int_0^{\frac{\pi}{2}} \cos^2 x ~ dx \\
+& \frac{1}{2} \int_0^{\frac{\pi}{2}} \frac{1 + \cos 2x}{2} dx = \frac{\pi}{8}. 
+\end{aligned}\]
+Therefore \(\overline{y} = M_x / M = \pi/8\).
+\end{feedback}
+\begin{keywords}
+center of mass,trigonometric integrals
+\end{keywords}
+\end{question}
+
+\begin{question}[2016C.02]
+\begin{type}
+multiplechoice
+\end{type}
+Find the \(y\)-coordinate of the centroid of the region in the upper half-plane (i.e., for \(y > 0\)) bounded by the semicircle \(y = \sqrt{1-x^2}\). (It is easiest to use a geometric formula to find the area of the region.)
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{4 \pi}{3}\)}
+\choice[correct]{\(\displaystyle \frac{4}{3 \pi}\)}
+\choice{\(\displaystyle \frac{7 \pi}{3}\)}
+\choice{\(\displaystyle \frac{7}{3 \pi}\)}
+\choice{\(\displaystyle \frac{28 \pi}{9}\)}
+\choice{\(\displaystyle \frac{28}{9 \pi}\)}
+\end{multiplechoice}
+\begin{keywords}
+center of mass
+\end{keywords}
+\end{question}
 
 \end{document}

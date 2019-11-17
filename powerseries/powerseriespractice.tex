@@ -9,30 +9,172 @@ Exercises relating to power series and their convergence properties.
 \end{abstract}
 \maketitle
 
-\begin{exercise}
-The base of a solid region is bounded by the curves $x = 0$, $y = x^2$ and $y = x$. The cross sections perpendicular to the $x$-axis are squares. Compute the volume of the region.
-\begin{itemize}
-\item A typical square cross section has side length $L = \answer{x - x^2}$ and area $A = \answer{(x-x^2)^2}$. 
-\item Possible numerical values of the $x$-coordinates of points in the base range from a minimum value of $x = \answer{0}$ up to a maximum of $x = \answer{1}$.
-\item To compute volume, integrate:
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{(x-x^2)^2} d\answer{x} = \answer{\frac{1}{30}}. \]
-\end{itemize}
-\end{exercise}
 
-\begin{exercise}
-Find the volume of the region in three-dimensional space defined by the inequalities
-\begin{align*}
-0 & \leq x \leq 1, \\
-0 & \leq y \leq z^2, \\
-0 & \leq z \leq 3.
-\end{align*}
-\begin{itemize}
-\item Cross sections perpendicular to the $z$-axis are \wordChoice{\choice{square}\choice[correct]{rectangular}\choice{triangluar}} with length $\answer{1}$ in the $x$-direction and width $\answer{z^2}$ in the $y$-direction.
-\item The area of a $z$ cross section is $A(z) = \answer{z^2}$.
-\item To compute volume, integrate:
-\[ V = \int_{\answer{0}}^{\answer{3}} \answer{z^2} dz = \answer{9}. \]
-\end{itemize}
-\end{exercise}
+\section*{Sample Quiz Questions}
+\begin{question}[PowerSerInterval001]
+\begin{type}
+multiplechoice
+\end{type}
+Find the full interval of convergence for the power series \[\sum_{m=2}^{\infty} \frac{(-3)^mm^2(x - 5)^m }{\ln m}.\]
+\begin{multiplechoice}
+\choice[correct]{\(\displaystyle \left(\frac{14}{3},\frac{16}{3}\right)\)}
+\choice{\(\displaystyle \left[\frac{14}{3},\frac{16}{3}\right)\)}
+\choice{\(\displaystyle \left(2,8\right]\)}
+\choice{\(\displaystyle \left[2,8\right]\)}
+\choice{\(\displaystyle \left(-\infty,\infty\right)\)}
+\end{multiplechoice}
+\begin{feedback}
+First observe that 
+\[\begin{aligned}
+\frac{1}{R} & = \lim_{m\rightarrow \infty} \left| \frac{\frac{(-3)^{(m+1)}{(m+1)}^2 }{\ln {(m+1)}} }{\frac{(-3)^mm^2 }{\ln m}} \right| \\
+& = \lim_{m\rightarrow \infty} \left| \frac{-3{(m+1)}^2\ln m }{m^2\ln {(m+1)} } \right| \\
+& = 3
+\end{aligned}\]
+because \[\lim_{m \rightarrow \infty} \frac{(m+1)^2 \ln m}{m^2 \ln (m+1)} = \lim_{m \rightarrow \infty} \frac{(m+1)^2}{m^2} \lim_{m \rightarrow \infty} \frac{\ln m}{\ln (m+1)} = 1\] by virtue of l'Hospital's rule applied to both limits on the right-hand side.
+This means that the radius equals \(1/3\). At the endpoint \(x=14/3\), the series equals \[\sum_{m=2}^{\infty} \frac{m^2 }{\ln m },\] which diverges by the \(n\)-th term divergence test because \(\lim_{m \rightarrow \infty} m^{2} / \ln m = \infty \neq 0\). At the endpoint \(x=16/3\), the series equals \[\sum_{m=2}^{\infty} (-1)^m\frac{m^2 }{\ln m },\] which diverges for the same reason as the other endpoint, i.e., the terms do not go to zero.
+\end{feedback}
+\begin{keywords}
+power series,interval of convergence,generation2
+\end{keywords}
+\end{question}
+
+\begin{question}[PowerSerInterval003]
+\begin{type}
+multiplechoice
+\end{type}
+Find the full interval of convergence for the power series \[\sum_{m=2}^{\infty} \frac{(-4)^m(\ln m)(x - 1)^m }{(-2)^mm}.\]
+\begin{multiplechoice}
+\choice{\(\displaystyle \left(\frac{1}{2},\frac{3}{2}\right)\)}
+\choice[correct]{\(\displaystyle \left[\frac{1}{2},\frac{3}{2}\right)\)}
+\choice{\(\displaystyle \left(-1,3\right]\)}
+\choice{\(\displaystyle \left[-1,3\right]\)}
+\choice{\(\displaystyle \left(-\infty,\infty\right)\)}
+\end{multiplechoice}
+\begin{feedback}
+First observe that 
+\[\begin{aligned}
+\frac{1}{R} & = \lim_{m\rightarrow \infty} \left| \frac{\frac{(-4)^{(m+1)}(\ln {(m+1)}) }{(-2)^{(m+1)}{(m+1)}} }{\frac{(-4)^m(\ln m) }{(-2)^mm}} \right| \\
+& = \lim_{m\rightarrow \infty} \left| \frac{-4(\ln {(m+1)})m }{-2(\ln m){(m+1)} } \right| \\
+& = 2
+\end{aligned}\]
+because \[\lim_{m \rightarrow \infty} \frac{m\ln (m+1)}{(m+1) \ln m} = \lim_{m \rightarrow \infty} \frac{m}{m+1} \lim_{m \rightarrow \infty} \frac{\ln (m+1)}{\ln m} = 1\] by virtue of l'Hospital's rule applied to both limits on the right-hand side.
+This means that the radius equals \(1/2\). At the endpoint \(x=3/2\), the series equals \[\sum_{m=2}^{\infty} \frac{(\ln m) }{m },\] which diverges by direct comparison to the harmonic series, i.e., the \(p\)-series with \(p = 1\). At the endpoint \(x=1/2\), the series equals \[\sum_{m=2}^{\infty} (-1)^m\frac{(\ln m) }{m },\] which converges by the alternating series test because the sign of the terms alternates and \(\ln m / m\) decreases to zero as \(m \rightarrow \infty\).
+\end{feedback}
+\begin{keywords}
+power series,interval of convergence,generation2
+\end{keywords}
+\end{question}
+
+\begin{question}[PowerSerInterval004]
+\begin{type}
+multiplechoice
+\end{type}
+Find the full interval of convergence for the power series \[\sum_{m=2}^{\infty} \frac{(-2)^m(\ln m)(x + 4)^m }{6^mm}.\]
+\begin{multiplechoice}
+\choice{\(\displaystyle \left(-\frac{13}{3},-\frac{11}{3}\right)\)}
+\choice{\(\displaystyle \left[-\frac{13}{3},-\frac{11}{3}\right)\)}
+\choice[correct]{\(\displaystyle \left(-7,-1\right]\)}
+\choice{\(\displaystyle \left[-7,-1\right]\)}
+\choice{\(\displaystyle \left(-\infty,\infty\right)\)}
+\end{multiplechoice}
+\begin{feedback}
+First observe that 
+\[\begin{aligned}
+\frac{1}{R} & = \lim_{m\rightarrow \infty} \left| \frac{\frac{(-2)^{(m+1)}(\ln {(m+1)}) }{6^{(m+1)}{(m+1)}} }{\frac{(-2)^m(\ln m) }{6^mm}} \right| \\
+& = \lim_{m\rightarrow \infty} \left| \frac{-2(\ln {(m+1)})m }{6(\ln m){(m+1)} } \right| \\
+& = \frac{1}{3}
+\end{aligned}\]
+because \[\lim_{m \rightarrow \infty} \frac{m\ln (m+1)}{(m+1) \ln m} = \lim_{m \rightarrow \infty} \frac{m}{m+1} \lim_{m \rightarrow \infty} \frac{\ln (m+1)}{\ln m} = 1\] by virtue of l'Hospital's rule applied to both limits on the right-hand side.
+This means that the radius equals \(3\). At the endpoint \(x=-7\), the series equals \[\sum_{m=2}^{\infty} \frac{(\ln m) }{m },\] which diverges by direct comparison to the harmonic series, i.e., the \(p\)-series with \(p = 1\). At the endpoint \(x=-1\), the series equals \[\sum_{m=2}^{\infty} (-1)^m\frac{(\ln m) }{m },\] which converges by the alternating series test because the sign of the terms alternates and \(\ln m / m\) decreases to zero as \(m \rightarrow \infty\).
+\end{feedback}
+\begin{keywords}
+power series,interval of convergence,generation2
+\end{keywords}
+\end{question}
+
+\begin{question}[PowerSerInterval005]
+\begin{type}
+multiplechoice
+\end{type}
+Find the full interval of convergence for the power series \[\sum_{m=1}^{\infty} \frac{\sqrt[3]{m}(x - 2)^m }{m!}.\]
+\begin{multiplechoice}
+\choice{\(\displaystyle \left(1,3\right)\)}
+\choice{\(\displaystyle \left[1,3\right)\)}
+\choice{\(\displaystyle \left(1,3\right]\)}
+\choice{\(\displaystyle \left[1,3\right]\)}
+\choice[correct]{\(\displaystyle \left(-\infty,\infty\right)\)}
+\end{multiplechoice}
+\begin{feedback}
+First observe that 
+\[\begin{aligned}
+\frac{1}{R} & = \lim_{m\rightarrow \infty} \left| \frac{\frac{\sqrt[3]{{(m+1)}} }{{(m+1)}!} }{\frac{\sqrt[3]{m} }{m!}} \right| \\
+& = \lim_{m\rightarrow \infty} \left| \frac{\sqrt[3]{{(m+1)}} }{(m+1)\sqrt[3]{m} } \right| \\
+& = 0
+\end{aligned}\]
+because \(m+1\) in the denominator tends to \(\infty\) and \[\lim_{m \rightarrow \infty} \frac{\sqrt[3]{m+1}}{\sqrt[3]{m}} = \lim_{m \rightarrow \infty} \left( 1 + m^{-1} \right)^{1/3} = \left( 1 + \lim_{m \rightarrow \infty} m^{-1} \right)^{1/3} = 1.\]
+This means that the radius is infinite and the interval of convergence is \((-\infty,\infty)\).
+\end{feedback}
+\begin{keywords}
+power series,interval of convergence,generation2
+\end{keywords}
+\end{question}
+
+\section*{Sample Exam Questions}
+
+\begin{question}[2015C.03]
+\begin{type}
+multiplechoice
+\end{type}
+For which values of \(x\) does the series \(\displaystyle \sum_{n=1}^\infty \frac{(-1)^{n+1}(x-1)^n}{n 4^n}\) converge?
+\begin{multiplechoice}
+\choice{\(-3 < x < 5\)}
+\choice{\(-3 \leq x < 5\)}
+\choice[correct]{\(-3 < x \leq 5\)}
+\choice{\(-5 < x \leq 3\)}
+\choice{\(-5 \leq x < 3\)}
+\choice{\(-5 \leq x \leq 3\)}
+\end{multiplechoice}
+\begin{keywords}
+power series,interval of convergence
+\end{keywords}
+\end{question}
+
+\begin{question}[2016C.11]
+\begin{type}
+multiplechoice
+\end{type}
+Find the interval of convergence of the power series below.
+\[ \sum_{n=1}^\infty \frac{(4x-1)^n}{n^\frac{3}{4} (n^2+2)} \]
+\begin{multiplechoice}
+\choice{\(\displaystyle \left( 0 , \frac{1}{2} \right]\)}
+\choice[correct]{\(\displaystyle \left[ 0 , \frac{1}{2} \right]\)}
+\choice{\(\displaystyle \left( 0 , \frac{1}{2} \right)\)}
+\choice{\(\displaystyle \left[ 0 , \frac{1}{2} \right)\)}
+\choice{\(\displaystyle \left( -\frac{1}{2} , 0\right]\)}
+\choice{\(\left( - \infty, \infty \right)\)}
+\end{multiplechoice}
+\begin{keywords}
+power series,interval of convergence
+\end{keywords}
+\end{question}
+
+\begin{question}[2017C.13]
+\begin{type}
+multiplechoice
+\end{type}
+Find the interval of convergence of the power series \(\displaystyle \sum_{n=2}^\infty \frac{2^n (x+5)^n}{\sqrt[3]{n}}\).
+\begin{multiplechoice}
+\choice{\(\displaystyle \left[ -\frac{11}{2}, -\frac{9}{2} \right]\)}
+\choice[correct]{\(\displaystyle \left[ -\frac{11}{2}, -\frac{9}{2} \right)\)}
+\choice{\(\displaystyle \left( -\frac{11}{2}, -\frac{9}{2} \right)\)}
+\choice{\(\displaystyle \left[ \frac{9}{2}, \frac{11}{2} \right)\)}
+\choice{\(\displaystyle \left( \frac{9}{2}, \frac{11}{2} \right)\)}
+\choice{\(\displaystyle \left[ \frac{9}{2}, \frac{11}{2} \right]\)}
+\end{multiplechoice}
+\begin{keywords}
+power series,interval of convergence
+\end{keywords}
+\end{question}
 
 
 \end{document}

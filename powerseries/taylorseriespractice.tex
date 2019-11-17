@@ -9,30 +9,89 @@ Exercises relating to Taylor series and their computation.
 \end{abstract}
 \maketitle
 
-\begin{exercise}
-The base of a solid region is bounded by the curves $x = 0$, $y = x^2$ and $y = x$. The cross sections perpendicular to the $x$-axis are squares. Compute the volume of the region.
-\begin{itemize}
-\item A typical square cross section has side length $L = \answer{x - x^2}$ and area $A = \answer{(x-x^2)^2}$. 
-\item Possible numerical values of the $x$-coordinates of points in the base range from a minimum value of $x = \answer{0}$ up to a maximum of $x = \answer{1}$.
-\item To compute volume, integrate:
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{(x-x^2)^2} d\answer{x} = \answer{\frac{1}{30}}. \]
-\end{itemize}
-\end{exercise}
+\section*{Sample Exam Questions}
 
-\begin{exercise}
-Find the volume of the region in three-dimensional space defined by the inequalities
-\begin{align*}
-0 & \leq x \leq 1, \\
-0 & \leq y \leq z^2, \\
-0 & \leq z \leq 3.
-\end{align*}
-\begin{itemize}
-\item Cross sections perpendicular to the $z$-axis are \wordChoice{\choice{square}\choice[correct]{rectangular}\choice{triangluar}} with length $\answer{1}$ in the $x$-direction and width $\answer{z^2}$ in the $y$-direction.
-\item The area of a $z$ cross section is $A(z) = \answer{z^2}$.
-\item To compute volume, integrate:
-\[ V = \int_{\answer{0}}^{\answer{3}} \answer{z^2} dz = \answer{9}. \]
-\end{itemize}
-\end{exercise}
+\begin{question}[2015C.01]
+\begin{type}
+multiplechoice
+\end{type}
+The first few nonzero terms of the Maclaurin series for \(f(x) = \ln ( 1 + \sin x)\) are:
+\begin{multiplechoice}
+\choice{\(\displaystyle 1 + \frac{1}{2} x - \frac{1}{8} x^2 + \frac{1}{24} x^3 + \cdots\)}
+\choice{\(\displaystyle 1 + \frac{1}{2} x - \frac{1}{8} x^2 - \frac{1}{48} x^3 + \cdots\)} \choicebreak
+\choice{\(\displaystyle x - \frac{1}{2} x^2 + \frac{1}{8} x^3 - \frac{1}{24} x^4 + \cdots\)}
+\choice{\(\displaystyle 1 + x + \frac{1}{2} x^2 + \frac{1}{3} x^3 + \frac{1}{6} x^4 \cdots\)} \choicebreak
+\choice[correct]{\(\displaystyle x - \frac{1}{2} x^2 + \frac{1}{6} x^3 - \frac{1}{12} x^4 + \cdots\)}
+\choice{\(\displaystyle 1 + x + \frac{1}{2} x^2 + \frac{1}{3} x^3 - \frac{1}{12} x^4 + \cdots\)}
+\end{multiplechoice}
+\begin{feedback}
+The first few derivatives of \(f(x)\) are:
+\[\begin{aligned}
+f(x) & = \ln (1 + \sin(x)) \\
+f'(x) & = \frac{ \cos x}{1 + \sin x} \\
+f''(x) & = - \frac{\sin x}{1 + \sin x} - \frac{\cos^2 x}{(1 + \sin x)^2} \\
+f'''(x) & = - \frac{\cos x}{1 + \sin x} + \frac{\sin x \cos x}{(1 + \sin x)^2} - \frac{2 \sin x \cos x}{(1 + \sin x)^2} + 2 \frac{\cos^3 x}{(1 + \sin x)^3}
+\end{aligned}\]
+Evaluating at \(x = 0\) gives \(f(0) = \ln 1 = 0\), \(f'(0) = 1\), \(f''(0) = -1\), and \(f'''(0) = 1\). Therefore the series starts with the terms \(x - \frac{1}{2} x^2 + \frac{1}{6} x^3 + \cdots\).
+\end{feedback}
+\begin{keywords}
+Taylor series,Taylor series computation
+\end{keywords}
+\end{question}
+
+\begin{question}[2016C.12]
+\begin{type}
+multiplechoice
+\end{type}
+Find the Taylor polynomial of degree 2 for \(f(x) = \sqrt{x+16}\) centered at \(x=9\).
+\begin{multiplechoice}
+\choice{\(\displaystyle 5 + \frac{4}{5} x + \frac{9}{250} x^2\)}
+\choice{\(\displaystyle 5 - \frac{3}{5} (x-5) + \frac{1}{125} (x-5)^2\)}
+\choice[correct]{\(\displaystyle 5 + \frac{1}{10} (x-9) - \frac{1}{1000} (x-9)^2\)} \choicebreak
+\choice{\(\displaystyle 5 + \frac{3}{5} (x-5) + \frac{8}{125} (x-5)^2\)}
+\choice{\(\displaystyle 5 + \frac{1}{5} (x-9) + \frac{16}{125} (x-9)^2\)}
+\choice{none of these}
+\end{multiplechoice}
+\begin{keywords}
+Taylor polynomials
+\end{keywords}
+\end{question}
+
+\begin{question}[2017C.14]
+\begin{type}
+multiplechoice
+\end{type}
+Use the Taylor polynomial of degree \(3\) for \(f(x) = \ln (1+x)\) centered at \(x_0 = 0\) to approximate the value of \(\displaystyle \ln \left( \frac{3}{2} \right)\).
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{2}{3}\)}
+\choice{\(\displaystyle \frac{3}{2}\)}
+\choice{\(\displaystyle \frac{15}{4}\)}
+\choice[correct]{\(\displaystyle \frac{5}{12}\)}
+\choice{\(\displaystyle \frac{9}{24}\)}
+\choice{\(\displaystyle \frac{11}{24}\)}
+\end{multiplechoice}
+\begin{keywords}
+Taylor series approximation
+\end{keywords}
+\end{question}
+
+\begin{question}[2017C.15]
+\begin{type}
+multiplechoice
+\end{type}
+Let \(F(x)\) be the unique function that satisfies \(F(0) = 0\), \(F'(0) = 0\), and \(F'(x) = \frac{1}{x} \sin x^3\) for all \(x \neq 0\). Find the Taylor Series of \(F(x)\) centered at \(x_0 = 0\).
+\begin{multiplechoice}
+\choice{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n x^{6n+3}}{(2n+1)!}\)}
+\choice{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n (6n+3) x^{6n+2}}{(2n+1)!}\)}
+\choice[correct]{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n x^{6n+3}}{(6n+3)(2n+1)!}\)} \choicebreak
+\choice{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n x^{6n+2}}{(2n+1)!}\)}
+\choice{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n (6n+2) x^{6n+2}}{(2n+1)!}\)}
+\choice{\(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n x^{2n+3}}{(6n+3)(2n+1)!}\)}
+\end{multiplechoice}
+\begin{keywords}
+Taylor series computation
+\end{keywords}
+\end{question}
 
 
 \end{document}

@@ -9,26 +9,137 @@ We practice computing arc length.
 \end{abstract}
 \maketitle
 
-\begin{example}
-The base of a solid region is bounded by the curves $x = 0$, $y= 0$, and $y = \sqrt{1-x^2}$. The cross sections perpendicular to the $x$ axis are squares. Compute the volume of the region.
-\begin{solution}
-Lines in the $xy$-plane which are perpendicular to the $x$-axis are vertical, so the base of a typical $x$ cross section will extend from $y=0$ to $y = \sqrt{1-x^2}$. Since each cross section will have area
-\[ A(x) = \left( \sqrt{1-x^2} - 0 \right)^2 = 1-x^2. \]
-To compute volume, we integrate $dV = A(x) dx$ between $x=0$ and $x=1$, since these are the most extreme values of $x$ found in our region. Therefore
-\[ V = \int_0^1 ( 1 -x^2) dx = \left. x - \frac{x^3}{3} \right|_0^1 = 1 - \frac{1}{3} = \frac{2}{3}. \]
-\end{solution}
-\end{example}
 
-\begin{example}
-The base of a solid region is bounded by the curves $y = 0$, $x = \sqrt{y}$, and $x = 1$. The cross sections perpendicular to the $y$-axis are squares. Compute the volume of the region.
-\begin{solution}
-Lines in the $xy$-plane which are perpendicular to the $y$-axis are \wordChoice{\choice[correct]{horizontal}\choice{vertical}}, so the base of a typical $y$ cross section will extend from the graph $x=\answer{\sqrt{y}}$ to the graph $x = \answer{1}$. The length of the base is the difference of $x$-coordinates (since all points on a slice have the same $y$-coordinate), so the length of the base is $\answer{1 - \sqrt{y}}$, giving the square an area of 
-\[ A(y) = \answer{(1-\sqrt{y})^2} \]
-(note that the answer is a function of $y$ because different $y$ cross sections will generally have different areas).
-To compute volume, we integrate $dV = A(y) dy$ between $y=0$ and $y=1$, since these are the most extreme values of $y$ found in our region (note that we can find the upper value $y=1$ by solving for the intersection of the curves $x = \sqrt{y}$ and $x=1$). Therefore we integrate $A(y) dy$ to conclude
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{(1-\sqrt{y})^2} dy = \answer{\frac{1}{6}}. \]
-\end{solution}
-\end{example}
+\section*{Sample Quiz Questions}
+
+\begin{question}[Arclen01]
+\begin{type}
+multiplechoice
+\end{type}
+Compute the arc length of the curve \[y = \frac{3}{4}x^{-2} + \frac{1}{24}x^{4} - 1\] between the endpoints \(x = \sqrt{3}\) and \(x = \sqrt{6}\).
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{5}{12}\)}
+\choice{\(\displaystyle \frac{7}{12}\)}
+\choice{\(\displaystyle \frac{3}{4}\)}
+\choice{\(\displaystyle \frac{11}{12}\)}
+\choice{\(\displaystyle \frac{13}{12}\)}
+\choice[correct]{\(\displaystyle \frac{5}{4}\)}
+\end{multiplechoice}
+\begin{feedback}
+Applying the formula for arc length gives that
+\[
+\begin{aligned}
+L & = \int_{\sqrt{3}}^{\sqrt{6}} \sqrt{1 + \left( \frac{dy}{dx} \right)^2}~dx 
+   = \int_{\sqrt{3}}^{\sqrt{6}} \sqrt{1 + \left( -\frac{3}{2}x^{-3} + \frac{1}{6}x^{3} \right)^2}~dx \\
+  & = \int_{\sqrt{3}}^{\sqrt{6}} \sqrt{1 + \frac{9}{4}x^{-6} - \frac{1}{2} + \frac{1}{36}x^{6}} ~ dx 
+   = \int_{\sqrt{3}}^{\sqrt{6}} \sqrt{ \left( \frac{3}{2}x^{-3} + \frac{1}{6}x^{3} \right)^2} ~ dx \\
+  & = \int_{\sqrt{3}}^{\sqrt{6}} \left( \frac{3}{2}x^{-3} + \frac{1}{6}x^{3} \right) ~ dx 
+   = \left.  \left( -\frac{3}{4}x^{-2} + \frac{1}{24}x^{4} \right) \right|_{\sqrt{3}}^{\sqrt{6}} \\
+  & =  \left( -\frac{1}{8} + \frac{3}{2} \right) - \left( -\frac{1}{4} + \frac{3}{8} \right) 
+   = \frac{5}{4}.
+\end{aligned}
+\]
+Note that you must always take the positive square root in going from line two to line three. In particular, if you get a negative answer, you have likely taken the negative square root.
+\end{feedback}
+\begin{keywords}
+arc length,arc length,tricks,generation2
+\end{keywords}
+\end{question}
+
+\section*{Sample Exam Questions}
+
+\begin{question}(2017 Midterm 1)
+Compute the length of the curve $x = \frac{1}{8} (y^2 + 2y) - \ln (y+1)$ between $y=0$ and $y = 2$.
+\begin{multipleChoice}
+\choice[correct]{$\displaystyle 1 + \ln 3$}
+\choice{$\displaystyle 2 + \ln 6$}
+\choice{$\displaystyle 3 + \ln 9$}
+\choice{$\displaystyle 4 + \ln 12$}
+\choice{$\displaystyle 5 + \ln 15$}
+\choice{none of the above}
+\end{multipleChoice}
+\end{question}
+
+\begin{question}
+ Find the arc length of the following curve between $x=-1$ and $x=1$:
+\[ y = 3 \cosh \frac{x}{3}. \]
+\begin{multipleChoice}
+\choice{\bigmath{\frac{e}{3} - \frac{1}{3e}}}
+\choice{\bigmath{\frac{e}{2} - \frac{1}{2e}}}
+\choice{\bigmath{e - \frac{1}{e}}}
+\choice{\bigmath{2 e - \frac{2}{e}}}
+\choice[correct]{\bigmath{3 e - \frac{3}{e}}}
+\choice{none of the above}
+\end{multipleChoice}
+\end{question}
+
+\begin{question}
+ A certain curve $y = f(x)$ in the plane has the property that its length between the endpoints $x=0$ and $x=a$ is equal to
+\[ \int_0^a \sqrt{1 + \sin^2 t} ~ dt \]
+for every value of $a > 0$.  Assuming the curve passes through the points $(0,0)$ and $(\frac{\pi}{2},1)$, what is $f( \frac{\pi}{4})$?
+\begin{multipleChoice} 
+\choice{$\displaystyle \frac{1}{2}$}
+\choice{$\displaystyle \frac{1}{\sqrt{2}}$}
+\choice[correct]{$\displaystyle 1 - \frac{1}{\sqrt{2}}$}
+\choice{$\displaystyle 0$}
+\choice{$\displaystyle - \frac{1}{\sqrt{2}}$}
+\choice{none of these}
+\end{multipleChoice}
+\end{question}
+
+\begin{question}[2015C.13]
+\begin{type}
+multiplechoice
+\end{type}
+Find the length of the part of the curve \(\displaystyle y = \frac{3}{16} e^{2x} + \frac{1}{3} e^{-2x}\) for \(0 \leq x \leq \ln 2\).
+\begin{multiplechoice}
+\choice[correct]{\(\displaystyle \frac{13}{16}\)}
+\choice{\(\displaystyle \frac{11}{16}\)}
+\choice{\(\displaystyle \frac{3}{8}\)}
+\choice{\(\displaystyle \frac{9}{8}\)}
+\choice{\(\displaystyle \frac{29}{64}\)}
+\choice{\(\displaystyle \frac{3}{4}\)}
+\end{multiplechoice}
+\begin{keywords}
+arc length
+\end{keywords}
+\end{question}
+
+\begin{question}[2016C.01]
+\begin{type}
+multiplechoice
+\end{type}
+Find the length of the part of the curve \(\displaystyle y = \frac{x^4}{4} + \frac{1}{8x^2}\) for \(1 \leq x \leq 2\).
+\begin{multiplechoice}
+\choice[correct]{\(\displaystyle \frac{13}{16}\)}
+\choice{\(\displaystyle \frac{11}{16}\)}
+\choice{\(\displaystyle \frac{7}{8}\)}
+\choice{\(\displaystyle \frac{13\sqrt{2}}{16}\)}
+\choice{\(\displaystyle \frac{11\sqrt{2}}{16}\)}
+\choice{\(\displaystyle \frac{7\sqrt{2}}{8}\)}
+\end{multiplechoice}
+\begin{keywords}
+arc length
+\end{keywords}
+\end{question}
+
+\begin{question}[2017C.03]
+\begin{type}
+multiplechoice
+\end{type}
+Let \(\displaystyle y = \frac{x^4}{16} + \frac{1}{2x^2}\). Find the arc length for \(1 \leq x \leq \sqrt{2}\).
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{5}{7}\)}
+\choice{\(\displaystyle \frac{6}{7}\)}
+\choice{\(\displaystyle \frac{5}{6}\)}
+\choice{\(\displaystyle \frac{7}{4}\)}
+\choice[correct]{\(\displaystyle \frac{7}{16}\)}
+\choice{none of these}
+\end{multiplechoice}
+\begin{keywords}
+arc length
+\end{keywords}
+\end{question}
 
 
 \end{document}

@@ -9,30 +9,77 @@ Various exercises relating to improper integrals.
 \end{abstract}
 \maketitle
 
-\begin{exercise}
-The base of a solid region is bounded by the curves $x = 0$, $y = x^2$ and $y = x$. The cross sections perpendicular to the $x$-axis are squares. Compute the volume of the region.
-\begin{itemize}
-\item A typical square cross section has side length $L = \answer{x - x^2}$ and area $A = \answer{(x-x^2)^2}$. 
-\item Possible numerical values of the $x$-coordinates of points in the base range from a minimum value of $x = \answer{0}$ up to a maximum of $x = \answer{1}$.
-\item To compute volume, integrate:
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{(x-x^2)^2} d\answer{x} = \answer{\frac{1}{30}}. \]
-\end{itemize}
-\end{exercise}
 
-\begin{exercise}
-Find the volume of the region in three-dimensional space defined by the inequalities
-\begin{align*}
-0 & \leq x \leq 1, \\
-0 & \leq y \leq z^2, \\
-0 & \leq z \leq 3.
-\end{align*}
-\begin{itemize}
-\item Cross sections perpendicular to the $z$-axis are \wordChoice{\choice{square}\choice[correct]{rectangular}\choice{triangluar}} with length $\answer{1}$ in the $x$-direction and width $\answer{z^2}$ in the $y$-direction.
-\item The area of a $z$ cross section is $A(z) = \answer{z^2}$.
-\item To compute volume, integrate:
-\[ V = \int_{\answer{0}}^{\answer{3}} \answer{z^2} dz = \answer{9}. \]
-\end{itemize}
-\end{exercise}
+\section*{Sample Quiz Questions}
+
+\begin{question}[ImpropCD01]
+\begin{type}
+multiplechoice
+\end{type}
+Which of the following improper integrals is convergent? \offline{Show how you used comparison tests to justify your answer.}
+\[ \mathrm{I}: \ \int_0^1\frac{\sqrt{{1}+{x^2}{e^{-x}}}}{{(\cos x)}{x^2}}~dx \qquad   \mathrm{II}: \ \int_{2}^\infty\frac{{e^{x}}}{{x}{e^{x}}+{x^2}}~dx \qquad  \mathrm{III}: \ \int_{2}^\infty\frac{{x^2}}{{x^4}+{1}}~dx\]
+\begin{multiplechoice}
+\choice{only \(\mathrm{I}\) converges}
+\choice{only \(\mathrm{II}\) converges}
+\choice[correct]{only \(\mathrm{III}\) converges} \choicebreak
+\choice{\(\mathrm{I}\) and \(\mathrm{II}\) converge}
+\choice{\(\mathrm{II}\) and \(\mathrm{III}\) converge}
+\choice{\(\mathrm{I}\) and \(\mathrm{III}\) converge}
+\end{multiplechoice}
+\begin{feedback}
+Integral \(\mathrm{I}\) is divergent by direct comparison to the function \(\displaystyle \frac{{1}}{{x^2}}\). 
+Integral \(\mathrm{II}\) is divergent by limit comparison to the function \(\displaystyle \frac{{1}}{{x}}\). 
+Integral \(\mathrm{III}\) is convergent by direct comparison to the function \(\displaystyle \frac{{1}}{{x^2}}\).
+\end{feedback}
+\begin{keywords}
+improper integrals,improper integral convergence, generation2
+\end{keywords}
+\end{question}
+
+\begin{question}[ImpropCD08]
+\begin{type}
+multiplechoice
+\end{type}
+Which of the following improper integrals is convergent? \offline{Show how you used comparison tests to justify your answer.}
+\[ \mathrm{I}: \ \int_0^1\frac{\sqrt{{e^{2x}}+{x^3}}}{{x}}~dx \qquad   \mathrm{II}: \ \int_0^1\frac{{x^2}}{{x^2}{\sqrt{x}}+{x^3}}~dx \qquad  \mathrm{III}: \ \int_{2}^\infty\frac{{x^2}{\ln x}}{-{x}+{x^4}}~dx\]
+\begin{multiplechoice}
+\choice{only \(\mathrm{I}\) converges}
+\choice{only \(\mathrm{II}\) converges}
+\choice{only \(\mathrm{III}\) converges} \choicebreak
+\choice{\(\mathrm{I}\) and \(\mathrm{II}\) converge}
+\choice[correct]{\(\mathrm{II}\) and \(\mathrm{III}\) converge}
+\choice{\(\mathrm{I}\) and \(\mathrm{III}\) converge}
+\end{multiplechoice}
+\begin{feedback}
+Integral \(\mathrm{I}\) is divergent by direct comparison to the function \(\displaystyle \frac{{1}}{{x}}\). 
+Integral \(\mathrm{II}\) is convergent by direct comparison to the function \(\displaystyle \frac{{1}}{{\sqrt{x}}}\). 
+Integral \(\mathrm{III}\) is convergent by limit comparison to the function \(\displaystyle \frac{{\ln x}}{{x^2}}\).
+\end{feedback}
+\begin{keywords}
+improper integrals,improper integral convergence, generation2
+\end{keywords}
+\end{question}
+
+\section*{Sample Exam Questions}
+
+\begin{question}[2016C.06]
+\begin{type}
+multiplechoice
+\end{type}
+Only one of the following four improper integrals diverges. Choose that improper integral\offline{ and justify why it diverges}. \offline{(You need NOT justify why the other integrals converge.)}
+\begin{multiplechoice}
+\choice{\(\displaystyle \int^{\infty}_{2} \frac{\arctan x}{1+x^3} dx\)}
+\choice{\(\displaystyle \int^{\infty}_{2} \frac{1}{\sqrt{x^4+x^2}} dx\)}
+\choice{\(\displaystyle \int^{\infty}_{2} \frac{1+\sin x}{x^2} dx\)}
+\choice[correct]{\(\displaystyle \int_{2}^{\infty} \frac{1}{\sqrt[3]{x^2-1}} dx\)}
+\end{multiplechoice}
+\begin{notes}
+same question as 2018.S.16
+\end{notes}
+\begin{keywords}
+handwritten,improper integrals
+\end{keywords}
+\end{question}
 
 
 \end{document}

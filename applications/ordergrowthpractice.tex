@@ -9,40 +9,120 @@ Various exercises relating to orders of growth.
 \end{abstract}
 \maketitle
 
-\begin{exercise}
-The region defined by the inequalities $\sqrt{1-x^2} \leq y \leq 1$ for $0 \leq y \leq 1$ is revolved around the $y$-axis. Compute the volume of the resulting solid using the shell method.
-\begin{center}
-\begin{image}
-\includegraphics{shell/shell03.png}
-\end{image}
-\end{center}
-\begin{itemize}
-\item When the slicing variable is $x$, the radius of a shell is the \wordChoice{\choice[correct]{horizontal}\choice{vertical}} distance from an $x$-slice to the axis of rotation. Thus
-\[ r(x) = \answer{x} - \answer{0}. \]
-\item The height of an $x$-slice is equal to
-\[ h(x) = \answer{1 - \sqrt{1 - x^2}}. \]
-\item The volume is equal to the integral of $2 \pi r h$, so 
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{2 \pi x ( 1 - \sqrt{1-x^2}) } dx = \answer{\frac{\pi}{3}}. \]
-(Note: to compute the integral, split it into two parts and make the substitution $u = 1-x^2$ for one of them.)
-\end{itemize}
-\end{exercise}
+\section*{Sample Quiz Questions}
 
-\begin{exercise}
-The region in the plane bounded above by the graph $y = \sqrt{1+x^2}$, below by $y = -1 + x + \sqrt{1+x^2}$, and on the left by $x = 0$ is revolved around the axis $x = 1$. Compute the volume of the resulting solid using the shell method.
-\begin{center}
-\begin{image}
-\includegraphics{shell/shell04.png}
-\end{image}
-\end{center}
-\begin{itemize}
-\item When the slicing variable is $x$, the radius of a shell is the \wordChoice{\choice[correct]{horizontal}\choice{vertical}} distance from an $x$-slice to the axis $x = 0$. Thus
-\[ r(x) = \answer{1} - \answer{x}. \]
-\item The height of an $x$-slice is equal to
-\[ h(x) = \answer{-1+x}. \]
-\item The volume is equal to the integral of $2 \pi r h$, so 
-\[ V = \int_{\answer{-1}}^{\answer{1}} \answer{2 \pi (1-x)^2 } dx = \answer{\frac{16\pi}{3}}. \]
+\begin{question}[GrowthOrdINF001]
+\begin{type}
+multiplechoice
+\end{type}
+Arrange the functions 
+\[ x^{x} \qquad \frac{e^{x}}{\ln{x}} \qquad \ln{x} \]
+in order from least rate of growth to greatest rate of growth as \(x \rightarrow \infty\). Compare on the basis of magnitude rather than sign, i.e., if a function is negative, take its absolute value first.
+\begin{multiplechoice}
+\choice{\(\displaystyle x^{x} < \! \! < \frac{e^{x}}{\ln{x}} < \! \! < \ln{x}\)}
+\choice{\(\displaystyle \ln{x} < \! \! < x^{x} < \! \! < \frac{e^{x}}{\ln{x}}\)}
+\choice{\(\displaystyle \frac{e^{x}}{\ln{x}} < \! \! < \ln{x} < \! \! < x^{x}\)} \choicebreak
+\choice{\(\displaystyle x^{x} < \! \! < \ln{x} < \! \! < \frac{e^{x}}{\ln{x}}\)}
+\choice{\(\displaystyle \frac{e^{x}}{\ln{x}} < \! \! < x^{x} < \! \! < \ln{x}\)}
+\choice[correct]{\(\displaystyle \ln{x} < \! \! < \frac{e^{x}}{\ln{x}} < \! \! < x^{x}\)}
+\end{multiplechoice}
+\begin{feedback}
+General Remarks:
+\begin{itemize} \item Higher powers of \(x\) grow faster at infinity than lower powers of \(x\).
+\item As \(x \rightarrow \infty\), \(\ln x\) goes to infinity slower than \(x^p\) for any (presumably small) positive constant \(p\).
+\item As \(x \rightarrow \infty\), \(e^x\) goes to infinity faster than \(x^n\) for any (presumably large) positive constant \(n\).
+\item As \(x \rightarrow \infty\), \(x^x\) goes to infinity faster than any exponential of the form \(e^{cx}\) for any constant \(c\).
 \end{itemize}
-\end{exercise}
+\end{feedback}
+\begin{keywords}
+orders of growth,conceptual,generation3
+\end{keywords}
+\end{question}
+
+\begin{question}[GrowthOrdINF002]
+\begin{type}
+multiplechoice
+\end{type}
+Arrange the functions 
+\[ \frac{e^{- x}}{\ln{x}} \qquad x^{3} \ln{x} \qquad e^{x} \]
+in order from least rate of growth to greatest rate of growth as \(x \rightarrow \infty\). Compare on the basis of magnitude rather than sign, i.e., if a function is negative, take its absolute value first.
+\begin{multiplechoice}
+\choice[correct]{\(\displaystyle \frac{e^{- x}}{\ln{x}} < \! \! < x^{3} \ln{x} < \! \! < e^{x}\)}
+\choice{\(\displaystyle e^{x} < \! \! < \frac{e^{- x}}{\ln{x}} < \! \! < x^{3} \ln{x}\)}
+\choice{\(\displaystyle x^{3} \ln{x} < \! \! < e^{x} < \! \! < \frac{e^{- x}}{\ln{x}}\)} \choicebreak
+\choice{\(\displaystyle \frac{e^{- x}}{\ln{x}} < \! \! < e^{x} < \! \! < x^{3} \ln{x}\)}
+\choice{\(\displaystyle x^{3} \ln{x} < \! \! < \frac{e^{- x}}{\ln{x}} < \! \! < e^{x}\)}
+\choice{\(\displaystyle e^{x} < \! \! < x^{3} \ln{x} < \! \! < \frac{e^{- x}}{\ln{x}}\)}
+\end{multiplechoice}
+\begin{feedback}
+General Remarks:
+\begin{itemize} \item Higher powers of \(x\) grow faster at infinity than lower powers of \(x\).
+\item As \(x \rightarrow \infty\), \(\ln x\) goes to infinity slower than \(x^p\) for any (presumably small) positive constant \(p\).
+\item As \(x \rightarrow \infty\), \(e^x\) goes to infinity faster than \(x^n\) for any (presumably large) positive constant \(n\).
+\end{itemize}
+\end{feedback}
+\begin{keywords}
+orders of growth,conceptual,generation3
+\end{keywords}
+\end{question}
+
+
+\begin{question}[GrowthOrdZERO001]
+\begin{type}
+multiplechoice
+\end{type}
+Arrange the functions 
+\[ \left( \ln \frac{1}{x} \right)^2 \qquad \frac{e^{- x}}{x^{3}} \ln{x} \qquad x^{3} e^{x} \]
+in order from least rate of growth to greatest rate of growth as \(x \rightarrow 0^+\). Compare on the basis of magnitude rather than sign, i.e., if a function is negative, take its absolute value first.
+\begin{multiplechoice}
+\choice{\(\displaystyle \left( \ln \frac{1}{x} \right)^2 < \! \! < \frac{e^{- x}}{x^{3}} \ln{x} < \! \! < x^{3} e^{x}\)}
+\choice[correct]{\(\displaystyle x^{3} e^{x} < \! \! < \left( \ln \frac{1}{x} \right)^2 < \! \! < \frac{e^{- x}}{x^{3}} \ln{x}\)}
+\choice{\(\displaystyle \frac{e^{- x}}{x^{3}} \ln{x} < \! \! < x^{3} e^{x} < \! \! < \left( \ln \frac{1}{x} \right)^2\)} \choicebreak
+\choice{\(\displaystyle \left( \ln \frac{1}{x} \right)^2 < \! \! < x^{3} e^{x} < \! \! < \frac{e^{- x}}{x^{3}} \ln{x}\)}
+\choice{\(\displaystyle \frac{e^{- x}}{x^{3}} \ln{x} < \! \! < \left( \ln \frac{1}{x} \right)^2 < \! \! < x^{3} e^{x}\)}
+\choice{\(\displaystyle x^{3} e^{x} < \! \! < \frac{e^{- x}}{x^{3}} \ln{x} < \! \! < \left( \ln \frac{1}{x} \right)^2\)}
+\end{multiplechoice}
+\begin{feedback}
+General Remarks:
+\begin{itemize} \item Lower powers of \(x\) grow faster as \(x \rightarrow 0^+\) than higher powers of \(x\).
+\item As \(x \rightarrow 0^+\), \(-\ln x = \ln x^{-1}\) goes to \(\infty\) slower than \(x^{-p}\) for any (presumably small) positive \(p\).
+\item As \(x \rightarrow 0^+\), \(e^{x} \rightarrow 1\) and so does not influence the growth rate.
+\item As \(x \rightarrow 0^+\), \(e^{-x} \rightarrow 1\) and so does not influence the growth rate.
+\end{itemize}
+\end{feedback}
+\begin{keywords}
+orders of growth,conceptual,generation3
+\end{keywords}
+\end{question}
+
+\begin{question}[GrowthOrdZERO005]
+\begin{type}
+multiplechoice
+\end{type}
+Arrange the functions 
+\[ \frac{x^{3} e^{x}}{\ln{x}} \qquad \frac{e^{- x}}{x^{3}} \qquad \frac{e^{- x}}{x^{3} \ln{x}} \]
+in order from least rate of growth to greatest rate of growth as \(x \rightarrow 0^+\). Compare on the basis of magnitude rather than sign, i.e., if a function is negative, take its absolute value first.
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{x^{3} e^{x}}{\ln{x}} < \! \! < \frac{e^{- x}}{x^{3}} < \! \! < \frac{e^{- x}}{x^{3} \ln{x}}\)}
+\choice{\(\displaystyle \frac{e^{- x}}{x^{3} \ln{x}} < \! \! < \frac{x^{3} e^{x}}{\ln{x}} < \! \! < \frac{e^{- x}}{x^{3}}\)}
+\choice{\(\displaystyle \frac{e^{- x}}{x^{3}} < \! \! < \frac{e^{- x}}{x^{3} \ln{x}} < \! \! < \frac{x^{3} e^{x}}{\ln{x}}\)} \choicebreak
+\choice[correct]{\(\displaystyle \frac{x^{3} e^{x}}{\ln{x}} < \! \! < \frac{e^{- x}}{x^{3} \ln{x}} < \! \! < \frac{e^{- x}}{x^{3}}\)}
+\choice{\(\displaystyle \frac{e^{- x}}{x^{3}} < \! \! < \frac{x^{3} e^{x}}{\ln{x}} < \! \! < \frac{e^{- x}}{x^{3} \ln{x}}\)}
+\choice{\(\displaystyle \frac{e^{- x}}{x^{3} \ln{x}} < \! \! < \frac{e^{- x}}{x^{3}} < \! \! < \frac{x^{3} e^{x}}{\ln{x}}\)}
+\end{multiplechoice}
+\begin{feedback}
+General Remarks:
+\begin{itemize} \item Lower powers of \(x\) grow faster as \(x \rightarrow 0^+\) than higher powers of \(x\).
+\item As \(x \rightarrow 0^+\), \(-\ln x = \ln x^{-1}\) goes to \(\infty\) slower than \(x^{-p}\) for any (presumably small) positive \(p\).
+\item As \(x \rightarrow 0^+\), \(e^{x} \rightarrow 1\) and so does not influence the growth rate.
+\item As \(x \rightarrow 0^+\), \(e^{-x} \rightarrow 1\) and so does not influence the growth rate.
+\end{itemize}
+\end{feedback}
+\begin{keywords}
+orders of growth,conceptual,generation3
+\end{keywords}
+\end{question}
+
 
 
 

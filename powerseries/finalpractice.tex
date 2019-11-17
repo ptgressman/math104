@@ -1,0 +1,76 @@
+\documentclass{ximera}
+
+\title{Exercises: Cumulative}
+\author{Philip T. Gressman}
+
+\begin{document}
+\begin{abstract}
+Exercises relating to various topics we have studied.
+\end{abstract}
+\maketitle
+
+\section*{Sample Exam Questions}
+
+\begin{question}[2015C.02]
+\begin{type}
+multiplechoice
+\end{type}
+If it converges, find the sum of the series \(\displaystyle \sum_{n=0}^\infty \frac{(-1)^n \pi^{2n}}{3^{2n} (2n)!}\). \offline{If the series diverges, explain why.}
+\begin{multiplechoice}
+\choice{\(\ln 2\)}
+\choice{\(\ln 3 - \ln 2\)}
+\choice{\(e^{-2}\)}
+\choice[correct]{\(\displaystyle \frac{1}{2}\)}
+\choice{\(\displaystyle \frac{2}{e}\)}
+\choice{diverges}
+\end{multiplechoice}
+\begin{feedback}
+We recognize the Taylor series for cosine:
+\[ \cos x = \sum_{n=0}^\infty \frac{(-1)^n \pi^{2n}}{3^{2n}(2n)!} \]
+The series in question is exactly
+\[ \sum_{n=0}^\infty \frac{(-1)^n (\pi/3)^{2n}}{(2n)!} = \cos \frac{\pi}{3} = \frac{1}{2}. \]
+\end{feedback}
+\begin{keywords}
+Taylor series,series evaluation
+\end{keywords}
+\end{question}
+
+\begin{question}[2015C.05]
+\begin{type}
+multiplechoice
+\end{type}
+What is the limit of the sequence \(\displaystyle \left\{ n^2 \left( 1 - \cos \frac{1}{n} \right) \right\}\)?
+\begin{multiplechoice}
+\choice{\(1\)}
+\choice{\(-1\)}
+\choice{\(\displaystyle \frac{\sqrt{3}}{2}\)}
+\choice[correct]{\(\displaystyle \frac{1}{2}\)}
+\choice{\(\displaystyle -\frac{\sqrt{3}}{2}\)}
+\choice{diverges}
+\end{multiplechoice}
+\begin{keywords}
+sequence convergence,Taylor series
+\end{keywords}
+\end{question}
+
+\begin{question}[2017C.10]
+\begin{type}
+multiplechoice
+\end{type}
+Find the limit of the sequence
+\[ a_n = \left\{ n \left[ \ln (n+3) - \ln n \right] \right\}. \]
+\begin{multiplechoice}
+\choice{\(0\)}
+\choice{\(1\)}
+\choice{\(\ln 3\)}
+\choice[correct]{\(3\)}
+\choice{\(\infty\)}
+\choice{the limit does not exist}
+\end{multiplechoice}
+\begin{keywords}
+sequence convergence,Taylor series
+\end{keywords}
+\end{question}
+
+
+\end{document}

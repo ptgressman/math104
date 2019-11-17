@@ -9,41 +9,104 @@ Various exercises relating to partial fractions and integration.
 \end{abstract}
 \maketitle
 
-\begin{exercise}
-The region defined by the inequalities $\sqrt{1-x^2} \leq y \leq 1$ for $0 \leq y \leq 1$ is revolved around the $y$-axis. Compute the volume of the resulting solid using the shell method.
-\begin{center}
-\begin{image}
-\includegraphics{shell/shell03.png}
-\end{image}
-\end{center}
-\begin{itemize}
-\item When the slicing variable is $x$, the radius of a shell is the \wordChoice{\choice[correct]{horizontal}\choice{vertical}} distance from an $x$-slice to the axis of rotation. Thus
-\[ r(x) = \answer{x} - \answer{0}. \]
-\item The height of an $x$-slice is equal to
-\[ h(x) = \answer{1 - \sqrt{1 - x^2}}. \]
-\item The volume is equal to the integral of $2 \pi r h$, so 
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{2 \pi x ( 1 - \sqrt{1-x^2}) } dx = \answer{\frac{\pi}{3}}. \]
-(Note: to compute the integral, split it into two parts and make the substitution $u = 1-x^2$ for one of them.)
-\end{itemize}
-\end{exercise}
+\section*{Sample Quiz Questions}
 
-\begin{exercise}
-The region in the plane bounded above by the graph $y = \sqrt{1+x^2}$, below by $y = -1 + x + \sqrt{1+x^2}$, and on the left by $x = 0$ is revolved around the axis $x = 1$. Compute the volume of the resulting solid using the shell method.
-\begin{center}
-\begin{image}
-\includegraphics{shell/shell04.png}
-\end{image}
-\end{center}
-\begin{itemize}
-\item When the slicing variable is $x$, the radius of a shell is the \wordChoice{\choice[correct]{horizontal}\choice{vertical}} distance from an $x$-slice to the axis $x = 0$. Thus
-\[ r(x) = \answer{1} - \answer{x}. \]
-\item The height of an $x$-slice is equal to
-\[ h(x) = \answer{-1+x}. \]
-\item The volume is equal to the integral of $2 \pi r h$, so 
-\[ V = \int_{\answer{-1}}^{\answer{1}} \answer{2 \pi (1-x)^2 } dx = \answer{\frac{16\pi}{3}}. \]
-\end{itemize}
-\end{exercise}
+\begin{question}[PartialFracHeav001v2]
+\begin{type}
+multiplechoice
+\end{type}
+Compute the integral
+\[\int_{3}^{4}\frac{2x-3}{x^2-3x+2}~dx.\]
+\begin{multiplechoice}
+\choice{\(\displaystyle \ln 2\)}
+\choice[correct]{\(\displaystyle \ln 3\)}
+\choice{\(\displaystyle \ln 4\)}
+\choice{\(\displaystyle \ln 5\)}
+\choice{\(\displaystyle \ln 6\)}
+\choice{\(\displaystyle \ln 7\)}
+\end{multiplechoice}
+\begin{feedback}
+First factor the denominator of the integrand: \(x^2-3x+2 = (x-1)(x-2)\). Since the roots are distinct, it is possible to use the Heaviside cover-up method.  The partial fractions expansion will take the form \[\frac{A}{x-1} + \frac{B}{x-2}, \] where the coefficient \(A\) can be computed by cancelling the factor of \(x-1\) in the denominator and evaluating the result at \(x = 1\), i.e., \[A = \frac{2(1)-3}{(1)-2} = 1. \] Similarly, \[B = \frac{2(2)-3}{(2)-1} = 1,\] which gives that \[\frac{2x-3}{(x-1)(x-2)} = \frac{1}{x-1} + \frac{1}{x-2}. \] Therefore
+\[ \begin{aligned} 
+\int_{3}^{4}\frac{2x-3}{x^2-3x+2}~dx & = \int_{3}^{4}\left(\frac{1}{x-1} + \frac{1}{x-2}\right)~dx \\
+ & = \left(\ln |4-1| + \ln |4-2| \right) - \left(\ln |3-1| + \ln |3-2| \right)\\
+ & = \ln 3 + \ln 2 + \ln \frac{1}{2} + 0 = \ln 3.\end{aligned}\]
+\end{feedback}
+\begin{keywords}
+partial fractions,Heaviside,substitution,generation2
+\end{keywords}
+\end{question}
 
+\section*{Sample Exam Questions}
+
+\begin{question}%[2019WrittenByClass01]
+Compute the volume of the solid of revolution obtained by revolving around the $y$-axis the region below the graph
+\[ y = \frac{1}{(x-1)^2}, \]
+above $y=0$, and between $x=2$ and $x=3$.
+\begin{multipleChoice}
+\choice{\bigmath{\pi}}
+\choice{\bigmath{\pi ( \ln 2 + 3)}}
+\choice[correct]{\bigmath{\pi (2 \ln 2 + 1)}}
+\choice{\bigmath{\pi (2 \ln 3 + 1)}}
+\choice{\bigmath{\pi (3 \ln 2 + 1)}}
+\choice{\bigmath{\pi (3 \ln 3 + 1)}}
+\end{multipleChoice}
+
+\begin{feedback}
+Choosing $x$ as the variable of integration, slices will be parallel to the $y$-axis, indicating that the shell method should be used. The radius of a shell is $x$ (because the axis lies to the left of the region) and the height will be $(x-1)^{-2}$, so 
+\[ V = \int_2^3 \frac{2 \pi x}{(x-1)^2} dx = 2 \pi \int_2^3 \frac{x}{(x-1)^2} dx. \]
+The integral can be computed by partial fractions; the expansion has the form
+\[ \frac{x}{(x-1)^2} = \frac{A}{x-1} + \frac{B}{(x-1)^2}. \]
+The coefficients $A$ and $B$ can be found by usual methods (but note that the Heaviside cover up method will \textit{not} work in this case), but it is also possible to find them directly by carefully rewriting the numerator of the fraction in terms of $x-1$:
+\[ \frac{x}{(x-1)^2} = \frac{(x-1) + 1}{(x-1)^2} = \frac{(x-1)}{(x-1)^2} + \frac{1}{(x-1)^2} = \frac{1}{x-1} + \frac{1}{(x-1)^2}. \]
+Therefore
+\[ \begin{aligned} V & = 2 \pi \int_2^3 \left[ \frac{1}{x-1} + \frac{1}{(x-1)^2} \right] dx = 2 \pi \left. \left[ \ln |x-1| - \frac{1}{x-1} \right] \right|_{2}^3 \\
+& = 2 \pi \left( \ln 2 - \frac{1}{2} \right) - 2 \pi \left( 0 - 1 \right) = \pi(2 \ln 2 + 1). \end{aligned}\]
+\end{feedback}
+\end{question}
+
+\begin{question}[2016C.04]
+\begin{type}
+multiplechoice
+\end{type}
+Compute the constants \(A\) and \(B\) in the partial fractions expansion indicated below. \offline{To receive full credit, it is not necessary to compute \(C, D,\) or \(E\).}
+\[ \frac{x^4 + 16}{x^4 - 16} =A +  \frac{B}{x-2} + \frac{C}{x+2} + \frac{Dx + E}{x^2 + 4} \]
+\begin{multiplechoice}
+\choice{\(A=-1, B=1\)}
+\choice{\(A = 0, B = 1\)}
+\choice[correct]{\(A = 1, B = 1\)} \choicebreak
+\choice{\(A=-1, B=-1\)}
+\choice{\(A = 0, B = -1\)}
+\choice{\(A = 1, B = -1\)}
+\end{multiplechoice}
+\begin{comments}
+\[  \frac{x^4 + 16}{x^4 - 16} = 1 + \frac{1}{x-2} - \frac{1}{x+2} - \frac{4}{x^2+4} \]
+\end{comments}
+\begin{notes}
+same question as 2018.S.17
+\end{notes}
+\begin{keywords}
+handwritten,partial fractions
+\end{keywords}
+\end{question}
+
+\begin{question}[2017C.04]
+\begin{type}
+multiplechoice
+\end{type}
+Evaluate \(\displaystyle \int_1^2 \frac{x^2+x+1}{x^2+x} dx\).
+\begin{multiplechoice}
+\choice{\(0\)}
+\choice{\(1\)}
+\choice[correct]{\(\displaystyle 1 + \ln \left(\frac{4}{3}\right)\)}
+\choice{\(2\)}
+\choice{\(\displaystyle 2 + \ln \left(\frac{8}{3}\right)\)}
+\choice{none of these}
+\end{multiplechoice}
+\begin{keywords}
+partial fractions,polynomial long division,Heaviside
+\end{keywords}
+\end{question}
 
 
 

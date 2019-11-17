@@ -8,80 +8,164 @@ Various exercises relating to probability.
 \end{abstract}
 \maketitle
 
-\begin{exercise}
-The region $0 \leq y \leq \sqrt{x}$ with $x \leq 1$, shown below, is revolved around the $x$-axis. Use the disk method to find the volume of the solid of revolution.
-\begin{center}
-\begin{image}
-\includegraphics[width=4in]{diskwasher/disk01.png}
-\end{image}
-\end{center}
-\begin{hint}
-The radius $R(x)$ will be a difference of $y$-values because slices are indexed by the variable $x$.
-Each slice will extend from $y=0$ to $y =  \sqrt{x}$, and so $R(x)$ must be the larger of these $y$-values minus the smaller of these $y$-values.
-\end{hint}
-\begin{prompt}
-\[ R(x) = \answer{\sqrt{x}} \]
-\[ V = \int_{\answer{0}}^{\answer{1}} \pi (R(x))^2 dx =  \answer{\frac{\pi}{2}} \]
-\end{prompt}
-\end{exercise}
+
+\section*{Sample Quiz Questions}
+\begin{question}[ProbabAssort001]
+\begin{type}
+multiplechoice
+\end{type}
+Find the value of \(c\) which makes the function
+\[f(x) = \frac{1}{2}e^{-x} - ce^{-2x}\]
+a probability density function on the interval \([0, \infty)\). 
+What is the value of the mean \(\mu\) of the corresponding random variable?
+\begin{multiplechoice}
+\choice{\(\displaystyle c = 1, ~ \mu = \frac{1}{2}\)}
+\choice[correct]{\(\displaystyle c = -1, ~ \mu = \frac{3}{4}\)}
+\choice{\(\displaystyle c = 1, ~ \mu = 1\)} \choicebreak
+\choice{\(\displaystyle c = -1, ~ \mu = \frac{5}{4}\)}
+\choice{\(\displaystyle c = 1, ~ \mu = \frac{3}{2}\)}
+\choice{\(\displaystyle c = -1, ~ \mu = \frac{7}{4}\)}
+\end{multiplechoice}
+\begin{feedback}
+To compute the constant \(c\), we use the fact that the integral of a probability density function must equal \(1\), so 
+\[ \mu = \int_{0}^{\infty} \left( \frac{1}{2}e^{-x} - ce^{-2x} \right) ~ dx = 1.\]
+This gives the equation \[\frac{1}{2} - \frac{1}{2}c = 1,\]
+which then implies that \(c = -1\). To compute the mean \(\mu\), we use the formula
+\[ \mu = \int_{0}^{\infty} x \left( \frac{1}{2}e^{-x} + e^{-2x} \right) ~ dx.\]
+ Calculating the integral gives \(\mu = 3/4.\)
+\end{feedback}
+\begin{keywords}
+probability,generation2
+\end{keywords}
+\end{question}
+
+\begin{question}[ProbEVsinibp001]
+\begin{type}
+multiplechoice
+\end{type}
+A certain random variable \(X\) takes values in the interval \(\left[2 \pi , \frac{5}{2} \pi \right]\).
+If the probability density function is given by
+\[ A \sin {x} \]
+ for some appropriate value of the constant \(A\),
+compute the expected value \(\mu\) of \(X\).
+\begin{multiplechoice}
+\choice{\(\displaystyle \mu = -1 + 2 \pi\)}
+\choice{\(\displaystyle \mu = 1 + \frac{3}{2} \pi\)}
+\choice{\(\displaystyle \mu = 2 \pi\)}
+\choice{\(\displaystyle \mu = -1 + \frac{5}{2} \pi\)}
+\choice[correct]{\(\displaystyle \mu = 1 + 2 \pi\)}
+\choice{\(\displaystyle \mu = \frac{5}{2} \pi\)}
+\end{multiplechoice}
+\begin{feedback}
+The constant \(A\) will be the reciprocal of the integral
+\[ \int_{2 \pi}^{\frac{5}{2} \pi} \sin {x}\, dx \]
+ One can check that
+\[ \begin{aligned} \int_{2 \pi}^{\frac{5}{2} \pi} \sin {x}\, dx & = 1. \end{aligned} \]
+To compute the expected value \(\mu\) we also need to compute the integral 
+\[ \int_{2 \pi}^{\frac{5}{2} \pi} x \sin {x}\, dx \]
+ To compute the integralwe can use integration by parts. A reasonable strategy is to integrate  \(\sin {x}\) and differentiate  \(x\).
+ This gives the equality
+\[ \begin{aligned} \int x \sin {x}\, dx & = - x \cos {x} - \int \left(- \cos {x}\right)\, dx \\
+ & = - x \cos {x} + \sin {x}. \end{aligned} \]
+Therefore 
+\[ \begin{aligned} \int_{2 \pi}^{\frac{5}{2} \pi} x \sin {x}\, dx & = \left. \left[- x \cos {x} + \sin {x} \right] \right|_{2 \pi}^{\frac{5}{2} \pi}\\ & = 1 - \left(- 2 \pi \right) = 1 + 2 \pi. \end{aligned} \]
+Therefore the expected value is the ratio of the integrals, i.e.,
+\[ \begin{aligned} \mu & = \frac{1 + 2 \pi}{1} = 1 + 2 \pi. \end{aligned} \]
+\end{feedback}
+\begin{keywords}
+probability,expected value,integration by parts,generation3
+\end{keywords}
+\end{question}
+
+\section*{Sample Exam Questions}
+
+\begin{question}%[2019ProbImprop]
+A certain random variable $X$ has values in $(1,\infty)$ and has the property that there is some constant $C$ such that
+\[ P( X > a) = C \ln \frac{a^3+1}{a^3} \]
+for every $a > 1$. Compute the value of $C$ and determine whether the expected value $\mu$ of $X$ is finite or infinite. [Hint: There is enough information given to compute $C$ without calculating any integrals.]
+\begin{multipleChoice}
+\choice{$C = \ln 2$ and $\mu < \infty$}
+\choice{$C = 1$ and $\mu < \infty$} 
+\choice[correct]{$C = (\ln 2)^{-1}$ and $\mu < \infty$} \choicebreak
+\choice{$C = \ln 2$ and $\mu = \infty$}
+\choice{$C = 1$ and $\mu  = \infty$}
+\choice{$C = (\ln 2)^{-1}$ and $\mu = \infty$}
+\end{multipleChoice}
 
 
-\begin{exercise}
-The region $0 \leq y \leq \sqrt{x}$ with $x \leq 1$, shown below, is revolved around the axis $x=1$. Use the disk method to find the volume of the solid of revolution.
-\begin{center}
-\begin{image}
-\includegraphics[width=4in]{diskwasher/disk02.png}
-\end{image}
-\end{center}
-\begin{hint}
-The radius $R(y)$ will be a difference of $x$-values because slices are indexed by the variable $y$.
-Each slice will extend from $x = y^2$ to $x = 1$, and so $R(y)$ must be the larger of these $x$-values minus the smaller of these $x$-values
-\end{hint}
-\begin{prompt}
-\[ R(y) = \answer{1 - y^2} \]
-\[ V = \int_{\answer{0}}^{\answer{1}} \pi (R(y))^2 dy = \answer{\frac{8\pi}{15}} \]
-\end{prompt}
-\end{exercise}
+\begin{feedback}
+We know that $X$ is always greater than one, so
+\[ 1 = P(X > 1) = C \ln \frac{1+1}{1}, \]
+which gives $C = (\ln 2)^{-1}$.  If we let $f(x)$ denote the probability density function of $X$, then
+\[ \frac{1}{\ln 2} \ln \frac{a^3+1}{a^3} = P(X > a) = \int_a^\infty f(x) dx. \]
+Differentiating both sides with respect to $a$ gives
+\[ \frac{1}{\ln 2} \left[ \frac{3 a^2}{a^3+1} - \frac{3}{a} \right] = - f(a) \]
+so 
+\[ f(a) = \frac{1}{\ln 2} \left[ \frac{3}{a} - \frac{3a^2}{a^3+1} \right] = \frac{3}{a(a^3+1) \ln 2}. \]
+The expected value of $X$ must equal
+\[ \int_1^\infty \frac{3a}{a(a^3+1) \ln 2} da = \frac{3}{\ln 2} \int_1^\infty \frac{da}{a^3+1}. \]
+This integral will be finite by direct comparison to the convergent integral $\int_1^\infty a^{-3} da$.
+\end{feedback}
+\end{question}
 
+\begin{question}[2015C.08]
+\begin{type}
+multiplechoice
+\end{type}
+The function 
+\[ f(x) = \begin{cases} \displaystyle \frac{k}{x^3} & 1 \leq x < \infty \\ 0 & \text{otherwise} \end{cases} \]
+is a probability density function for a certain value of \(k\). For that probability density function, find the probability that \(x > 2\).
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{1}{2}\)}
+\choice{\(\displaystyle \frac{1}{3}\)}
+\choice[correct]{\(\displaystyle \frac{1}{4}\)}
+\choice{\(\displaystyle \frac{2}{3}\)}
+\choice{\(\displaystyle \frac{1}{5}\)}
+\choice{\(\displaystyle \frac{1}{6}\)}
+\end{multiplechoice}
+\begin{keywords}
+probability,improper integrals
+\end{keywords}
+\end{question}
 
-\begin{exercise}
-The region $0 \leq y \leq \sqrt{x}$ with $x \leq 1$, shown below, is revolved around the axis $x=0$. Use the washer method to find the volume of the solid of revolution.
-\begin{center}
-\begin{image}
-\includegraphics[width=4in]{diskwasher/disk04.png}
-\end{image}
-\end{center}
-\begin{hint}
-Each radius will be a difference of $x$-values because slices are indexed by the variable $y$.
-The distance from the axis $x=0$ to the line $x=1$ is $1$, and the distance from the axis $x=0$ to $x = y^2$ is $y^2$.
-\end{hint}
-\begin{prompt}
-\[ R_{\mathrm{outer}} (y) = \answer{1} \text{ and } r_{\mathrm{inner}}(y) = \answer{y^2} \]
-\[ V = \int_{\answer{0}}^{\answer{1}} \pi  \left[ (R_{\mathrm{outer}}(y))^2 - (r_{\mathrm{inner}}(y))^2 \right] dy =  \answer{\frac{4\pi}{5}} \]
-\end{prompt}
+\begin{question}[2016C.07]
+\begin{type}
+multiplechoice
+\end{type}
+For a certain real number \(k\), the function
+\[ f(X) = \begin{cases} \displaystyle \frac{k}{X^2+1} & \text{if } X \geq 0 \\ 0 & \text{otherwise} \end{cases} \]
+is a probability density function for a continuous random variable \(X\). For this value of \(k\), find the probability that \(X > 1\).
+\begin{multiplechoice}
+\choice{\(0\)}
+\choice{\(\displaystyle \frac{1}{3}\)}
+\choice{\(\displaystyle \frac{2}{3}\)}
+\choice{\(1\)}
+\choice[correct]{\(\displaystyle \frac{1}{2}\)}
+\choice{\(\displaystyle \frac{1}{4}\)}
+\end{multiplechoice}
+\begin{keywords}
+probability
+\end{keywords}
+\end{question}
 
-\end{exercise}
-
-\begin{exercise}
-The region $0 \leq y \leq \sqrt{x}$ with $x \leq 1$, shown below, is revolved around the axis $y=1$. Use the washer method to find the volume of the solid of revolution.
-\begin{center}
-\begin{image}
-\includegraphics[width=4in]{diskwasher/disk03.png}
-\end{image}
-\end{center}
-\begin{hint}
-Each radius will be a difference of $y$-values because slices are indexed by the variable $x$.
-The distance from the axis $y=1$ to the line $y=0$ is $1$, and the distance from the axis $y=1$ to $y = \sqrt{x}$ is $1 - \sqrt{x}$.
-\end{hint}
-\begin{prompt}
-\[ R_{\mathrm{outer}} (x) = \answer{1} \text{ and } r_{\mathrm{inner}}(x) = \answer{1-\sqrt{x}} \]
-\[ V = \int_{\answer{0}}^{\answer{1}} \pi  \left[ (R_{\mathrm{outer}}(x))^2 - (r_{\mathrm{inner}}(x))^2 \right] dx =  \answer{\frac{5\pi}{6}} \]
-\end{prompt}
-\end{exercise}
-
-
-
-
+\begin{question}[2017C.09]
+\begin{type}
+multiplechoice
+\end{type}
+Let \[ f(r) = \begin{cases} C r^2 e^{-2r/b} & r \geq 0 \\ 0 & r < 0 \end{cases}. \]
+Find \(C\) so that this is a probability density function (pdf) for the random variable \(r\). Here \(b\) is a positive constant. This function is used to model the distance between the nucleus and the electron in a hydrogen atom. The constant \(b\) is called the \textit{Bohr length}. Find the mean of the pdf.
+\begin{multiplechoice}
+\choice{\(\displaystyle C = \frac{b^3}{4}\), mean \(\displaystyle = b\)}
+\choice{\(\displaystyle C = \frac{4}{b^2}\), mean \(\displaystyle = b\)}
+\choice{\(\displaystyle C = \frac{4}{b}\), mean \(\displaystyle = b^2\)} \choicebreak
+\choice[correct]{\(\displaystyle C = \frac{4}{b^3}\), mean \(\displaystyle = \frac{3}{2}b\)}
+\choice{\(\displaystyle C = \frac{4}{b^2}\), mean \(\displaystyle = \frac{3}{2}b^2\)}
+\choice{\(\displaystyle C = \frac{4}{b}\), mean \(\displaystyle = \frac{3}{2}b^3\)}
+\end{multiplechoice}
+\begin{keywords}
+probability,integration by parts,hard
+\end{keywords}
+\end{question}
 
 
 \end{document}

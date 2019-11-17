@@ -9,26 +9,124 @@ Exercises relating to sequences.
 \end{abstract}
 \maketitle
 
-\begin{example}
-The base of a solid region is bounded by the curves $x = 0$, $y= 0$, and $y = \sqrt{1-x^2}$. The cross sections perpendicular to the $x$ axis are squares. Compute the volume of the region.
-\begin{solution}
-Lines in the $xy$-plane which are perpendicular to the $x$-axis are vertical, so the base of a typical $x$ cross section will extend from $y=0$ to $y = \sqrt{1-x^2}$. Since each cross section will have area
-\[ A(x) = \left( \sqrt{1-x^2} - 0 \right)^2 = 1-x^2. \]
-To compute volume, we integrate $dV = A(x) dx$ between $x=0$ and $x=1$, since these are the most extreme values of $x$ found in our region. Therefore
-\[ V = \int_0^1 ( 1 -x^2) dx = \left. x - \frac{x^3}{3} \right|_0^1 = 1 - \frac{1}{3} = \frac{2}{3}. \]
-\end{solution}
-\end{example}
 
-\begin{example}
-The base of a solid region is bounded by the curves $y = 0$, $x = \sqrt{y}$, and $x = 1$. The cross sections perpendicular to the $y$-axis are squares. Compute the volume of the region.
-\begin{solution}
-Lines in the $xy$-plane which are perpendicular to the $y$-axis are \wordChoice{\choice[correct]{horizontal}\choice{vertical}}, so the base of a typical $y$ cross section will extend from the graph $x=\answer{\sqrt{y}}$ to the graph $x = \answer{1}$. The length of the base is the difference of $x$-coordinates (since all points on a slice have the same $y$-coordinate), so the length of the base is $\answer{1 - \sqrt{y}}$, giving the square an area of 
-\[ A(y) = \answer{(1-\sqrt{y})^2} \]
-(note that the answer is a function of $y$ because different $y$ cross sections will generally have different areas).
-To compute volume, we integrate $dV = A(y) dy$ between $y=0$ and $y=1$, since these are the most extreme values of $y$ found in our region (note that we can find the upper value $y=1$ by solving for the intersection of the curves $x = \sqrt{y}$ and $x=1$). Therefore we integrate $A(y) dy$ to conclude
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{(1-\sqrt{y})^2} dy = \answer{\frac{1}{6}}. \]
-\end{solution}
-\end{example}
+\section*{Sample Quiz Questions}
+
+\begin{question}[SeqConvSQRT01]
+\begin{type}
+multiplechoice
+\end{type}
+Find the limit of the sequence
+\[\lim_{n \rightarrow \infty} \sqrt{\frac{2n-2}{2n^2-4n+3}}.\] \offline{Justify your response.}
+\begin{multiplechoice}
+\choice[correct]{\(\displaystyle 0\)}
+\choice{\(\displaystyle \frac{1}{3}\)}
+\choice{\(\displaystyle \frac{1}{2}\)}
+\choice{\(\displaystyle 1\)}
+\choice{\(\displaystyle 2\)}
+\choice{\(\displaystyle 3\)}
+\end{multiplechoice}
+\begin{feedback}
+\[\begin{aligned}
+\lim_{n \rightarrow \infty} \sqrt{\frac{2n-2}{2n^2-4n+3}} & = \lim_{n \rightarrow \infty} \sqrt{\frac{2n^{-1}-2n^{-2}}{2-4n^{-1}+3n^{-2}}} \\
+ & = \sqrt{\frac{\lim_{n \rightarrow \infty} 2n^{-1}-2n^{-2}}{\lim_{n \rightarrow \infty} 2-4n^{-1}+3n^{-2}}} \\
+ & = \sqrt{\frac{0}{2}} = 0. 
+\end{aligned}\]
+\end{feedback}
+\begin{keywords}
+sequence convergence,generation2
+\end{keywords}
+\end{question}
+
+\begin{question}[SeqConvORDER19]
+\begin{type}
+multiplechoice
+\end{type}
+Determine whether the limit below exists. If it exists, find its value.
+\[\lim_{n \rightarrow \infty} \frac{(-1)^{n+1}n^2 - 2^{-n-1}}{(-1)^{n}n^2 + 4^{-n}}.\] \offline{Justify your response.}
+\begin{multiplechoice}
+\choice[correct]{\(\displaystyle -1\)}
+\choice{\(\displaystyle 0\)}
+\choice{\(\displaystyle \frac{1}{2}\)}
+\choice{\(\displaystyle 2\)}
+\choice{\(\displaystyle 3\)}
+\choice{limit does not exist}
+\end{multiplechoice}
+\begin{feedback}
+Comparing the orders of growth of the terms in the numerator, the first term dominates because \(|-1|>|1/2|\). Likewise the first term dominates in the denominator because  \(|-1|>|1/4|\). Neglecting non-dominant terms leads to the limit \[\lim_{n \rightarrow \infty} \frac{(-1)^{n+1}n^2}{(-1)^{n}n^2}\] which simply equals \(-1\).
+\end{feedback}
+\begin{keywords}
+sequence convergence,generation2
+\end{keywords}
+\end{question}
+
+\begin{question}[SeqConvEXPN43]
+\begin{type}
+multiplechoice
+\end{type}
+Determine whether the limit below exists. If it exists, find its value.
+\[\lim_{n \rightarrow \infty} \left(\frac{4n - 3}{4n + 1}\right)^{n}.\] \offline{Justify your response.}
+\begin{multiplechoice}
+\choice{\(\displaystyle 0\)}
+\choice{\(\displaystyle 1\)}
+\choice[correct]{\(\displaystyle e^{-1}\)}
+\choice{\(\displaystyle e\)}
+\choice{\(\displaystyle e^2\)}
+\choice{limit does not exist}
+\end{multiplechoice}
+\begin{feedback}
+First observe that 
+\[\frac{4n - 3}{4n + 1} = 1 - \frac{4}{4n + 1} \rightarrow 1\]
+as \(n \rightarrow \infty\). Next, in light of the known limit \((1+x/k)^{k} \rightarrow e^x\) as \(k \rightarrow \infty\), manipulate exponents to see that  \[\left(1 - \frac{4}{4n + 1}\right)^n = \left( \left(1 - \frac{4}{4n + 1}\right)^{4n + 1} \right)^{ 1/4} \left(1 - \frac{4}{4n + 1}\right)^{-1/4}. \] As \(n \rightarrow \infty\), the first term on the right-hand side tends to \(e^{-1}\) and the second term tends to \(1\). Thus the original sequence tends to \(e^{-1}\) as well.
+\end{feedback}
+\begin{keywords}
+sequence convergence,generation2
+\end{keywords}
+\end{question}
+
+\begin{question}[SeqConvEXPN39]
+\begin{type}
+multiplechoice
+\end{type}
+Determine whether the limit below exists. If it exists, find its value.
+\[\lim_{n \rightarrow \infty} \left(\frac{n + 3}{2n - 2}\right)^{n^2}.\] \offline{Justify your response.}
+\begin{multiplechoice}
+\choice[correct]{\(\displaystyle 0\)}
+\choice{\(\displaystyle 1\)}
+\choice{\(\displaystyle e^{-1}\)}
+\choice{\(\displaystyle e\)}
+\choice{\(\displaystyle e^2\)}
+\choice{limit does not exist}
+\end{multiplechoice}
+\begin{feedback}
+First observe that 
+\[\frac{n + 3}{2n - 2} = \frac{1}{2} + \frac{2}{n - 1} \rightarrow \frac{1}{2}\]
+as \(n \rightarrow \infty\). Since the limit is positive and less than one, raising this expression to increasingly large powers generates a sequence which converges rapidly to zero.
+\end{feedback}
+\begin{keywords}
+sequence convergence,generation2
+\end{keywords}
+\end{question}
+
+\section*{Sample Exam Questions}
+
+\begin{question}[2016C.08]
+\begin{type}
+multiplechoice
+\end{type}
+Determine whether the sequence \(\displaystyle a_n = (-1)^{n-1} \frac{n^2}{1 + n^2 + n^3}\) converges or diverges. If it converges, find its limit.
+\begin{multiplechoice}
+\choice{divergent, \(\displaystyle \lim_{n \rightarrow \infty} a_n = 0\)}
+\choice{convergent, \(\displaystyle \lim_{n \rightarrow \infty} a_n = 1\)}
+\choice[correct]{convergent, \(\displaystyle \lim_{n \rightarrow \infty} a_n = 0\)}
+\choice{convergent, \(\displaystyle \lim_{n \rightarrow \infty} a_n = -1\)}
+\choice{divergent, \(\displaystyle \lim_{n \rightarrow \infty} a_n = \infty\)}
+\choice{divergent, limit doesn't exist}
+\end{multiplechoice}
+\begin{keywords}
+sequence convergence
+\end{keywords}
+\end{question}
 
 
 \end{document}

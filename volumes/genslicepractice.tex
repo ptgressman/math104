@@ -34,5 +34,46 @@ Find the volume of the region in three-dimensional space defined by the inequali
 \end{itemize}
 \end{exercise}
 
+\section*{Sample Exam Questions}
+
+\begin{question}(2018 Midterm 1)
+Compute the volume of the region in 3-dimensional space which satisfies the inequalities
+\begin{align*} 
+0 \leq   x \leq (1 - z^2) \qquad \mbox{ and } \qquad
+0 \leq  y \leq (1 + z^2) \qquad \mbox{ and } \qquad 
+0 \leq z \leq 1.
+\end{align*}
+\vspace{-12pt}
+\begin{multipleChoice}
+\choice{$\displaystyle \frac{2}{3}$}
+\choice{$\displaystyle \frac{3}{4}$}
+\choice[correct]{$\displaystyle \frac{4}{5}$}
+\choice{$\displaystyle \frac{5}{6}$}
+\choice{$\displaystyle \frac{6}{7}$}
+\choice{none of these}
+\end{multipleChoice}
+\end{question}
+
+\begin{question}(2019 Midterm 1)
+The inequality 
+\[ \frac{x^2}{a^2} + \frac{y^2}{b^2} \leq 1 \]
+defines an ellipse in the $xy$-plane whose area is $\pi a b$ for any positive values of the constants $a$ and $b$.  Compute the three dimensional volume of the region defined by
+\[ 4 x^2 + z^2 y^2 \leq z^2 \mbox{ for } 0 \leq z \leq 1. \]
+\begin{multipleChoice}
+\choice{$\displaystyle 4 \pi z^2$}
+\choice{$4 \pi$}
+\choice{$\displaystyle \frac{\pi}{4z}$}
+\choice[correct]{$\displaystyle \frac{\pi}{4}$}
+\choice{$\displaystyle {\pi z}$}
+\choice{$\displaystyle {\pi}$}
+\end{multipleChoice}
+\begin{feedback}
+Dividing the first inequality by $z^2$ on both sides gives
+\[ \frac{x^2}{\frac{z^2}{4}} + \frac{y^2}{1} \leq 1, \]
+which means that slices in the $z$-direction are ellipses with area $\pi \frac{z}{2} \cdot 1 = \frac{\pi z}{2}$. Volume is obtained by integration:
+\[ V = \int_0^1 \frac{\pi z}{2} dz = \left. \frac{\pi z^2}{4} \right|_{0}^1 = \frac{\pi}{4}. \]
+\end{feedback}
+\end{question}
+
 
 \end{document}

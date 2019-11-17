@@ -9,30 +9,25 @@ Exercises relating to the application of ODEs to solve problems.
 \end{abstract}
 \maketitle
 
-\begin{exercise}
-The base of a solid region is bounded by the curves $x = 0$, $y = x^2$ and $y = x$. The cross sections perpendicular to the $x$-axis are squares. Compute the volume of the region.
-\begin{itemize}
-\item A typical square cross section has side length $L = \answer{x - x^2}$ and area $A = \answer{(x-x^2)^2}$. 
-\item Possible numerical values of the $x$-coordinates of points in the base range from a minimum value of $x = \answer{0}$ up to a maximum of $x = \answer{1}$.
-\item To compute volume, integrate:
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{(x-x^2)^2} d\answer{x} = \answer{\frac{1}{30}}. \]
-\end{itemize}
-\end{exercise}
+\section*{Sample Exam Questions}
 
-\begin{exercise}
-Find the volume of the region in three-dimensional space defined by the inequalities
-\begin{align*}
-0 & \leq x \leq 1, \\
-0 & \leq y \leq z^2, \\
-0 & \leq z \leq 3.
-\end{align*}
-\begin{itemize}
-\item Cross sections perpendicular to the $z$-axis are \wordChoice{\choice{square}\choice[correct]{rectangular}\choice{triangluar}} with length $\answer{1}$ in the $x$-direction and width $\answer{z^2}$ in the $y$-direction.
-\item The area of a $z$ cross section is $A(z) = \answer{z^2}$.
-\item To compute volume, integrate:
-\[ V = \int_{\answer{0}}^{\answer{3}} \answer{z^2} dz = \answer{9}. \]
-\end{itemize}
-\end{exercise}
+\begin{question}[2016C.15]
+\begin{type}
+multiplechoice
+\end{type}
+A tank contains 100 gallons of water in which 300 pounds of salt are dissolved. At some initial time, workers begin pumping in fresh water, i.e., containing no salt, at a rate of 10 gallons per minute. During the process, the tank is kept well-mixed and 20 gallons per minute of the resulting saltwater are pumped out of the tank (in particular, note that the tank will be empty after 10 minutes). Find the total amount of salt in the tank (measured in pounds) which remains 9 minutes after the process starts.
+\begin{multiplechoice}
+\choice{\(1\)}
+\choice{\(2\)}
+\choice[correct]{\(3\)}
+\choice{\(4\)}
+\choice{\(5\)}
+\choice{\(6\)}
+\end{multiplechoice}
+\begin{keywords}
+ODEs,mixing problem
+\end{keywords}
+\end{question}
 
 
 \end{document}

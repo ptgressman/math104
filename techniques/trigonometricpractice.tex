@@ -9,30 +9,105 @@ Various exercises relating to the integration of trigonometric functions.
 \end{abstract}
 \maketitle
 
-\begin{exercise}
-The base of a solid region is bounded by the curves $x = 0$, $y = x^2$ and $y = x$. The cross sections perpendicular to the $x$-axis are squares. Compute the volume of the region.
-\begin{itemize}
-\item A typical square cross section has side length $L = \answer{x - x^2}$ and area $A = \answer{(x-x^2)^2}$. 
-\item Possible numerical values of the $x$-coordinates of points in the base range from a minimum value of $x = \answer{0}$ up to a maximum of $x = \answer{1}$.
-\item To compute volume, integrate:
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{(x-x^2)^2} d\answer{x} = \answer{\frac{1}{30}}. \]
-\end{itemize}
-\end{exercise}
 
-\begin{exercise}
-Find the volume of the region in three-dimensional space defined by the inequalities
-\begin{align*}
-0 & \leq x \leq 1, \\
-0 & \leq y \leq z^2, \\
-0 & \leq z \leq 3.
-\end{align*}
-\begin{itemize}
-\item Cross sections perpendicular to the $z$-axis are \wordChoice{\choice{square}\choice[correct]{rectangular}\choice{triangluar}} with length $\answer{1}$ in the $x$-direction and width $\answer{z^2}$ in the $y$-direction.
-\item The area of a $z$ cross section is $A(z) = \answer{z^2}$.
-\item To compute volume, integrate:
-\[ V = \int_{\answer{0}}^{\answer{3}} \answer{z^2} dz = \answer{9}. \]
-\end{itemize}
-\end{exercise}
+\section*{Sample Quiz Questions}
+
+\begin{question}[TrigInt001]
+\begin{type}
+multiplechoice
+\end{type}
+Compute the value of the integral
+\[\int_{0}^{\frac{\pi}{4}} \sin^{3} 2x ~dx.\]
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{1}{5}\)}
+\choice[correct]{\(\displaystyle \frac{1}{3}\)}
+\choice{\(\displaystyle \frac{1}{2}\)}
+\choice{\(\displaystyle 1\)}
+\choice{\(\displaystyle 2\)}
+\choice{\(\displaystyle 3\)}
+\end{multiplechoice}
+\begin{feedback}
+To simplify the calculation, begin with a substitution which replaces \(x\) with \(x/2\). The question reduces to computing
+\[\frac{1}{2}\int_{0}^{\frac{\pi}{2}} \sin^{3} x ~dx.\]
+This integral is compatible with the substitution \(u = \cos x\). By the substitution formula, this means \(dx = - du / \sin x\), and one must also replace \(\sin^2 x\) by \(1 - u^2\). Furthermore, by virtue of the special angle formulas \(\cos 0 = 1\) and \(\cos \frac{\pi}{2} = 0\), the problem is reduced to computing the integral
+\[-\frac{1}{2}\int_{1}^{0} (1 - u^2) ~du.\]
+Carrying out this calculation in the usual way gives a final answer of \(\frac{1}{3}\).
+\end{feedback}
+\begin{keywords}
+trigonometric integrals,generation2
+\end{keywords}
+\end{question}
+
+\begin{question}[TrigInt010]
+\begin{type}
+multiplechoice
+\end{type}
+Compute the value of the integral
+\[\int_{\frac{\pi}{6}}^{\frac{\pi}{2}} \tan^{-6} x  \sec^{5} x ~dx.\]
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{17}{5}\)}
+\choice{\(\displaystyle \frac{19}{5}\)}
+\choice{\(\displaystyle \frac{23}{5}\)}
+\choice{\(\displaystyle \frac{29}{5}\)}
+\choice[correct]{\(\displaystyle \frac{31}{5}\)}
+\choice{\(\displaystyle \frac{37}{5}\)}
+\end{multiplechoice}
+\begin{feedback}
+Since the power of secant is odd and the power of tangent is even, try rewriting the integral in terms of sine and cosine. This gives 
+\[\int_{\frac{\pi}{6}}^{\frac{\pi}{2}} \sin^{-6} x  \cos x ~dx.\]
+This integral is compatible with the substitution \(u = \sin x\). By the substitution formula, this means \(dx = du / \cos x\). Furthermore, by virtue of the special angle formulas \(\sin \frac{\pi}{6} = \frac{1}{2}\) and \(\sin \frac{\pi}{2} = 1\), the problem is reduced to computing the integral
+\[\int_{\frac{1}{2}}^{1} u^{-6} ~du.\]
+Carrying out this calculation in the usual way gives a final answer of \(\frac{31}{5}\).
+\end{feedback}
+\begin{keywords}
+trigonometric integrals,generation2
+\end{keywords}
+\end{question}
+
+\begin{question}[TrigInt020]
+\begin{type}
+multiplechoice
+\end{type}
+Compute the value of the integral
+\[\int_{\frac{\pi}{6}}^{\frac{\pi}{2}} \sin^{-2} x  \cos^{3} x ~dx.\]
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{1}{5}\)}
+\choice{\(\displaystyle \frac{1}{3}\)}
+\choice[correct]{\(\displaystyle \frac{1}{2}\)}
+\choice{\(\displaystyle 1\)}
+\choice{\(\displaystyle 2\)}
+\choice{\(\displaystyle 3\)}
+\end{multiplechoice}
+\begin{feedback}
+This integral is compatible with the substitution \(u = \sin x\). By the substitution formula, this means \(dx = du / \cos x\), and one must also replace \(\cos^2 x\) by \(1-u^2\). Furthermore, by virtue of the special angle formulas \(\sin \frac{\pi}{6} = \frac{1}{2}\) and \(\sin \frac{\pi}{2} = 1\), the problem is reduced to computing the integral
+\[\int_{\frac{1}{2}}^{1} u^{-2}(1-u^2) ~du.\]
+Carrying out this calculation in the usual way gives a final answer of \(\frac{1}{2}\).
+\end{feedback}
+\begin{keywords}
+trigonometric integrals,generation2
+\end{keywords}
+\end{question}
+
+\section*{Sample Exam Questions}
+
+\begin{question}[2015C.10]
+\begin{type}
+multiplechoice
+\end{type}
+Compute the integral below.
+\[ \int_0^{\frac{\pi}{8}} \tan^4 2x \sec^4 2x ~ dx \]
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{4}{9}\)}
+\choice{\(\displaystyle \frac{7}{24}\)}
+\choice{\(\displaystyle \frac{5}{14}\)}
+\choice{\(\displaystyle \frac{9}{28}\)}
+\choice[correct]{\(\displaystyle \frac{6}{35}\)}
+\choice{\(\displaystyle \frac{1}{7}\)}
+\end{multiplechoice}
+\begin{keywords}
+trigonometric integrals
+\end{keywords}
+\end{question}
 
 
 \end{document}
