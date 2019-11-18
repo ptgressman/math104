@@ -9,6 +9,30 @@ We practice computing arc length.
 \end{abstract}
 \maketitle
 
+\begin{exercise}%[APEX0704ARCL04]
+Find the arc length of the function on the given interval: \(\displaystyle f(x) = \sqrt{8}x\) on \([-1, 1]\)
+\[ L = \answer{6}. \]
+%%
+%%
+\end{exercise}
+
+\begin{exercise}
+Find the arc length of the function on the given interval: \(\displaystyle f(x) = \ln \left(\cos x\right)\) on \([0, \pi/4]\).
+(You may use the fact that $\int \sec x ~ dx = \ln |\sec x + \tan x| + C$.)
+\[ L = \answer{\ln (1 + \sqrt{2})}. \]
+\end{exercise}
+
+\begin{exercise}%[APEX0704ARCL13]
+Set up the integral to compute the arc length of the function on the given interval: \(\displaystyle f(x) = x^2\) on \([0, 1]\).
+\[ L = \int_{\answer{0}}^{\answer{1}} \answer{\sqrt{1+4x^2}} \ dx\]
+%
+%
+\end{exercise}
+
+\begin{question}%%%%%[2017C.03]
+Let \(\displaystyle y = \frac{x^4}{16} + \frac{1}{2x^2}\). Find the arc length for \(1 \leq x \leq \sqrt{2}\).
+\[ L = \answer{\frac{7}{16}}. \]
+\end{question}
 
 \section*{Sample Quiz Questions}
 
@@ -56,23 +80,25 @@ Compute the length of the curve $x = \frac{1}{8} (y^2 + 2y) - \ln (y+1)$ between
 \end{multipleChoice}
 \end{question}
 
-\begin{question}
+\begin{question}%%%%%[2018.S.4]
  Find the arc length of the following curve between $x=-1$ and $x=1$:
 \[ y = 3 \cosh \frac{x}{3}. \]
-\begin{multipleChoice}
-\choice{\(\displaystyle 3 e - \frac{3}{e}\)}
-\choice{\(\displaystyle 3 e - \frac{3}{e}\)}
-\choice{\(\displaystyle 3 e - \frac{3}{e}\)}
-\choice{\(\displaystyle 3 e - \frac{3}{e}\)}
+(Note: $\cosh x = (e^x + e^{-x})/2$.)
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{e}{3} - \frac{1}{3e}\)}
+\choice{\(\displaystyle \frac{e}{2} - \frac{1}{2e}\)}
+\choice{\(\displaystyle e - \frac{1}{e}\)}
+\choice{\(\displaystyle 2 e - \frac{2}{e}\)}
 \choice[correct]{\(\displaystyle 3 e - \frac{3}{e}\)}
 \choice{none of the above}
-\end{multipleChoice}
+\end{multiplechoice}
+
 \end{question}
 
 \begin{question}
  A certain curve $y = f(x)$ in the plane has the property that its length between the endpoints $x=0$ and $x=a$ is equal to
 \[ \int_0^a \sqrt{1 + \sin^2 t} ~ dt \]
-for every value of $a > 0$.  Assuming the curve passes through the points $(0,0)$ and $(\frac{\pi}{2},1)$, what is $f( \frac{\pi}{4})$?
+for every value of $a > 0$.  Assuming the curve passes through the points $(0,0)$ and $\left(\frac{\pi}{2},1\right)$, what is $f\left( \frac{\pi}{4} \right)$?
 \begin{multipleChoice} 
 \choice{$\displaystyle \frac{1}{2}$}
 \choice{$\displaystyle \frac{1}{\sqrt{2}}$}
@@ -111,19 +137,7 @@ Find the length of the part of the curve \(\displaystyle y = \frac{x^4}{4} + \fr
 
 \end{question}
 
-\begin{question}%%%%%[2017C.03]
 
-Let \(\displaystyle y = \frac{x^4}{16} + \frac{1}{2x^2}\). Find the arc length for \(1 \leq x \leq \sqrt{2}\).
-\begin{multiplechoice}
-\choice{\(\displaystyle \frac{5}{7}\)}
-\choice{\(\displaystyle \frac{6}{7}\)}
-\choice{\(\displaystyle \frac{5}{6}\)}
-\choice{\(\displaystyle \frac{7}{4}\)}
-\choice[correct]{\(\displaystyle \frac{7}{16}\)}
-\choice{none of these}
-\end{multiplechoice}
-
-\end{question}
 
 
 \end{document}

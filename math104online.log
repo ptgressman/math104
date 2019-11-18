@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  17 NOV 2019 09:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  18 NOV 2019 09:10
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1011,95 +1011,96 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
+ [7
 
-Overfull \hbox (15.87032pt too wide) in paragraph at lines 39--41
+]
+Overfull \hbox (15.87032pt too wide) in paragraph at lines 49--51
 []\OT1/cmr/m/sl/10 (2018 Midterm 1) Com-pute the vol-ume of the re-gion in 3-di
 mensional
  []
 
-[7
-
-]
+[8]
 
 LaTeX Font Warning: Font shape `OT1/cmtt/bx/sl' undefined
-(Font)              using `OT1/cmtt/bx/n' instead on input line 71.
+(Font)              using `OT1/cmtt/bx/n' instead on input line 81.
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 71.
-[8]) (./volumes/02washerwarm.tex
-<volumes/diskwasher/disksin.png, id=394, 251.58994pt x 90.11166pt>
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 81.
+) (./volumes/02washerwarm.tex
+<volumes/diskwasher/disksin.png, id=390, 251.58994pt x 90.11166pt>
 File: volumes/diskwasher/disksin.png Graphic file (type png)
 
 <use volumes/diskwasher/disksin.png>
 Package pdftex.def Info: volumes/diskwasher/disksin.png used on input line 17.
 (pdftex.def)             Requested size: 289.07999pt x 103.54922pt.
+ [9]
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
- [9 <./volumes/diskwasher/disksin.png>]
-<volumes/diskwasher/washer1.png, id=415, 251.58994pt x 131.44106pt>
+
+<volumes/diskwasher/washer1.png, id=412, 251.58994pt x 131.44106pt>
 File: volumes/diskwasher/washer1.png Graphic file (type png)
 
 <use volumes/diskwasher/washer1.png>
 Package pdftex.def Info: volumes/diskwasher/washer1.png used on input line 34.
 (pdftex.def)             Requested size: 289.07999pt x 151.0417pt.
-) [10 <./volumes/diskwasher/washer1.png>]
-(./volumes/02washerpractice.tex
-<volumes/diskwasher/disk01.png, id=424, 217.26169pt x 212.74481pt>
+ [10 <./volumes/diskwasher/disksin.png> <./volumes/diskwasher/washer1.png>]) [1
+1] (./volumes/02washerpractice.tex
+<volumes/diskwasher/disk01.png, id=428, 217.26169pt x 212.74481pt>
 File: volumes/diskwasher/disk01.png Graphic file (type png)
 
 <use volumes/diskwasher/disk01.png>
 Package pdftex.def Info: volumes/diskwasher/disk01.png used on input line 17.
 (pdftex.def)             Requested size: 289.07999pt x 283.08337pt.
 
-<volumes/diskwasher/disk02.png, id=425, 217.26169pt x 212.74481pt>
+<volumes/diskwasher/disk02.png, id=429, 217.26169pt x 212.74481pt>
 File: volumes/diskwasher/disk02.png Graphic file (type png)
 
 <use volumes/diskwasher/disk02.png>
 Package pdftex.def Info: volumes/diskwasher/disk02.png used on input line 35.
 (pdftex.def)             Requested size: 289.07999pt x 283.08337pt.
- [11
+ [12
 
  <./volumes/diskwasher/disk01.png>]
-<volumes/diskwasher/disk04.png, id=431, 217.26169pt x 212.74481pt>
+<volumes/diskwasher/disk04.png, id=435, 217.26169pt x 212.74481pt>
 File: volumes/diskwasher/disk04.png Graphic file (type png)
 
 <use volumes/diskwasher/disk04.png>
 Package pdftex.def Info: volumes/diskwasher/disk04.png used on input line 53.
 (pdftex.def)             Requested size: 289.07999pt x 283.08337pt.
- [12 <./volumes/diskwasher/disk02.png>]
-<volumes/diskwasher/disk03.png, id=437, 217.26169pt x 212.74481pt>
+ [13 <./volumes/diskwasher/disk02.png>]
+<volumes/diskwasher/disk03.png, id=442, 217.26169pt x 212.74481pt>
 File: volumes/diskwasher/disk03.png Graphic file (type png)
 
 <use volumes/diskwasher/disk03.png>
 Package pdftex.def Info: volumes/diskwasher/disk03.png used on input line 71.
 (pdftex.def)             Requested size: 289.07999pt x 283.08337pt.
- [13 <./volumes/diskwasher/disk04.png>]
-[14 <./volumes/diskwasher/disk03.png>]
+ [14 <./volumes/diskwasher/disk04.png>]
+[15 <./volumes/diskwasher/disk03.png>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/sl' in size <9> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 99.
- [15]) (./volumes/03shellwarm.tex
-[16] <volumes/shell/shell01.png, id=476, 224.94037pt x 322.95656pt>
+ [16]) (./volumes/03shellwarm.tex
+[17] <volumes/shell/shell01.png, id=480, 224.94037pt x 322.95656pt>
 File: volumes/shell/shell01.png Graphic file (type png)
 
 <use volumes/shell/shell01.png>
 Package pdftex.def Info: volumes/shell/shell01.png used on input line 17.
 (pdftex.def)             Requested size: 224.9398pt x 322.95576pt.
- [17 <./volumes/shell/shell01.png>]
-<volumes/shell/shell02.png, id=483, 251.58994pt x 136.86131pt>
+ [18 <./volumes/shell/shell01.png>]
+<volumes/shell/shell02.png, id=487, 251.58994pt x 136.86131pt>
 File: volumes/shell/shell02.png Graphic file (type png)
 
 <use volumes/shell/shell02.png>
 Package pdftex.def Info: volumes/shell/shell02.png used on input line 39.
 (pdftex.def)             Requested size: 251.58931pt x 136.86096pt.
-) [18 <./volumes/shell/shell02.png>]
+) [19 <./volumes/shell/shell02.png>]
 (./volumes/03shellpractice.tex
-<volumes/shell/shell03.png, id=497, 218.16507pt x 222.00441pt>
+<volumes/shell/shell03.png, id=502, 218.16507pt x 222.00441pt>
 File: volumes/shell/shell03.png Graphic file (type png)
 
 <use volumes/shell/shell03.png>
 Package pdftex.def Info: volumes/shell/shell03.png used on input line 17.
 (pdftex.def)             Requested size: 218.16452pt x 222.00385pt.
- [19
+ [20
 
  <./volumes/shell/shell03.png>]
 Overfull \hbox (5.15244pt too wide) in paragraph at lines 31--32
@@ -1107,133 +1108,134 @@ Overfull \hbox (5.15244pt too wide) in paragraph at lines 31--32
 m/m/it/10 y \OT1/cmr/m/n/10 = []$\OT1/cmr/m/sl/10 ,
  []
 
-<volumes/shell/shell04.png, id=504, 217.26169pt x 205.9695pt>
+<volumes/shell/shell04.png, id=508, 217.26169pt x 205.9695pt>
 File: volumes/shell/shell04.png Graphic file (type png)
 
 <use volumes/shell/shell04.png>
 Package pdftex.def Info: volumes/shell/shell04.png used on input line 35.
 (pdftex.def)             Requested size: 217.26114pt x 205.96898pt.
- [20 <./volumes/shell/shell04.png>] [21]
-[22]) (./volumes/04choosewarm.tex) [23] (./volumes/04choosepractice.tex
-[24
+ [21 <./volumes/shell/shell04.png>] [22]
+[23]) (./volumes/04choosewarm.tex [24]) [25] (./volumes/04choosepractice.tex
+[26
 
-] [25] [26]) (./arclengths/05arclengthwarm.tex [27]) [28]
-(./arclengths/05arclengthpractice.tex [29
+] [27] [28]) (./arclengths/05arclengthwarm.tex [29]) [30]
+(./arclengths/05arclengthpractice.tex [31
 
-] [30] [31])
-(./arclengths/06surfacewarm.tex [32]) [33] (./arclengths/06surfacepractice.tex
-[34
+] [32] [33] [34])
+(./arclengths/06surfacewarm.tex [35]) [36] (./arclengths/06surfacepractice.tex
+[37
 
-]) (./centroids/07centroidwarm.tex [35]) [36]
-(./centroids/07centroidpractice.tex [37
-
-] [38])
-(./techniques/integrationintro.tex [39]) [40]
-(./techniques/08substitutionwarm.tex) [41
+]) (./centroids/07centroidwarm.tex [38]) [39]
+(./centroids/07centroidpractice.tex [40
 
 ]
-(./techniques/08substitutionpractice.tex) (./techniques/09ibpwarm.tex [42
-
-])
-[43] (./techniques/09ibppractice.tex [44
-
-] [45] [46] [47])
-(./techniques/10trigonometricwarm.tex [48]) [49]
-(./techniques/10trigonometricpractice.tex [50
-
-] [51] [52])
-(./techniques/11trigsubwarm.tex) [53] (./techniques/11trigsubpractice.tex
-[54
-
-] [55] [56]) (./techniques/12partialfractionswarm.tex [57]) [58]
-(./techniques/12partialfractionspractice.tex [59
-
-] [60])
-(./techniques/13finalpractice.tex [61] [62] [63] [64] [65])
-(./applications/applicationsintro.tex [66]) [67]
-(./applications/14numericalwarm.tex) [68
-
-]
-(./applications/14numericalpractice.tex) (./applications/15ordergrowthwarm.tex
-[69
-
-]) [70] (./applications/15ordergrowthpractice.tex
-LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
- [71
-
-] [72] [73])
-(./applications/16improperwarm.tex [74]) [75]
-(./applications/16improperpractice.tex [76
-
-]
-Overfull \hbox (8.97217pt too wide) in paragraph at lines 59--61
-[]\OT1/cmr/m/sl/10 Only one of the fol-low-ing four im-proper in-te-grals di-ve
-rges. Choose
+Overfull \hbox (1.56908pt too wide) in paragraph at lines 51--52
+[]\OT1/cmr/m/sl/10 Compute the cen-troid of a thin wire along the graph $\OML/c
+mm/m/it/10 y \OT1/cmr/m/n/10 = []$
  []
 
-) (./applications/17probabilitywarm.tex [77]) [78]
+[41] [42]) (./techniques/integrationintro.tex [43]) [44]
+(./techniques/08substitutionwarm.tex) [45
+
+]
+(./techniques/08substitutionpractice.tex [46
+
+]) (./techniques/09ibpwarm.tex
+[47]) [48] (./techniques/09ibppractice.tex [49
+
+] [50] [51] [52] [53])
+(./techniques/10trigonometricwarm.tex [54]) [55]
+(./techniques/10trigonometricpractice.tex [56
+
+] [57] [58] [59])
+(./techniques/11trigsubwarm.tex [60]) [61] (./techniques/11trigsubpractice.tex
+[62
+
+] [63] [64] [65]) (./techniques/12partialfractionswarm.tex [66]) [67]
+(./techniques/12partialfractionspractice.tex [68
+
+] [69] [70] [71])
+(./techniques/13finalpractice.tex [72] [73] [74] [75])
+(./applications/applicationsintro.tex [76]) [77]
+(./applications/14numericalwarm.tex) [78
+
+]
+(./applications/14numericalpractice.tex [79
+
+])
+(./applications/15ordergrowthwarm.tex [80]) [81]
+(./applications/15ordergrowthpractice.tex
+LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
+ [82
+
+] [83] [84])
+(./applications/16improperwarm.tex [85]) [86]
+(./applications/16improperpractice.tex [87
+
+] [88] [89] [90])
+(./applications/17probabilitywarm.tex [91]) [92]
 (./applications/17probabilitypractice.tex
-Overfull \hbox (8.67886pt too wide) in paragraph at lines 41--43
+Overfull \hbox (14.1789pt too wide) in paragraph at lines 41--43
 []\OT1/cmr/m/sl/10 A cer-tain ran-dom vari-able $\OML/cmm/m/it/10 X$ \OT1/cmr/m
 /sl/10 takes val-ues in the in-ter-val $[]$.
  []
 
-[79
+[93
 
-] [80] [81] [82]) (./series/seriesintro.tex [83]) [84]
-(./series/18sequencewarm.tex) [85
+] [94] [95] [96]) (./series/seriesintro.tex [97]) [98]
+(./series/18sequencewarm.tex) [99
 
-] (./series/18sequencepractice.tex [86
-
-]
-[87] [88]) (./series/19serieswarm.tex [89]) [90] (./series/19seriespractice.tex
-) (./series/20comparisonwarm.tex [91
-
-] [92]) [93]
-(./series/20comparisonpractice.tex) (./series/21ratiorootwarm.tex [94
-
-])
-[95] (./series/21ratiorootpractice.tex) (./series/22integralwarm.tex [96
-
-])
-[97] (./series/22integralpractice.tex) (./series/23alternatewarm.tex [98
-
-])
-[99] (./series/23alternatepractice.tex [100
-
-] [101] [102])
-(./series/24finalpractice.tex [103]) (./powerseries/powerseriesintro.tex
-[104]) [105] (./powerseries/25powerserieswarm.tex) [106
+] (./series/18sequencepractice.tex [100
 
 ]
-(./powerseries/25powerseriespractice.tex [107
+[101] [102]) (./series/19serieswarm.tex [103]) [104]
+(./series/19seriespractice.tex) (./series/20comparisonwarm.tex [105
 
-] [108] [109] [110]
-Overfull \hbox (13.19029pt too wide) in paragraph at lines 139--141
+] [106])
+[107] (./series/20comparisonpractice.tex) (./series/21ratiorootwarm.tex
+[108
+
+]) [109] (./series/21ratiorootpractice.tex) (./series/22integralwarm.tex
+[110
+
+]) [111] (./series/22integralpractice.tex) (./series/23alternatewarm.tex
+[112
+
+]) [113] (./series/23alternatepractice.tex [114
+
+] [115] [116])
+(./series/24finalpractice.tex [117]) (./powerseries/powerseriesintro.tex
+[118]) [119] (./powerseries/25powerserieswarm.tex) [120
+
+]
+(./powerseries/25powerseriespractice.tex [121
+
+] [122] [123] [124]
+Overfull \hbox (18.69032pt too wide) in paragraph at lines 139--141
 []\OT1/cmr/m/sl/10 Find the in-ter-val of con-ver-gence of the power se-ries $[
 ] []$. 
  []
 
-[111]) (./powerseries/26taylorserieswarm.tex [112]) [113]
-(./powerseries/26taylorseriespractice.tex [114
+[125]) (./powerseries/26taylorserieswarm.tex [126]) [127]
+(./powerseries/26taylorseriespractice.tex [128
 
-] [115])
-(./powerseries/27taylorseries2warm.tex [116]) [117]
-(./powerseries/27taylorseries2practice.tex [118
+] [129])
+(./powerseries/27taylorseries2warm.tex [130]) [131]
+(./powerseries/27taylorseries2practice.tex [132
 
-] [119] [120])
-(./powerseries/28finalpractice.tex [121]) (./odes/odeintro.tex [122] [123])
-[124] (./odes/29odewarm.tex) [125
+] [133] [134])
+(./powerseries/28finalpractice.tex [135]) (./odes/odeintro.tex [136] [137])
+[138] (./odes/29odewarm.tex) [139
 
 ] (./odes/29odepractice.tex)
-(./odes/30solvewarm.tex [126
+(./odes/30solvewarm.tex [140
 
-]) [127] (./odes/30solvepractice.tex [128
+]) [141] (./odes/30solvepractice.tex [142
 
-] [129]
-[130]) (./odes/31applywarm.tex [131]) [132] (./odes/31applypractice.tex)
-[133
+] [143]
+[144]) (./odes/31applywarm.tex [145]) [146] (./odes/31applypractice.tex)
+[147
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
@@ -1250,8 +1252,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
  ) 
 Here is how much of TeX's memory you used:
- 30099 strings out of 493014
- 684453 string characters out of 6133351
+ 30117 strings out of 493014
+ 684589 string characters out of 6133351
  833154 words of memory out of 5000000
  31924 multiletter control sequences out of 15000+600000
  16205 words of font info for 60 fonts, out of 8000000 for 9000
@@ -1286,10 +1288,10 @@ dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on math104online.pdf (133 pages, 959452 bytes).
+Output written on math104online.pdf (147 pages, 994686 bytes).
 PDF statistics:
- 1985 PDF objects out of 2073 (max. 8388607)
- 1783 compressed objects within 18 object streams
- 943 named destinations out of 1000 (max. 500000)
+ 2052 PDF objects out of 2073 (max. 8388607)
+ 1835 compressed objects within 19 object streams
+ 961 named destinations out of 1000 (max. 500000)
  583 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -9,6 +9,74 @@ Various exercises relating to partial fractions and integration.
 \end{abstract}
 \maketitle
 
+
+Compute the indefinite integrals below. Since there are many possible answers (which differ by constant values), use the given instructions if needed to choose which possible answer to use. Do not forget absolute value signs inside logarithms when they are needed.
+
+\begin{exercise}%[APEX0604PF07]
+\[ \frac{7x+7}{x^2+3x-10} = \frac{\answer{3}}{x-2} + \frac{\answer{4}}{x+5} \]
+\[ \int \frac{7x+7}{x^2+3x-10}\ dx = \answer{3 \ln |x-2|+4 \ln |x+5|}+C\]
+(Do not include any constant terms in your antiderivative.)
+%%
+%%
+\end{exercise}
+
+\begin{exercise}%[APEX0604PF08]
+\[ \int \frac{7x-2}{x^2+x}\ dx = \answer{9 \ln |x+1|-2 \ln |x|}+C\]
+(Do not include any constant terms in your antiderivative.)
+%
+%
+\end{exercise}
+
+\begin{exercise}%[APEX0604PF11]
+\[ \frac{x+7}{(x+5)^2} = \frac{\answer{1}}{x+5} + \frac{\answer{2}}{(x+5)^2} \]
+\[ \int \frac{x+7}{(x+5)^2}\ dx = \answer{\ln |x+5|-\frac{2}{x+5}}+C\]
+(Do not include any constant terms in your antiderivative.)
+%
+%
+\end{exercise}
+
+
+\begin{exercise}%[APEX0604PF13]
+\[ \int \frac{9x^2+11x+7}{x(x+1)^2}\ dx = \answer{\frac{5}{x+1}+7 \ln |x|+2 \ln |x+1|}+C\]
+(Do not include any constant terms in your answer.)
+%
+%
+\end{exercise}
+
+\begin{exercise}%[APEX0604PF16]
+\[ \int \frac{x^2+x+1}{x^2+x-2}\ dx = \answer{x+\ln |x-1|-\ln |x+2|}+C \]
+(Do not include any constant terms in your answer.)
+\begin{hint}
+Don't forget polynomial long division; it is needed in this case because the degree of the numerator is at least as large as the degree of the denominator.
+\end{hint}
+%
+%
+\end{exercise}
+
+\begin{exercise}[APEX0604PF20]
+\[ \int \frac{x^2+x+5}{x^2+4x+10}\ dx = \answer{-\frac{3}{2} \ln \left|x^2+4 x+10\right|+x+\frac{\arctan \left(\frac{x+2}{\sqrt{6}}\right)}{\sqrt{6}}}+C \]
+(Do not include any constant terms in your answer.)
+\begin{hint}
+\[ \frac{x^2+x+5}{x^2+4x+10} = \answer{1} + \frac{\answer{-3} x + \answer{-5}}{x^{2} + 4 x + 10}  \]
+Since the derivative of the denominator is $2x + 4$, we should rewrite the numerator of the big fraction to have $x+2$'s if possible:
+\[  \frac{x^2+x+5}{x^2+4x+10} = \answer{1} + \frac{\answer{-3}(x+2) + \answer{1}}{x^2 + 4x + 10}. \]
+For expressions like
+\[ \int \frac{x+2}{x^2 +4x+10} dx \]
+we should do a substitution. For terms like
+\[ \int \frac{1}{x^2 + 4x + 10} dx \]
+we should first complete the square: $x^2 + 4x + 10 =  (x + 2)^2 + 6$ and then make the substitution $x + 2 = u \sqrt{6}$.
+\end{hint}
+%
+%
+\end{exercise}
+
+\begin{exercise}%[APEX0604PF23]
+\[ \int \frac{2x^2+x+1}{(x+1)(x^2+9)}\ dx = \answer{\frac{9}{10} \ln \left|x^2+9\right|+\frac{1}{5} \ln |x+1|-\frac{4}{15} \arctan \left(\frac{x}{3}\right)} +C\]
+(Do not include any constant terms in your answer.)
+%
+%
+\end{exercise}
+
 \section*{Sample Quiz Questions}
 
 \begin{question}%%%%%[PartialFracHeav001v2]
@@ -35,19 +103,18 @@ First factor the denominator of the integrand: \(x^2-3x+2 = (x-1)(x-2)\). Since 
 
 \section*{Sample Exam Questions}
 
-\begin{question}%[2019WrittenByClass01]
+\begin{question}%%%%%[2019WrittenByClass01]
 Compute the volume of the solid of revolution obtained by revolving around the $y$-axis the region below the graph
 \[ y = \frac{1}{(x-1)^2}, \]
 above $y=0$, and between $x=2$ and $x=3$.
-\begin{multipleChoice}
+\begin{multiplechoice}
+\choice{\(\displaystyle \pi\)}
+\choice{\(\displaystyle \pi ( \ln 2 + 3)\)}
+\choice[correct]{\(\displaystyle \pi (2 \ln 2 + 1)\)}
+\choice{\(\displaystyle \pi (2 \ln 3 + 1)\)}
+\choice{\(\displaystyle \pi (3 \ln 2 + 1)\)}
 \choice{\(\displaystyle \pi (3 \ln 3 + 1)\)}
-\choice{\(\displaystyle \pi (3 \ln 3 + 1)\)}
-\choice[correct]{\(\displaystyle \pi (3 \ln 3 + 1)\)}
-\choice{\(\displaystyle \pi (3 \ln 3 + 1)\)}
-\choice{\(\displaystyle \pi (3 \ln 3 + 1)\)}
-\choice{\(\displaystyle \pi (3 \ln 3 + 1)\)}
-\end{multipleChoice}
-
+\end{multiplechoice}
 \begin{feedback}
 Choosing $x$ as the variable of integration, slices will be parallel to the $y$-axis, indicating that the shell method should be used. The radius of a shell is $x$ (because the axis lies to the left of the region) and the height will be $(x-1)^{-2}$, so 
 \[ V = \int_2^3 \frac{2 \pi x}{(x-1)^2} dx = 2 \pi \int_2^3 \frac{x}{(x-1)^2} dx. \]
@@ -59,6 +126,7 @@ Therefore
 \[ \begin{aligned} V & = 2 \pi \int_2^3 \left[ \frac{1}{x-1} + \frac{1}{(x-1)^2} \right] dx = 2 \pi \left. \left[ \ln |x-1| - \frac{1}{x-1} \right] \right|_{2}^3 \\
 & = 2 \pi \left( \ln 2 - \frac{1}{2} \right) - 2 \pi \left( 0 - 1 \right) = \pi(2 \ln 2 + 1). \end{aligned}\]
 \end{feedback}
+
 \end{question}
 
 \begin{question}%%%%%[2016C.04]

@@ -11,32 +11,34 @@ Exercises choosing a method for computing volume.
 
 \section*{Sample Exam Questions}
 
-\begin{question}
+\begin{question}%%%%%[2016.29]
 The region in the plane bounded by $y = e^{-x/2}$ and the $x$-axis for $0 \leq x \leq \ln 2$ is rotated about the $x$-axis. The volume of the resulting solid of revolution is
-\begin{multipleChoice}
-\choice{\(\displaystyle 4 \pi\)}
-\choice{\(\displaystyle 4 \pi\)}
-\choice{\(\displaystyle 4 \pi\)}
-\choice{\(\displaystyle 4 \pi\)}
-\choice{\(\displaystyle 4 \pi\)}
-\choice[correct]{\(\displaystyle 4 \pi\)}
-\end{multipleChoice}
+\begin{multiplechoice}
+\choice{\(\displaystyle \frac{2 \pi}{3}\)}
+\choice{\(\displaystyle \frac{\pi}{3}\)}
+\choice{\(\displaystyle \frac{3}{2}\)}
+\choice{\(\displaystyle 2 \pi\)}
+\choice{\(\displaystyle \frac{5}{3}\)}
+\choice[correct]{\(\displaystyle \frac{\pi}{2}\)}
+\end{multiplechoice}
 \begin{feedback}
 If $x$ is used as the slicing variable, then slices are vertical and consequently perpendicular to the axis of rotation. Furthermore one side of the region lies along the axis, so the disk method is appropriate in this case. The distance from the axis to the upper edge of the region is $e^{-x/2}$, so
 \[ \begin{aligned} V & = \int_0^{\ln 2} \pi \left( e^{-x/2} \right)^2 dx = \pi \int_0^{\ln 2} e^{-x} dx \\ & =  \left. - \pi e^{-x} \right|_{x=0}^{\ln 2} = \pi (-e^{-\ln 2} + e^0) = \pi \left( - \frac{1}{2} + 1 \right) = \frac{\pi}{2}. \end{aligned}\]
 \end{feedback}
+
 \end{question}
 
-\begin{question}
+\begin{question}%%%%%[2018.S.1]
 Compute the volume of the solid of revolution obtained by rotating the region between $x=0$, $y=0$, and $y=\sqrt{2+3x^2 - 5x^4}$ around the $x$-axis.
-\begin{multipleChoice} 
+\begin{multiplechoice} 
+\choice{\(\displaystyle - \pi\)}
+\choice{\(\displaystyle 0\)}
+\choice{\(\displaystyle \pi\)}
+\choice[correct]{\(\displaystyle 2 \pi\)}
+\choice{\(\displaystyle 3 \pi\)}
 \choice{\(\displaystyle 4 \pi\)}
-\choice{\(\displaystyle 4 \pi\)}
-\choice{\(\displaystyle 4 \pi\)}
-\choice[correct]{\(\displaystyle 4 \pi\)}
-\choice{\(\displaystyle 4 \pi\)}
-\choice{\(\displaystyle 4 \pi\)}
-\end{multipleChoice}
+\end{multiplechoice}
+
 \end{question}
 
 \begin{question}

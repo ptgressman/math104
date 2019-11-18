@@ -9,6 +9,57 @@ Various questions relating to centers of mass and centroids.
 \end{abstract}
 \maketitle
 
+%\begin{exercise}%%Community Calculus Section 09.06
+%A thin plate fills the upper half of the unit circle $x^2 + y^2 = 1$. Find the centroid.
+%\[ \overline{x} = \answer{0} \text{ and } \overline{y} = \answer{\frac{4}{3 \pi}}. \]
+%\end{exercise}
+
+\begin{exercise}%%Community Calculus 09.06
+Find the centroid of the region bounded above by $y = x$ and below by $y = x^2$.
+\[ \overline{x} = \answer{\frac{1}{2}} \text{ and } \overline{y} = \answer{\frac{2}{5}}. \]
+\end{exercise}
+
+\begin{exercise}%%Community Calculus 09.06
+Find the centroid of the region bounded above by $y = 4-x^2$ and below by $y = 0$.
+\[ \overline{x} = \answer{0} \text{ and } \overline{y} = \answer{\frac{8}{5}}. \]
+\end{exercise}
+
+\begin{exercise}
+A thin plate in the plane defined by $x^2 \leq y \leq 1$ and $x \geq 0$ has density $y$ at the point $(x,y)$. Compute the center of mass.
+\begin{hint}
+Use $y$ as the variable of slicing. The center of mass of a single slice $(\tilde x, \tilde y)$ is then $(\sqrt{y}/2,y)$.
+\end{hint}
+\[ \overline{x} = \answer{\frac{1}{2}} \text{ and } \overline{y} = \answer{\frac{5}{7}}. \]
+\end{exercise}
+
+\begin{exercise}
+A thin plate in the plane defined by $x^2 \leq y \leq 2x^2$ and $0 \leq x \leq 1$ has density $x$ at the point $(x,y)$. Compute the center of mass.
+\begin{hint}
+Use $x$ as the variable of slicing. The center of mass of a single slice $(\tilde x, \tilde y)$ is then $(x,3x^2/2)$.
+\end{hint}
+\[ \overline{x} = \answer{\frac{4}{5}} \text{ and } \overline{y} = \answer{1}. \]
+\end{exercise}
+
+\begin{exercise}
+The same thin plate as above ($x^2 \leq y \leq 2x^2$ and $0 \leq x \leq 1$) now has density $x^{-2}$ at the point $(x,y)$.  Because the density of the plate is now higher near the origin than in the previous problem, this suggests that the center of mass will shift \wordChoice{\choice{away from}\choice[correct]{towards}} the origin relative to the previous exercise.
+
+Compute the center of mass.
+\[ \overline{x} = \answer{\frac{1}{2}} \text{ and } \overline{y} = \answer{\frac{1}{2}}. \]
+\end{exercise}
+
+\begin{exercise}
+Compute the centroid of a thin wire along the graph $y = \sqrt{1-x^2}$ between $x = 0$ and $x=1$. 
+\begin{hint}
+Recall that 
+\[ M = \int ds \]
+\[ \overline{x} = \frac{1}{M} \int x ds \]
+\[ \overline{y} = \frac{1}{M} \int y ds \]
+where $ds$ is the arc length element. We also know that
+\[ \int \frac{dx}{\sqrt{1-x^2}} = \arcsin x + C. \]
+\end{hint}
+\[ \overline{x} = \answer{\frac{2}{\pi}} \text{ and } \overline{y} = \answer{\frac{2}{\pi}}. \]
+\end{exercise}
+
 
 \section*{Sample Quiz Questions}
 \begin{question}%%%%%[CentroidQuad01]
@@ -36,26 +87,16 @@ M_x & = \frac{1}{2} \int_{-2}^{0} \left[ \left({3x^2-\frac{11}{2}}\right)^2 - \l
 
 \section*{Sample Exam Questions}
 
-\begin{question}
-Which of the following is  the centroid of the region given by $x^2 + y^2 \leq 1$, $x \geq 0$, and $y \geq 0$? Justify your response.  {\bf Without doing the calculation,} is $\overline{x}$ greater than or less than $\frac{1}{2}$? Give a brief geometric explanation.
-\begin{multipleChoice}
-\choice[correct]{\(\displaystyle \left(\frac{5}{3 \pi},\frac{4}{3 \pi}\right)\)}
-\choice{\(\displaystyle \left(\frac{5}{3 \pi},\frac{4}{3 \pi}\right)\)}
-\choice{\(\displaystyle \left(\frac{5}{3 \pi},\frac{4}{3 \pi}\right)\)}
-\choice{\(\displaystyle \left(\frac{5}{3 \pi},\frac{4}{3 \pi}\right)\)}
-\choice{\(\displaystyle \left(\frac{5}{3 \pi},\frac{4}{3 \pi}\right)\)}
-\choice{\(\displaystyle \left(\frac{5}{3 \pi},\frac{4}{3 \pi}\right)\)}
-\end{multipleChoice}
 
- \begin{feedback}\[ M = \frac{\pi}{4} \]
-\[ \int_0^1 x \sqrt{1-x^2} dx = \left. - \frac{1}{3} (1-x^2)^\frac{3}{2} \right|_{0}^1 \]
-The value of $\overline{x}$ should be less than $\frac{1}{2}$ since, when compared symmetrically about the axis $x=\frac{1}{2}$, the quarter circle has longer slices to the left of the axis than it does to the right.
-\end{feedback}
-\end{question}
+
 
 \begin{question}%%%%%[2015C.12]
 
 Find the \(y\)-coordinate of the centroid of the region bounded by the \(x\)-axis, the \(y\)-axis, and the graph of \(y = \cos x\) for \(0 \leq x \leq \pi/2\) if the density is constant.
+\begin{hint}
+Use the identity \[ \cos^2 x  = \frac{1 + \cos 2x}{2} \]
+to calculate the integral of $\cos^2 x$.
+\end{hint}
 \begin{multiplechoice}
 \choice{\(\displaystyle \frac{\pi}{18}\)}
 \choice{\(\displaystyle \frac{\pi}{12}\)}

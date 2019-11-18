@@ -1,6 +1,22 @@
 import re
 import os
 
+def check_weird(srctxt):
+    pattern = re.compile(r"\\choice{.*?\n")
+    foundthings = {}
+    shouldbe = False
+    for thing in re.finditer(pattern,srctxt):
+        if thing.group(0) in foundthings:
+            foundthings[thing.group(0)] += 1
+        else:
+            foundthings[thing.group(0)] = 1
+    for item in foundthings:
+        weirdones = foundthings[item]
+        if (weirdones >= 4):
+            print [weirdones,item]
+            shouldbe = True
+    return shouldbe
+
 def cleansourcefile(srctxt):
     returntxt = srctxt
 
@@ -36,11 +52,11 @@ def cleansourcefile(srctxt):
                 foundinstance = returntxt[found.start(0):index+1]
                 replaceinstance = returntxt[startindex:index]
                 replaceinstance = r"\(\displaystyle " + replaceinstance + r"\)"
-                allbigmaths.append([re.escape(foundinstance),lambda x : replaceinstance])
+                allbigmaths.append([re.escape(foundinstance),replaceinstance])
                 break
 
     for pairs in allbigmaths:
-        returntxt = re.sub(pairs[0],pairs[1],returntxt)
+        returntxt = re.sub(pairs[0],lambda x : pairs[1],returntxt)
     return returntxt
 
 for (root,dirs,files) in os.walk('.'):
@@ -49,5 +65,7 @@ for (root,dirs,files) in os.walk('.'):
             fullname = os.path.join(root,filename)
             text = open(fullname,"r").read()
             out = cleansourcefile(text)
+            if (check_weird(text)):
+                print "Something weird in " + filename
             if text != out:
                 open(fullname,"w").write(out)
