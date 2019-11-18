@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  18 NOV 2019 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  18 NOV 2019 15:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1108,19 +1108,19 @@ File: volumes/shell/shell04.png Graphic file (type png)
 <use volumes/shell/shell04.png>
 Package pdftex.def Info: volumes/shell/shell04.png  used on input line 35.
 (pdftex.def)             Requested size: 217.26114pt x 205.96898pt.
-[22 <./volumes/shell/shell04.png>] [23] [24] [25]) (./volumes/04choosewarm.tex)
-[26] (./volumes/04choosepractice.tex [27
+[22 <./volumes/shell/shell04.png>] [23] [24]) (./volumes/04choosewarm.tex
+[25] [26] [27]) [28] (./volumes/04choosepractice.tex [29
 
-] [28] [29])
-(./arclengths/05arclengthwarm.tex [30]) [31]
-(./arclengths/05arclengthpractice.tex [32
+] [30])
+(./arclengths/05arclengthwarm.tex [31]) [32]
+(./arclengths/05arclengthpractice.tex [33
 
-] [33] [34] [35])
-(./arclengths/06surfacewarm.tex [36]) [37] (./arclengths/06surfacepractice.tex
-[38
+] [34] [35] [36])
+(./arclengths/06surfacewarm.tex [37]) [38] (./arclengths/06surfacepractice.tex
+[39
 
-]) (./centroids/07centroidwarm.tex [39]) [40]
-(./centroids/07centroidpractice.tex [41
+]) (./centroids/07centroidwarm.tex [40]) [41]
+(./centroids/07centroidpractice.tex [42
 
 ]
 Overfull \hbox (1.56908pt too wide) in paragraph at lines 51--52
@@ -1128,28 +1128,28 @@ Overfull \hbox (1.56908pt too wide) in paragraph at lines 51--52
 mm/m/it/10 y \OT1/cmr/m/n/10 = []$
  []
 
-[42] [43] [44]) (./techniques/integrationintro.tex [45]) [46]
-(./techniques/08substitutionwarm.tex) [47
+[43] [44] [45]) (./techniques/integrationintro.tex) [46] [47]
+(./techniques/08substitutionwarm.tex) [48
 
 ]
-(./techniques/08substitutionpractice.tex [48
+(./techniques/08substitutionpractice.tex [49
 
 ]) (./techniques/09ibpwarm.tex
-[49]) [50] (./techniques/09ibppractice.tex [51
+[50]) [51] (./techniques/09ibppractice.tex [52
 
-] [52] [53] [54] [55])
-(./techniques/10trigonometricwarm.tex [56]) [57]
-(./techniques/10trigonometricpractice.tex [58
+] [53] [54] [55] [56])
+(./techniques/10trigonometricwarm.tex [57]) [58]
+(./techniques/10trigonometricpractice.tex [59
 
-] [59] [60] [61])
-(./techniques/11trigsubwarm.tex [62]) [63] (./techniques/11trigsubpractice.tex
-[64
+] [60] [61] [62])
+(./techniques/11trigsubwarm.tex [63]) [64] (./techniques/11trigsubpractice.tex
+[65
 
-] [65] [66] [67]) (./techniques/12partialfractionswarm.tex [68]) [69]
-(./techniques/12partialfractionspractice.tex [70
+] [66] [67] [68]) (./techniques/12partialfractionswarm.tex [69]) [70]
+(./techniques/12partialfractionspractice.tex [71
 
-] [71] [72] [73])
-(./techniques/13finalpractice.tex [74] [75] [76] [77] [78])
+] [72] [73] [74])
+(./techniques/13finalpractice.tex [75] [76] [77] [78])
 (./applications/applicationsintro.tex [79]) [80]
 (./applications/14numericalwarm.tex) [81
 
@@ -1246,8 +1246,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
  ) 
 Here is how much of TeX's memory you used:
- 30738 strings out of 492649
- 705141 string characters out of 6129622
+ 30749 strings out of 492649
+ 705235 string characters out of 6129622
  865286 words of memory out of 5000000
  32878 multiletter control sequences out of 15000+600000
  16205 words of font info for 60 fonts, out of 8000000 for 9000
@@ -1282,10 +1282,10 @@ dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2018/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2018/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on math104online.pdf (150 pages, 991789 bytes).
+Output written on math104online.pdf (150 pages, 996599 bytes).
 PDF statistics:
- 2064 PDF objects out of 2073 (max. 8388607)
- 1844 compressed objects within 19 object streams
- 964 named destinations out of 1000 (max. 500000)
+ 2078 PDF objects out of 2487 (max. 8388607)
+ 1858 compressed objects within 19 object streams
+ 975 named destinations out of 1000 (max. 500000)
  583 words of extra memory for PDF output out of 10000 (max. 10000000)
 
