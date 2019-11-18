@@ -92,11 +92,11 @@ Compute the integral
 \choice{\(\displaystyle \ln 7\)}
 \end{multiplechoice}
 \begin{feedback}
-First factor the denominator of the integrand: \(x^2-3x+2 = (x-1)(x-2)\). Since the roots are distinct, it is possible to use the Heaviside cover-up method.  The partial fractions expansion will take the form \[\frac{A}{x-1} + \frac{B}{x-2}, \] where the coefficient \(A\) can be computed by cancelling the factor of \(x-1\) in the denominator and evaluating the result at \(x = 1\), i.e., \[A = \frac{2(1)-3}{(1)-2} = 1. \] Similarly, \[B = \frac{2(2)-3}{(2)-1} = 1,\] which gives that \[\frac{2x-3}{(x-1)(x-2)} = \frac{1}{x-1} + \frac{1}{x-2}. \] Therefore
+First factor the denominator of the integrand: \(x^2-3x+2 = (x-1)(x-2)\). Since the roots are distinct, it is possible to use the Heaviside cover-up method.  \begin{hint} The partial fractions expansion will take the form \[\frac{A}{x-1} + \frac{B}{x-2}, \] where the coefficient \(A\) can be computed by cancelling the factor of \(x-1\) in the denominator and evaluating the result at \(x = 1\), i.e., \[A = \frac{2(1)-3}{(1)-2} = 1. \] Similarly, \[B = \frac{2(2)-3}{(2)-1} = 1,\] which gives that \[\frac{2x-3}{(x-1)(x-2)} = \frac{1}{x-1} + \frac{1}{x-2}. \] \begin{hint} Therefore
 \[ \begin{aligned} 
 \int_{3}^{4}\frac{2x-3}{x^2-3x+2}~dx & = \int_{3}^{4}\left(\frac{1}{x-1} + \frac{1}{x-2}\right)~dx \\
  & = \left(\ln |4-1| + \ln |4-2| \right) - \left(\ln |3-1| + \ln |3-2| \right)\\
- & = \ln 3 + \ln 2 + \ln \frac{1}{2} + 0 = \ln 3.\end{aligned}\]
+ & = \ln 3 + \ln 2 + \ln \frac{1}{2} + 0 = \ln 3.\end{aligned}\] \end{hint} \end{hint}
 \end{feedback}
 
 \end{question}
@@ -117,14 +117,14 @@ above $y=0$, and between $x=2$ and $x=3$.
 \end{multiplechoice}
 \begin{feedback}
 Choosing $x$ as the variable of integration, slices will be parallel to the $y$-axis, indicating that the shell method should be used. The radius of a shell is $x$ (because the axis lies to the left of the region) and the height will be $(x-1)^{-2}$, so 
-\[ V = \int_2^3 \frac{2 \pi x}{(x-1)^2} dx = 2 \pi \int_2^3 \frac{x}{(x-1)^2} dx. \]
+\[ V = \int_2^3 \frac{2 \pi x}{(x-1)^2} dx = 2 \pi \int_2^3 \frac{x}{(x-1)^2} dx. \] \begin{hint}
 The integral can be computed by partial fractions; the expansion has the form
 \[ \frac{x}{(x-1)^2} = \frac{A}{x-1} + \frac{B}{(x-1)^2}. \]
 The coefficients $A$ and $B$ can be found by usual methods (but note that the Heaviside cover up method will \textit{not} work in this case), but it is also possible to find them directly by carefully rewriting the numerator of the fraction in terms of $x-1$:
 \[ \frac{x}{(x-1)^2} = \frac{(x-1) + 1}{(x-1)^2} = \frac{(x-1)}{(x-1)^2} + \frac{1}{(x-1)^2} = \frac{1}{x-1} + \frac{1}{(x-1)^2}. \]
 Therefore
 \[ \begin{aligned} V & = 2 \pi \int_2^3 \left[ \frac{1}{x-1} + \frac{1}{(x-1)^2} \right] dx = 2 \pi \left. \left[ \ln |x-1| - \frac{1}{x-1} \right] \right|_{2}^3 \\
-& = 2 \pi \left( \ln 2 - \frac{1}{2} \right) - 2 \pi \left( 0 - 1 \right) = \pi(2 \ln 2 + 1). \end{aligned}\]
+& = 2 \pi \left( \ln 2 - \frac{1}{2} \right) - 2 \pi \left( 0 - 1 \right) = \pi(2 \ln 2 + 1). \end{aligned}\] \end{hint}
 \end{feedback}
 
 \end{question}

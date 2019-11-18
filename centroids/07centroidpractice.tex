@@ -76,11 +76,18 @@ Compute the centroid of the region bounded by the inequalities \[-2 \leq x \leq 
 \begin{feedback}
 The key calculations are as follows: 
 \[ \begin{aligned}
+M & = \int_{-2}^{0} \left[ \left({3x^2-\frac{11}{2}}\right) - \left({3x^2-\frac{13}{2}}\right) \right] dx , \\
+M_y & = \int_{-2}^{0} x \left[ \left({3x^2-\frac{11}{2}}\right) - \left({3x^2-\frac{13}{2}}\right) \right] dx, \\
+M_x & = \frac{1}{2} \int_{-2}^{0} \left[ \left({3x^2-\frac{11}{2}}\right)^2 - \left({3x^2-\frac{13}{2}}\right)^2 \right] dx.
+\end{aligned}\]
+ \begin{hint}
+ \[ \begin{aligned}
 M & = \int_{-2}^{0} \left[ \left({3x^2-\frac{11}{2}}\right) - \left({3x^2-\frac{13}{2}}\right) \right] dx = \int_{-2}^{0} \left[{1}\right] dx = 2, \\
 M_y & = \int_{-2}^{0} x \left[ \left({3x^2-\frac{11}{2}}\right) - \left({3x^2-\frac{13}{2}}\right) \right] dx = \int_{-2}^{0} x \left[{1}\right] dx = -2, \\
 M_x & = \frac{1}{2} \int_{-2}^{0} \left[ \left({3x^2-\frac{11}{2}}\right)^2 - \left({3x^2-\frac{13}{2}}\right)^2 \right] dx = \int_{-2}^{0} \left[{3x^2-6}\right] = -4, \\
  \overline{x} &  = \frac{M_y}{M} = -1, \\
  \overline{y} &  = \frac{M_x}{M} = -2.\end{aligned}\]
+ \end{hint}
 \end{feedback}
 
 \end{question}

@@ -98,9 +98,11 @@ The region in the plane bounded on the left by the curve \(x=-y^2\), on the righ
 \begin{feedback}
 The axis \(x = 2\) is perpendicular to the direction of slices using the integration variable \(y\), which indicates the washer method. 
  The region lies to the left of the axis. One way to see this is to evaluate \(x=-y^2\) at \(y = -2\), giving \(x = -4\), which is to the left of the axis \(x = 2\).
+ \begin{hint}
 The integral to compute equals \[ \begin{aligned} V &= \int_{-2}^{0}\pi \left((2-(-y^2))^2 - (2-(y^2+2y+2))^2\right)~ dy\\
 & = \pi \int_{-2}^{0} (-4y^3+4)~ dy\\
 & = \pi \left. \left(-y^4+4y\right) \right|_{-2}^{0} = 24\pi. \end{aligned}\]
+\end{hint}
 \end{feedback}
 
 \end{question}
@@ -119,9 +121,11 @@ The region in the plane bounded below by the curve \(y=-2x^2+5x+2\), above by th
 \begin{feedback}
 The axis \(y = 2\) is perpendicular to the direction of slices using the integration variable \(x\), which indicates the washer method. 
  The region lies below the axis. One way to see this is to evaluate \(y=-2x^2+5x+2\) at \(x = -1\), giving \(y = -5\), which is below the axis \(y = 2\).
+ \begin{hint}
 The integral to compute equals \[ \begin{aligned} V &= \int_{-1}^{0}\pi \left((2-(-2x^2+5x+2))^2 - (2-(-2x^2+2x+2))^2\right)~ dx\\
 & = \pi \int_{-1}^{0} (-12x^3+21x^2)~ dx\\
 & = \pi \left. \left(-3x^4+7x^3\right) \right|_{-1}^{0} = 10\pi. \end{aligned}\]
+\end{hint}
 \end{feedback}
 
 \end{question}
@@ -139,13 +143,18 @@ The region in the plane given by \(\left|{- \frac{x}{2} + \frac{1}{2} \sqrt{9 - 
 \end{multiplechoice}
 \begin{feedback}
 If the variable \(x\) is used for slicing, then slices are perpendicular to the axis of rotation, which indicates the washer method should be used.
-The inequalities for \(y\) give the outer and inner radii, and \[ \left(\frac{x}{2} + \frac{1}{2} \sqrt{9 - 6 x^{2}}\right)^2 - \left( \left|{- \frac{x}{2} + \frac{1}{2} \sqrt{9 - 6 x^{2}}}\right|\right)^2 = x \sqrt{9 - 6 x^{2}}. \](Note that the absolute values go away when the radius is squared.)To compute the integral 
+\begin{hint}
+The inequalities for \(y\) give the outer and inner radii, and \[ \left(\frac{x}{2} + \frac{1}{2} \sqrt{9 - 6 x^{2}}\right)^2 - \left( \left|{- \frac{x}{2} + \frac{1}{2} \sqrt{9 - 6 x^{2}}}\right|\right)^2 = x \sqrt{9 - 6 x^{2}}. \](Note that the absolute values go away when the radius is squared.)
+\begin{hint}
+To compute the integral 
 \[ \int_{0}^{\frac{2}{3} \sqrt{3}} \pi x \sqrt{9 - 6 x^{2}}\, dx \]
  we can use the substitution \(u = 9 - 6 x^{2}\) which implies the equality \(du = \left(- 12 x\right)dx\) for the differentials. This gives the equality
 \[ \begin{aligned} \int \pi x \sqrt{9 - 6 x^{2}}\, dx & = \int \left(- \frac{\pi}{12} \sqrt{u}\right)\, du \\
  & = - \frac{\pi}{18} u^{\frac{3}{2}}. \end{aligned} \]
 Reversing the substitution gives
 \[ \begin{aligned} \int_{0}^{\frac{2}{3} \sqrt{3}} \pi x \sqrt{9 - 6 x^{2}}\, dx & = \left. \left[- \frac{\pi}{18} \left(9 - 6 x^{2}\right)^{\frac{3}{2}} \right] \right|_{0}^{\frac{2}{3} \sqrt{3}}\\ & = \left(- \frac{\pi}{18} \right) - \left(- \frac{3}{2} \pi \right) = \frac{13}{9} \pi. \end{aligned} \]
+\end{hint}
+\end{hint}
 \end{feedback}
 
 \end{question}
