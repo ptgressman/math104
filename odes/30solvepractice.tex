@@ -9,6 +9,76 @@ Exercises related to solving linear and separable ODEs.
 \end{abstract}
 \maketitle
 
+
+Remember: several of these exercises involve logarithms. Use absolute value signs inside the logarithm when they're needed.
+
+\begin{exercise}%[APEX2002SEPODE06]
+Find the general solution of the ODE below. Write your answer in the form $f(y) = g(x) + C$ for appropriate functions $f(y)$ and $g(x)$.
+\[ y' = y - 2 \]
+\[ \text{General Solution: } \ \ \answer{\ln |y-2|} = \answer{x} + C \]
+\begin{hint}
+This ODE is both linear and separable, so either approach will work.
+\end{hint}
+\end{exercise}
+
+\begin{exercise}%[APEX2003LINODE02]
+Find the general solution of the ODE below.
+\[ x^2 y' + xy = 1 \]
+\[ \text{General Solution: } \ \  y = \answer{\frac{\ln |x|}{x}} + \frac{C}{x} \]
+(For definiteness, the function you enter for your answer should equal $0$ at $x=1$. If that's not the case, you might need to rewrite your solution and redefine the constant $C$.)
+\begin{hint}
+This is a linear ODE.
+\end{hint}
+\end{exercise}
+
+\begin{exercise}%[APEX2002SEPODE08]
+Find the general solution of the ODE below.
+\[ y y' = 4x \]
+\[ \text{General Solution: } \ \  y^2 =  \answer{4 x^2} + C \]
+(For definiteness, the function you enter for your answer should equal $0$ at $x=0$. If that's not the case, you might need to rewrite your solution and redefine the constant $C$.)
+\begin{hint}
+This is a separable ODE. In the form written, it's \textit{already} separated.
+\end{hint}
+\end{exercise}
+
+\begin{exercise}%[APEX2003LINODE07]
+\[ y'-3y=xe^{2x} \]
+\[ \text{General Solution: } \ \  y = C\answer{e^{3x}}-(x+1)\answer{e^{2x}} \]
+\begin{hint}
+This is a linear ODE.
+\end{hint}
+\end{exercise}
+
+\begin{exercise}%[APEX2002SEPODE10]
+\[ (x^2+1) y' = \frac{x}{y-1} \]
+\[ \text{General Solution: } \ \  (y-1)^2 = \answer{\ln (x^2 + 1)} + C \]
+(For definiteness, the function you enter for your answer should equal $0$ at $x=0$. If that's not the case, you might need to rewrite your solution and redefine the constant $C$.)
+\begin{hint}
+This is a separable ODE.
+\end{hint}
+\end{exercise}
+
+
+\begin{exercise}%[APEX2002SEPODE19]
+Solve the initial value problem
+\[ y' = \cos^2 x \cos^2 2y \text{ with } y(0) = 0. \]
+%\[ 2 \tan 2y = 2x + sin 2x \]
+\[ \text{Solution: } \ \ y = \answer{\frac{1}{2} \arctan \left( x + \frac{1}{2} \sin 2x \right)} \]
+\begin{hint}
+This is a separable ODE.
+\end{hint}
+\end{exercise}
+
+
+\begin{exercise}%[APEX2003LINODE14]
+Solve the initial value problem
+\[  y' + (\tan x) y = \sec x \text{ with } y(0) = -3.\]
+\[\text{Solution: } \ \ y = \answer{\sin x - 3\cos x}\]
+\begin{hint}
+This is a linear ODE. The integral of $\tan x$ is $-\ln |\cos x|$.
+\end{hint}
+\end{exercise}
+
 \section*{Sample Quiz Questions}
 
 \begin{question}%%%%%[SepIVP001]
