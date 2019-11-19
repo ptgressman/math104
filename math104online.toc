@@ -37,7 +37,7 @@
 \contentsline {section}{\textbf {4\hspace {1em}Sequences and Series}}{99}{section*.37}
 \contentsline {subsection}{4.1\hspace {1em}Sequences}{101}{section*.38}
 \contentsline {subsection}{4.2\hspace {1em}Exercises: Sequences}{102}{section*.39}
-\contentsline {subsection}{4.3\hspace {1em}Series}{111}{section*.40}
+\contentsline {subsection}{4.3\hspace {1em}Series}{110}{section*.40}
 \contentsline {subsection}{4.4\hspace {1em}Exercises: Series}{112}{section*.41}
 \contentsline {subsection}{4.5\hspace {1em}Series Comparison Tests}{113}{section*.42}
 \contentsline {subsection}{4.6\hspace {1em}Exercises: Series Comparison Tests}{115}{section*.43}
