@@ -9,6 +9,166 @@ Exercises relating to sequences.
 \end{abstract}
 \maketitle
 
+\begin{exercise}
+The sequence $a_n = 1/n^3$ has limit $L = 0$. Suppose $\epsilon = 1/64$; find a threshold $N$ such that
+\[ |a_n -L| < \epsilon \]
+is guaranteed to hold for all $n > N$ (take your value of $N$ as small as possible).
+\[ N = \answer{4}. \]
+\end{exercise}
+
+\begin{exercise}
+The sequence $a_n = (2n^2 + (-1)^n)/n^2$ has limit $L = 2$. Suppose $\epsilon = 1/100$; find a threshold $N$ such that
+\[ |a_n -L| < \epsilon \]
+is guaranteed to hold for all $n > N$ (take your value of $N$ as small as possible).
+\[ N = \answer{10}. \]
+\end{exercise}
+
+\begin{exercise}%[APEX0801SEQS09]
+Determine the \(n^\text{th}\) term of the given sequence. $a_1 = 4$, $a_2 = 7$, $a_3 = 10$, $a_4 = 13$, $a_5 = 16$, \(\ldots\)
+\[ a_n = \answer{3n+1}. \]
+\end{exercise}
+\begin{exercise}%[APEX0801SEQS09]
+Determine the \(n^\text{th}\) term of the given sequence. $a_1 = 3$, $a_2 = -5/2$, $a_3 = 7/4$, $a_4 = -9/8$, $a_5 = 11/16$, \(\ldots\)
+\[ a_n = \answer{\frac{(-1)^{n-1} (2n+1)}{2^{n-1}}}. \]
+\end{exercise}
+
+\begin{exercise}%[APEX0801SEQS17]
+Determine whether the sequence converges or diverges. If convergent, give the limit of the sequence. 
+\[ a_n = \left\{(-1)^n\frac{n}{n+1}\right\} \]
+\begin{multipleChoice}
+\choice{converges to $\answer{u}$}
+\choice[correct]{diverges}
+\end{multipleChoice}
+\end{exercise}
+
+\begin{exercise}%[APEX0801SEQS18]
+Determine whether the sequence converges or diverges. If convergent, give the limit of the sequence. 
+\[ a_n = \frac{4n^2-n+5}{3n^2+1} \]
+\begin{multipleChoice}
+\choice[correct]{converges to $\answer{\frac{4}{3}}$}
+\choice{diverges}
+\end{multipleChoice}
+\end{exercise}
+
+\begin{exercise}%[APEX0801SEQS19]
+Determine whether the sequence converges or diverges. If convergent, give the limit of the sequence. 
+\[ a_n = \frac{4^n}{5^n} \]
+\begin{multipleChoice}
+\choice[correct]{converges to $\answer{0}$}
+\choice{diverges}
+\end{multipleChoice}
+\end{exercise}
+
+\begin{exercise}
+Determine whether the sequence converges or diverges. If convergent, give the limit of the sequence. 
+\[ a_n = \left(1 - \frac{3}{n} \right)^{-n} \]
+\begin{multipleChoice}
+\choice[correct]{converges to $\answer{e^{3}}$}
+\choice{diverges}
+\end{multipleChoice}
+\begin{hint}
+Take the reciprocal and compare to your reference list of commonly-occurring limits.
+\end{hint}
+\end{exercise}
+
+\begin{exercise}
+Determine whether the sequence converges or diverges. If convergent, give the limit of the sequence. 
+\[ a_n = \left(1 - \frac{3}{n}\right)^{-n^2} \]
+\begin{multipleChoice}
+\choice{converges to $\answer{u}$}
+\choice[correct]{diverges}
+\end{multipleChoice}
+\begin{hint}
+If a sequence $b_n$ tends to $e^3$, what will the sequence $(b_n)^n$ do?
+\end{hint}
+\end{exercise}
+
+\begin{exercise}
+Determine whether the sequence converges or diverges. If convergent, give the limit of the sequence. 
+\[ a_n = \frac{(1.1)^n}{n} \]
+\begin{multipleChoice}
+\choice{converges to $\answer{u}$}
+\choice[correct]{diverges}
+\end{multipleChoice}
+\begin{hint}
+What are the relative orders of growth of numerator versus denominator?
+\end{hint}
+\end{exercise}
+
+\begin{exercise}
+Determine whether the sequence converges or diverges. If convergent, give the limit of the sequence. 
+\[ a_n = \frac{(0.9)^n}{n} \]
+\begin{multipleChoice}
+\choice[correct]{converges to $\answer{0}$}
+\choice{diverges}
+\end{multipleChoice}
+\end{exercise}
+
+\begin{exercise}
+Determine whether the sequence converges or diverges. If convergent, give the limit of the sequence. 
+\[ a_n = n^{1000000} (0.9)^n \]
+\begin{multipleChoice}
+\choice[correct]{converges to $\answer{0}$}
+\choice{diverges}
+\end{multipleChoice}
+\end{exercise}
+
+\begin{exercise}
+Determine whether the sequence converges or diverges. If convergent, give the limit of the sequence. 
+\[ a_n = \frac{\ln n}{n} \]
+\begin{multipleChoice}
+\choice[correct]{converges to $\answer{0}$}
+\choice{diverges}
+\end{multipleChoice}
+\end{exercise}
+
+\begin{exercise}
+Determine whether the sequence converges or diverges. If convergent, give the limit of the sequence. 
+\[ a_n = \frac{\ln n}{n^{0.00001}} \]
+\begin{multipleChoice}
+\choice[correct]{converges to $\answer{0}$}
+\choice{diverges}
+\end{multipleChoice}
+\end{exercise}
+
+
+\begin{exercise}
+Let $b_n$ be the sequence given by
+\[ b_1 = 0 \ \text{ and } \ b_{n+1} = \frac{2 + b_n}{3} \ \text{ for } n \geq 1 \]
+converges. Compute its limit.
+\[ \lim_{n \rightarrow \infty} b_n = \answer{1}. \]
+\end{exercise}
+
+\begin{exercise}
+Determine whether the sequence converges or diverges. If convergent, give the limit of the sequence. 
+\[ a_1 = 1 \ \text{ and } \ a_{n+1} = a_n + \frac{1}{a_n} \ \text{ for } n \geq 1 \]
+\begin{multipleChoice}
+\choice{converges to $\answer{u}$}
+\choice[correct]{diverges}
+\end{multipleChoice}
+\end{exercise}
+
+\begin{exercise}
+Determine whether the sequence converges or diverges. If convergent, give the limit of the sequence. 
+\[ a_1 = 1 \ \text{ and } \ a_{n+1} = a_n + \frac{1}{4} (4 - a_n^2) \ \text{ for } n \geq 1 \]
+\begin{multipleChoice}
+\choice[correct]{converges to $\answer{2}$}
+\choice{diverges}
+\end{multipleChoice}
+\end{exercise}
+
+\begin{exercise}
+Let $a_n$ be the sequence given by
+\[ a_1 = \frac{1}{4}, \ \text{ and }  \ a_{n+1} = 2 a_n(1-a_n) \ \text{ for } n \geq 1 \]
+converges. Compute its limit.
+\[ \lim_{n \rightarrow \infty} a_n = \answer{\frac{1}{2}}. \]
+\begin{hint}
+If $a_n$ happens to be positive and less than $1/2$, then $2 (1-a_n) > 1$, so this forces $2 a_n(1-a_n) > a_n$ (meaning that the term after $a_n$ will be larger than $a_n$.
+\begin{hint}
+The function $2 x(1-x)$ is nonnegative on the interval $[0,1]$ and has a maximum value of $1/2$ attained at $x = 1/2$. This means that if $a_n$ is anything between $0$ and $1$, the next term of the sequence will always be between $0$ and $1/2$.
+\end{hint}
+\end{hint}
+\end{exercise}
 
 \section*{Sample Quiz Questions}
 
@@ -16,6 +176,7 @@ Exercises relating to sequences.
 
 Find the limit of the sequence
 \[\lim_{n \rightarrow \infty} \sqrt{\frac{2n-2}{2n^2-4n+3}}.\] \offline{Justify your response.}
+(Hints will not be revealed until after you choose a response.)
 \begin{multiplechoice}
 \choice[correct]{\(\displaystyle 0\)}
 \choice{\(\displaystyle \frac{1}{3}\)}
@@ -25,11 +186,18 @@ Find the limit of the sequence
 \choice{\(\displaystyle 3\)}
 \end{multiplechoice}
 \begin{feedback}
+Because the square root function is continuous, you can pass the limit through it and compute
+\[ \sqrt{\lim_{n \rightarrow \infty} \frac{2n-2}{2n^2-4n+3}}. \]
+\begin{hint}
+Reduce numerator and denominator to the dominant terms (in the regime $n \rightarrow \infty$).
+\begin{hint}
 \[\begin{aligned}
 \lim_{n \rightarrow \infty} \sqrt{\frac{2n-2}{2n^2-4n+3}} & = \lim_{n \rightarrow \infty} \sqrt{\frac{2n^{-1}-2n^{-2}}{2-4n^{-1}+3n^{-2}}} \\
  & = \sqrt{\frac{\lim_{n \rightarrow \infty} 2n^{-1}-2n^{-2}}{\lim_{n \rightarrow \infty} 2-4n^{-1}+3n^{-2}}} \\
  & = \sqrt{\frac{0}{2}} = 0. 
 \end{aligned}\]
+\end{hint}
+\end{hint}
 \end{feedback}
 
 \end{question}
@@ -38,6 +206,7 @@ Find the limit of the sequence
 
 Determine whether the limit below exists. If it exists, find its value.
 \[\lim_{n \rightarrow \infty} \frac{(-1)^{n+1}n^2 - 2^{-n-1}}{(-1)^{n}n^2 + 4^{-n}}.\] \offline{Justify your response.}
+(Hints will not be revealed until after you choose a response.)
 \begin{multiplechoice}
 \choice[correct]{\(\displaystyle -1\)}
 \choice{\(\displaystyle 0\)}
@@ -47,7 +216,8 @@ Determine whether the limit below exists. If it exists, find its value.
 \choice{limit does not exist}
 \end{multiplechoice}
 \begin{feedback}
-Comparing the orders of growth of the terms in the numerator, the first term dominates because \(|-1|>|1/2|\). Likewise the first term dominates in the denominator because  \(|-1|>|1/4|\). Neglecting non-dominant terms leads to the limit \[\lim_{n \rightarrow \infty} \frac{(-1)^{n+1}n^2}{(-1)^{n}n^2}\] which simply equals \(-1\).
+Comparing the orders of growth of the terms in the numerator, the first term dominates because \(|-1|>|1/2|\). 
+\begin{hint} Likewise the first term dominates in the denominator because  \(|-1|>|1/4|\). \begin{hint} Neglecting non-dominant terms leads to the limit \[\lim_{n \rightarrow \infty} \frac{(-1)^{n+1}n^2}{(-1)^{n}n^2}\] which simply equals \(-1\). \end{hint} \end{hint}
 \end{feedback}
 
 \end{question}
@@ -56,6 +226,7 @@ Comparing the orders of growth of the terms in the numerator, the first term dom
 
 Determine whether the limit below exists. If it exists, find its value.
 \[\lim_{n \rightarrow \infty} \left(\frac{4n - 3}{4n + 1}\right)^{n}.\] \offline{Justify your response.}
+(Hints will not be revealed until after you choose a response.)
 \begin{multiplechoice}
 \choice{\(\displaystyle 0\)}
 \choice{\(\displaystyle 1\)}
@@ -67,7 +238,7 @@ Determine whether the limit below exists. If it exists, find its value.
 \begin{feedback}
 First observe that 
 \[\frac{4n - 3}{4n + 1} = 1 - \frac{4}{4n + 1} \rightarrow 1\]
-as \(n \rightarrow \infty\). Next, in light of the known limit \((1+x/k)^{k} \rightarrow e^x\) as \(k \rightarrow \infty\), manipulate exponents to see that  \[\left(1 - \frac{4}{4n + 1}\right)^n = \left( \left(1 - \frac{4}{4n + 1}\right)^{4n + 1} \right)^{ 1/4} \left(1 - \frac{4}{4n + 1}\right)^{-1/4}. \] As \(n \rightarrow \infty\), the first term on the right-hand side tends to \(e^{-1}\) and the second term tends to \(1\). Thus the original sequence tends to \(e^{-1}\) as well.
+as \(n \rightarrow \infty\). \begin{hint} Next, in light of the known limit \((1+x/k)^{k} \rightarrow e^x\) as \(k \rightarrow \infty\), manipulate exponents to see that  \[\left(1 - \frac{4}{4n + 1}\right)^n = \left( \left(1 - \frac{4}{4n + 1}\right)^{4n + 1} \right)^{ 1/4} \left(1 - \frac{4}{4n + 1}\right)^{-1/4}. \] \begin{hint} As \(n \rightarrow \infty\), the first term on the right-hand side tends to \(e^{-1}\) and the second term tends to \(1\). Thus the original sequence tends to \(e^{-1}\) as well. \end{hint} \end{hint}
 \end{feedback}
 
 \end{question}
@@ -76,6 +247,7 @@ as \(n \rightarrow \infty\). Next, in light of the known limit \((1+x/k)^{k} \ri
 
 Determine whether the limit below exists. If it exists, find its value.
 \[\lim_{n \rightarrow \infty} \left(\frac{n + 3}{2n - 2}\right)^{n^2}.\] \offline{Justify your response.}
+(Hints will not be revealed until after you choose a response.)
 \begin{multiplechoice}
 \choice[correct]{\(\displaystyle 0\)}
 \choice{\(\displaystyle 1\)}
@@ -87,7 +259,7 @@ Determine whether the limit below exists. If it exists, find its value.
 \begin{feedback}
 First observe that 
 \[\frac{n + 3}{2n - 2} = \frac{1}{2} + \frac{2}{n - 1} \rightarrow \frac{1}{2}\]
-as \(n \rightarrow \infty\). Since the limit is positive and less than one, raising this expression to increasingly large powers generates a sequence which converges rapidly to zero.
+as \(n \rightarrow \infty\). \begin{hint} Since the limit is positive and less than one, raising this expression to increasingly large powers generates a sequence which converges rapidly to zero. \end{hint}
 \end{feedback}
 
 \end{question}
