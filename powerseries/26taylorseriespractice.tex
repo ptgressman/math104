@@ -9,6 +9,13 @@ Exercises relating to Taylor series and their computation.
 \end{abstract}
 \maketitle
 
+
+\begin{exercise}
+Use the Maclaurin series for $\sin x$ to give a complete formula for the Maclaurin series for $x \sin x^2$:
+\[ x \sin x^2 = \sum_{m=0}^\infty  \answer{\frac{(-1)^m}{(2m+1)!}} x^{\answer{4m+3}} \]
+\end{exercise}
+
+
 \section*{Sample Exam Questions}
 
 \begin{question}%%%%%[2015C.01]
@@ -22,6 +29,7 @@ The first few nonzero terms of the Maclaurin series for \(f(x) = \ln ( 1 + \sin 
 \choice[correct]{\(\displaystyle x - \frac{1}{2} x^2 + \frac{1}{6} x^3 - \frac{1}{12} x^4 + \cdots\)}
 \choice{\(\displaystyle 1 + x + \frac{1}{2} x^2 + \frac{1}{3} x^3 - \frac{1}{12} x^4 + \cdots\)}
 \end{multiplechoice}
+(Hints will not be revealed until you choose your response.)
 \begin{feedback}
 The first few derivatives of \(f(x)\) are:
 \[\begin{aligned}
@@ -30,7 +38,9 @@ f'(x) & = \frac{ \cos x}{1 + \sin x} \\
 f''(x) & = - \frac{\sin x}{1 + \sin x} - \frac{\cos^2 x}{(1 + \sin x)^2} \\
 f'''(x) & = - \frac{\cos x}{1 + \sin x} + \frac{\sin x \cos x}{(1 + \sin x)^2} - \frac{2 \sin x \cos x}{(1 + \sin x)^2} + 2 \frac{\cos^3 x}{(1 + \sin x)^3}
 \end{aligned}\]
+\begin{hint}
 Evaluating at \(x = 0\) gives \(f(0) = \ln 1 = 0\), \(f'(0) = 1\), \(f''(0) = -1\), and \(f'''(0) = 1\). Therefore the series starts with the terms \(x - \frac{1}{2} x^2 + \frac{1}{6} x^3 + \cdots\).
+\end{hint}
 \end{feedback}
 
 \end{question}

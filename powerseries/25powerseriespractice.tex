@@ -9,11 +9,88 @@ Exercises relating to power series and their convergence properties.
 \end{abstract}
 \maketitle
 
+\begin{exercise}
+Compute the radius of convergence of the power series below.
+\[ \sum_{n = 1}^\infty \frac{(x-3)^n}{2^n + 1} \]
+\[ R = \answer{2} \]
+\begin{hint}
+When computing a limit like
+\[ \lim_{n \rightarrow \infty} \frac{2^{n} + 1}{2^{n+1} + 1}, \]
+remember the effect of orders of growth: $1 <\!\!< 2^n$, and so from the perspective of the limit, the $+1$'s in both the numerator and denominator are both negligible.
+\end{hint}
+\end{exercise}
+
+\begin{exercise}
+Compute the radius of convergence of the power series below.
+\[ \sum_{n = 1}^\infty \frac{(-3)^n (\ln n) (x-3)^n}{4^n} \]
+\[ R = \answer{\frac{4}{3}} \]
+\begin{hint}
+When computing a limit like
+\[ \lim_{n \rightarrow \infty} (\ln n)^{1/n}, \]
+remember that we already know $n^{1/n} \rightarrow 1$ and that $\ln n <\!\!<n$ as well, so we expect $(\ln n)^{1/n} \rightarrow 1$ as well.
+\end{hint}
+\end{exercise}
+
+\begin{exercise}
+Compute the radius of convergence of the power series below.
+\[ \sum_{n = 1}^\infty \frac{(-2)^n n! (x-3)^n}{3^n+n^2} \]
+\[ R = \answer{0} \]
+\end{exercise}
+
+\begin{exercise}
+Compute the interval of convergence for the power series below.
+\[ \sum_{n=1}^\infty \frac{(-2)^n (x-3)^n}{\ln n} \]
+The left endpoint of the interval is $\answer{5/2}$; it \wordChoice{\choice{is}\choice[correct]{is not}} included in the interval of convergence.
+The right endpoint of the interval is $\answer{7/2}$; it is \wordChoice{\choice[correct]{is}\choice{is not}} included in the interval of convergence.
+\end{exercise}
+
+\begin{exercise}
+Reindex the series below:
+\[ \sum_{n=1}^\infty \frac{x^{2n+1}}{n + 2} = \sum_{n = 0} \frac{x^{\answer{2n+3}}}{\answer{n+3}} \]
+\end{exercise}
+
+\begin{exercise}
+Differentiate the series below term-by-term:
+\[ \frac{d}{dx} \sum_{n=0}^\infty \frac{n}{n+1} x^n = \sum_{n=1} \answer{\frac{n^2}{n+1}} x^{\answer{n-1}}. \]
+(Note that the $n=0$ term goes away because the derivative of a constant is zero.)
+\end{exercise}
+
+\begin{exercise}
+Integrate the series below term-by-term:
+\[ \int_0^x \left[ \sum_{n=0}^\infty \frac{x^n}{(2n+3)^2} \right]  = \sum_{n=0} \answer{\frac{1}{(n+1)(2n+3)^2}} x^{\answer{n+1}}. \]
+\end{exercise}
+
+\begin{exercise}
+For each step below, apply a term-by-term operation, a multiplication by a monomial, or a substitution to derive a new series formula from a known formula.
+\begin{itemize}
+\item Use the formula \[ \frac{1}{1-x} = \sum_{n=0}^\infty x^n \]
+to derive a summation formula for $1/(1+x^2)$, i.e.,
+\[ \frac{1}{1+x^2} = \sum_{n=0}^\infty \answer{(-1)^n} x^{\answer{2n}}. \]
+\item Use the formula you derived above to develop a power series expansion for arctangent:
+\[ \arctan x = \sum_{n=0}^\infty \answer{\frac{(-1)^n}{(2n+1)}} x^{\answer{2n+1}}. \]
+\item The radius of convergence of this last series is $R = \answer{1}$.
+\end{itemize}
+\end{exercise}
+
+\begin{exercise}
+For each step below, apply a term-by-term operation, a multiplication by a monomial, or a substitution to derive a new series formula from a known formula.
+\begin{itemize}
+\item Use the formula \[ \frac{1}{1-x}   = \sum_{n=0}^\infty x^n \] to determine the sum of the series below for $-1 < x < 1$:
+\[ \sum_{n = 0}^\infty \frac{x^{n+1}}{n+1} = \answer{- \ln |1-x|}. \]
+(Don't forget absolute values if you need them.)
+\item Use the formula you just derived to determine the sum of the series
+\[ \sum_{n=0}^\infty \frac{x^{2n+3}}{n+1} = \answer{- x \ln |1-x^2|.} \]
+\item Use the formula you just derived to determine the sum of the series
+\[ \sum_{n=0}^\infty \frac{2^{2n} x^{2n+3}}{n+1} = \answer{- \frac{1}{4} x \ln |1-4x^2|.} \]
+\end{itemize}
+\end{exercise}
+
 
 \section*{Sample Quiz Questions}
 \begin{question}%%%%%[PowerSerInterval001]
 
 Find the full interval of convergence for the power series \[\sum_{m=2}^{\infty} \frac{(-3)^mm^2(x - 5)^m }{\ln m}.\]
+(Hints will not be revealed until after you choose a response.)
 \begin{multiplechoice}
 \choice[correct]{\(\displaystyle \left(\frac{14}{3},\frac{16}{3}\right)\)}
 \choice{\(\displaystyle \left[\frac{14}{3},\frac{16}{3}\right)\)}
@@ -29,7 +106,9 @@ First observe that
 & = 3
 \end{aligned}\]
 because \[\lim_{m \rightarrow \infty} \frac{(m+1)^2 \ln m}{m^2 \ln (m+1)} = \lim_{m \rightarrow \infty} \frac{(m+1)^2}{m^2} \lim_{m \rightarrow \infty} \frac{\ln m}{\ln (m+1)} = 1\] by virtue of l'Hospital's rule applied to both limits on the right-hand side.
+\begin{hint}
 This means that the radius equals \(1/3\). At the endpoint \(x=14/3\), the series equals \[\sum_{m=2}^{\infty} \frac{m^2 }{\ln m },\] which diverges by the \(n\)-th term divergence test because \(\lim_{m \rightarrow \infty} m^{2} / \ln m = \infty \neq 0\). At the endpoint \(x=16/3\), the series equals \[\sum_{m=2}^{\infty} (-1)^m\frac{m^2 }{\ln m },\] which diverges for the same reason as the other endpoint, i.e., the terms do not go to zero.
+\end{hint}
 \end{feedback}
 
 \end{question}
@@ -37,6 +116,7 @@ This means that the radius equals \(1/3\). At the endpoint \(x=14/3\), the serie
 \begin{question}%%%%%[PowerSerInterval003]
 
 Find the full interval of convergence for the power series \[\sum_{m=2}^{\infty} \frac{(-4)^m(\ln m)(x - 1)^m }{(-2)^mm}.\]
+(Hints will not be revealed until after you choose a response.)
 \begin{multiplechoice}
 \choice{\(\displaystyle \left(\frac{1}{2},\frac{3}{2}\right)\)}
 \choice[correct]{\(\displaystyle \left[\frac{1}{2},\frac{3}{2}\right)\)}
@@ -51,8 +131,8 @@ First observe that
 & = \lim_{m\rightarrow \infty} \left| \frac{-4(\ln {(m+1)})m }{-2(\ln m){(m+1)} } \right| \\
 & = 2
 \end{aligned}\]
-because \[\lim_{m \rightarrow \infty} \frac{m\ln (m+1)}{(m+1) \ln m} = \lim_{m \rightarrow \infty} \frac{m}{m+1} \lim_{m \rightarrow \infty} \frac{\ln (m+1)}{\ln m} = 1\] by virtue of l'Hospital's rule applied to both limits on the right-hand side.
-This means that the radius equals \(1/2\). At the endpoint \(x=3/2\), the series equals \[\sum_{m=2}^{\infty} \frac{(\ln m) }{m },\] which diverges by direct comparison to the harmonic series, i.e., the \(p\)-series with \(p = 1\). At the endpoint \(x=1/2\), the series equals \[\sum_{m=2}^{\infty} (-1)^m\frac{(\ln m) }{m },\] which converges by the alternating series test because the sign of the terms alternates and \(\ln m / m\) decreases to zero as \(m \rightarrow \infty\).
+because \[\lim_{m \rightarrow \infty} \frac{m\ln (m+1)}{(m+1) \ln m} = \lim_{m \rightarrow \infty} \frac{m}{m+1} \lim_{m \rightarrow \infty} \frac{\ln (m+1)}{\ln m} = 1\] by virtue of l'Hospital's rule applied to both limits on the right-hand side. \begin{hint}
+This means that the radius equals \(1/2\). At the endpoint \(x=3/2\), the series equals \[\sum_{m=2}^{\infty} \frac{(\ln m) }{m },\] which diverges by direct comparison to the harmonic series, i.e., the \(p\)-series with \(p = 1\). At the endpoint \(x=1/2\), the series equals \[\sum_{m=2}^{\infty} (-1)^m\frac{(\ln m) }{m },\] which converges by the alternating series test because the sign of the terms alternates and \(\ln m / m\) decreases to zero as \(m \rightarrow \infty\). \end{hint}
 \end{feedback}
 
 \end{question}
@@ -60,6 +140,7 @@ This means that the radius equals \(1/2\). At the endpoint \(x=3/2\), the series
 \begin{question}%%%%%[PowerSerInterval004]
 
 Find the full interval of convergence for the power series \[\sum_{m=2}^{\infty} \frac{(-2)^m(\ln m)(x + 4)^m }{6^mm}.\]
+(Hints will not be revealed until after you choose a response.)
 \begin{multiplechoice}
 \choice{\(\displaystyle \left(-\frac{13}{3},-\frac{11}{3}\right)\)}
 \choice{\(\displaystyle \left[-\frac{13}{3},-\frac{11}{3}\right)\)}
@@ -74,8 +155,8 @@ First observe that
 & = \lim_{m\rightarrow \infty} \left| \frac{-2(\ln {(m+1)})m }{6(\ln m){(m+1)} } \right| \\
 & = \frac{1}{3}
 \end{aligned}\]
-because \[\lim_{m \rightarrow \infty} \frac{m\ln (m+1)}{(m+1) \ln m} = \lim_{m \rightarrow \infty} \frac{m}{m+1} \lim_{m \rightarrow \infty} \frac{\ln (m+1)}{\ln m} = 1\] by virtue of l'Hospital's rule applied to both limits on the right-hand side.
-This means that the radius equals \(3\). At the endpoint \(x=-7\), the series equals \[\sum_{m=2}^{\infty} \frac{(\ln m) }{m },\] which diverges by direct comparison to the harmonic series, i.e., the \(p\)-series with \(p = 1\). At the endpoint \(x=-1\), the series equals \[\sum_{m=2}^{\infty} (-1)^m\frac{(\ln m) }{m },\] which converges by the alternating series test because the sign of the terms alternates and \(\ln m / m\) decreases to zero as \(m \rightarrow \infty\).
+because \[\lim_{m \rightarrow \infty} \frac{m\ln (m+1)}{(m+1) \ln m} = \lim_{m \rightarrow \infty} \frac{m}{m+1} \lim_{m \rightarrow \infty} \frac{\ln (m+1)}{\ln m} = 1\] by virtue of l'Hospital's rule applied to both limits on the right-hand side. \begin{hint}
+This means that the radius equals \(3\). At the endpoint \(x=-7\), the series equals \[\sum_{m=2}^{\infty} \frac{(\ln m) }{m },\] which diverges by direct comparison to the harmonic series, i.e., the \(p\)-series with \(p = 1\). At the endpoint \(x=-1\), the series equals \[\sum_{m=2}^{\infty} (-1)^m\frac{(\ln m) }{m },\] which converges by the alternating series test because the sign of the terms alternates and \(\ln m / m\) decreases to zero as \(m \rightarrow \infty\). \end{hint}
 \end{feedback}
 
 \end{question}
