@@ -9,26 +9,50 @@ We review substitution and the use of integral tables.
 \end{abstract}
 \maketitle
 
-\begin{example}
-The base of a solid region is bounded by the curves $x = 0$, $y= 0$, and $y = \sqrt{1-x^2}$. The cross sections perpendicular to the $x$ axis are squares. Compute the volume of the region.
-\begin{solution}
-Lines in the $xy$-plane which are perpendicular to the $x$-axis are vertical, so the base of a typical $x$ cross section will extend from $y=0$ to $y = \sqrt{1-x^2}$. Since each cross section will have area
-\[ A(x) = \left( \sqrt{1-x^2} - 0 \right)^2 = 1-x^2. \]
-To compute volume, we integrate $dV = A(x) dx$ between $x=0$ and $x=1$, since these are the most extreme values of $x$ found in our region. Therefore
-\[ V = \int_0^1 ( 1 -x^2) dx = \left. x - \frac{x^3}{3} \right|_0^1 = 1 - \frac{1}{3} = \frac{2}{3}. \]
-\end{solution}
+\begin{example}%[washeralgsub2001]
+The region in the plane given by \[\left|{\frac{x}{2} - \frac{1}{2 \sqrt{\frac{x^{2}}{3} + 1}}}\right| \leq y \leq \frac{x}{2} + \frac{1}{2 \sqrt{\frac{x^{2}}{3} + 1}}\] and \(0 \leq x \leq 3\) is revolved around the \(x\)-axis. Compute the volume of the resulting solid.
+
+If the variable \(x\) is used for slicing, then slices are perpendicular to the axis of rotation, which indicates the washer method should be used.
+The inequalities for \(y\) give the outer and inner radii, and \[ \left(\frac{x}{2} + \frac{1}{2 \sqrt{\frac{x^{2}}{3} + 1}}\right)^2 - \left( \left|{\frac{x}{2} - \frac{1}{2 \sqrt{\frac{x^{2}}{3} + 1}}}\right|\right)^2 = \frac{\sqrt{3} x}{\sqrt{x^{2} + 3}}. \] (Note that the absolute values go away when the radius is squared.)
+This leads to the conclusion
+\[ V=  \int_{0}^{3} \frac{\sqrt{3} \pi x}{\sqrt{x^{2} + 3}} dx. \]
+Among the options below, the best choice for a potential substitution is
+\begin{multipleChoice}
+\choice{$u = \sqrt{3x}$}
+\choice{$u = 1/\sqrt{x^2+3}$}
+\choice{$u = \sqrt{x^2 + 3}$}
+\choice[correct]{$u = x^2+3$}
+\end{multipleChoice}
+Using the substitution above, the differentials satisfy \(du = \answer{2x}dx\). This gives the equality
+\[  \int \frac{\sqrt{3} \pi x}{\sqrt{x^{2} + 3}}\, dx  = \int \answer{\frac{\sqrt{3} \pi}{2 \sqrt{u}}} du = \answer{\sqrt{3} \pi \sqrt{u}}.  \]
+Reversing the substitution gives
+\[ \begin{aligned} \int_{0}^{3} \frac{\sqrt{3} \pi x}{\sqrt{x^{2} + 3}}\, dx & = \left. \left[\answer{\sqrt{3} \pi \sqrt{x^{2} + 3}} \right] \right|_{0}^{3}\\ & =  \answer{3 \pi}. \end{aligned} \]
+\textbf{Note:} We would not have to reverse the substitution if we also determined the new bounds. In this case, if $u = x^2 + 3$ and $x = 0$, then $u = \answer{3}$. Likewise if $x = 3$, then $u = \answer{12}$. Thus we could also have carried out the calculation by changing bounds:
+\[ \int_{0}^{3} \frac{\sqrt{3} \pi x}{\sqrt{x^{2} + 3}}\, dx = \int_{\answer{3}}^{\answer{12}} \answer{\frac{\sqrt{3} \pi}{2 \sqrt{u}}} du. \]
 \end{example}
 
-\begin{example}
-The base of a solid region is bounded by the curves $y = 0$, $x = \sqrt{y}$, and $x = 1$. The cross sections perpendicular to the $y$-axis are squares. Compute the volume of the region.
-\begin{solution}
-Lines in the $xy$-plane which are perpendicular to the $y$-axis are \wordChoice{\choice[correct]{horizontal}\choice{vertical}}, so the base of a typical $y$ cross section will extend from the graph $x=\answer{\sqrt{y}}$ to the graph $x = \answer{1}$. The length of the base is the difference of $x$-coordinates (since all points on a slice have the same $y$-coordinate), so the length of the base is $\answer{1 - \sqrt{y}}$, giving the square an area of 
-\[ A(y) = \answer{(1-\sqrt{y})^2} \]
-(note that the answer is a function of $y$ because different $y$ cross sections will generally have different areas).
-To compute volume, we integrate $dV = A(y) dy$ between $y=0$ and $y=1$, since these are the most extreme values of $y$ found in our region (note that we can find the upper value $y=1$ by solving for the intersection of the curves $x = \sqrt{y}$ and $x=1$). Therefore we integrate $A(y) dy$ to conclude
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{(1-\sqrt{y})^2} dy = \answer{\frac{1}{6}}. \]
-\end{solution}
-\end{example}
+
+\begin{center}
+\textbf{A Basic Table of Integrals} \\
+\begin{tabular}{|lr|}
+\hline
+\vspace{-10pt}&   \\
+$\displaystyle \int x^k dx = \frac{x^{k+1}}{k+1} + C$ & $(k \neq -1)$ \\ $\displaystyle \int \frac{1}{x} dx = \ln |x| + C$ & \\
+$\displaystyle \int a^x dx = \frac{a^x}{\ln a} + C$  &  $(a > 0, a \neq 1)$  \\   $\displaystyle \int e^x dx = e^x + C$ & \\
+$\displaystyle \int x^k \ln |x| dx = \frac{x^{k+1}}{k+1} \ln |x| - \frac{x^{k+1}}{(k+1)^2} + C$  \hspace{-8pt} & $(k \neq -1)$  \\  $\displaystyle \int \frac{dx}{x^2 + a^2} = \frac{1}{a} \arctan \frac{x}{a} + C$ & $(a \neq 0)$ \\
+$\displaystyle \int \frac{dx}{\sqrt{a^2 + x^2}} = \ln \left|x + \sqrt{a^2 + x^2}\right| + C$ & \\ $\displaystyle \int \frac{dx}{\sqrt{a^2 - x^2}} = \arcsin \frac{x}{a} + C$ & $(a > 0, |x| < a)$  \\
+$\displaystyle \int \frac{dx}{\sqrt{x^2 - a^2}} = \ln \left| x + \sqrt{x^2-a^2} \right| + C$ & $(|x| > |a|)$ \\ $\displaystyle \int \frac{dx}{x \sqrt{x^2 - a^2}} = \frac{1}{a} \mathrm{arcsec} \frac{x}{a} + C$ & $(a > 0, |x| > a)$ \\
+$\displaystyle \int \sin x ~dx = - \cos x + C$ & \\ $\displaystyle \int \cos x ~dx = \sin x + C$ & \\
+$\displaystyle \int \tan x ~dx = \ln |\sec x| + C$ & \\ $\displaystyle \int \csc x ~dx = - \ln |\csc x + \cot x| + C$ \hspace{-18pt} & \\
+$\displaystyle \int \sec x ~dx = \ln |\sec x + \tan x| + C$ & \\ $\displaystyle \int \cot x ~dx = \ln |\sin x| + C$ & \\
+$\displaystyle \int \sec^2 x ~ dx = \tan x + C$ & \\ $\displaystyle \int \csc^2 x ~dx = - \cot x + C$ & \\
+$\displaystyle \int \sec x \tan x dx = \sec x + C$  & \\ $\displaystyle \int \csc x \cot x dx = - \csc x + C$ &  \vspace{-8pt} \\
+&   \\
+\hline
+\end{tabular}
+\end{center}
+
+
 
 
 \end{document}
