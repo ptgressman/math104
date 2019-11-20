@@ -9,54 +9,41 @@ Various exercises relating to the application of Taylor Series to other problems
 \end{abstract}
 \maketitle
 
+
+
+\begin{exercise}
+In this exercise, we will investigate two different ways of numerically approximating the value of $\ln 2$ using infinite series.
+
+\begin{itemize}
+\item The Maclaurin series of the function $\ln 1 + x$ converges conditionally at $x = 1$ to $\ln 2$. Compute the Maclaurin series: 
+\[ \ln (1 + x) = \sum_{n=0}^\infty \answer{\frac{(-1)^n}{n+1}} x^{n+1} \]
+(Reindex your answer to match the template above if your answer doesn't work as-is.)
+\item  What degree Taylor polynomial would you need to use to approximate the value of $\ln 2$ to an error strictly less than $10^{-3}$? Answer: Taylor polynomial used should have degree $N = \answer{1000}$ or greater.
+\item A similar but distinct strategy would be to compute $\ln (1/2)$ instead because we know $- \ln (1/2)  = \ln 2$. Evaluating the Maclaurin series at $x=-1/2$ and doing a little simplification, we see from the above series that
+\[ \ln 2 = \sum_{n=1}^\infty \answer{\frac{1}{n 2^n}}. \]
+(Once again, reindex if your answer does not already start at $n=1$.)
+\item The presence of a factor exponential in $n$ suggests that this second series converges to $\ln 2$ \wordChoice{\choice{much slower}\choice{slightly slower}\choice{slightly faster}\choice[correct]{much faster}} than the first series. Of the two series, then, the \wordChoice{\choice{first}\choice[correct]{second}} series presents a more efficient way to compute $\ln 2$ numerically.
+\end{itemize}
+\begin{hint}
+For the first estimation, use the series estimation features of the Alternating Series Test.
+\begin{hint}
+For an alternating series, the error of approximating the series by a partial sum is never greater than the magnitude of the \textit{first term omitted}.
+\end{hint}
+\end{hint}
+\end{exercise}
+
+
+
+
 \section*{Sample Quiz Questions}
 
-\begin{question}%%%%%[TaylorExpand001]
 
-Compute the first \(4\) nonzero terms in the Taylor series 
-at \(x=0\) of the function \[\frac{d}{dx} \left[ x e^{x^2} \right].\]
-\begin{multiplechoice}
-\choice[correct]{\( \displaystyle 1 + 3x^{2} + \frac{5}{2}x^{4} + \frac{7}{6}x^{6}\)}
-\choice{\( \displaystyle  - 1 - 3x^{2} + \frac{5}{2}x^{4} + \frac{7}{6}x^{6}\)}
-\choice{\( \displaystyle 1 - 6x^{2} - \frac{5}{4}x^{4} + \frac{7}{6}x^{6}\)}
-\choice{\( \displaystyle  - 1 - 6x^{2} + \frac{5}{4}x^{4} + \frac{7}{6}x^{6}\)}
-\choice{\( \displaystyle 2 + 3x^{2} + \frac{5}{4}x^{4} + \frac{7}{6}x^{6}\)}
-\choice{\( \displaystyle 2 - 3x^{2} - \frac{5}{4}x^{4} + \frac{7}{6}x^{6}\)}
-\end{multiplechoice}
-\begin{feedback}
-Compute the series in stages beginning with substitution into known series:
-\[e^{x^2} = 1 + x^{2} + \frac{1}{2}x^{4} + \frac{1}{6}x^{6} + \cdots \]
-\[x e^{x^2} = x + x^{3} + \frac{1}{2}x^{5} + \frac{1}{6}x^{7} + \cdots \]
-\[\frac{d}{dx} \left[ x e^{x^2} \right] = 1 + 3x^{2} + \frac{5}{2}x^{4} + \frac{7}{6}x^{6} + \cdots \]
-\end{feedback}
-
-\end{question}
-
-\begin{question}%%%%%[TaylorExpand011]
-
-Compute the first \(4\) nonzero terms in the Taylor series 
-at \(x=0\) of the function \[\int_0^x \left( x \ln (1-x) \right) ~ dx.\]
-\begin{multiplechoice}
-\choice{\( \displaystyle  - \frac{1}{6}x^{3} - \frac{1}{8}x^{4} - \frac{2}{15}x^{5} - \frac{1}{24}x^{6}\)}
-\choice{\( \displaystyle \frac{1}{6}x^{3} + \frac{1}{8}x^{4} - \frac{2}{15}x^{5} - \frac{1}{24}x^{6}\)}
-\choice{\( \displaystyle  - \frac{1}{6}x^{3} + \frac{1}{4}x^{4} + \frac{1}{15}x^{5} - \frac{1}{24}x^{6}\)}
-\choice{\( \displaystyle \frac{1}{6}x^{3} + \frac{1}{4}x^{4} - \frac{1}{15}x^{5} - \frac{1}{24}x^{6}\)}
-\choice[correct]{\( \displaystyle  - \frac{1}{3}x^{3} - \frac{1}{8}x^{4} - \frac{1}{15}x^{5} - \frac{1}{24}x^{6}\)}
-\choice{\( \displaystyle  - \frac{1}{3}x^{3} + \frac{1}{8}x^{4} + \frac{1}{15}x^{5} - \frac{1}{24}x^{6}\)}
-\end{multiplechoice}
-\begin{feedback}
-Compute the series in stages beginning with substitution into known series:
-\[\ln (1-x) =  - x - \frac{1}{2}x^{2} - \frac{1}{3}x^{3} - \frac{1}{4}x^{4} + \cdots \]
-\[x \ln (1-x) =  - x^{2} - \frac{1}{2}x^{3} - \frac{1}{3}x^{4} - \frac{1}{4}x^{5} + \cdots \]
-\[\int_0^x \left( x \ln (1-x) \right) ~ dx =  - \frac{1}{3}x^{3} - \frac{1}{8}x^{4} - \frac{1}{15}x^{5} - \frac{1}{24}x^{6} + \cdots \]
-\end{feedback}
-
-\end{question}
 
 \begin{question}%%%%%[TAp0]
 
 Use Taylor series to estimate the value of
 \[\sqrt[3]{\frac{11}{10}}\] to within an error of at most \(1/900\).
+(Hints will not be revealed until you choose a response.)
 \begin{multiplechoice}
 \choice[correct]{\(\displaystyle \frac{31}{30}\)}
 \choice{\(\displaystyle \frac{47}{45}\)}
@@ -69,10 +56,11 @@ Use Taylor series to estimate the value of
 We may use the remainder formula for Taylor series to approach this problem.
 Suppose \(p_n(x)\) is the degree \(n\) Taylor polynomial of the function
 \[ f(x) = \sqrt[3]{1+x}\]
-with center \(a=0\). Then the error \(E_n(x)\), i.e., the difference between the polynomial and the function, does not exceed \(\frac{f^{(n+1)}(\xi)}{(n+1)!}x^{n+1}\), where \(\xi\) is some unknown point  in the range \(0 \leq \xi \leq x\). In this case one should take \(x = 1/10\) and determine how many derivatives are required to make this error estimate less than the given threshold. This means checking by hand for small numbers of derivatives. For the specific problem at hand, if we approximate \(f(x)\) by the Taylor polynomial of degree \( n = 1\), we have 
-\[ \left| \frac{x^{n+1} }{(n+1)!} f^{(n+1)}(\xi) \right| = \left| \frac{x^{n+1}}{(n+1)!} \left( -\frac{2}{9} (\xi+1)^{-5/3} \right) \right| \leq \left| \frac{x^{n+1}}{(n+1)!} \left( \frac{2}{9} \right) \right| = \frac{1}{900} \] when \(x = 1/10\).
+with center \(a=0\). Then the error \(E_n(x)\), i.e., the difference between the polynomial and the function, does not exceed \(\frac{f^{(n+1)}(\xi)}{(n+1)!}x^{n+1}\), where \(\xi\) is some unknown point  in the range \(0 \leq \xi \leq x\). \begin{hint} In this case one should take \(x = 1/10\) and determine how many derivatives are required to make this error estimate less than the given threshold. \begin{hint} This means checking by hand for small numbers of derivatives. For the specific problem at hand, if we approximate \(f(x)\) by the Taylor polynomial of degree \( n = 1\), we have 
+\[ \left| \frac{x^{n+1} }{(n+1)!} f^{(n+1)}(\xi) \right| = \left| \frac{x^{n+1}}{(n+1)!} \left( -\frac{2}{9} (\xi+1)^{-5/3} \right) \right| \leq \left| \frac{x^{n+1}}{(n+1)!} \left( \frac{2}{9} \right) \right| = \frac{1}{900} \] when \(x = 1/10\). \begin{hint}
 We conclude that the correct Taylor approximation is
 \[ p_n \left( \frac{1}{10}\right) =  \left(\frac{1}{10}\right)^{0} + \frac{1}{3}\left(\frac{1}{10}\right)^{1} =  1 + \frac{1}{30} = \frac{31}{30}.\]
+\end{hint} \end{hint} \end{hint}
 \end{feedback}
 
 \end{question}
@@ -93,10 +81,10 @@ Use Taylor series to estimate the value of
 We may use the remainder formula for Taylor series to approach this problem.
 Suppose \(p_n(x)\) is the degree \(n\) Taylor polynomial of the function
 \[ f(x) = e^{-x}\]
-with center \(a=0\). Then the error \(E_n(x)\), i.e., the difference between the polynomial and the function, does not exceed \(\frac{f^{(n+1)}(\xi)}{(n+1)!}x^{n+1}\), where \(\xi\) is some unknown point  in the range \(0 \leq \xi \leq x\). In this case one should take \(x = 1/3\) and determine how many derivatives are required to make this error estimate less than the given threshold. This means checking by hand for small numbers of derivatives. For the specific problem at hand, if we approximate \(f(x)\) by the Taylor polynomial of degree \( n = 2\), we have 
-\[ \left| \frac{x^{n+1} }{(n+1)!} f^{(n+1)}(\xi) \right| = \left| \frac{x^{n+1}}{(n+1)!} \left( e^{-\xi} \right) \right| \leq \left| \frac{x^{n+1}}{(n+1)!} \left( 1 \right) \right| = \frac{1}{162} \] when \(x = 1/3\).
+with center \(a=0\). Then the error \(E_n(x)\), i.e., the difference between the polynomial and the function, does not exceed \(\frac{f^{(n+1)}(\xi)}{(n+1)!}x^{n+1}\), where \(\xi\) is some unknown point  in the range \(0 \leq \xi \leq x\). \begin{hint}  In this case one should take \(x = 1/3\) and determine how many derivatives are required to make this error estimate less than the given threshold. \begin{hint} This means checking by hand for small numbers of derivatives. For the specific problem at hand, if we approximate \(f(x)\) by the Taylor polynomial of degree \( n = 2\), we have 
+\[ \left| \frac{x^{n+1} }{(n+1)!} f^{(n+1)}(\xi) \right| = \left| \frac{x^{n+1}}{(n+1)!} \left( e^{-\xi} \right) \right| \leq \left| \frac{x^{n+1}}{(n+1)!} \left( 1 \right) \right| = \frac{1}{162} \] when \(x = 1/3\). \begin{hint}
 We conclude that the correct Taylor approximation is
-\[ p_n \left( \frac{1}{3}\right) =  \left(\frac{1}{3}\right)^{0} -1\left(\frac{1}{3}\right)^{1} + \frac{1}{2}\left(\frac{1}{3}\right)^{2} =  1 -\frac{1}{3} + \frac{1}{18} = \frac{13}{18}.\]
+\[ p_n \left( \frac{1}{3}\right) =  \left(\frac{1}{3}\right)^{0} -1\left(\frac{1}{3}\right)^{1} + \frac{1}{2}\left(\frac{1}{3}\right)^{2} =  1 -\frac{1}{3} + \frac{1}{18} = \frac{13}{18}.\] \end{hint} \end{hint} \end{hint}
 \end{feedback}
 
 \end{question}

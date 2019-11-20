@@ -12,9 +12,71 @@ Exercises relating to Taylor series and their computation.
 
 \begin{exercise}
 Use the Maclaurin series for $\sin x$ to give a complete formula for the Maclaurin series for $x \sin x^2$:
-\[ x \sin x^2 = \sum_{m=0}^\infty  \answer{\frac{(-1)^m}{(2m+1)!}} x^{\answer{4m+3}} \]
+\[ x \sin (x^2) = \sum_{m=0}^\infty  \answer{\frac{(-1)^m}{(2m+1)!}} x^{\answer{4m+3}} \]
 \end{exercise}
 
+\begin{exercise}
+Use the Maclaurin series for $e^x$ and $e^{-x}$ to give a complete formula for the Maclaurin series for $\cosh x$:
+\[ \cosh x = \sum_{n=0}^\infty \answer{\frac{1}{(2n)!}} x^{\answer{2n}}. \]
+\begin{hint}
+Your formula should account for the fact that there are only even powers of $x$.
+\end{hint}
+\end{exercise}
+
+\begin{exercise}
+Compute the Taylor series of the function $f(x) = \ln x$ centered at the point $x_0 = 2$.
+\[ \answer{ \ln 2} + \answer{\frac{1}{2}} (x-2) + \answer{- \frac{1}{8}}(x-2)^2 + \answer{\frac{1}{24}}(x-2)^3 + \cdots = \ln 2 + \sum_{n=1}^\infty \answer{\frac{(-1)^{n-1}2^{-n}}{n}} (x-2)^n \]
+\end{exercise}
+
+
+\begin{exercise}
+Compute the Maclaurin series of the function identified below.
+\[ \int_0^x \frac{\sin t}{t} dt = \sum_{n=0}^\infty \answer{\frac{(-1)^n}{(2n+1)! (2n+1)}} x^{\answer{2n+1}} \]
+\end{exercise}
+
+\section*{Sample Quiz Questions}
+
+\begin{question}%%%%%[TaylorExpand001]
+
+Compute the first \(4\) nonzero terms in the Taylor series 
+at \(x=0\) of the function \[\frac{d}{dx} \left[ x e^{x^2} \right].\]
+\begin{multiplechoice}
+\choice[correct]{\( \displaystyle 1 + 3x^{2} + \frac{5}{2}x^{4} + \frac{7}{6}x^{6}\)}
+\choice{\( \displaystyle  - 1 - 3x^{2} + \frac{5}{2}x^{4} + \frac{7}{6}x^{6}\)}
+\choice{\( \displaystyle 1 - 6x^{2} - \frac{5}{4}x^{4} + \frac{7}{6}x^{6}\)}
+\choice{\( \displaystyle  - 1 - 6x^{2} + \frac{5}{4}x^{4} + \frac{7}{6}x^{6}\)}
+\choice{\( \displaystyle 2 + 3x^{2} + \frac{5}{4}x^{4} + \frac{7}{6}x^{6}\)}
+\choice{\( \displaystyle 2 - 3x^{2} - \frac{5}{4}x^{4} + \frac{7}{6}x^{6}\)}
+\end{multiplechoice}
+\begin{feedback}
+Compute the series in stages beginning with substitution into known series:
+\[e^{x^2} = 1 + x^{2} + \frac{1}{2}x^{4} + \frac{1}{6}x^{6} + \cdots \]
+\[x e^{x^2} = x + x^{3} + \frac{1}{2}x^{5} + \frac{1}{6}x^{7} + \cdots \]
+\[\frac{d}{dx} \left[ x e^{x^2} \right] = 1 + 3x^{2} + \frac{5}{2}x^{4} + \frac{7}{6}x^{6} + \cdots \]
+\end{feedback}
+
+\end{question}
+
+\begin{question}%%%%%[TaylorExpand011]
+
+Compute the first \(4\) nonzero terms in the Taylor series 
+at \(x=0\) of the function \[\int_0^x \left( x \ln (1-x) \right) ~ dx.\]
+\begin{multiplechoice}
+\choice{\( \displaystyle  - \frac{1}{6}x^{3} - \frac{1}{8}x^{4} - \frac{2}{15}x^{5} - \frac{1}{24}x^{6}\)}
+\choice{\( \displaystyle \frac{1}{6}x^{3} + \frac{1}{8}x^{4} - \frac{2}{15}x^{5} - \frac{1}{24}x^{6}\)}
+\choice{\( \displaystyle  - \frac{1}{6}x^{3} + \frac{1}{4}x^{4} + \frac{1}{15}x^{5} - \frac{1}{24}x^{6}\)}
+\choice{\( \displaystyle \frac{1}{6}x^{3} + \frac{1}{4}x^{4} - \frac{1}{15}x^{5} - \frac{1}{24}x^{6}\)}
+\choice[correct]{\( \displaystyle  - \frac{1}{3}x^{3} - \frac{1}{8}x^{4} - \frac{1}{15}x^{5} - \frac{1}{24}x^{6}\)}
+\choice{\( \displaystyle  - \frac{1}{3}x^{3} + \frac{1}{8}x^{4} + \frac{1}{15}x^{5} - \frac{1}{24}x^{6}\)}
+\end{multiplechoice}
+\begin{feedback}
+Compute the series in stages beginning with substitution into known series:
+\[\ln (1-x) =  - x - \frac{1}{2}x^{2} - \frac{1}{3}x^{3} - \frac{1}{4}x^{4} + \cdots \]
+\[x \ln (1-x) =  - x^{2} - \frac{1}{2}x^{3} - \frac{1}{3}x^{4} - \frac{1}{4}x^{5} + \cdots \]
+\[\int_0^x \left( x \ln (1-x) \right) ~ dx =  - \frac{1}{3}x^{3} - \frac{1}{8}x^{4} - \frac{1}{15}x^{5} - \frac{1}{24}x^{6} + \cdots \]
+\end{feedback}
+
+\end{question}
 
 \section*{Sample Exam Questions}
 
