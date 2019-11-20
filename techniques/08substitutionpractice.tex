@@ -75,6 +75,32 @@ Value = \(\answer{(1-e)/2}\)
 %
 \end{exercise}
 
+\section*{Sample Exam Questions}
+
+\begin{question}%[2016.13]
+Evaluate the integral $\displaystyle \int_1^3 \left( x - \sqrt{4 x^2 - 8 x + 13} \right)  dx$ using the fact that $\displaystyle \int_0^4 \sqrt{x^2 + 9} ~ dx =  \frac{20 + 9 \ln 3}{2}$.
+(Hints will not be displayed until you have chosen a response.)
+\begin{multiplechoice}
+\choice{\bigmath{-\frac{4 + 9 \ln 3}{6}}}
+\choice[correct]{\bigmath{-\frac{4 + 9 \ln 3}{4}}}
+\choice{\bigmath{-\frac{4 + 9 \ln 3}{2}}}
+\choice{\bigmath{-4 - 9 \ln 3}}
+\choice{\bigmath{-8 - 18 \ln 3}}
+\choice{\bigmath{-12 - 27 \ln 3}}
+\end{multiplechoice}
+\begin{feedback}
+First complete the square:
+\[ 4 x^2 - 8 x + 13 = 4 x^2 - 8 x + 4 + (13 - 4) = (2x - 2)^2 + 9. \] \begin{hint} 
+Next substitute $u = 2x-2$ (i.e., $x = \frac{u}{2} + 1$). Then $du = 2 dx$ and $x=1 \leftrightarrow u = 0$, $x=3 \leftrightarrow u = 4$, so
+\[ \int_1^3 \left( x - \sqrt{4x^2 - 8x + 13} \right) dx = \int_0^4 \left( \frac{u}{2} + 1 - \sqrt{u^2 + 9} \right) \frac{du}{2}. \] \begin{hint}
+Now use linearity of the integral to finish:
+\[ \int_0^4 \frac{u}{4} ~ du + \int_0^4 \frac{1}{2} ~ du - \int_0^4 \frac{1}{2} \sqrt{u^2+9} ~ du = \left. \frac{u^2}{8} \right|_0^4 + \left. \frac{u}{2} \right|_0^4 - \frac{20 + 9 \ln 3}{4} = 4 - \frac{20+9 \ln 3}{4} = - \frac{4 + 9 \ln 3}{4}.\] \end{hint}\end{hint}
+\end{feedback}
+\end{question}
+
+
+
+
 
 
 \end{document}

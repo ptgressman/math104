@@ -32,8 +32,39 @@ Reversing the substitution gives
 \end{example}
 
 
+\begin{example}%%From the corresponding worksheet
+Using the table of integrals below, compute the indefinite integral
+\[ \int \frac{d \theta}{(1-\theta) \sqrt{\theta^2 - 2 \theta - 3}}.\]
+\begin{itemize}
+\item When dealing with quadratic expressions such as the ones appearing in this integrand, it is often necessary to complete the square before appealing to a table. In this case, 
+\[ \theta^2 - 2 \theta - 3 = \left( \theta - \answer{1} \right)^2 - \answer{4}. \]
+\item Using the most appropriate entry of the table and plugging in the correct value of $a$ gives
+\[ \int \frac{dx}{x \sqrt{x^2 - \answer{4}}} = \frac{1}{\answer{2}} \mathrm{arcsec} \frac{x}{\answer{2}} + C. \]
+\item Based on the results of completing the square, we make a substitution $x = \theta - \answer{1}$ and conclude
+\[ \int \frac{d \theta}{(1-\theta) \sqrt{\theta^2 - 2 \theta - 3}} =  \int \frac{dx}{\answer{-x} \sqrt{x^2 - \answer{4}}} = \answer{- \frac{1}{2}} \mathrm{arcsec} \answer{\frac{\theta-1}{2}} + C. \]
+\end{itemize}
+\end{example}
+
+
+\begin{example}%[2019MT1.integraltable]
+Use a table of integrals to compute the antiderivative below.
+\[ \int \frac{x^2 ~ dx}{\sqrt{16 + x^6}} \]
+\begin{itemize}
+\item The key is to make the substitution $u = x^{\answer{3}}$ so that the expression $16 + x^6$ can be understood as a quadratic function of $u$. 
+\item Specifically $du = \answer{3x^2} dx$, so
+\[ \int \frac{x^2 ~ dx}{\sqrt{16 + x^6}} = \frac{1}{3} \int \frac{du}{\sqrt{16+u^2}}. \] 
+Aside from the factor of $1/3$, the $u$ integral belongs to the table:
+\[ \int \frac{du}{\sqrt{16+u^2}} = \answer{\ln | u + \sqrt{16 + u^2}| } + C \]
+\item We conclude that
+\[  \int \frac{x^2 ~ dx}{\sqrt{16 + x^6}} = \frac{1}{3} \int \frac{du}{\sqrt{16+u^2}} = \frac{\ln ( x^3 + \sqrt{16 + x^6})}{3} + C. \]
+Absolute values are not needed in the logarithm because $x^3 + \sqrt{16 + x^6}$ can never be negative. 
+\end{itemize}
+\end{example}
+
+
 \begin{center}
-\textbf{A Basic Table of Integrals} \\
+\textbf{A Basic Table of Integrals} \\ \label{table_of_integrals}
+(Note: To use these tables, $k$ and $a$ must represent \textit{constants} in the integral you wish to compute and cannot depend on the variable of integration.)
 \begin{tabular}{|lr|}
 \hline
 \vspace{-10pt}&   \\
@@ -41,7 +72,7 @@ $\displaystyle \int x^k dx = \frac{x^{k+1}}{k+1} + C$ & $(k \neq -1)$ \\ $\displ
 $\displaystyle \int a^x dx = \frac{a^x}{\ln a} + C$  &  $(a > 0, a \neq 1)$  \\   $\displaystyle \int e^x dx = e^x + C$ & \\
 $\displaystyle \int x^k \ln |x| dx = \frac{x^{k+1}}{k+1} \ln |x| - \frac{x^{k+1}}{(k+1)^2} + C$  \hspace{-8pt} & $(k \neq -1)$  \\  $\displaystyle \int \frac{dx}{x^2 + a^2} = \frac{1}{a} \arctan \frac{x}{a} + C$ & $(a \neq 0)$ \\
 $\displaystyle \int \frac{dx}{\sqrt{a^2 + x^2}} = \ln \left|x + \sqrt{a^2 + x^2}\right| + C$ & \\ $\displaystyle \int \frac{dx}{\sqrt{a^2 - x^2}} = \arcsin \frac{x}{a} + C$ & $(a > 0, |x| < a)$  \\
-$\displaystyle \int \frac{dx}{\sqrt{x^2 - a^2}} = \ln \left| x + \sqrt{x^2-a^2} \right| + C$ & $(|x| > |a|)$ \\ $\displaystyle \int \frac{dx}{x \sqrt{x^2 - a^2}} = \frac{1}{a} \mathrm{arcsec} \frac{x}{a} + C$ & $(a > 0, |x| > a)$ \\
+$\displaystyle \int \frac{dx}{\sqrt{x^2 - a^2}} = \ln \left| x + \sqrt{x^2-a^2} \right| + C$ & $(|x| > |a|)$ \\ $\displaystyle \int \frac{dx}{x \sqrt{x^2 - a^2}} = \frac{1}{a} \mathrm{arcsec} \frac{x}{a} + C$ & $(a > 0, x > a)$ \\
 $\displaystyle \int \sin x ~dx = - \cos x + C$ & \\ $\displaystyle \int \cos x ~dx = \sin x + C$ & \\
 $\displaystyle \int \tan x ~dx = \ln |\sec x| + C$ & \\ $\displaystyle \int \csc x ~dx = - \ln |\csc x + \cot x| + C$ \hspace{-18pt} & \\
 $\displaystyle \int \sec x ~dx = \ln |\sec x + \tan x| + C$ & \\ $\displaystyle \int \cot x ~dx = \ln |\sin x| + C$ & \\
