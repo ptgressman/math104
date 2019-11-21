@@ -10,24 +10,41 @@ We study the integration technique of integration by parts.
 \maketitle
 
 \begin{example}
-The base of a solid region is bounded by the curves $x = 0$, $y= 0$, and $y = \sqrt{1-x^2}$. The cross sections perpendicular to the $x$ axis are squares. Compute the volume of the region.
-\begin{solution}
-Lines in the $xy$-plane which are perpendicular to the $x$-axis are vertical, so the base of a typical $x$ cross section will extend from $y=0$ to $y = \sqrt{1-x^2}$. Since each cross section will have area
-\[ A(x) = \left( \sqrt{1-x^2} - 0 \right)^2 = 1-x^2. \]
-To compute volume, we integrate $dV = A(x) dx$ between $x=0$ and $x=1$, since these are the most extreme values of $x$ found in our region. Therefore
-\[ V = \int_0^1 ( 1 -x^2) dx = \left. x - \frac{x^3}{3} \right|_0^1 = 1 - \frac{1}{3} = \frac{2}{3}. \]
-\end{solution}
+Compute the indefinite integral
+\[ \int x^4 e^{2x} ex. \]
+\begin{itemize}
+\item We'll do this using an organizational technique called ``tabular integration'' that many people find helpful when doing repeated integrations by parts.
+\item Make a table: one column for $u$ and another for $dv$. In the first row, rewrite the functions that you will use for $u$ and $dv$:
+\begin{center}
+\begin{tabular}{ccc}
+ & $u$ & $dv$ \\
+ \hline
+& $\displaystyle x^4$ & $\displaystyle e^{2x}$ 
+\end{tabular}
+\end{center}
+\item Add new rows: differentiate items in the $u$ column and integrate items in the $dv$ column to determine what items go in the next row. 
+\begin{center}
+\begin{tabular}{ccc}
+ & $u$ & $dv$ \\
+ \hline
+& $\displaystyle x^4$ & $\displaystyle e^{2x}$ \\
+& $\displaystyle 4 x^3$ & $\displaystyle e^{2x}/2$ \\
+& $\displaystyle \answer{12 x^2}$ & $\displaystyle \answer{e^{2x}/4}$ \\
+& $\displaystyle \answer{24 x}$ & $\displaystyle \answer{e^{2x}/8}$ \\
+& $\displaystyle \answer{24}$ & $\displaystyle  \answer{e^{2x}/16}$ \\
+\end{tabular}
+\item Now you combine terms by matching items in the first column with items \textit{one row down}. For the last item in the $u$ column, match it with the last item in the $dv$ column (which you'll end up using twice):
+\[ x^4 \cdot \frac{e^{2x}}{2} \qquad {4 x^3} \cdot \answer{\frac{e^{2x}}{4}} \qquad \answer{12 x^2} \cdot \answer{\frac{e^{2x}}{8}} \qquad \answer{24 x} \cdot \answer{\frac{e^{2x}}{16}} \qquad \answer{24} \cdot \answer{\frac{e^{2x}}{16}} \]
+\end{center}
+\item To finish, you alternate addition and subtraction. Give a $+$ to the first term, a $-$ to the second, and so on. Last but not least, put an integral on the last term as well:
+\[ + x^4 \frac{e^{2x}}{2} - \answer{4 x^3 \frac{e^{2x}}{4}} + \answer{12 x^2 \frac{e^{2x}}{8}} - \answer{24 x\frac{e^{2x}}{16} }+ \int \answer{24 \frac{e^{2x}}{16}} dx \]
+In this way, we arrive at the formula
+\[ \int x^4 e^{2x} dx = \frac{1}{2} x^4 e^{2x} - x^3 e^{2x} + \frac{3}{2} x^2 e^{2x} - \frac{3}{2} x e^{2x} + \int \frac{3}{2} e^{2x} dx \]
+\item Sometimes the integrand of the last term is zero. This would happen when $u$ is a polynomial if you have enough lines in your table. In that case there would be nothing else to compute.  (We stopped one line short of that point on purpose in this example to show how you would handle a case where there the last term \textit{isn't} zero.)
+\end{itemize}
 \end{example}
-
 \begin{example}
-The base of a solid region is bounded by the curves $y = 0$, $x = \sqrt{y}$, and $x = 1$. The cross sections perpendicular to the $y$-axis are squares. Compute the volume of the region.
-\begin{solution}
-Lines in the $xy$-plane which are perpendicular to the $y$-axis are \wordChoice{\choice[correct]{horizontal}\choice{vertical}}, so the base of a typical $y$ cross section will extend from the graph $x=\answer{\sqrt{y}}$ to the graph $x = \answer{1}$. The length of the base is the difference of $x$-coordinates (since all points on a slice have the same $y$-coordinate), so the length of the base is $\answer{1 - \sqrt{y}}$, giving the square an area of 
-\[ A(y) = \answer{(1-\sqrt{y})^2} \]
-(note that the answer is a function of $y$ because different $y$ cross sections will generally have different areas).
-To compute volume, we integrate $dV = A(y) dy$ between $y=0$ and $y=1$, since these are the most extreme values of $y$ found in our region (note that we can find the upper value $y=1$ by solving for the intersection of the curves $x = \sqrt{y}$ and $x=1$). Therefore we integrate $A(y) dy$ to conclude
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{(1-\sqrt{y})^2} dy = \answer{\frac{1}{6}}. \]
-\end{solution}
+
 \end{example}
 
 
