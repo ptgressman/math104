@@ -9,9 +9,33 @@ We study the integration technique of integration by parts.
 \end{abstract}
 \maketitle
 
+
+
 \begin{example}
 Compute the indefinite integral
-\[ \int x^4 e^{2x} ex. \]
+\[ \int x e^{3x} dx. \]
+\begin{itemize}
+\item Because integrating $e^{3x}$ and differentiating $e^{3x}$ are at a similar level of difficulty, we opt to differentiate $x$ so that its degree as a polynomial will be decreasing.
+\item This gives
+\[ \int x e^{3x} dx = \answer{\frac{1}{3} x e^{3x}} - \int \answer{ \frac{1}{3} e^{3x} } dx = \answer{ \frac{1}{3} x e^{3x} - \frac{1}{9} e^{3x} } + C. \]
+\end{itemize}
+\end{example}
+
+
+\begin{example}
+Compute the indefinite integral
+\[ \int x^2 \ln |x| dx. \]
+\begin{itemize}
+\item Because integrating $\ln |x|$ is much harder than differentiating it, we choose to differentiate $\ln |x|$ and integrate $x^2$. 
+\item This gives
+\[ \int x^2 \ln |x| dx = \answer{\frac{x^3}{3}} \ln |x| - \int \answer{\frac{x^2}{3}} dx = \answer{ \frac{x^3}{3} \ln |x| - \frac{x^3}{9}} + C. \]
+\end{itemize}
+\end{example}
+
+
+\begin{example}
+Compute the indefinite integral
+\[ \int x^4 e^{2x} dx. \]
 \begin{itemize}
 \item We'll do this using an organizational technique called ``tabular integration'' that many people find helpful when doing repeated integrations by parts.
 \item Make a table: one column for $u$ and another for $dv$. In the first row, rewrite the functions that you will use for $u$ and $dv$:
@@ -41,10 +65,33 @@ Compute the indefinite integral
 In this way, we arrive at the formula
 \[ \int x^4 e^{2x} dx = \frac{1}{2} x^4 e^{2x} - x^3 e^{2x} + \frac{3}{2} x^2 e^{2x} - \frac{3}{2} x e^{2x} + \int \frac{3}{2} e^{2x} dx \]
 \item Sometimes the integrand of the last term is zero. This would happen when $u$ is a polynomial if you have enough lines in your table. In that case there would be nothing else to compute.  (We stopped one line short of that point on purpose in this example to show how you would handle a case where there the last term \textit{isn't} zero.)
+\item In this case, the final answer is
+\[ \int x^4 e^{2x} dx = \frac{1}{2} x^4 e^{2x} - x^3 e^{2x} + \frac{3}{2} x^2 e^{2x} - \frac{3}{2} x e^{2x} + \frac{3}{4} e^{2x} +C \]
 \end{itemize}
 \end{example}
-\begin{example}
 
+
+\begin{example}
+Compute the indefinite integral below using tabular integration:
+\[ \int \cos 3x \cos 5x ~dx \]
+\begin{itemize}
+\item Let us take $u = \cos 3x$ and $dv = \cos 5x$ (it would have been fine to choose them the other way around as well). The table is then
+\begin{center}
+\begin{tabular}{ccc}
+& $u$ & $dv$ \\
+\hline
+& $\answer{\cos 3x}$ & $\answer{\cos 5x}$ \\
+& $\answer{-3 \sin 3 x}$ & $\answer{(\sin 5x)/5}$ \\
+& $\answer{-9 \cos 3x}$ & $\answer{-(\cos 5x)/25}$
+\end{tabular}
+\end{center}
+Which gives
+\[ \begin{aligned} \int & \cos 3x \cos 5x ~dx = \\ & \answer{ \frac{1}{5} \cos 3x \sin 5x} - \answer{\frac{3}{25} \sin 3x \cos 5x} + \int \answer{\frac{9}{25} \cos 3x \cos 5x} ~dx. \end{aligned} \]
+\item This example has a twist: the integral on the right-hand side is just a constant times the integral on the left-hand side. This indicates that further integrations by parts would be unfruitful because you'd end up in something like a cycle.  What you \textit{can} do is \textit{solve} for the answer by moving both integrals to the left side of the equation and then combining like terms:
+\[ \answer{\frac{16}{25}} \int  \cos 3x \cos 5x ~dx =  \answer{ \frac{1}{5} \cos 3x \sin 5x} - \answer{\frac{3}{25} \sin 3x \cos 5x} \]
+and therefore
+\[ \int \cos 3x \cos 5x ~ dx = \answer{  \frac{5}{16} \cos 3x \sin 5x - \frac{3}{16} \sin 3x \cos 5x} + C. \]
+\end{itemize}
 \end{example}
 
 

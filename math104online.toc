@@ -17,50 +17,50 @@
 \contentsline {subsection}{2.1\hspace {1em}Substitution and Tables}{47}{section*.17}
 \contentsline {subsection}{2.2\hspace {1em}Exercises: Substitution and Tables}{51}{section*.18}
 \contentsline {subsection}{2.3\hspace {1em}Integration by Parts}{53}{section*.19}
-\contentsline {subsection}{2.4\hspace {1em}Exercises: Integration by Parts}{55}{section*.20}
-\contentsline {subsection}{2.5\hspace {1em}Trigonometric Integrals}{60}{section*.21}
-\contentsline {subsection}{2.6\hspace {1em}Exercises: Trigonometric Integral}{62}{section*.22}
-\contentsline {subsection}{2.7\hspace {1em}Trigonometric Substitions}{66}{section*.23}
-\contentsline {subsection}{2.8\hspace {1em}Exercises: Trigonometric Substitions}{68}{section*.24}
-\contentsline {subsection}{2.9\hspace {1em}Partial Fractions}{72}{section*.25}
-\contentsline {subsection}{2.10\hspace {1em}Exercises: Partial Fractions}{74}{section*.26}
-\contentsline {subsection}{2.11\hspace {1em}Exercises: Cumulative}{79}{section*.27}
-\contentsline {section}{\textbf {3\hspace {1em}Further Topics in Integration}}{82}{section*.28}
-\contentsline {subsection}{3.1\hspace {1em}Numerical Integration}{84}{section*.29}
-\contentsline {subsection}{3.2\hspace {1em}Exercises: Numerical Integration}{85}{section*.30}
-\contentsline {subsection}{3.3\hspace {1em}Orders of Growth}{86}{section*.31}
-\contentsline {subsection}{3.4\hspace {1em}Exercises: Orders of Growth}{88}{section*.32}
-\contentsline {subsection}{3.5\hspace {1em}Improper Integrals}{91}{section*.33}
-\contentsline {subsection}{3.6\hspace {1em}Exercises: Improper Integrals}{93}{section*.34}
-\contentsline {subsection}{3.7\hspace {1em}Probability}{97}{section*.35}
-\contentsline {subsection}{3.8\hspace {1em}Exercises: Probability}{99}{section*.36}
-\contentsline {section}{\textbf {4\hspace {1em}Sequences and Series}}{103}{section*.37}
-\contentsline {subsection}{4.1\hspace {1em}Sequences}{105}{section*.38}
-\contentsline {subsection}{4.2\hspace {1em}Exercises: Sequences}{106}{section*.39}
-\contentsline {subsection}{4.3\hspace {1em}Series}{114}{section*.40}
-\contentsline {subsection}{4.4\hspace {1em}Exercises: Series}{116}{section*.41}
-\contentsline {subsection}{4.5\hspace {1em}Series Comparison Tests}{117}{section*.42}
-\contentsline {subsection}{4.6\hspace {1em}Exercises: Series Comparison Tests}{119}{section*.43}
-\contentsline {subsection}{4.7\hspace {1em}The Ratio and Root Tests}{120}{section*.44}
-\contentsline {subsection}{4.8\hspace {1em}Exercises: Ratio and Root Tests}{121}{section*.45}
-\contentsline {subsection}{4.9\hspace {1em}The Integral Test}{121}{section*.46}
-\contentsline {subsection}{4.10\hspace {1em}Exercises: The Integral Test}{123}{section*.47}
-\contentsline {subsection}{4.11\hspace {1em}Alternating Series}{123}{section*.48}
-\contentsline {subsection}{4.12\hspace {1em}Exercises: Alternating Series}{125}{section*.49}
-\contentsline {subsection}{4.13\hspace {1em}Exercises: Cumulative}{128}{section*.50}
-\contentsline {section}{\textbf {5\hspace {1em}Power Series}}{130}{section*.51}
-\contentsline {subsection}{5.1\hspace {1em}Power Series}{131}{section*.52}
-\contentsline {subsection}{5.2\hspace {1em}Exercises: Power Series and Convergence}{132}{section*.53}
-\contentsline {subsection}{5.3\hspace {1em}Taylor Series}{140}{section*.54}
-\contentsline {subsection}{5.4\hspace {1em}Exercises: Taylor Series}{142}{section*.55}
-\contentsline {subsection}{5.5\hspace {1em}Taylor Series Applications}{146}{section*.56}
-\contentsline {subsection}{5.6\hspace {1em}Exercises: Taylor Series Applications}{148}{section*.57}
-\contentsline {subsection}{5.7\hspace {1em}Exercises: Cumulative}{151}{section*.58}
-\contentsline {section}{\textbf {6\hspace {1em}Ordinary Differential Equations}}{152}{section*.59}
-\contentsline {subsection}{6.1\hspace {1em}ODEs: Foundations}{154}{section*.60}
-\contentsline {subsection}{6.2\hspace {1em}Exercises: ODEs}{155}{section*.61}
-\contentsline {subsection}{6.3\hspace {1em}Separable and Linear ODEs}{156}{section*.62}
-\contentsline {subsection}{6.4\hspace {1em}Exercises: Linear and Separable ODEs}{157}{section*.63}
-\contentsline {subsection}{6.5\hspace {1em}Applications of ODEs}{162}{section*.64}
-\contentsline {subsection}{6.6\hspace {1em}Exercises: ODE Applications}{164}{section*.65}
+\contentsline {subsection}{2.4\hspace {1em}Exercises: Integration by Parts}{56}{section*.20}
+\contentsline {subsection}{2.5\hspace {1em}Trigonometric Integrals}{61}{section*.21}
+\contentsline {subsection}{2.6\hspace {1em}Exercises: Trigonometric Integral}{63}{section*.22}
+\contentsline {subsection}{2.7\hspace {1em}Trigonometric Substitions}{67}{section*.23}
+\contentsline {subsection}{2.8\hspace {1em}Exercises: Trigonometric Substitions}{69}{section*.24}
+\contentsline {subsection}{2.9\hspace {1em}Partial Fractions}{73}{section*.25}
+\contentsline {subsection}{2.10\hspace {1em}Exercises: Partial Fractions}{75}{section*.26}
+\contentsline {subsection}{2.11\hspace {1em}Exercises: Cumulative}{80}{section*.27}
+\contentsline {section}{\textbf {3\hspace {1em}Further Topics in Integration}}{83}{section*.28}
+\contentsline {subsection}{3.1\hspace {1em}Numerical Integration}{85}{section*.29}
+\contentsline {subsection}{3.2\hspace {1em}Exercises: Numerical Integration}{86}{section*.30}
+\contentsline {subsection}{3.3\hspace {1em}Orders of Growth}{87}{section*.31}
+\contentsline {subsection}{3.4\hspace {1em}Exercises: Orders of Growth}{89}{section*.32}
+\contentsline {subsection}{3.5\hspace {1em}Improper Integrals}{92}{section*.33}
+\contentsline {subsection}{3.6\hspace {1em}Exercises: Improper Integrals}{94}{section*.34}
+\contentsline {subsection}{3.7\hspace {1em}Probability}{98}{section*.35}
+\contentsline {subsection}{3.8\hspace {1em}Exercises: Probability}{100}{section*.36}
+\contentsline {section}{\textbf {4\hspace {1em}Sequences and Series}}{104}{section*.37}
+\contentsline {subsection}{4.1\hspace {1em}Sequences}{106}{section*.38}
+\contentsline {subsection}{4.2\hspace {1em}Exercises: Sequences}{107}{section*.39}
+\contentsline {subsection}{4.3\hspace {1em}Series}{115}{section*.40}
+\contentsline {subsection}{4.4\hspace {1em}Exercises: Series}{117}{section*.41}
+\contentsline {subsection}{4.5\hspace {1em}Series Comparison Tests}{118}{section*.42}
+\contentsline {subsection}{4.6\hspace {1em}Exercises: Series Comparison Tests}{120}{section*.43}
+\contentsline {subsection}{4.7\hspace {1em}The Ratio and Root Tests}{121}{section*.44}
+\contentsline {subsection}{4.8\hspace {1em}Exercises: Ratio and Root Tests}{122}{section*.45}
+\contentsline {subsection}{4.9\hspace {1em}The Integral Test}{122}{section*.46}
+\contentsline {subsection}{4.10\hspace {1em}Exercises: The Integral Test}{124}{section*.47}
+\contentsline {subsection}{4.11\hspace {1em}Alternating Series}{124}{section*.48}
+\contentsline {subsection}{4.12\hspace {1em}Exercises: Alternating Series}{126}{section*.49}
+\contentsline {subsection}{4.13\hspace {1em}Exercises: Cumulative}{129}{section*.50}
+\contentsline {section}{\textbf {5\hspace {1em}Power Series}}{131}{section*.51}
+\contentsline {subsection}{5.1\hspace {1em}Power Series}{132}{section*.52}
+\contentsline {subsection}{5.2\hspace {1em}Exercises: Power Series and Convergence}{133}{section*.53}
+\contentsline {subsection}{5.3\hspace {1em}Taylor Series}{141}{section*.54}
+\contentsline {subsection}{5.4\hspace {1em}Exercises: Taylor Series}{143}{section*.55}
+\contentsline {subsection}{5.5\hspace {1em}Taylor Series Applications}{147}{section*.56}
+\contentsline {subsection}{5.6\hspace {1em}Exercises: Taylor Series Applications}{149}{section*.57}
+\contentsline {subsection}{5.7\hspace {1em}Exercises: Cumulative}{152}{section*.58}
+\contentsline {section}{\textbf {6\hspace {1em}Ordinary Differential Equations}}{153}{section*.59}
+\contentsline {subsection}{6.1\hspace {1em}ODEs: Foundations}{155}{section*.60}
+\contentsline {subsection}{6.2\hspace {1em}Exercises: ODEs}{156}{section*.61}
+\contentsline {subsection}{6.3\hspace {1em}Separable and Linear ODEs}{157}{section*.62}
+\contentsline {subsection}{6.4\hspace {1em}Exercises: Linear and Separable ODEs}{158}{section*.63}
+\contentsline {subsection}{6.5\hspace {1em}Applications of ODEs}{163}{section*.64}
+\contentsline {subsection}{6.6\hspace {1em}Exercises: ODE Applications}{165}{section*.65}
 \contentsfinish 
