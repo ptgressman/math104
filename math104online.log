@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 NOV 2019 13:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 NOV 2019 15:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1154,17 +1154,18 @@ S/cmsy/m/n/9 ^^@ [] \OT1/cmr/m/n/9 = 4 \OMS/cmsy/m/n/9 ^^@ [] \OT1/cmr/m/n/9 =
 \OMS/cmsy/m/n/9 ^^@[]\OML/cmm/m/it/9 :
  []
 
-) (./techniques/09ibpwarm.tex [53] [54]) [55] (./techniques/09ibppractice.tex
-[56
+) (./techniques/09ibpwarm.tex [53] [54] [55]) [56]
+(./techniques/09ibppractice.tex [57
 
-] [57] [58] [59] [60]) (./techniques/10trigonometricwarm.tex [61]) [62]
-(./techniques/10trigonometricpractice.tex [63
+] [58] [59] [60] [61])
+(./techniques/10trigonometricwarm.tex [62]) [63]
+(./techniques/10trigonometricpractice.tex [64
 
-] [64] [65] [66])
-(./techniques/11trigsubwarm.tex [67]) [68] (./techniques/11trigsubpractice.tex
-[69
+] [65] [66] [67])
+(./techniques/11trigsubwarm.tex [68]) [69] (./techniques/11trigsubpractice.tex
+[70
 
-] [70] [71] [72]) (./techniques/12partialfractionswarm.tex [73]) [74]
+] [71] [72] [73]) (./techniques/12partialfractionswarm.tex) [74]
 (./techniques/12partialfractionspractice.tex [75
 
 ] [76] [77] [78])
@@ -1274,8 +1275,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 30196 strings out of 493014
- 685248 string characters out of 6133351
+ 30186 strings out of 493014
+ 685168 string characters out of 6133351
  834178 words of memory out of 5000000
  31926 multiletter control sequences out of 15000+600000
  16557 words of font info for 61 fonts, out of 8000000 for 9000
@@ -1311,10 +1312,10 @@ st/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on math104online.pdf (175 pages, 1084806 bytes).
+Output written on math104online.pdf (175 pages, 1086031 bytes).
 PDF statistics:
- 2237 PDF objects out of 2487 (max. 8388607)
- 1990 compressed objects within 20 object streams
- 1038 named destinations out of 1200 (max. 500000)
+ 2232 PDF objects out of 2487 (max. 8388607)
+ 1985 compressed objects within 20 object streams
+ 1028 named destinations out of 1200 (max. 500000)
  583 words of extra memory for PDF output out of 10000 (max. 10000000)
 
