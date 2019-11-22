@@ -10,29 +10,53 @@ Exercises relating to the direct and limit comparison tests for series.
 \maketitle
 
 \begin{exercise}
-The base of a solid region is bounded by the curves $x = 0$, $y = x^2$ and $y = x$. The cross sections perpendicular to the $x$-axis are squares. Compute the volume of the region.
-\begin{itemize}
-\item A typical square cross section has side length $L = \answer{x - x^2}$ and area $A = \answer{(x-x^2)^2}$. 
-\item Possible numerical values of the $x$-coordinates of points in the base range from a minimum value of $x = \answer{0}$ up to a maximum of $x = \answer{1}$.
-\item To compute volume, integrate:
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{(x-x^2)^2} d\answer{x} = \answer{\frac{1}{30}}. \]
-\end{itemize}
+Suppose you wished to use the Direct Comparison Test to establish convergence of the series
+\[ \sum_{n=1}^\infty \frac{1}{n^4 + n}. \]
+Which of the following options below would be valid series for comparison? Select all that apply.
+\begin{multipleChoice}
+\choice{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^5}$}
+\choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^4}$}
+\choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^3}$}
+\choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^2}$}
+\choice{$\displaystyle \sum_{n=2}^\infty \frac{1}{n}$}
+\end{multipleChoice}
+\begin{feedback}
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n^5}$}:
+\begin{expandable}
+This comparison wouldn't be valid because
+\[ \frac{1}{n^5} \leq \frac{1}{n^4+n} \ \ \text{ for all } n \geq 2,\]
+which is the wrong direction for the inequality when showing convergence.
+\end{expandable}
+
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n^4}$}:
+\begin{expandable}
+This comparison is valid because
+\[ \frac{1}{n^4+n} \leq \frac{1}{n^4}  \ \ \text{ for all } n \geq 2,\]
+which is the proper direction for the comparison inequality when showing convergence. Also key is that the $p$-series for $p=4$ is convergent.
+\end{expandable}
+
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n^3}$}:
+\begin{expandable}
+This comparison is valid because
+\[ \frac{1}{n^4+n} \leq \frac{1}{n^3}  \ \ \text{ for all } n \geq 2, \]
+which is the proper direction for the comparison inequality when showing convergence. Also key is that the $p$-series for $p=3$ is convergent.
+\end{expandable}
+
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n^2}$}:
+\begin{expandable}
+This comparison is valid because
+\[ \frac{1}{n^4+n} \leq \frac{1}{n^2}  \ \ \text{ for all } n \geq 2, \]
+which is the proper direction for the comparison inequality when showing convergence. Also key is that the $p$-series for $p=2$ is convergent.
+\end{expandable}
+
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n}$}:
+\begin{expandable}
+This comparison is not valid because the series (known as the \textit{harmonic series}) is not convergent, so no comparisons to it can establish convergence.
+\end{expandable}
+\end{feedback}
 \end{exercise}
 
-\begin{exercise}
-Find the volume of the region in three-dimensional space defined by the inequalities
-\begin{align*}
-0 & \leq x \leq 1, \\
-0 & \leq y \leq z^2, \\
-0 & \leq z \leq 3.
-\end{align*}
-\begin{itemize}
-\item Cross sections perpendicular to the $z$-axis are \wordChoice{\choice{square}\choice[correct]{rectangular}\choice{triangluar}} with length $\answer{1}$ in the $x$-direction and width $\answer{z^2}$ in the $y$-direction.
-\item The area of a $z$ cross section is $A(z) = \answer{z^2}$.
-\item To compute volume, integrate:
-\[ V = \int_{\answer{0}}^{\answer{3}} \answer{z^2} dz = \answer{9}. \]
-\end{itemize}
-\end{exercise}
+
 
 
 \end{document}
