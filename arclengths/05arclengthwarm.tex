@@ -9,27 +9,32 @@ We practice setting up and executing arc length calculations.
 \end{abstract}
 \maketitle
 
+\section*{(Video) Calculus: Single Variable}
+\youtube{fT1LVQdF-70}
+
+\section*{Examples}
+
 \begin{example}%[Arclen03]
 Compute the arc length of the curve $$x = -\frac{1}{8}y^{-2} - \frac{1}{4}y^{4} - 2$$ between the endpoints $y = 1/\sqrt{2}$ and $y = 1$.
 \begin{itemize}
-\item First we compute the derivative: \[\frac{dx}{dy} = \frac{1}{4} y^{-3} - y^3. \]
+\item First we compute the derivative: \[\frac{dx}{dy} = \answer{\frac{1}{4} y^{-3} - y^3}. \]
 \item Next, we write the arc length element:
-\[ ds = \sqrt{ 1 + \left(\frac{dx}{dy}\right)^2} dy = \sqrt{1 + \left( \frac{1}{4} y^{-3} - y^3 \right)^2} dy. \]
-\item The key to integrating is to first fully simplify:
+\[ ds = \sqrt{ 1 + \left(\frac{dx}{dy}\right)^2} dy = \sqrt{1 + \left( \answer{ \frac{1}{4} y^{-3} - y^3} \right)^2} dy. \]
+\item The key to integrating is to first fully simplify the quantity inside the square root:
 \[ \begin{aligned}
-1 + \left( \frac{1}{4} y^{-3} - y^3 \right)^2 = & 1 + \frac{1}{16} y^{-6} + 2 \left( \frac{1}{4} y^{-3} \right) \left( - y^3 \right) + y^6 \\
+1 + \left( \answer{\frac{1}{4} y^{-3} - y^3} \right)^2 = & 1 + \frac{1}{16} y^{-6} + 2 \left( \frac{1}{4} y^{-3} \right) \left( - y^3 \right) + y^6 \\
 & = 1 + \frac{1}{16} y^{-6} - \frac{1}{2} + y^6
 \end{aligned} \]
 \begin{observation}
 When the middle term in a binomial (i.e., FOIL) expansion is $-1/2$ adding one \textbf{always} gives a perfect square. In this case, the algebraic fact is
-\[  1 + \frac{1}{16} y^{-6} - \frac{1}{2} + y^6 =   \frac{1}{16} y^{-6} + \frac{1}{2} + y^6 = \left( \frac{1}{4} y^{-3} + y^3 \right)^2. \]
+\[  1 + \frac{1}{16} y^{-6} - \frac{1}{2} + y^6 =   \frac{1}{16} y^{-6} + \frac{1}{2} + y^6 = \left( \answer{\frac{1}{4} y^{-3} + y^3} \right)^2. \]
 The general phenomenon is that what was formerly the square of a difference---in this case, $\left( \frac{1}{4} y^{-3} - y^3 \right)^2$---becomes the square of the corresponding sum.
 \end{observation} 
 Therefore
 $$
 \begin{aligned}
 L & = \int_{1/\sqrt{2}}^{1} \sqrt{1 + \left( \frac{dx}{dy} \right)^2}~dy 
-   = \int_{1/\sqrt{2}}^{1} \sqrt{1 + \left( \frac{1}{4}y^{-3} - y^{3} \right)^2}~dy \\
+   = \int_{1/\sqrt{2}}^{1} \sqrt{1 + \left( \answer{\frac{1}{4}y^{-3} - y^{3}} \right)^2}~dy \\
   & = \int_{1/\sqrt{2}}^{1} \sqrt{1 + \frac{1}{16}y^{-6} - \frac{1}{2} + y^{6}} ~ dy 
    = \int_{1/\sqrt{2}}^{1} \sqrt{ \left( \answer{\frac{1}{4}y^{-3} + y^{3}} \right)^2} ~ dy \\
   & = \int_{1/\sqrt{2}}^{1} \answer{\frac{1}{4}y^{-3} + y^{3}} ~ dy 
