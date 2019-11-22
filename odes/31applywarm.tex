@@ -9,25 +9,18 @@ We study some sample applications of ODEs.
 \end{abstract}
 \maketitle
 
+\section*{(Videos) Calculus: Single Variable}
+\youtube{54HrJmeON24}
+\youtube{xZ3CxLxljLA}
+
+\section*{Examples}
+
 \begin{example}
-The base of a solid region is bounded by the curves $x = 0$, $y= 0$, and $y = \sqrt{1-x^2}$. The cross sections perpendicular to the $x$ axis are squares. Compute the volume of the region.
-\begin{solution}
-Lines in the $xy$-plane which are perpendicular to the $x$-axis are vertical, so the base of a typical $x$ cross section will extend from $y=0$ to $y = \sqrt{1-x^2}$. Since each cross section will have area
-\[ A(x) = \left( \sqrt{1-x^2} - 0 \right)^2 = 1-x^2. \]
-To compute volume, we integrate $dV = A(x) dx$ between $x=0$ and $x=1$, since these are the most extreme values of $x$ found in our region. Therefore
-\[ V = \int_0^1 ( 1 -x^2) dx = \left. x - \frac{x^3}{3} \right|_0^1 = 1 - \frac{1}{3} = \frac{2}{3}. \]
-\end{solution}
+
 \end{example}
 
 \begin{example}
-The base of a solid region is bounded by the curves $y = 0$, $x = \sqrt{y}$, and $x = 1$. The cross sections perpendicular to the $y$-axis are squares. Compute the volume of the region.
-\begin{solution}
-Lines in the $xy$-plane which are perpendicular to the $y$-axis are \wordChoice{\choice[correct]{horizontal}\choice{vertical}}, so the base of a typical $y$ cross section will extend from the graph $x=\answer{\sqrt{y}}$ to the graph $x = \answer{1}$. The length of the base is the difference of $x$-coordinates (since all points on a slice have the same $y$-coordinate), so the length of the base is $\answer{1 - \sqrt{y}}$, giving the square an area of 
-\[ A(y) = \answer{(1-\sqrt{y})^2} \]
-(note that the answer is a function of $y$ because different $y$ cross sections will generally have different areas).
-To compute volume, we integrate $dV = A(y) dy$ between $y=0$ and $y=1$, since these are the most extreme values of $y$ found in our region (note that we can find the upper value $y=1$ by solving for the intersection of the curves $x = \sqrt{y}$ and $x=1$). Therefore we integrate $A(y) dy$ to conclude
-\[ V = \int_{\answer{0}}^{\answer{1}} \answer{(1-\sqrt{y})^2} dy = \answer{\frac{1}{6}}. \]
-\end{solution}
+
 \end{example}
 
 
