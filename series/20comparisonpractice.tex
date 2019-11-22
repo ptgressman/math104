@@ -13,13 +13,13 @@ Exercises relating to the direct and limit comparison tests for series.
 Suppose you wished to use the Direct Comparison Test to establish convergence of the series
 \[ \sum_{n=1}^\infty \frac{1}{n^4 + n}. \]
 Which of the following options below would be valid series for comparison? Select all that apply.
-\begin{multipleChoice}
+\begin{selectAll}
 \choice{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^5}$}
 \choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^4}$}
 \choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^3}$}
 \choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^2}$}
 \choice{$\displaystyle \sum_{n=2}^\infty \frac{1}{n}$}
-\end{multipleChoice}
+\end{selectAll}
 \begin{feedback}
 Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n^5}$}:
 \begin{expandable}
@@ -55,6 +55,87 @@ This comparison is not valid because the series (known as the \textit{harmonic s
 \end{expandable}
 \end{feedback}
 \end{exercise}
+
+
+\begin{exercise}
+Suppose you wished to use the Direct Comparison Test to establish convergence of the series
+\[ \sum_{n=1}^\infty \frac{1}{n^4 - n}. \]
+Which of the following options below would be valid series for comparison? Select all that apply.
+\begin{selectAll}
+\choice{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^4}$}
+\choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^3}$}
+\choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^2}$}
+\end{selectAll}
+\begin{feedback}
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n^4}$}:
+\begin{expandable}
+This comparison is not valid because
+\[ \frac{1}{n^4} \leq \frac{1}{n^4-n^2}  \ \ \text{ for all } n \geq 2,\]
+which is the wrong direction for the comparison inequality when showing convergence.
+\end{expandable}
+
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n^3}$}:
+\begin{expandable}
+This comparison is valid because
+\[ \frac{1}{n^4-n} \leq \frac{1}{n^3}  \ \ \text{ for all } n \geq 2 \]
+(because $n^4 - n = n(n^3-1)$ and $n^3 - 1$ is always greater than $n^2$ whenever $n \geq 2$.)
+which is the proper direction for the comparison inequality when showing convergence. Also key is that the $p$-series for $p=3$ is convergent.
+\end{expandable}
+
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n^2}$}:
+\begin{expandable}
+This comparison is valid because
+\[ \frac{1}{n^4-n} \leq \frac{1}{n^2}  \ \ \text{ for all } n \geq 2, \]
+(because $n^4 - n = n(n^3-1)$ and $n^3 - 1$ is always greater than $n$ whenever $n \geq 2$.)
+which is the proper direction for the comparison inequality when showing convergence. Also key is that the $p$-series for $p=2$ is convergent.
+\end{expandable}
+
+\end{feedback}
+\end{exercise}
+
+
+
+For the exercises below, you are only allowed to make comparisons to the following series:
+\[ \sum_{n=1}^\infty \frac{1}{1+\sqrt{n}}, \qquad \sum_{n=1}^\infty \frac{1}{n+1},  \qquad \sum_{n=1}^\infty \frac{1}{n^2}, \qquad \sum_{n=1}^\infty e^{-n} \]
+\begin{exercise}
+Using only the comparison functions listed above, which of the following series can be proved to either diverge or converge using the Direct Comparison Test? (Select all that apply.)
+\begin{selectAll}
+\choice{$\displaystyle \sum_{n=1}^\infty \frac{1}{n^{3/2}+n^{1/2}}$}
+\choice[correct]{$\displaystyle \sum_{n=1}^\infty \frac{1}{n^2 + n^{1/2}}$}
+\choice[correct]{$\displaystyle \sum_{n=1}^\infty \frac{1}{\ln (n+1)}$}
+\choice{$\displaystyle \sum_{n=1}^\infty \frac{1}{n^2-1}$}
+\choice[correct]{$\displaystyle \sum_{n=1}^\infty \frac{1}{e^n  + 1}$}
+\end{selectAll}
+\begin{feedback}
+For the series {$\displaystyle \sum_{n=1}^\infty \frac{1}{n^{3/2}+n^{1/2}}$}:
+\begin{expandable}
+This series \textit{is} convergent, but none of the allowed comparisons will work: Only $1/(n+1)$ and $1/(1+\sqrt{n})$ are larger than $1/(n^{3/2}+n^{1/2})$, but neither of those series converges.
+\end{expandable}
+
+For the series {$\displaystyle \sum_{n=1}^\infty \frac{1}{n^2 + n^{1/2}}$}:
+\begin{expandable}
+Comparison to $1/n^2$ works fine in this case.
+\end{expandable}
+
+For the series {$\displaystyle \sum_{n=1}^\infty \frac{1}{\ln (n+1)}$}:
+\begin{expandable}
+$\ln (n+1) \leq n+1$ so $1/\ln (n+1) \geq 1/(n+1)$, so actually diverges by direct comparison.
+\end{expandable}
+
+For the series {$\displaystyle \sum_{n=1}^\infty \frac{1}{n^2-1}$}:
+\begin{expandable}
+This series textit{is} convergent, but none of the convergent comparison options $1/n^2$ and $e^{-n}$ is greater than $1/n^2$.
+\end{expandable}
+
+For the series {$\displaystyle \sum_{n=1}^\infty \frac{1}{e^n  + 1}$}:
+\begin{expandable}
+The direct comparison $1/(e^n + 1) \leq e^{-n}$ works fine to show convergence of the series.
+\end{expandable}
+
+
+\end{feedback}
+\end{exercise}
+
 
 
 

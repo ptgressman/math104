@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 NOV 2019 09:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 NOV 2019 11:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1208,31 +1208,31 @@ Overfull \hbox (14.1789pt too wide) in paragraph at lines 41--43
 ]) (./series/20comparisonwarm.tex
 [118]) [119] (./series/20comparisonpractice.tex [120
 
-])
-(./series/21ratiorootwarm.tex [121]) [122] (./series/21ratiorootpractice.tex)
-(./series/22integralwarm.tex [123
+] [121] [122])
+(./series/21ratiorootwarm.tex [123]) [124] (./series/21ratiorootpractice.tex)
+(./series/22integralwarm.tex [125
 
-]) [124] (./series/22integralpractice.tex)
-(./series/23alternatewarm.tex [125
+]) [126] (./series/22integralpractice.tex)
+(./series/23alternatewarm.tex [127
 
-]) [126] (./series/23alternatepractice.tex
-[127
+]) [128] (./series/23alternatepractice.tex
+[129
 
-] [128] [129]) (./series/24finalpractice.tex [130])
-(./powerseries/powerseriesintro.tex [131]) [132]
-(./powerseries/25powerserieswarm.tex) [133
+] [130] [131]) (./series/24finalpractice.tex [132])
+(./powerseries/powerseriesintro.tex [133]) [134]
+(./powerseries/25powerserieswarm.tex) [135
 
 ]
-(./powerseries/25powerseriespractice.tex [134
+(./powerseries/25powerseriespractice.tex [136
 
-] [135] [136] [137] [138] [139]
-[140]
+] [137] [138] [139] [140] [141]
+[142]
 Overfull \hbox (18.69032pt too wide) in paragraph at lines 220--222
 []\OT1/cmr/m/sl/10 Find the in-ter-val of con-ver-gence of the power se-ries $[
 ] []$. 
  []
 
-[141]) (./powerseries/26taylorserieswarm.tex [142]) [143]
+[143]) (./powerseries/26taylorserieswarm.tex [144]) [145]
 (./powerseries/26taylorseriespractice.tex
 Overfull \hbox (9.42921pt too wide) detected at line 28
 [] \OT1/cmr/m/n/10 + [](\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10
@@ -1241,21 +1241,21 @@ Overfull \hbox (9.42921pt too wide) detected at line 28
 ML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2)[]
  []
 
-[144
+[146
 
-] [145] [146] [147]) (./powerseries/27taylorseries2warm.tex [148]) [149]
-(./powerseries/27taylorseries2practice.tex [150
+] [147] [148] [149]) (./powerseries/27taylorseries2warm.tex [150]) [151]
+(./powerseries/27taylorseries2practice.tex [152
 
-] [151] [152])
-(./powerseries/28finalpractice.tex [153]) (./odes/odeintro.tex [154]) [155]
-(./odes/29odewarm.tex) [156
+] [153] [154])
+(./powerseries/28finalpractice.tex [155]) (./odes/odeintro.tex [156]) [157]
+(./odes/29odewarm.tex) [158
 
-] (./odes/29odepractice.tex) (./odes/30solvewarm.tex [157
+] (./odes/29odepractice.tex) (./odes/30solvewarm.tex [159
 
-]) [158] (./odes/30solvepractice.tex [159
+]) [160] (./odes/30solvepractice.tex [161
 
-] [160] [161] [162] [163])
-(./odes/31applywarm.tex [164]) [165] (./odes/31applypractice.tex) [166
+] [162] [163] [164] [165])
+(./odes/31applywarm.tex [166]) [167] (./odes/31applypractice.tex) [168
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
@@ -1273,8 +1273,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 30164 strings out of 493014
- 684992 string characters out of 6133351
+ 30174 strings out of 493014
+ 685072 string characters out of 6133351
  834178 words of memory out of 5000000
  31926 multiletter control sequences out of 15000+600000
  16557 words of font info for 61 fonts, out of 8000000 for 9000
@@ -1310,10 +1310,10 @@ st/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on math104online.pdf (166 pages, 1058778 bytes).
+Output written on math104online.pdf (168 pages, 1065594 bytes).
 PDF statistics:
- 2170 PDF objects out of 2487 (max. 8388607)
- 1932 compressed objects within 20 object streams
- 1006 named destinations out of 1200 (max. 500000)
+ 2189 PDF objects out of 2487 (max. 8388607)
+ 1949 compressed objects within 20 object streams
+ 1016 named destinations out of 1200 (max. 500000)
  583 words of extra memory for PDF output out of 10000 (max. 10000000)
 
