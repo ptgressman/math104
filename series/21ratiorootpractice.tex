@@ -5,16 +5,98 @@
 
 \begin{document}
 \begin{abstract}
-Exercises relating to the ratio and root tests.
+Exercises relating to the Ratio and Root Tests.
 \end{abstract}
 \maketitle
 
+
+\begin{exercise}
+Consider the infinite series
+\[ \sum_{n=1}^\infty n 2^{-n}. \]
+Apply the Ratio Test:
+\[ \lim_{n \rightarrow \infty} \frac{\answer{(n+1) 2^{-n-1}}}{\answer{n 2^{-n}}} = \answer{\frac{1}{2}}. \]
+Apply the Root Test:
+\[ \lim_{n \rightarrow \infty} \left| \answer{n 2^{-n}} \right|^{\frac{1}{n}} = \answer{\frac{1}{2}}. \]
+Both tests indicate that the series \wordChoice{\choice[correct]{converges}\choice{diverges}}.
+\end{exercise}
+
+\begin{exercise}
+Oftentimes the Ratio Test is easier to apply than the Root Test when dealing with factorials. Use the Ratio Test to determine convergence or divergence of the series
+\[ \sum_{n=1}^\infty \frac{(n!)^2}{(2n)!}. \]
+In the spaces below, record the eponymous ``ratio'' in the first blanks, simplify it in the second blanks, and then record the limit.
+\[ \lim_{n \rightarrow \infty} \frac{\answer{\frac{((n+1)!)^2}{(2n+2)!}}}{\answer{\frac{(n!)^2}{(2n)!}}} = \lim_{n \rightarrow \infty} \answer{\frac{(n+1)^2}{(2n+1)(2n+2)}} = \answer{\frac{1}{4}}. \]
+The test \wordChoice{\choice[correct]{indicates convergence}\choice{indicates divergence}\choice{is inconclusive}}.
+\end{exercise}
+
+\begin{exercise}%APEX0804RATTST06
+Apply the Ratio Test to the series given below.
+\[ \sum_{n=0}^\infty \frac{5^n-3n}{4^n} \]
+\[ \lim_{n \rightarrow \infty} \frac{\answer{\frac{5^{n+1}-3(n+1)}{4^{n+1}}}}{\answer{\frac{5^n-3n}{4^n}}} = \lim_{n \rightarrow \infty} \answer{\frac{1}{4} \frac{5^{n+1} - 3(n+1)}{5^n - 3n}} = \answer{\frac{5}{4}}. \]
+The test \wordChoice{\choice{indicates convergence}\choice[correct]{indicates divergence}\choice{is inconclusive}}.
+\end{exercise}
+
+\begin{exercise}
+Apply the Ratio Test to the series given below.
+\[ \sum_{n=1}^\infty \frac{1}{n^2+1} \]
+\[ \lim_{n \rightarrow \infty} \frac{\answer{((n+1)^2+1)^{-1}}}{\answer{(n^2+1)^{-1}}} = \lim_{n \rightarrow \infty} \answer{\frac{n^2+1}{(n+1)^2+1}} = \answer{1}. \]
+The test \wordChoice{\choice{indicates convergence}\choice{indicates divergence}\choice[correct]{is inconclusive}}.
+\end{exercise}
+
+\begin{exercise}
+Apply the Ratio Test to the series given below.
+\[ \sum_{n=1}^\infty \frac{3^n}{n^2 2^n} \]
+\[ \lim_{n \rightarrow \infty} \frac{\answer{3^{n+1}/((n+1)^2 2^{n+1})}}{\answer{3^n/(n^2 2^n)}} = \lim_{n \rightarrow \infty} \answer{ \frac{3}{2} \frac{n^2}{(n+1)^2}} = \answer{\frac{3}{2}}. \]
+The test \wordChoice{\choice{indicates convergence}\choice[correct]{indicates divergence}\choice{is inconclusive}}.
+\end{exercise}
+
+\begin{exercise}
+Apply the Ratio Test to the series given below.
+\[ \sum_{n=0}^\infty \frac{4^n}{4^n+1} \]
+\[ \lim_{n \rightarrow \infty} \frac{\answer{\frac{4^{n+1}}{4^{n+1}+1}}}{\answer{\frac{4^n}{4^n+1}}} = \lim_{n \rightarrow \infty} \answer{4 \frac{4^n+1}{4^{n+1}+1}} = \answer{1}. \]
+The test \wordChoice{\choice{indicates convergence}\choice{indicates divergence}\choice[correct]{is inconclusive}}.
+\end{exercise}
+
+\begin{exercise}
+Oftentimes the Root Test is easier to apply when terms have large exponents (growing faster than a constant times $n$). Use the Root Test to determine the convergence or divergence of the series
+\[ \sum_{n=1}^\infty 4^n \left( 1 - \frac{1}{n} \right)^{n^2}. \]
+First say what should quantity should have its $n$-th root taken, then simplify, and lastly record the value of the limit.
+\[ \lim_{n \rightarrow \infty} = \left| \answer{4^n \left( 1 - \frac{1}{n} \right)^{n^2}} \right|^{\frac{1}{n}} = \lim_{n \rightarrow \infty} \answer{4 \left( 1 - \frac{1}{n} \right)^n} = \answer{ \frac{4}{e}}. \]
+The test \wordChoice{\choice{indicates convergence}\choice[correct]{indicates divergence}\choice{is inconclusive}}.
+\end{exercise}
+
+\begin{exercise}
+Apply the Root Test to the series given below.
+\[ \sum_{n=1}^\infty  2^{- \ln n} \]
+\[ \lim_{n \rightarrow \infty} \left| \answer{2^{-\ln n}} \right|^{\frac{1}{n}} = 2^{- \lim_{n \rightarrow \infty} \answer{\frac{\ln n}{n}}} = \answer{1}. \]
+The test \wordChoice{\choice{indicates convergence}\choice{indicates divergence}\choice[correct]{is inconclusive}}.
+\end{exercise}
+
+\begin{exercise}
+Apply the Root Test to the series given below.
+\[ \sum_{n=1}^\infty 2^{-n^2} \]
+\[ \lim_{n \rightarrow \infty} \left| \answer{2^{-n^2}} \right|^{\frac{1}{n}} = \lim_{n \rightarrow \infty} \answer{2^{-n}} = \answer{0}. \]
+The test \wordChoice{\choice[correct]{indicates convergence}\choice{indicates divergence}\choice{is inconclusive}}.
+\end{exercise}
+
+\begin{exercise}
+Apply the Root Test to the series given below.
+\[ \sum_{n=1}^\infty  e^{\ln n} \left( 1 - \frac{1}{n} \right)^{n^2} \]
+\[ \lim_{n \rightarrow \infty} \left| \answer{e^{\ln n} \left( 1 - \frac{1}{n} \right)^{n^2}} \right|^{\frac{1}{n}} = \lim_{n \rightarrow \infty} \answer{e^{(\ln n)/n} \left( 1 - \frac{1}{n} \right)^{n}} = \answer{1/e}. \]
+The test \wordChoice{\choice[correct]{indicates convergence}\choice{indicates divergence}\choice{is inconclusive}}.
+\end{exercise}
+
+\begin{exercise}
+Apply the Root Test to the series given below.
+\[ \sum_{n=1}^\infty \frac{e^{n^2}}{n^n} \]
+\[ \lim_{n \rightarrow \infty} \left| \frac{e^{n^2}}{n^n} \right|^{\frac{1}{n}}  = \lim_{n \rightarrow \infty} \answer{e^n/n} = \answer{\infty} \]
+The test \wordChoice{\choice{indicates convergence}\choice[correct]{indicates divergence}\choice{is inconclusive}}.
+\end{exercise}
 
 \section*{Sample Quiz Questions}
 
 \begin{question}%%%%%[2019RatioInconclusive1]
 
-Determine which of the following three infinite series will lead to inconclusive results for the ratio test and then determine whether that series is convergent or divergent. 
+Determine which of the following three infinite series will lead to inconclusive results for the Ratio Test and then determine whether that series is convergent or divergent. 
 \[ 
 	\text{I: }   \sum_{k=1}^\infty \frac{1}{k - e^{-k}} \ \ \
 	\text{II: }  \sum_{m=1}^\infty \frac{1}{m^2 - e^{m}} \ \ \
@@ -29,7 +111,7 @@ Determine which of the following three infinite series will lead to inconclusive
 \choice{III inconclusive, diverges}
 \end{multiplechoice}
 \begin{feedback}
-The first series will give an inconclusive result for the ratio test because
+The first series will give an inconclusive result for the Ratio Test because
 \[ 
 \lim_{k \rightarrow \infty} \frac{k - e^{-k}}{k+1 - e^{-k-1}} = \lim_{k \rightarrow \infty} \frac{1 - k^{-1} e^{-k}}{\frac{k+1}{k} - k^{-1} e^{-k-1}} = \frac{1 - 0}{1 - 0} = 1.
 \]
