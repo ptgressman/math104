@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 NOV 2019 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 NOV 2019 13:35
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1213,7 +1213,7 @@ Overfull \hbox (14.1789pt too wide) in paragraph at lines 41--43
 (./series/21ratiorootpractice.tex [128
 
 ] [129] [130] [131])
-(./series/22integralwarm.tex) [132] [133] (./series/22integralpractice.tex)
+(./series/22integralwarm.tex [132]) [133] (./series/22integralpractice.tex)
 (./series/23alternatewarm.tex [134
 
 ]) [135] (./series/23alternatepractice.tex
@@ -1311,7 +1311,7 @@ st/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on math104online.pdf (175 pages, 1083867 bytes).
+Output written on math104online.pdf (175 pages, 1084806 bytes).
 PDF statistics:
  2237 PDF objects out of 2487 (max. 8388607)
  1990 compressed objects within 20 object streams
