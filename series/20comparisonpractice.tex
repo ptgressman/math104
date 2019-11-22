@@ -59,7 +59,7 @@ This comparison is not valid because the series (known as the \textit{harmonic s
 
 \begin{exercise}
 Suppose you wished to use the Direct Comparison Test to establish convergence of the series
-\[ \sum_{n=1}^\infty \frac{1}{n^4 - n}. \]
+\[ \sum_{n=2}^\infty \frac{1}{n^4 - n}. \]
 Which of the following options below would be valid series for comparison? Select all that apply.
 \begin{selectAll}
 \choice{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^4}$}
@@ -103,8 +103,9 @@ Using only the comparison functions listed above, which of the following series 
 \choice{$\displaystyle \sum_{n=1}^\infty \frac{1}{n^{3/2}+n^{1/2}}$}
 \choice[correct]{$\displaystyle \sum_{n=1}^\infty \frac{1}{n^2 + n^{1/2}}$}
 \choice[correct]{$\displaystyle \sum_{n=1}^\infty \frac{1}{\ln (n+1)}$}
-\choice{$\displaystyle \sum_{n=1}^\infty \frac{1}{n^2-1}$}
+\choice{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^2-1}$}
 \choice[correct]{$\displaystyle \sum_{n=1}^\infty \frac{1}{e^n  + 1}$}
+\choice{$\displaystyle \sum_{n=3}{\infty} \frac{1}{2n+3}$}
 \end{selectAll}
 \begin{feedback}
 For the series {$\displaystyle \sum_{n=1}^\infty \frac{1}{n^{3/2}+n^{1/2}}$}:
@@ -132,10 +133,120 @@ For the series {$\displaystyle \sum_{n=1}^\infty \frac{1}{e^n  + 1}$}:
 The direct comparison $1/(e^n + 1) \leq e^{-n}$ works fine to show convergence of the series.
 \end{expandable}
 
-
+For the series {$\displaystyle \sum_{n=3}{\infty} \frac{1}{2n+3}$}:
+\begin{expandable}
+This is a divergent series, but direct comparison with the allowed options doesn't work because $1/(2n+3)$ is smaller than the two divergent options $1/(n+1)$ and $1/(1+\sqrt{n})$.
+\end{expandable}
 \end{feedback}
 \end{exercise}
 
+%------------ Limit Comparison ------------------%
+
+\begin{exercise}
+Suppose you wished to use the Limit Comparison Test to establish convergence of the series
+\[ \sum_{n=1}^\infty \frac{1}{n^4 + n}. \]
+Which of the following options below would be valid series for comparison? Select all that apply.
+\begin{selectAll}
+\choice{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^5}$}
+\choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^4}$}
+\choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^3}$}
+\choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^2}$}
+\choice{$\displaystyle \sum_{n=2}^\infty \frac{1}{n}$}
+\end{selectAll}
+\begin{feedback}
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n^5}$}:
+\begin{expandable}
+This comparison wouldn't be valid because $1/n^5$ is too small: the limit of $1/(n^4+n)$ divided by $1/n^5$ is infinite, which is an inconclusive case.
+\end{expandable}
+
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n^4}$}:
+\begin{expandable}
+This comparison is valid because the limit $1/(n^4-n)$ divided by $1/n^4$ is $1$, which means that they both converge (because a $p$-series for $p=4$ is convergent).
+\end{expandable}
+
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n^3}$}:
+\begin{expandable}
+This comparison is valid because $1/n^3$ is a convergent $p$-series which is much larger than $1/(n^4+n)$, i.e.,
+\[ \lim_{n \rightarrow \infty} \frac{\frac{1}{n^4+n}}{\frac{1}{n^3}} = \lim_{n \rightarrow \infty} \frac{n^3}{n^4+n} = 0. \]
+\end{expandable}
+
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n^2}$}:
+\begin{expandable}
+Also works for the same reason as $1/n^3$: it's a convergent $p$-series and the original series divided by the comparison series goes to zero.
+\end{expandable}
+
+Expand for feedback on {$\displaystyle \sum_{n=2}^\infty \frac{1}{n}$}:
+\begin{expandable}
+This comparison is not valid because the series (known as the \textit{harmonic series}) is not convergent, so no comparisons to it can establish convergence.
+\end{expandable}
+\end{feedback}
+\end{exercise}
+
+
+\begin{exercise}
+Suppose you wished to use the Limit Comparison Test to establish convergence of the series
+\[ \sum_{n=2}^\infty \frac{1}{n^4 - n}. \]
+Which of the following options below would be valid series for comparison? Select all that apply.
+\begin{selectAll}
+\choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^4}$}
+\choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^3}$}
+\choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^2}$}
+\end{selectAll}
+\begin{feedback}
+For the Limit Comparison Test, non-dominant terms don't matter, so the results will be the same here as they were for the series $1/(n^4+n)$.
+\end{feedback}
+\end{exercise}
+
+
+
+For the exercises below, you are only allowed to make comparisons to the following series:
+\[ \sum_{n=1}^\infty \frac{1}{1+\sqrt{n}}, \qquad \sum_{n=1}^\infty \frac{1}{n+1},  \qquad \sum_{n=1}^\infty \frac{1}{n^2}, \qquad \sum_{n=1}^\infty e^{-n} \]
+\begin{exercise}
+Using only the comparison functions listed above, which of the following series can be proved to either diverge or converge using the Limit Comparison Test? (Select all that apply.)
+\begin{selectAll}
+\choice{$\displaystyle \sum_{n=1}^\infty \frac{1}{n^{3/2}+n^{1/2}}$}
+\choice[correct]{$\displaystyle \sum_{n=1}^\infty \frac{1}{n^2 + n^{1/2}}$}
+\choice[correct]{$\displaystyle \sum_{n=1}^\infty \frac{1}{\ln (n+1)}$}
+\choice[correct]{$\displaystyle \sum_{n=2}^\infty \frac{1}{n^2-1}$}
+\choice[correct]{$\displaystyle \sum_{n=1}^\infty \frac{1}{e^n  + 1}$}
+\choice[correct]{$\displaystyle \sum_{n=3}{\infty} \frac{1}{2n+3}$}
+\end{selectAll}
+\begin{feedback}
+For the series {$\displaystyle \sum_{n=1}^\infty \frac{1}{n^{3/2}+n^{1/2}}$}:
+\begin{expandable}
+This series \textit{is} convergent, but none of the allowed comparisons will work: Only $1/(n+1)$ and $1/(1+\sqrt{n})$ are larger than $1/(n^{3/2}+n^{1/2})$, but neither of those series converges.
+\end{expandable}
+
+For the series {$\displaystyle \sum_{n=1}^\infty \frac{1}{n^2 + n^{1/2}}$}:
+\begin{expandable}
+Comparison to $1/n^2$ works fine in this case.
+\end{expandable}
+
+For the series {$\displaystyle \sum_{n=1}^\infty \frac{1}{\ln (n+1)}$}:
+\begin{expandable}
+$\ln (n+1) \leq n+1$ so $1/\ln (n+1) \geq 1/(n+1)$, so the limit
+\[ \frac{n+1}{\ln (n+1)} \rightarrow \infty \text{ as } n \rightarrow \infty \]
+so we get divergence by the divergence of the comparison series.
+\end{expandable}
+
+For the series {$\displaystyle \sum_{n=1}^\infty \frac{1}{n^2-1}$}:
+\begin{expandable}
+Here the non-dominant term $-1$ in the denominator is no longer relevant, so limit comparison to $1/n^2$ works fine.
+\end{expandable}
+
+For the series {$\displaystyle \sum_{n=1}^\infty \frac{1}{e^n  + 1}$}:
+\begin{expandable}
+The direct comparison $1/(e^n + 1) / e^{-n} \rightarrow 1$ works fine to show convergence of the series.
+\end{expandable}
+
+For the series {$\displaystyle \sum_{n=3}{\infty} \frac{1}{2n+3}$}:
+\begin{expandable}
+Limit comparison with $1/(n+1)$ works great: $1/(2n+3)$ divided by $1/(n+1)$ equals
+\[ \frac{n+1}{2n+3} \rightarrow \frac{1}{2} \text{ as } n \rightarrow \infty. \]
+\end{expandable}
+
+\end{feedback}
+\end{exercise}
 
 
 
