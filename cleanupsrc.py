@@ -57,6 +57,10 @@ def cleansourcefile(srctxt):
 
     for pairs in allbigmaths:
         returntxt = re.sub(pairs[0],lambda x : pairs[1],returntxt)
+
+    returntxt = re.sub(r"\\href{(.*?)}{(.*?)}",r"\\link[\2]{\1}",returntxt)
+    returntxt = re.sub(r"(?<!%)\\author{(.*?)}",r"%%%%%\\author{\1}",returntxt)
+
     return returntxt
 
 for (root,dirs,files) in os.walk('.'):
