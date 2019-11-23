@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 NOV 2019 20:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 NOV 2019 21:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1025,7 +1025,13 @@ https : / / www . youtube . com / playlist ? list =
 [5
 
 
-]) [6] (./volumes/volumeintro.tex) [7
+]
+Underfull \hbox (badness 3536) in paragraph at lines 33--33
+[][][]\OT1/cmr/m/n/8 See Cal-cu-lus: Early Tran-scen-den-tals at [][]$\OT1/cmtt
+/m/n/8 https : / / www . whitman . edu / mathematics /
+ []
+
+) [6] (./volumes/volumeintro.tex) [7
 
 ] (./volumes/01genslicewarm.tex [8
 
@@ -1050,7 +1056,7 @@ LaTeX Font Warning: Font shape `OT1/cmtt/bx/sl' undefined
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 82.
 ) (./volumes/02washerwarm.tex [12]
-<volumes/diskwasher/disksin.png, id=459, 251.58994pt x 90.11166pt>
+<volumes/diskwasher/disksin.png, id=466, 251.58994pt x 90.11166pt>
 File: volumes/diskwasher/disksin.png Graphic file (type png)
 
 <use volumes/diskwasher/disksin.png>
@@ -1059,7 +1065,7 @@ Package pdftex.def Info: volumes/diskwasher/disksin.png used on input line 25.
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
 
-<volumes/diskwasher/washer1.png, id=461, 251.58994pt x 131.44106pt>
+<volumes/diskwasher/washer1.png, id=468, 251.58994pt x 131.44106pt>
 File: volumes/diskwasher/washer1.png Graphic file (type png)
 
 <use volumes/diskwasher/washer1.png>
@@ -1067,14 +1073,14 @@ Package pdftex.def Info: volumes/diskwasher/washer1.png used on input line 42.
 (pdftex.def)             Requested size: 289.07999pt x 151.0417pt.
  [13 <./volumes/diskwasher/disksin.png>])
 [14 <./volumes/diskwasher/washer1.png>] (./volumes/02washerpractice.tex
-<volumes/diskwasher/disk01.png, id=484, 217.26169pt x 212.74481pt>
+<volumes/diskwasher/disk01.png, id=491, 217.26169pt x 212.74481pt>
 File: volumes/diskwasher/disk01.png Graphic file (type png)
 
 <use volumes/diskwasher/disk01.png>
 Package pdftex.def Info: volumes/diskwasher/disk01.png used on input line 17.
 (pdftex.def)             Requested size: 289.07999pt x 283.08337pt.
 
-<volumes/diskwasher/disk02.png, id=485, 217.26169pt x 212.74481pt>
+<volumes/diskwasher/disk02.png, id=492, 217.26169pt x 212.74481pt>
 File: volumes/diskwasher/disk02.png Graphic file (type png)
 
 <use volumes/diskwasher/disk02.png>
@@ -1083,14 +1089,14 @@ Package pdftex.def Info: volumes/diskwasher/disk02.png used on input line 35.
  [15
 
  <./volumes/diskwasher/disk01.png>]
-<volumes/diskwasher/disk04.png, id=491, 217.26169pt x 212.74481pt>
+<volumes/diskwasher/disk04.png, id=498, 217.26169pt x 212.74481pt>
 File: volumes/diskwasher/disk04.png Graphic file (type png)
 
 <use volumes/diskwasher/disk04.png>
 Package pdftex.def Info: volumes/diskwasher/disk04.png used on input line 53.
 (pdftex.def)             Requested size: 289.07999pt x 283.08337pt.
  [16 <./volumes/diskwasher/disk02.png>]
-<volumes/diskwasher/disk03.png, id=497, 217.26169pt x 212.74481pt>
+<volumes/diskwasher/disk03.png, id=504, 217.26169pt x 212.74481pt>
 File: volumes/diskwasher/disk03.png Graphic file (type png)
 
 <use volumes/diskwasher/disk03.png>
@@ -1101,14 +1107,14 @@ Package pdftex.def Info: volumes/diskwasher/disk03.png used on input line 71.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/sl' in size <9> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 100.
  [19] [20]) (./volumes/03shellwarm.tex
-<volumes/shell/shell01.png, id=541, 224.94037pt x 322.95656pt>
+<volumes/shell/shell01.png, id=548, 224.94037pt x 322.95656pt>
 File: volumes/shell/shell01.png Graphic file (type png)
 
 <use volumes/shell/shell01.png>
 Package pdftex.def Info: volumes/shell/shell01.png used on input line 28.
 (pdftex.def)             Requested size: 224.9398pt x 322.95576pt.
  [21] [22 <./volumes/shell/shell01.png>]
-<volumes/shell/shell02.png, id=559, 251.58994pt x 136.86131pt>
+<volumes/shell/shell02.png, id=566, 251.58994pt x 136.86131pt>
 File: volumes/shell/shell02.png Graphic file (type png)
 
 <use volumes/shell/shell02.png>
@@ -1116,7 +1122,7 @@ Package pdftex.def Info: volumes/shell/shell02.png used on input line 50.
 (pdftex.def)             Requested size: 251.58931pt x 136.86096pt.
 ) [23 <./volumes/shell/shell02.png>]
 (./volumes/03shellpractice.tex
-<volumes/shell/shell03.png, id=569, 218.16507pt x 222.00441pt>
+<volumes/shell/shell03.png, id=576, 218.16507pt x 222.00441pt>
 File: volumes/shell/shell03.png Graphic file (type png)
 
 <use volumes/shell/shell03.png>
@@ -1130,7 +1136,7 @@ Overfull \hbox (5.15244pt too wide) in paragraph at lines 31--32
 m/m/it/10 y \OT1/cmr/m/n/10 = []$\OT1/cmr/m/sl/10 ,
  []
 
-<volumes/shell/shell04.png, id=575, 217.26169pt x 205.9695pt>
+<volumes/shell/shell04.png, id=582, 217.26169pt x 205.9695pt>
 File: volumes/shell/shell04.png Graphic file (type png)
 
 <use volumes/shell/shell04.png>
@@ -1531,19 +1537,16 @@ Package rerunfilecheck Info: File `math104online.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
  ) 
 Here is how much of TeX's memory you used:
- 30263 strings out of 493014
- 686193 string characters out of 6133351
- 845178 words of memory out of 5000000
+ 30265 strings out of 493014
+ 686217 string characters out of 6133351
+ 846178 words of memory out of 5000000
  31937 multiletter control sequences out of 15000+600000
  18873 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,15n,81p,742b,753s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,15n,81p,917b,753s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb
@@ -1576,10 +1579,10 @@ nts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb>
-Output written on math104online.pdf (176 pages, 1111156 bytes).
+Output written on math104online.pdf (176 pages, 1111803 bytes).
 PDF statistics:
- 2589 PDF objects out of 2984 (max. 8388607)
- 2335 compressed objects within 24 object streams
- 1086 named destinations out of 1200 (max. 500000)
+ 2597 PDF objects out of 2984 (max. 8388607)
+ 2343 compressed objects within 24 object streams
+ 1088 named destinations out of 1200 (max. 500000)
  591 words of extra memory for PDF output out of 10000 (max. 10000000)
 
