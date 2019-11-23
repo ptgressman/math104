@@ -52,6 +52,9 @@ Compute the indefinite integrals below. Since there are many possible answers (w
 
 \begin{exercise}%[APEX0603TRIG13]
 \[ \int \sin(5x)\cos(3x)\ dx = \answer{\frac{1}{2}\left(-\frac{1}{8}\cos(8x)-\frac{1}{2}\cos(2x)\right)}+ C\]
+\begin{hint}
+You can either use an integration by parts technique or you can use a trigonometric identity to simplfy the expression $\cos Ax \sin Bx$ (for constants $A$ and $B$) as a sum of simpler things.
+\end{hint}
 (Your answer should not include any constant terms.)
 %
 %
@@ -65,6 +68,25 @@ Use power reduction formulas.
 \end{hint}
 %
 %
+\end{exercise}
+
+\begin{exercise}
+To fully evaluate the integral from Example \ref{trig:reduce_example}, it helps to identify the pattern.  Suppose that the power $7$ is replaced by an unknown positive constant $n > 2$. Carry out the calculation again with the unspecified exponent:
+\[ \begin{aligned}
+\int & \sec^{n} x \, dx  = \int \sec^{\answer{n-2}} x  \sec^2 x \, dx \\
+& = \sec^{\answer{n-2}} x \tan x - \int \answer{(n-2)} (\sec x)^{\answer{n-3}} (\sec x \tan x) \tan x dx \\
+& = \sec^{\answer{n-2}} x \tan x - \answer{(n-2)}  \int \sec^{n} x \, dx + \answer{n-2} \int \sec^{\answer{n-2}} x \, dx.
+\end{aligned} \]
+We conclude
+\[ \int \sec^n x \, dx = \answer{\frac{1}{n-1}} \sec^{n-2} x \tan x + \answer{\frac{n-2}{n-1}} \int \sec^{n-2} x \, dx. \]
+Using this formula several times in a row gives the result
+\[ \begin{aligned}
+\int &  \sec^7 x \, dx \\
+ = & \frac{\sec^5 x \tan x}{6} + \frac{5}{6} \int \sec^5 x \, dx \\
+ = & \frac{\sec^5 x \tan x}{6} + \frac{5}{6}  \left[ \frac{\sec^3 x \tan x}{4} + \frac{3}{4} \int \sec^3 x \, dx \right] \\
+ = & \frac{\sec^5 x \tan x}{6} +  \frac{5 \sec^3 x \tan x}{4 \cdot 6} + \frac{5}{6} \cdot \frac{3}{4} \left[ \frac{\sec x \tan x}{2} + \frac{1}{2} \int \sec x \, dx \right] \\
+ = & \frac{\sec^5 x \tan x}{6} + \frac{5 \sec^3 x \tan x}{24} + \frac{5 \sec x \tan x}{16} + \frac{5}{16} \ln |\sec x + \tan x| + C.
+\end{aligned} \]
 \end{exercise}
 
 
