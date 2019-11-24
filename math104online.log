@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  23 NOV 2019 15:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 NOV 2019 14:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1229,8 +1229,16 @@ mtt/m/n/8 https : / / ximera . osu . edu / mooculus /
 [67] [68] [69]) [70] (./techniques/10trigonometricpractice.tex [71
 
 ] [72]
-[73] [74] [75]) (./techniques/11trigsubwarm.tex [76]) [77]
-(./techniques/11trigsubpractice.tex [78
+[73] [74] [75]) (./techniques/11trigsubwarm.tex [76]
+<techniques/images/trigsub01.png, id=1130, 208.67963pt x 213.1965pt>
+File: techniques/images/trigsub01.png Graphic file (type png)
+
+<use techniques/images/trigsub01.png>
+Package pdftex.def Info: techniques/images/trigsub01.png used on input line 38.
+
+(pdftex.def)             Requested size: 289.07999pt x 295.36632pt.
+) [77 <./techniques/images/trigsub01.png>] (./techniques/11trigsubpractice.tex 
+[78
 
 ] [79] [80] [81])
 (./techniques/12partialfractionswarm.tex
@@ -1290,7 +1298,13 @@ Overfull \hbox (8.52606pt too wide) in paragraph at lines 13--15
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 18--18
+Underfull \hbox (badness 4713) in paragraph at lines 18--18
+[][][]\OT1/cmr/m/n/8 See Ximera Sup-ple-men-tary Ma-te-rial: Prob-a-bil-ity at 
+[][]$\OT1/cmtt/m/n/8 https : / / ximera . osu . edu /
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 19--19
 [][][]\OT1/cmr/m/n/8 See Com-mu-nity Cal-cu-lus: Prob-a-bil-ity at [][]$\OT1/cm
 tt/m/n/8 https : / / www . whitman . edu / mathematics /
  []
@@ -1538,16 +1552,13 @@ Package rerunfilecheck Info: File `math104online.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
  ) 
 Here is how much of TeX's memory you used:
- 30274 strings out of 493014
- 686315 string characters out of 6133351
- 846204 words of memory out of 5000000
- 31940 multiletter control sequences out of 15000+600000
+ 30286 strings out of 493014
+ 686567 string characters out of 6133351
+ 846215 words of memory out of 5000000
+ 31944 multiletter control sequences out of 15000+600000
  19571 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,15n,81p,917b,753s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1583,10 +1594,10 @@ nts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb>
-Output written on math104online.pdf (179 pages, 1122549 bytes).
+Output written on math104online.pdf (179 pages, 1136847 bytes).
 PDF statistics:
- 2613 PDF objects out of 2984 (max. 8388607)
- 2356 compressed objects within 24 object streams
- 1093 named destinations out of 1200 (max. 500000)
- 591 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2619 PDF objects out of 2984 (max. 8388607)
+ 2360 compressed objects within 24 object streams
+ 1094 named destinations out of 1200 (max. 500000)
+ 596 words of extra memory for PDF output out of 10000 (max. 10000000)
 
