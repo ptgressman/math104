@@ -9,6 +9,82 @@ Various exercises relating to orders of growth.
 \end{abstract}
 \maketitle
 
+\begin{exercise}
+Use orders of growth to identify dominant terms and compute limits.
+\begin{itemize}
+\item Compute the limit:
+\[ \lim_{x \rightarrow \infty} \frac{e^x + x^2}{3 e^x + x^3} = \answer{\frac{1}{3}} \]
+The dominant terms are
+\begin{multipleChoice}
+\choice[correct]{$e^x$ in the numerator and $3 e^x$ in the denominator}
+\choice{$e^x$ in the numerator and $x^3$ in the denominator}
+\choice{$x^2$ in the numerator and $3 e^x$ in the denominator}
+\choice{$x^2$ in the numerator and $x^3$ in the denominator}
+\end{multipleChoice}
+\item Compute the limit:
+\[ \lim_{x \rightarrow 0} \frac{e^x + x^2}{3 e^x + x^3} = \answer{\frac{1}{3}} \]
+The dominant terms are
+\begin{multipleChoice}
+\choice[correct]{$e^x$ in the numerator and $3 e^x$ in the denominator}
+\choice{$e^x$ in the numerator and $x^3$ in the denominator}
+\choice{$x^2$ in the numerator and $3 e^x$ in the denominator}
+\choice{$x^2$ in the numerator and $x^3$ in the denominator}
+\end{multipleChoice}
+\item Compute the limit:
+\[ \lim_{x \rightarrow \infty} \frac{x + x^2}{3 x^4 + x^3} = \answer{0} \]
+The dominant terms are
+\begin{multipleChoice}
+\choice{$x$ in the numerator and $3 x^4$ in the denominator}
+\choice{$x$ in the numerator and $x^3$ in the denominator}
+\choice[correct]{$x^2$ in the numerator and $3 x^4$ in the denominator}
+\choice{$x^2$ in the numerator and $x^3$ in the denominator}
+\end{multipleChoice}
+\item Compute the limit:
+\[ \lim_{x \rightarrow 0} \frac{x + x^2}{3 x^4 + x^3} = \answer{\infty} \]
+The dominant terms are
+\begin{multipleChoice}
+\choice{$x$ in the numerator and $3 x^4$ in the denominator}
+\choice[correct]{$x$ in the numerator and $x^3$ in the denominator}
+\choice{$x^2$ in the numerator and $3 x^4$ in the denominator}
+\choice{$x^2$ in the numerator and $x^3$ in the denominator}
+\end{multipleChoice}
+\item Compute the limit:
+\[ \lim_{x \rightarrow \infty} \frac{\sqrt{x^3 + 9} - x}{\sqrt{x^3 + 9} + x} = \answer{1} \]
+\begin{multipleChoice}
+\choice[correct]{$\sqrt{x^3+9}$ dominates $x$}
+\choice{$x$ dominates $\sqrt{x^3+9}$}
+\end{multipleChoice}
+\item Compute the limit:
+\[ \lim_{x \rightarrow \infty} \frac{\sqrt{x^3 + 9x^2} - x}{\sqrt{x^3 - 9x^2} + x} = \answer{1} \]
+(First identify whether the square-root term is dominant or not; when it is dominant, identify the dominant term \textit{inside} the square root and neglect the non-dominant term.)
+\item Compute the limit:
+\[ \lim_{x \rightarrow \infty} \frac{ 2 x^3 + \sin x^5}{ 3 x^4 + \sin x^6} = \answer{0}. \]
+\item Compute the limit
+\[ \lim_{x \rightarrow 0} \frac{\sqrt{x + 1}}{\sqrt{x}} = \answer{\infty}. \]
+\begin{multipleChoice}
+\choice{$x$ dominantes $1$ as $x \rightarrow 0$}
+\choice[correct]{$1$ dominates $x$ as $x \rightarrow 0$}
+\end{multipleChoice}
+\item Compute the limit:
+\[ \lim_{x \rightarrow \infty} \frac{ (\ln x)^{100}}{x^{0.01}} = \answer{0}. \]
+\begin{multipleChoice}
+\choice[correct]{$x^{0.01}$ dominates $(\ln x)^{100}$ as $x \rightarrow \infty$}
+\choice{$(\ln x)^{100}$ dominates $x^{0.01}$ as $x \rightarrow \infty$}
+\end{multipleChoice}
+\item Compute the limit:
+\[ \lim_{x \rightarrow 0^+} x^{0.01} (\ln x)^{100} = \answer{\infty} \]
+\begin{multipleChoice}
+\choice[correct]{$x^{-0.01}$ dominates $(\ln x)^{100}$ as $x \rightarrow 0^+$}
+\choice{$(\ln x)^{100}$ dominates $x^{-0.01}$ as $x \rightarrow 0^+$}
+\end{multipleChoice}
+\item Compute the limit:
+\[ \lim_{x \rightarrow \infty} \frac{e^{\ln \ln x}+1}{x^2} = \answer{0} \]
+(Use the laws of exponents to write $x^2 = e^{2 \ln x}$.)
+\end{itemize}
+\end{exercise}
+
+
+
 \section*{Sample Quiz Questions}
 
 \begin{question}%%%%%[GrowthOrdINF001]
