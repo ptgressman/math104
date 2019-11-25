@@ -9,6 +9,60 @@ Various exercises relating to probability.
 \end{abstract}
 \maketitle
 
+\begin{exercise}
+\begin{itemize}
+\item If it exists, find the value of the constant $c$ below which makes the function a PDF on the interval $[e,e^2]$. If no such constant exists, enter N/A.
+\[ f(x) = c \ln x \]
+\[ c = \answer{e^{-2}}. \]
+\begin{hint}
+You'll need to integrate by parts.
+\end{hint}
+\item For the same function as above, find the value of the constant $c$ which makes it a PDF on the interval $[e^{-2},e^2]$. If no such constant exists, enter N/A.
+\[ c = \answer{N/A}. \]
+\begin{hint}
+The function $\ln x$ is negative on $[e^{-2},1)$ and positive on $(1,e^2]$. What does that imply for the possibility of it being a PDF?
+\end{hint}
+\end{itemize}
+\end{exercise}
+
+
+\begin{exercise}
+Suppose $X$ is a random variable which represents the length of time your customers remain on hold before reaching a customer service agent. A reasonable model for such a random variable is to use an exponential distribution, i.e., to have a PDF given by
+\[ f(x) = c e^{-cx} \]
+for some positive constant $c$.  If the mean hold time is $2$ minutes, what is the standard deviation?
+\[ \sigma = \answer{2}. \]
+What is the probability that a customer will have to wait more than one standard deviation beyond the mean before their call is answered?
+\[ P = \answer{e^{-2}} \approx 13.5\%. \]
+\begin{hint}
+First you need to solve for $c$.
+\begin{hint}
+The equation will be \[ 2 = \int c x e^{-cx} dx. \]
+\begin{hint}
+This gives $c = 1/2$.
+\begin{hint}
+The easiest formula to use here is
+\[ \sigma^2 = \int_0^\infty x^2 f(x) dx - \mu^2, \]
+where $\mu$ is the mean.
+\end{hint}
+\end{hint}
+\end{hint}
+\end{hint}
+\end{exercise}
+
+\begin{exercise}
+Suppose $X$ is a random variable on the interval $[1,10]$ whose PDF is given by 
+\[ f(x) = \frac{c}{x} \]
+for some positive constant $c$ (note: this is the PDF that arises in the phenomenon known as \link[Benford's Law]{https://en.wikipedia.org/wiki/Benford\%27s_law}). Compute the mean $\mu$ and the median $m$ associated to this PDF. Which is larger?
+\[ \mu = \answer{\frac{9}{\ln 10}} \ \ \text{ and } m = \answer{\sqrt{10}} \]
+The \wordChoice{\choice[correct]{mean}\choice{median}} is more sensitive to tails. Since this distribution has a tail extending \wordChoice{\choice{to the left/for smaller $x$}\choice[correct]{to the right/for larger $x$}}, it is expected (and in fact, true) that the mean is \wordChoice{\choice[correct]{larger}\choice{smaller}} than the median.
+\begin{hint}
+First you need to solve for the constant $c$.
+\begin{hint}
+\[ c = \frac{1}{\ln 10} \]
+\end{hint}
+\end{hint}
+\end{exercise}
+
 
 \section*{Sample Quiz Questions}
 \begin{question}%%%%%[ProbabAssort001]
@@ -16,7 +70,7 @@ Various exercises relating to probability.
 Find the value of \(c\) which makes the function
 \[f(x) = \frac{1}{2}e^{-x} - ce^{-2x}\]
 a probability density function on the interval \([0, \infty)\). 
-What is the value of the mean \(\mu\) of the corresponding random variable?
+What is the value of the mean \(\mu\) of the corresponding random variable? (Hints will not be revealed until after you choose a response.)
 \begin{multiplechoice}
 \choice{\(\displaystyle c = 1, ~ \mu = \frac{1}{2}\)}
 \choice[correct]{\(\displaystyle c = -1, ~ \mu = \frac{3}{4}\)}
@@ -29,20 +83,18 @@ What is the value of the mean \(\mu\) of the corresponding random variable?
 To compute the constant \(c\), we use the fact that the integral of a probability density function must equal \(1\), so 
 \[ \mu = \int_{0}^{\infty} \left( \frac{1}{2}e^{-x} - ce^{-2x} \right) ~ dx = 1.\]
 This gives the equation \[\frac{1}{2} - \frac{1}{2}c = 1,\]
-which then implies that \(c = -1\). To compute the mean \(\mu\), we use the formula
+which then implies that \(c = -1\). \begin{hint} To compute the mean \(\mu\), we use the formula
 \[ \mu = \int_{0}^{\infty} x \left( \frac{1}{2}e^{-x} + e^{-2x} \right) ~ dx.\]
- Calculating the integral gives \(\mu = 3/4.\)
+ Calculating the integral gives \(\mu = 3/4.\) \end{hint}
 \end{feedback}
-
 \end{question}
 
 \begin{question}%%%%%[ProbEVsinibp001]
-
 A certain random variable \(X\) takes values in the interval \(\left[2 \pi , \frac{5}{2} \pi \right]\).
 If the probability density function is given by
 \[ A \sin {x} \]
  for some appropriate value of the constant \(A\),
-compute the expected value \(\mu\) of \(X\).
+compute the expected value \(\mu\) of \(X\).  (Hints will not be revealed until after you choose a response.)
 \begin{multiplechoice}
 \choice{\(\displaystyle \mu = -1 + 2 \pi\)}
 \choice{\(\displaystyle \mu = 1 + \frac{3}{2} \pi\)}
@@ -54,11 +106,12 @@ compute the expected value \(\mu\) of \(X\).
 \begin{feedback}
 The constant \(A\) will be the reciprocal of the integral
 \[ \int_{2 \pi}^{\frac{5}{2} \pi} \sin {x}\, dx \]
+\begin{hint}
  One can check that
-\[ \begin{aligned} \int_{2 \pi}^{\frac{5}{2} \pi} \sin {x}\, dx & = 1. \end{aligned} \]
+\[ \begin{aligned} \int_{2 \pi}^{\frac{5}{2} \pi} \sin {x}\, dx & = 1. \end{aligned} \] \begin{hint} 
 To compute the expected value \(\mu\) we also need to compute the integral 
 \[ \int_{2 \pi}^{\frac{5}{2} \pi} x \sin {x}\, dx \]
- To compute the integralwe can use integration by parts. A reasonable strategy is to integrate  \(\sin {x}\) and differentiate  \(x\).
+ To compute the integral, we can use integration by parts. A reasonable strategy is to integrate  \(\sin {x}\) and differentiate  \(x\). \begin{hint}
  This gives the equality
 \[ \begin{aligned} \int x \sin {x}\, dx & = - x \cos {x} - \int \left(- \cos {x}\right)\, dx \\
  & = - x \cos {x} + \sin {x}. \end{aligned} \]
@@ -66,8 +119,8 @@ Therefore
 \[ \begin{aligned} \int_{2 \pi}^{\frac{5}{2} \pi} x \sin {x}\, dx & = \left. \left[- x \cos {x} + \sin {x} \right] \right|_{2 \pi}^{\frac{5}{2} \pi}\\ & = 1 - \left(- 2 \pi \right) = 1 + 2 \pi. \end{aligned} \]
 Therefore the expected value is the ratio of the integrals, i.e.,
 \[ \begin{aligned} \mu & = \frac{1 + 2 \pi}{1} = 1 + 2 \pi. \end{aligned} \]
+\end{hint} \end{hint} \end{hint}
 \end{feedback}
-
 \end{question}
 
 \section*{Sample Exam Questions}

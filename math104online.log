@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 NOV 2019 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 NOV 2019 20:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1325,27 +1325,27 @@ Underfull \hbox (badness 1810) in paragraph at lines 19--19
 tt/m/n/8 https : / / www . whitman . edu / mathematics /
  []
 
-[109]) [110] (./applications/17probabilitypractice.tex
-Overfull \hbox (14.1789pt too wide) in paragraph at lines 41--43
+[109]) [110] (./applications/17probabilitypractice.tex [111
+
+] [112]
+Overfull \hbox (14.1789pt too wide) in paragraph at lines 93--95
 []\OT1/cmr/m/sl/10 A cer-tain ran-dom vari-able $\OML/cmm/m/it/10 X$ \OT1/cmr/m
 /sl/10 takes val-ues in the in-ter-val $[]$.
  []
 
-[111
-
-] [112] [113] [114]) (./series/seriesintro.tex [115]) [116]
+[113] [114] [115] [116]) (./series/seriesintro.tex [117]) [118]
 (./series/18sequencewarm.tex
 Underfull \hbox (badness 10000) in paragraph at lines 15--15
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Se-quences at [][]$\OT1/cmtt/m/n/8 https :
  / / ximera . osu . edu / mooculus / calculus2 /
  []
 
-[117
+[119
 
-]) [118] (./series/18sequencepractice.tex [119
+]) [120] (./series/18sequencepractice.tex [121
 
-] [120] [121] [122] [123]
-[124] [125] [126]) (./series/19serieswarm.tex
+] [122] [123] [124] [125]
+[126] [127] [128]) (./series/19serieswarm.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 5.2: In-fi-nite Se-ries at [][]$\OT1/cmtt
 /m/n/8 https : / / openstax . org / books /
@@ -1375,15 +1375,15 @@ Underfull \hbox (badness 1552) in paragraph at lines 16--16
 /m/n/8 https : / / www . whitman . edu / mathematics /
  []
 
-[127] [128]
+[129] [130]
 Overfull \hbox (45.98099pt too wide) detected at line 58
 [] [] \OT1/cmr/m/n/10 = []  [] [] = []  [] 2[] = []  [] [] = []\OML/cmm/m/it/10
  :
  []
 
-[129]) [130] (./series/19seriespractice.tex [131
+[131]) [132] (./series/19seriespractice.tex [133
 
-] [132] [133])
+] [134] [135])
 (./series/20comparisonwarm.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 5.4: Com-par-i-son Tests at [][]$\OT1/cmt
@@ -1396,24 +1396,24 @@ Underfull \hbox (badness 1960) in paragraph at lines 16--16
 []$\OT1/cmtt/m/n/8 https : / / www . whitman . edu /
  []
 
-) [134] (./series/20comparisonpractice.tex [135
+) [136] (./series/20comparisonpractice.tex [137
 
-] [136] [137] [138] [139]
-[140]) (./series/21ratiorootwarm.tex
+] [138] [139] [140] [141]
+[142]) (./series/21ratiorootwarm.tex
 Underfull \hbox (badness 2351) in paragraph at lines 17--17
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 5.6: Ra-tio and Root Tests at [][]$\OT1/c
 mtt/m/n/8 https : / / openstax . org / books /
  []
 
-[141]
+[143]
 Underfull \hbox (badness 2318) in paragraph at lines 18--18
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Ra-tio and Root Tests at [][]$\OT1/cmtt/m/
 n/8 https : / / ximera . osu . edu / mooculus /
  []
 
-) [142] (./series/21ratiorootpractice.tex [143
+) [144] (./series/21ratiorootpractice.tex [145
 
-] [144] [145] [146])
+] [146] [147] [148])
 (./series/22integralwarm.tex
 Underfull \hbox (badness 10000) in paragraph at lines 17--17
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 5.3: The In-te-gral Test at [][]$\OT1/cmt
@@ -1426,8 +1426,8 @@ Underfull \hbox (badness 1590) in paragraph at lines 19--19
 []$\OT1/cmtt/m/n/8 https : / / www . whitman . edu /
  []
 
-) [147] (./series/22integralpractice.tex) (./series/23alternatewarm.tex
-[148
+) [149] (./series/22integralpractice.tex) (./series/23alternatewarm.tex
+[150
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 17--17
@@ -1447,11 +1447,11 @@ Underfull \hbox (badness 1888) in paragraph at lines 19--19
  [][]$\OT1/cmtt/m/n/8 https : / / www . whitman . edu /
  []
 
-) [149] (./series/23alternatepractice.tex [150
+) [151] (./series/23alternatepractice.tex [152
 
-] [151] [152])
-(./series/24finalpractice.tex [153]) (./powerseries/powerseriesintro.tex
-[154]) [155] (./powerseries/25powerserieswarm.tex
+] [153] [154])
+(./series/24finalpractice.tex [155]) (./powerseries/powerseriesintro.tex
+[156]) [157] (./powerseries/25powerserieswarm.tex
 Underfull \hbox (badness 2050) in paragraph at lines 15--15
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Power Se-ries at [][]$\OT1/cmtt/m/n/8 http
 s : / / ximera . osu . edu / mooculus / calculus2 /
@@ -1463,18 +1463,18 @@ Underfull \hbox (badness 1281) in paragraph at lines 16--16
 m/n/8 https : / / www . whitman . edu / mathematics /
  []
 
-) [156
+) [158
 
-] (./powerseries/25powerseriespractice.tex [157
+] (./powerseries/25powerseriespractice.tex [159
 
-] [158] [159] [160]
-[161] [162] [163]
+] [160] [161] [162]
+[163] [164] [165]
 Overfull \hbox (18.69032pt too wide) in paragraph at lines 220--222
 []\OT1/cmr/m/sl/10 Find the in-ter-val of con-ver-gence of the power se-ries $[
 ] []$. 
  []
 
-[164]) (./powerseries/26taylorserieswarm.tex
+[166]) (./powerseries/26taylorserieswarm.tex
 Underfull \hbox (badness 1728) in paragraph at lines 19--19
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Tay-lor Se-ries at [][]$\OT1/cmtt/m/n/8 ht
 tps : / / ximera . osu . edu / mooculus / calculus2 /
@@ -1486,7 +1486,7 @@ Underfull \hbox (badness 6173) in paragraph at lines 20--20
 \OT1/cmtt/m/n/8 https : / / www . whitman . edu /
  []
 
-) [165] (./powerseries/26taylorseriespractice.tex
+) [167] (./powerseries/26taylorseriespractice.tex
 Overfull \hbox (9.42921pt too wide) detected at line 28
 [] \OT1/cmr/m/n/10 + [](\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10
  2) + [](\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2)[] + [](\OML
@@ -1494,9 +1494,9 @@ Overfull \hbox (9.42921pt too wide) detected at line 28
 ML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2)[]
  []
 
-[166
+[168
 
-] [167] [168] [169]) (./powerseries/27taylorseries2warm.tex [170]
+] [169] [170] [171]) (./powerseries/27taylorseries2warm.tex [172]
 Underfull \hbox (badness 2197) in paragraph at lines 18--18
 [][][]\OT1/cmr/m/n/8 See Cal-cu-lus and Tay-lor Se-ries at [][]$\OT1/cmtt/m/n/8
  https : / / ximera . osu . edu / mooculus / calculus2 /
@@ -1508,10 +1508,10 @@ Underfull \hbox (badness 1406) in paragraph at lines 19--19
 ][]$\OT1/cmtt/m/n/8 https : / / www . whitman . edu /
  []
 
-) [171] (./powerseries/27taylorseries2practice.tex [172
+) [173] (./powerseries/27taylorseries2practice.tex [174
 
-] [173] [174])
-(./powerseries/28finalpractice.tex [175]) (./odes/odeintro.tex [176]) [177]
+] [175] [176])
+(./powerseries/28finalpractice.tex [177]) (./odes/odeintro.tex [178]) [179]
 (./odes/29odewarm.tex
 Underfull \hbox (badness 4366) in paragraph at lines 14--14
 [][][]\OT1/cmr/m/n/8 See Di-rec-tion Fields and Nu-mer-i-cal Meth-ods at [][]$\
@@ -1530,7 +1530,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--15
 / / ximera . osu . edu / mooculus / calculus2 /
  []
 
-) [178
+) [180
 
 ] (./odes/29odepractice.tex) (./odes/30solvewarm.tex
 Underfull \hbox (badness 6173) in paragraph at lines 14--14
@@ -1544,7 +1544,7 @@ Underfull \hbox (badness 4266) in paragraph at lines 14--14
  openstax . org / books / calculus-[]volume-[]2 / pages /
  []
 
-[179
+[181
 
 ]
 Underfull \hbox (badness 7925) in paragraph at lines 15--15
@@ -1552,16 +1552,16 @@ Underfull \hbox (badness 7925) in paragraph at lines 15--15
 m/n/8 https : / / ximera . osu . edu / mooculus /
  []
 
-) [180] (./odes/30solvepractice.tex [181
+) [182] (./odes/30solvepractice.tex [183
 
-] [182] [183] [184] [185])
+] [184] [185] [186] [187])
 (./odes/31applywarm.tex
 Overfull \hbox (8.52606pt too wide) in paragraph at lines 13--15
 \OT1/cmr/m/n/10 YouTube link: [][]$\OT1/cmtt/m/n/10 https : / / www . youtube .
  com / watch ? v = 54HrJmeON24$[][] \OT1/cmr/m/n/10 YouTube link:
  []
 
-) [186] (./odes/31applypractice.tex) [187
+) [188] (./odes/31applypractice.tex) [189
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
@@ -1578,8 +1578,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
  ) 
 Here is how much of TeX's memory you used:
- 30311 strings out of 493014
- 687005 string characters out of 6133351
+ 30314 strings out of 493014
+ 687033 string characters out of 6133351
  846215 words of memory out of 5000000
  31952 multiletter control sequences out of 15000+600000
  19571 words of font info for 72 fonts, out of 8000000 for 9000
@@ -1617,10 +1617,10 @@ nts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb>
-Output written on math104online.pdf (187 pages, 1179623 bytes).
+Output written on math104online.pdf (189 pages, 1186987 bytes).
 PDF statistics:
- 2667 PDF objects out of 2984 (max. 8388607)
- 2396 compressed objects within 24 object streams
- 1109 named destinations out of 1200 (max. 500000)
+ 2680 PDF objects out of 2984 (max. 8388607)
+ 2406 compressed objects within 25 object streams
+ 1112 named destinations out of 1200 (max. 500000)
  606 words of extra memory for PDF output out of 10000 (max. 10000000)
 
