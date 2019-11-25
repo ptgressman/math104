@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 NOV 2019 20:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  25 NOV 2019 11:25
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1532,7 +1532,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--15
 
 ) [182
 
-] (./odes/29odepractice.tex) (./odes/30solvewarm.tex
+] (./odes/29odepractice.tex
+<odes/images/slope01.png, id=2279, 224.94037pt x 222.00441pt>
+File: odes/images/slope01.png Graphic file (type png)
+
+<use odes/images/slope01.png>
+Package pdftex.def Info: odes/images/slope01.png used on input line 16.
+(pdftex.def)             Requested size: 289.07999pt x 285.30962pt.
+
+<odes/images/slope02.png, id=2280, 226.29544pt x 222.00441pt>
+File: odes/images/slope02.png Graphic file (type png)
+
+<use odes/images/slope02.png>
+Package pdftex.def Info: odes/images/slope02.png used on input line 30.
+(pdftex.def)             Requested size: 289.07999pt x 283.61247pt.
+ [183
+
+ <./odes/images/slope01.png>]
+<odes/images/connect01.png, id=2291, 225.16621pt x 227.1988pt>
+File: odes/images/connect01.png Graphic file (type png)
+
+<use odes/images/connect01.png>
+Package pdftex.def Info: odes/images/connect01.png used on input line 44.
+(pdftex.def)             Requested size: 289.07999pt x 291.70096pt.
+ [184 <./odes/images/slope02.png>]
+<odes/images/connect02.png, id=2302, 229.45724pt x 222.00441pt>
+File: odes/images/connect02.png Graphic file (type png)
+
+<use odes/images/connect02.png>
+Package pdftex.def Info: odes/images/connect02.png used on input line 59.
+(pdftex.def)             Requested size: 289.07999pt x 279.71346pt.
+ [185 <./odes/images/connect01.png>] [186 <./odes/images/connect02.png>]) (./od
+es/30solvewarm.tex [187]
 Underfull \hbox (badness 6173) in paragraph at lines 14--14
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 4.3: Sep-a-ra-ble Equa-tions at [][]$\OT1
 /cmtt/m/n/8 https : / / openstax . org / books /
@@ -1544,24 +1575,22 @@ Underfull \hbox (badness 4266) in paragraph at lines 14--14
  openstax . org / books / calculus-[]volume-[]2 / pages /
  []
 
-[183
 
-]
 Underfull \hbox (badness 7925) in paragraph at lines 15--15
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Sep-a-ra-ble Equa-tions at [][]$\OT1/cmtt/
 m/n/8 https : / / ximera . osu . edu / mooculus /
  []
 
-) [184] (./odes/30solvepractice.tex [185
+) [188] (./odes/30solvepractice.tex [189
 
-] [186] [187] [188] [189])
+] [190] [191] [192] [193])
 (./odes/31applywarm.tex
 Overfull \hbox (8.52606pt too wide) in paragraph at lines 13--15
 \OT1/cmr/m/n/10 YouTube link: [][]$\OT1/cmtt/m/n/10 https : / / www . youtube .
  com / watch ? v = 54HrJmeON24$[][] \OT1/cmr/m/n/10 YouTube link:
  []
 
-) [190] (./odes/31applypractice.tex) [191
+) [194] (./odes/31applypractice.tex) [195
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
@@ -1578,10 +1607,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
  ) 
 Here is how much of TeX's memory you used:
- 30340 strings out of 493014
- 687241 string characters out of 6133351
- 846215 words of memory out of 5000000
- 31952 multiletter control sequences out of 15000+600000
+ 30393 strings out of 493014
+ 688046 string characters out of 6133351
+ 847215 words of memory out of 5000000
+ 31968 multiletter control sequences out of 15000+600000
  19571 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,15n,81p,917b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1617,10 +1646,10 @@ nts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
 ype1/public/amsfonts/symbols/msam10.pfb>
-Output written on math104online.pdf (191 pages, 1192211 bytes).
+Output written on math104online.pdf (195 pages, 1729638 bytes).
 PDF statistics:
- 2717 PDF objects out of 2984 (max. 8388607)
- 2441 compressed objects within 25 object streams
- 1138 named destinations out of 1200 (max. 500000)
- 606 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2773 PDF objects out of 2984 (max. 8388607)
+ 2485 compressed objects within 25 object streams
+ 1167 named destinations out of 1200 (max. 500000)
+ 626 words of extra memory for PDF output out of 10000 (max. 10000000)
 

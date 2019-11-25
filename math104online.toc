@@ -60,8 +60,8 @@
 \contentsline {section}{\textbf {7\hspace {1em}Ordinary Differential Equations}}{180}{section*.60}
 \contentsline {subsection}{7.1\hspace {1em}ODEs: Foundations}{182}{section*.61}
 \contentsline {subsection}{7.2\hspace {1em}Exercises: ODEs}{183}{section*.62}
-\contentsline {subsection}{7.3\hspace {1em}Separable and Linear ODEs}{183}{section*.63}
-\contentsline {subsection}{7.4\hspace {1em}Exercises: Linear and Separable ODEs}{185}{section*.64}
-\contentsline {subsection}{7.5\hspace {1em}Applications of ODEs}{190}{section*.65}
-\contentsline {subsection}{7.6\hspace {1em}Exercises: ODE Applications}{191}{section*.66}
+\contentsline {subsection}{7.3\hspace {1em}Separable and Linear ODEs}{188}{section*.63}
+\contentsline {subsection}{7.4\hspace {1em}Exercises: Linear and Separable ODEs}{189}{section*.64}
+\contentsline {subsection}{7.5\hspace {1em}Applications of ODEs}{194}{section*.65}
+\contentsline {subsection}{7.6\hspace {1em}Exercises: ODE Applications}{195}{section*.66}
 \contentsfinish 

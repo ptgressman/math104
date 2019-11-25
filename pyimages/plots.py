@@ -20,7 +20,9 @@ class MyStandardPlot(object):
         bot, top = plt.ylim()
         height = (top - bot) / (right - left) * 4.0
         self.fig.set_size_inches(4.0,height)
-
+    def disk(self,x,y,r):
+        c = plt.Circle((x,y),r)
+        self.canvas.add_artist(c)
     def arrow(self,x,y,dx,dy):
         dl = dx
         if (dl < 0):
@@ -51,7 +53,23 @@ class MyStandardPlot(object):
             colorname = material['deeppurple500']
         if (colorno == 1):
             colorname = material['red500']
+        if (colorno == 2):
+            colorname = material['orange500']
+        if (colorno == 3):
+            colorname = material['yellow500']
+        if (colorno == 4):
+            colorname = material['green500']
+        if (colorno == 5):
+            colorname = material['blue500']
         self.canvas.plot(list1,list2,color=colorname)
+    def thinplot(self,list1,list2,lw,colorno = 0):
+        if (colorno == -1):
+            colorname = '#000000'
+        if (colorno == 0):
+            colorname = material['deeppurple500']
+        if (colorno == 1):
+            colorname = material['red500']
+        self.canvas.plot(list1,list2,color=colorname,linewidth=lw)
     def fill(self,list1,list2,colorno = 0):
         if (colorno == 0):
             colorname = material['deeppurple100']
@@ -121,6 +139,20 @@ class MyStandardPlot(object):
             except:
                 y.append(float(func))
         self.plot(y,x,color)
+    def slopefield(self,func,xdata,ydata,samples=21,length=-1,color=0):
+        x = np.linspace(float(xdata[1]),float(xdata[2]),samples)
+        y = np.linspace(float(ydata[1]),float(ydata[2]),samples)
+        if length <= 0:
+            length = (float(xdata[2]) - float(xdata[1]))/float(samples+5)
+        for xval in x:
+            for yval in y:
+                try:
+                    slope = float(func.subs(xdata[0],xval).subs(ydata[0],yval))
+                except:
+                    slope = float(func)
+                dx = length / np.sqrt(1.0 + slope*slope)
+                dy = dx * slope
+                self.thinplot([xval - dx*0.5,xval+dx*0.5],[yval-0.5*dy,yval+0.5*dy],0.5,color)
     def yfillbetween(self,funcs,xdata,samples=100,color=0,closed=True,swap=False):
         x = np.linspace(float(xdata[1]),float(xdata[2]),samples)
         x1 = []
