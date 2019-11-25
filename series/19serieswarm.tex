@@ -19,12 +19,68 @@ We introduce the concept of a series and study some fundamental properties.
 \section*{Examples}
 
 \begin{example}
-
+Find a formula for the partial sums of the series
+\[ \sum_{n=1}^\infty \left[ e^{\frac{1}{n}} - e^{\frac{1}{n+1}}\right]  \]
+and then compute the sum of the series.
+\begin{itemize}
+\item We can start by computing the first few partial sums:
+\[ \begin{aligned} 
+S_1 & = (e - e^{1/2}) \\
+S_2 & = (e^{1} - e^{1/2}) + (e^{1/2} - e^{1/3}) = e - e^{1/3} \\
+S_3 & = (e^{1} - e^{1/2}) + (e^{1/2} - e^{1/3}) + (e^{1/3} - e^{1/4}) = e - e^{1/4} \\
+S_4 & = (e^{1} - e^{1/2}) + (e^{1/2} - e^{1/3}) + (e^{1/3} - e^{1/4}) + (e^{1/4} - e^{1/5}) = e - e^{1/5} \end{aligned} \]
+We observe a general pattern that is consistent with a telescoping series:
+\[ S_n = e - \answer{e^{1/(n+1)}} \]
+\item Now we let $n \rightarrow \infty$:
+\[ \lim_{n \rightarrow \infty} S_n = \lim_{n \rightarrow \infty} \left( \answer{e - e^{1/(n+1)}} \right) = e - e^{\lim_{n \rightarrow \infty} \frac{1}{n+1}} = e - e^{\answer{0}} = e - 1. \]
+Therefore
+\[ \sum_{n=1}^\infty \left[ e^{\frac{1}{n}} - e^{\frac{1}{n+1}}\right] = \answer{e-1}. \]
+\end{itemize}
 \end{example}
 
 \begin{example}
-
+Show that each series below is a geometric series; determine which ones are convergent, and for those that are convergent, find their sum.
+\[ \sum_{n=0}^\infty \frac{3^n}{2} \qquad \sum_{n=0}^\infty \frac{2}{3^n} \qquad \sum_{n=0}^\infty 2^{-n-2}  \qquad \sum_{n=0}^\infty \frac{(-1)^{n+1} 3^n}{4^n} \]
+\begin{itemize}
+\item First we rewrite each geometric series in standard form: i.e., write each term in the form $a r^n$ where $a$ and $r$ are fixed quantities independent of $n$:
+\[ \sum_{n=0}^\infty \frac{3^n}{2} = \sum_{n=0}^\infty \answer{\frac{1}{2}} \left[ \answer{3} \right]^n \]
+\[ \sum_{n=0}^\infty \frac{2}{3^n} = \sum_{n=0}^\infty \answer{2} \left[ \answer{\frac{1}{3}} \right]^n \]
+\[ \sum_{n=0}^\infty 2^{-n-2} = \sum_{n=0}^\infty \answer{\frac{1}{4}} \left[ \answer{\frac{1}{2}} \right]^n \]
+\[ \sum_{n=0}^\infty \frac{(-1)^{n+1} 3^n}{4^n} = \sum_{n=0}^\infty \answer{-1} \left[ \answer{\frac{-3}{4}} \right]^n \]
+\item A geometric series is convergent exactly when $|r| < \answer{1}$. This means that the following series are convergent (select all that apply):
+\begin{selectAll}
+\choice{$\displaystyle \sum_{n=0}^\infty \frac{3^n}{2}$}
+\choice[correct]{$\displaystyle \sum_{n=0}^\infty \frac{2}{3^n}$}
+\choice[correct]{$\displaystyle  \sum_{n=0}^\infty 2^{-n-2}$}
+\choice[correct]{$\displaystyle \sum_{n=0}^\infty \frac{(-1)^{n+1} 3^n}{4^n}$}
+\end{selectAll}
+\item This means that the given series have the sums (write N/A if the series diverges, otherwise give the sum)
+\[  \sum_{n=0}^\infty \frac{3^n}{2} = \answer{N/A} \qquad \sum_{n=0}^\infty \frac{2}{3^n} = \answer{3} \qquad \sum_{n=0}^\infty 2^{-n-2}  = \answer{\frac{1}{2}} \qquad \sum_{n=0}^\infty \frac{(-1)^{n+1} 3^n}{4^n} = \answer{-\frac{4}{7}}. \]
+\end{itemize}
 \end{example}
+
+\begin{example}
+Reindex each series below to begin at the specified starting value:
+
+Series 1: \begin{hint} Inside each term, replace every occurrence of $n$ with $n-1$. \end{hint}
+\[ \sum_{n=0}^\infty \frac{1}{n+1} = \sum_{n=1}^\infty \answer{\frac{1}{n}} \]
+
+Series 2: \begin{hint} Inside each term, replace every occurrence of $n$ with $n+1$. \end{hint}
+\[ \sum_{n=2}^\infty e^{-2n-1} =  \sum_{n=0}^\infty e^{\answer{-2n-5}} \]
+
+Series 3: \begin{hint} Inside each term, replace every occurrence of $n$ with $n+1$. \end{hint}
+\[ \sum_{n=3}^\infty (-1)^n \cos \frac{n^2 + n}{3} = \sum_{n=2}^\infty \answer{(-1)^{n+1}} \cos \answer{\frac{(n+1)^2+(n+1)}{3}} \]
+\end{example}
+
+\begin{example}
+Suppose the series $\displaystyle \sum_{n=1}^\infty a_n$ and $\displaystyle \sum_{n=1}^\infty b_n$ both converge and the series $\displaystyle \sum_{n=1}^\infty c_n$ and $\displaystyle \sum_{n=1}^\infty d_n$ both diverge. Then
+\begin{itemize}
+\item The series $\displaystyle \sum_{n=1}^\infty (a_n + b_n)$ \wordChoice{\choice[correct]{converges}\choice{diverges}\choice{may converge or diverge}}.
+\item The series $\displaystyle \sum_{n=1}^\infty (a_n + c_n)$ \wordChoice{\choice{converges}\choice[correct]{diverges}\choice{may converge or diverge}}.
+\item The series $\displaystyle \sum_{n=1}^\infty (c_n + d_n)$ \wordChoice{\choice{converges}\choice{diverges}\choice[correct]{may converge or diverge}}.
+\end{itemize}
+\end{example}
+
 
 
 \end{document}
