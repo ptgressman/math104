@@ -2,6 +2,57 @@ import plots
 from sympy import *
 
 
+
+x,y = symbols('x,y')
+myPlot = plots.MyStandardPlot()
+
+for c in [0.5,0.667,1.0,2.0,8.0,0.25,0.01,-20,-5]:
+    myPlot.ygraph(1/(c+x**2),[x,-1.55,1.55])
+myPlot.ygraph(1/(-1.5+x**2),[x,-sqrt(0.5),sqrt(0.5)])
+myPlot.ygraph(1/(-2+x**2),[x,-1,1])
+myPlot.ygraph(1/(-3+x**2),[x,-sqrt(2),sqrt(2)])
+myPlot.ygraph(1/(-0.4+x**2),[x,0.9,1.55])
+myPlot.ygraph(1/(-0.4+x**2),[x,-1.55,-0.9])
+for c in [0.01,0.05,0.15,0.4,0.75,1.0,1.25,1.5,1.75,2]:
+    myPlot.xgraph(c*exp(2*y**3/3),[y,-1,2.1],color=1)
+    myPlot.xgraph(-c*exp(2*y**3/3),[y,-1,2.1],color=1)
+myPlot.xlim(-1.55,1.55)
+myPlot.ylim(-1,2.1)
+myPlot.xticks([-1,0,1])
+myPlot.yticks([-1,0,1])
+myPlot.yaxis('left')
+myPlot.xaxis('bottom')
+myPlot.show()
+myPlot.saveas('slopeX02.png')
+myPlot.destroy()
+quit()
+
+x,y = symbols('x,y')
+myPlot = plots.MyStandardPlot()
+
+for x0 in [0.25,0.375,0.5,0.625,0.75,0.875,1.0]:
+    myPlot.ygraph(sqrt(x0**4-x**4),[x,-x0,x0],samples=400)
+    myPlot.ygraph(-sqrt(x0**4-x**4),[x,-x0,x0],samples=400)
+for c in [0,0.333,0.667,1,1.333,2,5.0,5000.0]:
+    if c <= 1:
+        range = 1
+    else:
+        range = sqrt(1.0/ln(c))/2.0
+    if range > 1.0:
+        range = 1.0
+    myPlot.ygraph(c*exp(-1/(4*x**2)),[x,0.1,range],color=1)
+    myPlot.ygraph(-c*exp(-1/(4*x**2)),[x,0.1,range],color=1)
+    myPlot.ygraph(c*exp(-1/(4*x**2)),[x,-range,-0.1],color=1)
+    myPlot.ygraph(-c*exp(-1/(4*x**2)),[x,-range,0.1],color=1)
+myPlot.xticks([-1,0,1])
+myPlot.yticks([-1,0,1])
+myPlot.yaxis('left')
+myPlot.xaxis('bottom')
+myPlot.show()
+myPlot.saveas('slopeX01.png')
+myPlot.destroy()
+quit()
+
 x,y = symbols('x,y')
 myPlot = plots.MyStandardPlot()
 myPlot.slopefield(x**3-3*x*(y**2),[x,-2,2],[y,-2,2],samples=25)

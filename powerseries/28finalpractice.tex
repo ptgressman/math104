@@ -9,6 +9,70 @@ Exercises relating to various topics we have studied.
 \end{abstract}
 \maketitle
 
+
+\begin{exercise}
+The series
+\[ \sum_{n=1}^\infty \left( e^{ \frac{1}{n}} - 1 \right) \]
+is \wordChoice{\choice{convergent}\choice[correct]{divergent}} by limit comparison to the $p$-series
+\[ \sum_{n=1}^\infty \frac{1}{n^p} \]
+with $p = \answer{1}$.  Likewise, the
+series
+\[ \sum_{n=1}^\infty \left( e^{ \frac{1}{n}} - 1 - \frac{1}{n} \right) \]
+is \wordChoice{\choice[correct]{convergent}\choice{divergent}} by limit comparison to the $p$-series
+with $p = \answer{2}$.
+\begin{hint}
+Use a Maclaurin series to determine the dominant behavior of 
+\[ e^{\frac{1}{n}} - 1 \]
+as $n \rightarrow \infty$.
+\end{hint}
+\end{exercise}
+
+\begin{exercise}
+Fill in the blank below with an appropriate constant to make the series absolutely convergent:
+\[ \sum_{n=1}^\infty \left[ \ln \left( 1 + \frac{1}{n} \right) - \frac{\answer{1}}{n} \right] \]
+\begin{hint}
+Use the Maclaurin series for $\ln (1 + x)$ and substitute $x = 1/n$.
+\end{hint}
+\end{exercise}
+
+\begin{exercise}
+Compute the sum of the series below.
+\[ \sum_{n=0}^\infty \frac{(-1)^n}{2n+1} \frac{1}{3^n} \]
+\begin{itemize}
+\item We know the series
+\[ \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{2n+1} = \answer{\arctan x} \]
+for $-1 < x < 1$. 
+\item This means
+\[ \sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{2n+1} = \answer{\frac{\arctan x}{x}}. \]
+\item We conclude
+\[  \sum_{n=0}^\infty \frac{(-1)^n}{2n+1} \frac{1}{3^n} = \answer{\frac{\pi \sqrt{3}}{6}}. \]
+\end{itemize}
+\end{exercise}
+
+
+
+\begin{exercise}
+Compute the sum of the series below.
+\[ \sum_{n=0}^\infty n 3^{-n} = \answer{\frac{3}{4}}. \]
+\begin{hint}
+\[ \frac{1}{1-x} = \sum_{n=0}^\infty x^n \ \ \text{ when } -1 < x < 1. \]
+\end{hint}
+\begin{hint}
+\[ \frac{1}{(1-x)^2} = \sum_{n=0}^\infty n x^{n-1} \ \ \text{ when } -1 < x < 1. \]
+\end{hint}
+\end{exercise}
+
+\begin{exercise}
+Compute the sum of the series below.
+\[ \sum_{n=1}^\infty \frac{3}{n(n+1)} = \answer{3}. \]
+\begin{hint}
+You don't need Taylor series for this one.
+\end{hint}
+\begin{hint}
+It's a telescoping series
+\end{hint}
+\end{exercise}
+
 \section*{Sample Exam Questions}
 
 \begin{question}%%%%%[2015C.02]

@@ -49,19 +49,19 @@
 \contentsline {subsection}{5.11\hspace {1em}Alternating Series}{155}{section*.49}
 \contentsline {subsection}{5.12\hspace {1em}Exercises: Alternating Series}{157}{section*.50}
 \contentsline {subsection}{5.13\hspace {1em}Exercises: Cumulative}{162}{section*.51}
-\contentsline {section}{\textbf {6\hspace {1em}Power Series}}{163}{section*.52}
-\contentsline {subsection}{6.1\hspace {1em}Power Series}{165}{section*.53}
-\contentsline {subsection}{6.2\hspace {1em}Exercises: Power Series and Convergence}{166}{section*.54}
-\contentsline {subsection}{6.3\hspace {1em}Taylor Series}{174}{section*.55}
-\contentsline {subsection}{6.4\hspace {1em}Exercises: Taylor Series}{175}{section*.56}
-\contentsline {subsection}{6.5\hspace {1em}Taylor Series Applications}{179}{section*.57}
-\contentsline {subsection}{6.6\hspace {1em}Exercises: Taylor Series Applications}{181}{section*.58}
-\contentsline {subsection}{6.7\hspace {1em}Exercises: Cumulative}{184}{section*.59}
-\contentsline {section}{\textbf {7\hspace {1em}Ordinary Differential Equations}}{185}{section*.60}
-\contentsline {subsection}{7.1\hspace {1em}ODEs: Foundations}{187}{section*.61}
-\contentsline {subsection}{7.2\hspace {1em}Exercises: ODEs}{188}{section*.62}
-\contentsline {subsection}{7.3\hspace {1em}Separable and Linear ODEs}{193}{section*.63}
-\contentsline {subsection}{7.4\hspace {1em}Exercises: Linear and Separable ODEs}{194}{section*.64}
-\contentsline {subsection}{7.5\hspace {1em}Applications of ODEs}{199}{section*.65}
-\contentsline {subsection}{7.6\hspace {1em}Exercises: ODE Applications}{200}{section*.66}
+\contentsline {section}{\textbf {6\hspace {1em}Power Series}}{164}{section*.52}
+\contentsline {subsection}{6.1\hspace {1em}Power Series}{166}{section*.53}
+\contentsline {subsection}{6.2\hspace {1em}Exercises: Power Series and Convergence}{167}{section*.54}
+\contentsline {subsection}{6.3\hspace {1em}Taylor Series}{175}{section*.55}
+\contentsline {subsection}{6.4\hspace {1em}Exercises: Taylor Series}{176}{section*.56}
+\contentsline {subsection}{6.5\hspace {1em}Taylor Series Applications}{180}{section*.57}
+\contentsline {subsection}{6.6\hspace {1em}Exercises: Taylor Series Applications}{182}{section*.58}
+\contentsline {subsection}{6.7\hspace {1em}Exercises: Cumulative}{188}{section*.59}
+\contentsline {section}{\textbf {7\hspace {1em}Ordinary Differential Equations}}{191}{section*.60}
+\contentsline {subsection}{7.1\hspace {1em}ODEs: Foundations}{193}{section*.61}
+\contentsline {subsection}{7.2\hspace {1em}Exercises: ODEs}{194}{section*.62}
+\contentsline {subsection}{7.3\hspace {1em}Separable and Linear ODEs}{199}{section*.63}
+\contentsline {subsection}{7.4\hspace {1em}Exercises: Linear and Separable ODEs}{200}{section*.64}
+\contentsline {subsection}{7.5\hspace {1em}Applications of ODEs}{205}{section*.65}
+\contentsline {subsection}{7.6\hspace {1em}Exercises: ODE Applications}{209}{section*.66}
 \contentsfinish 

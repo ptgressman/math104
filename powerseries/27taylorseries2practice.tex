@@ -9,11 +9,66 @@ Various exercises relating to the application of Taylor Series to other problems
 \end{abstract}
 \maketitle
 
+\begin{exercise}
+Compute the limit 
+\[ \lim_{n \rightarrow \infty} n^3 \left[ \arctan \frac{1}{n} - \frac{1}{n} \right]. \]
+\begin{itemize}
+\item The first few terms of the Maclaurin series for $\arctan x$ are
+\[ \cos x = \answer{x} - \answer{\frac{x^3}{3}} + \answer{\frac{x^5}{5}} + \cdots \]
+\item Plug in $x = \frac{1}{n}$ and subtract $1/n$:
+\[ \arctan \frac{1}{n} - \frac{1}{n} = - \frac{1}{3n^3} + \answer{\frac{1}{5n^5}} + \cdots \]
+\item Multiply by $n^3$, neglect all but the dominant term, and conclude
+\[ \lim_{n \rightarrow \infty} n^3 \left[ \arctan \frac{1}{n} - \frac{1}{n} \right] = \answer{-\frac{1}{3}} \]
+\end{itemize}
+\end{exercise}
+
+\begin{exercise}
+Compute the limit
+\[ \lim_{n \rightarrow \infty} \frac{\ln (n+3) - \ln n}{\ln (n+1) - \ln n}. \]
+\begin{itemize}
+\item First combine logarithms to simplify a bit:
+\[  \ln (n+3) - \ln n  =  \ln \answer{1 + \frac{3}{n}} \ \ \text{ and } \ \ \ln (n+1) - \ln n  =  \ln \answer{1 + \frac{1}{n}}. \]
+\item Write out the first few terms of the Maclaurin series for $\ln (1+x)$ and substitute in the appropriate expression involving $n$:
+\[ \ln (1 + x) = \answer{x} - \answer{\frac{x^2}{2}} + \answer{\frac{x^3}{3}} - \cdots \]
+\[ \ln (n+3) - \ln n = \answer{ \frac{3}{n}} - \answer{\frac{9}{2n^2}} + \answer{\frac{9}{n^3}} - \cdots \]
+\[ \ln (n+1) - \ln n = \answer{\frac{1}{n}} - \answer{\frac{1}{2n^2}} + \answer{\frac{1}{3n^3}} - \cdots \]
+\item Multiply by $n$, neglect all but the dominant term (as $n \rightarrow \infty)$ to conclude
+\[ \lim_{n \rightarrow \infty} \frac{\ln (n+3) - \ln n}{\ln (n+1) - \ln n} = \answer{3}. \]
+\end{itemize}
+\end{exercise}
+
+\begin{exercise}
+Compute the limit
+\[ \lim_{x \rightarrow 1}  \frac{\ln x - x + 1}{\sin \pi x}. \]
+\begin{itemize}
+\item Compute the first few terms of the Taylor series of numerator and denominator centered at $x = 1$:
+\[ \ln x - x + 1 = \answer{0} + \answer{0} (x-1) + \answer{-\frac{1}{2}} (x-1)^2 + \answer{\frac{1}{3}} (x-1)^3 + \cdots \]
+\[ \sin \pi x = \answer{0} + \answer{-\pi}(x-1) + \answer{0} (x-1)^2 + \answer{\frac{\pi^3}{6}}(x-1)^3 + \cdots \]
+\item Neglect all but the dominant terms in numerator and denominator. Note that dominant here means as $x \rightarrow 1$. Then take the limit $x \rightarrow 1$:
+\[ \lim_{x \rightarrow 1}  \frac{\ln x - x + 1}{\sin \pi x} = \answer{0}. \]
+\end{itemize}
+\end{exercise}
+
+
+\begin{exercise}
+Use the remainder formula for Taylor series to determine which partial sums of the series 
+\[ \sum_{n=0}^\infty \frac{1}{n!} \]
+differ from $e$ by at most $1/100$?
+\begin{itemize}
+\item The remainder formula says that
+\[ e^1 - \sum_{n=0}^{N} \frac{1}{n!} = \frac{e^{\xi}}{(N+1)!} (1-0)^{N+1} \]
+for some point $\xi$ which depends on $N$ and is somewhere in the interval $(\answer{0},\answer{1})$. The upper bound for the magnitude of $e^\xi$ on this interval is $M = \answer{e}$.
+\item For which values of $N$ do we have
+\[  \frac{M}{(N+1)!} \leq \frac{1}{50}? \]
+(Check manually for small values of $N$; use the fact that $e$ is between $2$ and $3$.)
+\[ N \geq \answer{4}. \]
+\end{itemize}
+\end{exercise}
+
 
 
 \begin{exercise}
 In this exercise, we will investigate two different ways of numerically approximating the value of $\ln 2$ using infinite series.
-
 \begin{itemize}
 \item The Maclaurin series of the function $\ln 1 + x$ converges conditionally at $x = 1$ to $\ln 2$. Compute the Maclaurin series: 
 \[ \ln (1 + x) = \sum_{n=0}^\infty \answer{\frac{(-1)^n}{n+1}} x^{n+1} \]
@@ -32,6 +87,24 @@ For an alternating series, the error of approximating the series by a partial su
 \end{hint}
 \end{exercise}
 
+\begin{exercise}
+Use the remainder formula for Taylor series to determine which partial sums of the series
+\[ \sum_{n=1}^\infty \frac{1}{n 3^n} \]
+differ from $\ln (3/2)$ by at most $10^{-2}$?
+\begin{itemize}
+\item Guided by the example above, we will use the Maclaurin series 
+\[ - \ln (1-x) = \sum_{n=1}^\infty \frac{x^n}{n}. \]
+First, compute the derivatives of $- \ln (1-x)$. Find a pattern which holds for all $N$:
+\[ \frac{d^{N+1}}{dx^{N+1}} \left( - \ln (1 - x) \right)  = \answer{ \frac{N!}{(1-x)^{N+1}}}. \]
+When $x$ is between $0$ and $1/3$, the largest value of the $(N+1)$-st derivative is what?
+\[ \left| \frac{d^{N+1}}{dx^{N+1}} \left( - \ln (1 - x) \right) \right| \leq \answer{N! 3^{N+1}/2^{N+1}}. \]
+\item Using this upper bound for the $(N+1)$-st derivative, we know that
+\[ \left| \ln \frac{3}{2} - \sum_{n=0}^N \frac{1}{n 3^n} \right| \leq \answer{ \frac{1}{(N+1) 2^{N+1}}} \]
+(use the upper bound and the remainder formula.)
+\item For which values of $N$ is the expression you just found less than $1/100$? Check by hand for smallish values of $N$ to find the smallest one which works.
+\[ N \geq \answer{4}. \]
+\end{itemize}
+\end{exercise}
 
 
 
