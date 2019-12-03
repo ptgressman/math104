@@ -18,11 +18,40 @@ We learn techniques to solve first-order linear and separable ODEs.
 \section*{Examples}
 
 \begin{example}
-
+The ODE
+\[ y' =  x^2 e^y \]
+is separable. 
+\begin{itemize}
+\item To separate, we move all factors involving $y$ to the left-hand side and all factors involving $x$ to the right-hand side. We also formally write $y'$ as $dy/dx$ and verify that we can end up with $dy$ on the left-hand side and $dx$ on the right hand side:
+\[ \answer{e^{-y}} dy = \answer{x^2} dx. \]
+\item Apply an integral on both sides:
+\[ \int  \answer{e^{-y}} dy = \int \answer{x^2} dx \Rightarrow \answer{-e^{-y}} = \answer{\frac{x^3}{3}} + C.\]
+That gives our general solution.
+\item If we had initial conditions $y(0) = 1$, we would plug in $x=\answer{0}$, $y=\answer{1}$ to our general solution to determine that $C = \answer{-e^{-1}}$.  We can plug in this value for $C$ and solve for $y$ to determine that
+\[ y = \answer{- \ln \left( e^{-1} - \frac{x^3}{3} \right)}. \]
+\end{itemize}
 \end{example}
 
 \begin{example}
-
+The ODE
+\[ x y' = -x^2 y +  e^{-x^2/2}\]
+is linear.
+\begin{itemize}
+\item To begin, we must write the ODE in standard form:
+\[ y' + \answer{x} y = \answer{e^{-x^2/2}/x}. \]
+\item We give the name $P(x)$ to the coefficient of $y$ (note that it doesn't \textit{have to} depend on $x$. Writing $P(x)$ is only meant to indicate that it \textit{cannot} depend on $y$). We give the name $Q(x)$ to the right-hand side.
+\item The integrating factor is the exponential of the integral of $P$. In this case, we can take $I(x) = e^{x^2/2}$. Multiply both sides of the standard form equation by the integrating factor:
+\[ \answer{e^{x^2/2}} y' + \answer{x e^{x^2/2}} y = \answer{\frac{1}{x}}. \]
+\item The integrating factor gets its name because it is now possible to integrate the left-hand side.  By the product rule, we know that
+\[ \left( e^{x^2/2} y \right)' = \answer{e^{x^2/2}} y' + \answer{x e^{x^2/2}} y, \]
+which is exactly the right-hand side. Thus we have
+\[ \left( e^{x^2/2} y \right)' = \answer{\frac{1}{x}}. \]
+\item Integrating the left-hand side gives $e^{x^2/2} y$; integrating both sides gives
+\[ e^{x^2/2} y = \answer{\ln |x|} + C \]
+(don't forget absolute values in the logarithm).  Solving for $y$ gives
+\[ y = \answer{e^{-x^2/2} \ln |x|} + C e^{-x^2/2} \]
+as the general solution.
+\end{itemize}
 \end{example}
 
 
