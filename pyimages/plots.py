@@ -114,9 +114,9 @@ class MyStandardPlot(object):
         totext = r'$\displaystyle ' + s + '$'
         self.canvas.text(x,y,totext,fontsize=12,ha=horizontal,va=vertical)
     def xlim(self,x0,x1):
-        plt.xlim(x0,x1)
+        plt.xlim(float(x0),float(x1))
     def ylim(self,y0,y1):
-        plt.ylim(y0,y1)
+        plt.ylim(float(y0),float(y1))
     def saveas(self,filename):
         self.fig.savefig(filename,format='png',dpi=320,bbox_inches='tight',pad_inches=0)
     def show(self):
