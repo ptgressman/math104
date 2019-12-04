@@ -75,18 +75,18 @@ In general, expanding and equating coefficients is more \textbf{reliable but ted
 Compute the partial fractions expansion of
 \[ \frac{x^3 + x^2 -1}{x^2-1}. \]
 \begin{itemize}
-\item Because the degree of the numerator is at least as big as the degree of the denominator, we must first prepare by doing polynomial long division. It works essentially exactly the same way as usual long division, except that we align columns by powers of $x$ rather than by digits of a number. Take care to include coefficients of $0$ when terms are absent so that different powers of $x$ always align with different columns:
+\item Because the degree of the numerator is at least as big as the degree of the denominator, we must first prepare by doing polynomial long division. It works essentially exactly the same way as usual long division, except that we align columns by powers of $x$ rather than by digits of a number. Take care to include coefficients of $0$ when terms are absent so that different powers of $x$ always align with different columns (note: we have left off the $x^2 + 0 x - 1$ that one would usually write to the left of the second row below and we have extended the lines to be longer than usual; both of these unusual choices are simply because of ``technical difficulties'' in rendering the table correctly):
 \[ 
-\begin{array}{r@{\hskip\arraycolsep}lcccc}
- && \answer{1}x & + \answer{1} & & \\
- \cmidrule{2-6}
-x^2 + 0 x - 1 &)& 1 x^3 & + 1 x^2 & + 0 x & -1 \\
- && \answer{1} x^3 & + \answer{0} x^2 & + \answer{-1} x &  \\
-\cmidrule{3-5} 
-  && & \answer{1} x^2 & + \answer{1} x & + \answer{-1} \\
-  && & \answer{1} x^2 & + \answer{0} x & + \answer{-1} \\
-\cmidrule{4-6}
-  && &  & \answer{1} x & + \answer{0}
+\begin{array}{rrrr}
+  \answer{1}x & + \answer{1} & & \\
+\hline
+ 1 x^3 & + 1 x^2 & + 0 x & -1 \\
+ \answer{1} x^3 & + \answer{0} x^2 & + \answer{-1} x &  \\
+\hline
+ & \answer{1} x^2 & + \answer{1} x & + \answer{-1} \\
+ & \answer{1} x^2 & + \answer{0} x & + \answer{-1} \\
+\hline
+ &  & \answer{1} x & + \answer{0}
 \end{array}
 \]
 The last line is the remainder and we write it out in much the same way we do with numerical ratios:
