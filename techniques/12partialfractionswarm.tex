@@ -25,11 +25,82 @@ We study the technique of partial fractions and its application to integration.
 \section*{Examples}
 
 \begin{example}
+Calculate the value of the integral
+\[ \int_{-3}^0 \frac{2 x^2 - 2x + 9}{(x-2)(x^2+9)} dx. \]
+\begin{itemize}
+\item The general form of the expansion will be
+\[ \frac{2 x^2 - 2x + 9}{(x-2)(x^2+9)} = \frac{A}{\answer{x-2}} + \frac{Bx + C}{\answer{x^2+9}} \]
+\begin{itemize}
+\item Let's cover a few distinct ways of computing the coefficients $A$, $B$, and $C$.  One way to do it is to clear denominators by multiplying by $(x-2)(x^2+9)$ on both sides. This gives
+\[ \begin{aligned} 2 x^2 - 2x + 9 & =  A ( \answer{x^2 + 9}) + B x ( \answer{x-2}) + C ( \answer{x-2}) \\ & = (\answer{A + B}) x^2 + (\answer{-2B+C})x + (\answer{9A-2C}). \end{aligned}\]
+Now we equate the coefficients of like powers of $x$:
+\[ \begin{aligned}
+2 & = \answer{A + B} \ \text{(coefficients of } x^2), \\
+-2 & = \answer{-2B + C}  \ \text{(coefficients of } x), \\
+9 & = \answer{9A-2C} \ \text{(constant terms)}.
+\end{aligned} \]
+We solve these equations for $A$, $B$, and $C$ by eliminating variables: taking twice the top equation and adding the second equation gives $2 = 2 A + 2C$. Adding this to the last equation gives $A = \answer{1}$. Plugging this back in to the equation $2 = 2A + 2C$ gives $C = \answer{0}$.  Plugging in our value of $A$ into either the first or last equations above gives $B = \answer{1}$.  Thus we know that
+\[ \frac{2x^2 - 2x + 9}{(x-2)(x^2+9)} = \frac{\answer{1}}{x-2} + \frac{\answer{x}}{x^2+9}. \]
 
+\item Here's an entirely different approach: Go back to the formula
+\[\frac{2 x^2 - 2x + 9}{(x-2)(x^2+9)} = \frac{A}{x-2} + \frac{Bx + C}{x^2+9}. \]
+Multiply both sides by $(x-2)$ and simplify as much as possible to get
+\[ \frac{2 x^2 - 2x + 9}{x^2+9} = A + \frac{(Bx + C)(x-2)}{x^2+9}. \]
+Now evaluate both sides at $x = 2$: We get
+\[ \answer{1} = A + \answer{0}. \]
+This is closely related to what is called the ``Heaviside cover-up method.''
+Knowing that $A = \answer{1}$, we write
+\[\frac{2 x^2 - 2x + 9}{(x-2)(x^2+9)} = \frac{1}{x-2} + \frac{Bx + C}{x^2+9}. \]
+Evaluating both sides at $x = 0$ gives
+\[ \answer{-\frac{1}{2}} = \answer{- \frac{1}{2}} + \frac{C}{9}, \]
+which gives $C = \answer{0}$. Plugging this back in gives
+\[\frac{2 x^2 - 2x + 9}{(x-2)(x^2+9)} = \frac{1}{x-2} + \frac{Bx}{x^2+9}. \]
+To finish off, we can plug in $x = 1$ to conclude
+\[ \answer{-\frac{9}{10}} = \answer{-1} + \frac{B}{10} \]
+to get $B = \answer{1}$.
+\end{itemize}
+\item Either way, we get
+\[ \frac{2x^2 - 2x + 9}{(x-2)(x^2+9)} = \frac{\answer{1}}{x-2} + \frac{\answer{1}x}{x^2+9}. \]
+The usual antiderivative of the right-hand side is
+\[  \answer{\ln |x-2| + \frac{1}{2} \ln |x^2+9|}. \]
+(Don't forget absolute values inside logarithms.)
+We conclude
+\[ \int_{-3}^0 \frac{2 x^2 - 2x + 9}{(x-2)(x^2+9)} dx = \answer{(\ln 2)/2 - \ln 5} . \]
+\end{itemize}
 \end{example}
 
-\begin{example}
+In general, expanding and equating coefficients is more \textbf{reliable but tedious}. Conversely, doing other techniques like Heaviside cover-up or evaluating at special values of $x$ can be \textbf{more efficient but only if done wisely}.
 
+\begin{example}
+Compute the partial fractions expansion of
+\[ \frac{x^3 + x^2 -1}{x^2-1}. \]
+\begin{itemize}
+\item Because the degree of the numerator is at least as big as the degree of the denominator, we must first prepare by doing polynomial long division. It works essentially exactly the same way as usual long division, except that we align columns by powers of $x$ rather than by digits of a number. Take care to include coefficients of $0$ when terms are absent so that different powers of $x$ always align with different columns:
+\[ 
+\begin{array}{r@{\hskip\arraycolsep}lcccc}
+ && \answer{1}x & + \answer{1} & & \\
+\cline{2-6}
+x^2 + 0 x - 1 &)& 1 x^3 & + 1 x^2 & + 0 x & -1 \\
+ && \answer{1} x^3 & + \answer{0} x^2 & + \answer{-1} x &  \\
+ \cline{3-5} 
+  && & \answer{1} x^2 & + \answer{1} x & + \answer{-1} \\
+  && & \answer{1} x^2 & + \answer{0} x & + \answer{-1} \\
+  \cline{4-6}
+  && &  & \answer{1} x & + \answer{0}
+\end{array}
+\]
+The last line is the remainder and we write it out in much the same way we do with numerical ratios:
+\[ \frac{x^3 + x^2 - 1}{x^2 - 1} = \answer{ x + 1} + \frac{\answer{x}}{x^2-1} \]
+(the ``quotient'' goes in the first box and the remainder goes in the second).
+\item Now we perform a partial fractions expansion on just the fractional part.  It will have the form
+\[ \frac{A}{x-1} + \frac{B}{x+1}. \]
+\item Because there are no repeated factors, we can use the cover-up method to find both coefficients.  To find $A$, factor the denominator of the fractional part and drop the factor of $(x-1)$ from the denominator. This gives the expression
+\[ \answer{\frac{x}{x+1}}. \]
+Now evaluate the expression at $x = 1$ to get the value of $A$. In this case $A = answer{1/2}$.
+\item Likewise, to get $B$, drop the $(x+1)$ from the denominator instead of $(x-1)$. Evaluating the resulting expression at $x = -1$ gives $B = \answer{-1/2}$.  
+\item The full expansion is now known:
+\[ \frac{x^3+x^2-1}{x^2-1} = \answer{x+1} + \frac{\answer{1/2}}{x-1} + \frac{\answer{-1/2}}{x+1}. \]
+\end{itemize}
 \end{example}
 
 

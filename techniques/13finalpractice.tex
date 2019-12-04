@@ -10,6 +10,38 @@ Exercises relating to various topics we have studied.
 \maketitle
 
 
+A key skill to practice is deciding which of the several techniques we have learned should be applied to a particular problem. In these exercises and questions, you will be responsible for choosing a method which works for you.
+
+\begin{exercise}
+Compute the indefinite integral.
+\[ \int \ln x \, dx = \answer{ x \ln x - x} + C\]
+(You should choose an answer which equals $-1$ at $x = 1$; if your answer does not satisfy this, add a constant to make it so.)
+\begin{hint}
+Integrate by parts.
+\end{hint}
+\begin{hint}
+Let $u = \ln x$ and $dv = 1$.
+\end{hint}
+\end{exercise}
+
+\begin{exercise}
+Compute the indefinite integral.
+\[ \int \frac{dx}{(x^2+1)^2} = \answer{ \frac{1}{2} \frac{x}{x^2+1} + \frac{1}{2} \arctan x} + C.\]
+(You should choose an answer which equals $0$ at $x = 0$; if your answer does not satisfy this, add a constant to make it so.)
+\begin{hint}
+Partial fractions won't help in this case because the expression is already simplified as much as possible.
+\end{hint}
+\begin{hint}
+Try a trigonometric substitution
+\end{hint}
+\begin{hint}
+Make the substitution $x = \tan \theta$.
+\end{hint}
+\begin{hint}
+You should arrive at the integral $\int \cos^2 \theta \, d \theta$ after the substitution; here you'll need to use a power-reduction formula to continue.
+\end{hint}
+\end{exercise}
+
 \section*{Sample Quiz Questions}
 
 \begin{question}%%%%%[shelllogibp001]
@@ -30,7 +62,7 @@ If the variable \(x\) is used for slicing, then slices are parallel to the axis 
 The radius of a shell is \(x - \frac{1}{10}\). The height of a shell is exactly \(\frac{1}{2} \ln{x} + 1\).
 The volume of the region is therefore given by
 \[ \int_{\frac{1}{5}}^{1} \frac{\pi}{10} \left(10 x - 1\right) \left(\ln{x} + 2\right)\, dx. \]
- To compute the integralwe can use integration by parts. A reasonable strategy is to integrate  \(x - \frac{1}{10}\) and differentiate  \(\ln{x} + 2\).
+ To compute the integral, we can use integration by parts. A reasonable strategy is to integrate  \(x - \frac{1}{10}\) and differentiate  \(\ln{x} + 2\).
  This gives the equality
 \[ \begin{aligned} \pi \int \left(x - \frac{1}{10}\right) \left(\ln{x} + 2\right)\, dx & = \pi \left(\left(\frac{x^{2}}{2} - \frac{x}{10}\right) \left(\ln{x} + 2\right) - \int \frac{1}{x} \left(\frac{x^{2}}{2} - \frac{x}{10}\right)\, dx\right) \\
  & = - \pi \left(\frac{x^{2}}{4} - \frac{x}{10}\right) + \pi \left(\frac{x^{2}}{2} - \frac{x}{10}\right) \left(\ln{x} + 2\right). \end{aligned} \]
@@ -59,7 +91,7 @@ The mass  \(M\) will be given by the integral
 \[ \begin{aligned} \int_{2 \pi}^{\frac{5}{2} \pi} \sin {x}\, dx & = 1. \end{aligned} \]
 To compute the  \(x\)-coordinate of the centroid, we also need to compute the integral 
 \[ \int_{2 \pi}^{\frac{5}{2} \pi} x \sin {x}\, dx \]
- To compute the integralwe can use integration by parts. A reasonable strategy is to integrate  \(\sin {x}\) and differentiate  \(x\).
+ To compute the integral, we can use integration by parts. A reasonable strategy is to integrate  \(\sin {x}\) and differentiate  \(x\).
  This gives the equality
 \[ \begin{aligned} \int x \sin {x}\, dx & = - x \cos {x} - \int \left(- \cos {x}\right)\, dx \\
  & = - x \cos {x} + \sin {x}. \end{aligned} \]
