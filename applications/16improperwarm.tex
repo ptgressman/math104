@@ -22,11 +22,63 @@ We study the concept of improper integrals.
 \section*{Examples}
 
 \begin{example}
-
+Compute the improper integral
+\[ \int_0^1 \ln x \, dx \]
+if it is convergent.
+\begin{itemize}
+\item First off, we note that the integral \textit{is} in fact improper because $\ln x$ has a vertical asymptote at $x = 0$.  We can find the antiderivative of $\ln x$ by integration by parts:
+\[ \int \ln x \, dx = \answer{x \ln x - x} + C\]
+(your answer should be the usual thing given by integration by parts. In particular, it equals $0$ at $x = e$.)
+\item The correct interpretation of the improper integral is 
+\[ \int_0^1 \ln x \, dx = \lim_{b \rightarrow 0^+} \int_{\answer{b}}^{\answer{1}} \ln x \, dx. \]
+\item Using the antiderivative you found above (with $C = 0$), use the Fundamental Theorem of Calculus to conclude
+\[ \int_0^1 \ln x \, dx = \lim_{b \rightarrow 0^+} \int_{\answer{b}}^{\answer{1}} \ln x \, dx = \lim_{b \rightarrow 0^+} \left[ \left( \answer{-1} \right) - \left(\answer{ b \ln b - b} \right) \right]. \]
+\item As $b \rightarrow 0^+$, $b \rightarrow 0$ and $\ln b \rightarrow - \infty$. Using knowledge of orders of growth, we know that the product $b \ln b$
+\begin{multipleChoice}
+\choice{tends to $-\infty$ because $\ln b$ grows faster than any negative power of $b$ as $b \rightarrow 0^+$.}
+\choice{tends to some finite constant as $b \rightarrow 0^+$ because $\ln b$ has the same growth rate as $b^{-1}$ as $b \rightarrow 0^+$.}
+\choice[correct]{tends to zero because $\ln b$ grows slower than any negative power of $b$ as $b \rightarrow 0^+$.}
+\end{multipleChoice}
+\item We take the limit as $b \rightarrow 0^+$ to conclude
+\[ \int_{0}^1 \ln x \, dx = \answer{-1} \]
+(write N/A if the limit diverges).
+\end{itemize}
 \end{example}
 
 \begin{example}
+Without finding an antiderivative, determine whether the integral below is convergent or divergent.
+\[ \int_1^\infty \frac{dx}{x - \ln x} \]
+\begin{itemize}
+\item The dominant term in the denominator as $x \rightarrow \infty$ will be 
+\begin{multipleChoice}
+\choice[correct]{$x$}
+\choice{$\ln x$}
+\end{multipleChoice}
+which suggests doing a comparison to the integral
+\begin{multipleChoice}
+\choice[correct]{$\displaystyle \int_1^\infty \frac{dx}{x}$}
+\choice{$\displaystyle \int_1^\infty \frac{dx}{- \ln x}$}
+\end{multipleChoice}
+Since $1/(x- \ln x)$ is always \wordChoice{\choice{less than}\choice[correct]{greater than}} $1/x$, the simplest test which applies is the \wordChoice{\choice[correct]{direct comparison}\choice{limit comparison}} test and it indicates \wordChoice{\choice{convergence}\choice[correct]{divergence}\choice{nothing--it does not apply}}.
+\end{itemize}
+\end{example}
 
+\begin{example}
+Without finding an antiderivative, determine whether the integral below is convergent or divergent.
+\[ \int_0^1 \frac{dx}{2\sqrt{x} - x^2}. \]
+\begin{itemize}
+\item The dominant term in the denominator as $x \rightarrow 0^+$ is
+\begin{multipleChoice}
+\choice{$x^2$}
+\choice[correct]{$2 \sqrt{x}$}
+\end{multipleChoice}
+which suggests doing a comparison to the integral
+\begin{multipleChoice}
+\choice[correct]{$\displaystyle \int_0^1 \frac{dx}{2 \sqrt{x}}$}
+\choice{$\displaystyle \int_0^1 \frac{dx}{- x^2}$}
+\end{multipleChoice}
+Since $1/(2 \sqrt{x} -x^2)$ is always \wordChoice{\choice{less than}\choice[correct]{greater than}} $1/(2 \sqrt{x})$, the simplest test which applies is the \wordChoice{\choice{direct comparison}\choice[correct]{limit comparison}} test and it indicates \wordChoice{\choice[correct]{convergence}\choice{divergence}\choice{nothing--it does not apply}}.
+\end{itemize}
 \end{example}
 
 
