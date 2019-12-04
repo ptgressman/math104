@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 DEC 2019 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 DEC 2019 20:56
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -928,7 +928,28 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \openout8 = `math104online.jax'.
 
 ))
-(./preamble.tex) (./math104online.aux)
+(./preamble.tex
+(/usr/local/texlive/2016/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen193
+\lightrulewidth=\dimen194
+\cmidrulewidth=\dimen195
+\belowrulesep=\dimen196
+\belowbottomsep=\dimen197
+\aboverulesep=\dimen198
+\abovetopsep=\dimen199
+\cmidrulesep=\dimen256
+\cmidrulekern=\dimen257
+\defaultaddspace=\dimen258
+\@cmidla=\count191
+\@cmidlb=\count192
+\@aboverulesep=\dimen259
+\@belowrulesep=\dimen260
+\@thisruleclass=\count193
+\@lastruleclass=\count194
+\@thisrulewidth=\dimen261
+))
+(./math104online.aux)
 \openout1 = `math104online.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -948,16 +969,16 @@ LaTeX Font Info:    ... okay on input line 7.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count191
-\scratchdimen=\dimen193
+\scratchcounter=\count195
+\scratchdimen=\dimen262
 \scratchbox=\box45
-\nofMPsegments=\count192
-\nofMParguments=\count193
+\nofMPsegments=\count196
+\nofMParguments=\count197
 \everyMPshowfont=\toks53
-\MPscratchCnt=\count194
-\MPscratchDim=\dimen194
-\MPnumerator=\count195
-\makeMPintoPDFobject=\count196
+\MPscratchCnt=\count198
+\MPscratchDim=\dimen263
+\MPnumerator=\count199
+\makeMPintoPDFobject=\count266
 \everyMPtoPDFconversion=\toks54
 ) ABD: EveryShipout initializing macros
 
@@ -966,7 +987,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into
 your preamble.
  on input line 7.
 
-\c@lstlisting=\count197
+\c@lstlisting=\count267
 \AtBeginShipoutBox=\box46
 Package hyperref Info: Link coloring ON on input line 7.
 LaTeX Info: Redefining \ref on input line 7.
@@ -1037,7 +1058,7 @@ Underfull \hbox (badness 3536) in paragraph at lines 33--33
 
 ])
 [9] (./volumes/01genslicepractice.tex
-\c@depthICount=\count198
+\c@depthICount=\count268
 LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
  [10
@@ -1618,20 +1639,19 @@ File: odes/images/ortho01.png Graphic file (type png)
 <use odes/images/ortho01.png>
 Package pdftex.def Info: odes/images/ortho01.png used on input line 22.
 (pdftex.def)             Requested size: 289.07999pt x 285.30962pt.
- [216
 
- <./odes/images/ortho01.png>]
-<odes/images/ortho02.png, id=2553, 226.0696pt x 222.00441pt>
+<odes/images/ortho02.png, id=2548, 226.0696pt x 222.00441pt>
 File: odes/images/ortho02.png Graphic file (type png)
 
 <use odes/images/ortho02.png>
 Package pdftex.def Info: odes/images/ortho02.png used on input line 35.
 (pdftex.def)             Requested size: 289.07999pt x 283.88687pt.
- [217 <./odes/images/ortho02.png>] [218]) [219]
+ [216
+
+ <./odes/images/ortho01.png>] [217 <./odes/images/ortho02.png>] [218]) [219]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
-
-(./math104online.aux)
+ (./math104online.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
 Package rerunfilecheck Info: File `math104online.out' has not changed.
@@ -1643,10 +1663,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
  ) 
 Here is how much of TeX's memory you used:
- 30476 strings out of 493014
- 689040 string characters out of 6133351
- 847215 words of memory out of 5000000
- 31986 multiletter control sequences out of 15000+600000
+ 30530 strings out of 493014
+ 689790 string characters out of 6133351
+ 847973 words of memory out of 5000000
+ 32036 multiletter control sequences out of 15000+600000
  19571 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,15n,81p,938b,825s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1683,7 +1703,7 @@ st/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist
 fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/font
 s/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on math104online.pdf (219 pages, 2450554 bytes).
+Output written on math104online.pdf (219 pages, 2450835 bytes).
 PDF statistics:
  2939 PDF objects out of 2984 (max. 8388607)
  2616 compressed objects within 27 object streams
