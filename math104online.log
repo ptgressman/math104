@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 DEC 2019 21:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 DEC 2019 21:13
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -928,8 +928,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \openout8 = `math104online.jax'.
 
 ))
-(./preamble.tex)
-No file math104online.aux.
+(./preamble.tex) (./math104online.aux)
 \openout1 = `math104online.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -946,6 +945,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
+
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count191
@@ -972,8 +972,10 @@ Package hyperref Info: Link coloring ON on input line 7.
 LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
 LaTeX Info: Redefining \nameref on input line 7.
+(./math104online.out) (./math104online.out)
 \@outlinefile=\write9
 \openout9 = `math104online.out'.
+
 
 
 LaTeX Warning: No \author given.
@@ -981,23 +983,24 @@ LaTeX Warning: No \author given.
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\tf@toc=\write10
-\openout10 = `math104online.toc'.
-
-
-[2
-
-] (./ximerawelcome.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+(./math104online.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [2
+
+] [3])
+\tf@toc=\write10
+\openout10 = `math104online.toc'.
+
+
+[4] (./ximerawelcome.tex
 
 LaTeX Warning: No \author given.
 
@@ -1019,7 +1022,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--27
 https : / / www . youtube . com / playlist ? list =
  []
 
-[3
+[5
 
 
 ]
@@ -1028,16 +1031,16 @@ Underfull \hbox (badness 3536) in paragraph at lines 33--33
 /m/n/8 https : / / www . whitman . edu / mathematics /
  []
 
-) [4] (./volumes/volumeintro.tex) [5
+) [6] (./volumes/volumeintro.tex) [7
 
-] (./volumes/01genslicewarm.tex [6
+] (./volumes/01genslicewarm.tex [8
 
 ])
-[7] (./volumes/01genslicepractice.tex
+[9] (./volumes/01genslicepractice.tex
 \c@depthICount=\count198
 LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
- [8
+ [10
 
 ]
 Overfull \hbox (15.87032pt too wide) in paragraph at lines 49--51
@@ -1045,15 +1048,15 @@ Overfull \hbox (15.87032pt too wide) in paragraph at lines 49--51
 mensional
  []
 
-[9]
+[11]
 
 LaTeX Font Warning: Font shape `OT1/cmtt/bx/sl' undefined
 (Font)              using `OT1/cmtt/bx/n' instead on input line 82.
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 82.
-) (./volumes/02washerwarm.tex [10]
-<volumes/diskwasher/disksin.png, id=131, 251.58994pt x 90.11166pt>
+) (./volumes/02washerwarm.tex [12]
+<volumes/diskwasher/disksin.png, id=466, 251.58994pt x 90.11166pt>
 File: volumes/diskwasher/disksin.png Graphic file (type png)
 
 <use volumes/diskwasher/disksin.png>
@@ -1062,70 +1065,70 @@ Package pdftex.def Info: volumes/diskwasher/disksin.png used on input line 25.
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
 
-<volumes/diskwasher/washer1.png, id=133, 251.58994pt x 131.44106pt>
+<volumes/diskwasher/washer1.png, id=468, 251.58994pt x 131.44106pt>
 File: volumes/diskwasher/washer1.png Graphic file (type png)
 
 <use volumes/diskwasher/washer1.png>
 Package pdftex.def Info: volumes/diskwasher/washer1.png used on input line 42.
 (pdftex.def)             Requested size: 289.07999pt x 151.0417pt.
- [11 <./volumes/diskwasher/disksin.png>])
-[12 <./volumes/diskwasher/washer1.png>] (./volumes/02washerpractice.tex
-<volumes/diskwasher/disk01.png, id=155, 217.26169pt x 212.74481pt>
+ [13 <./volumes/diskwasher/disksin.png>])
+[14 <./volumes/diskwasher/washer1.png>] (./volumes/02washerpractice.tex
+<volumes/diskwasher/disk01.png, id=491, 217.26169pt x 212.74481pt>
 File: volumes/diskwasher/disk01.png Graphic file (type png)
 
 <use volumes/diskwasher/disk01.png>
 Package pdftex.def Info: volumes/diskwasher/disk01.png used on input line 17.
 (pdftex.def)             Requested size: 289.07999pt x 283.08337pt.
 
-<volumes/diskwasher/disk02.png, id=156, 217.26169pt x 212.74481pt>
+<volumes/diskwasher/disk02.png, id=492, 217.26169pt x 212.74481pt>
 File: volumes/diskwasher/disk02.png Graphic file (type png)
 
 <use volumes/diskwasher/disk02.png>
 Package pdftex.def Info: volumes/diskwasher/disk02.png used on input line 35.
 (pdftex.def)             Requested size: 289.07999pt x 283.08337pt.
- [13
+ [15
 
  <./volumes/diskwasher/disk01.png>]
-<volumes/diskwasher/disk04.png, id=164, 217.26169pt x 212.74481pt>
+<volumes/diskwasher/disk04.png, id=498, 217.26169pt x 212.74481pt>
 File: volumes/diskwasher/disk04.png Graphic file (type png)
 
 <use volumes/diskwasher/disk04.png>
 Package pdftex.def Info: volumes/diskwasher/disk04.png used on input line 53.
 (pdftex.def)             Requested size: 289.07999pt x 283.08337pt.
- [14 <./volumes/diskwasher/disk02.png>]
-<volumes/diskwasher/disk03.png, id=170, 217.26169pt x 212.74481pt>
+ [16 <./volumes/diskwasher/disk02.png>]
+<volumes/diskwasher/disk03.png, id=504, 217.26169pt x 212.74481pt>
 File: volumes/diskwasher/disk03.png Graphic file (type png)
 
 <use volumes/diskwasher/disk03.png>
 Package pdftex.def Info: volumes/diskwasher/disk03.png used on input line 71.
 (pdftex.def)             Requested size: 289.07999pt x 283.08337pt.
- [15 <./volumes/diskwasher/disk04.png>]
-[16 <./volumes/diskwasher/disk03.png>]
+ [17 <./volumes/diskwasher/disk04.png>]
+[18 <./volumes/diskwasher/disk03.png>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/sl' in size <9> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 100.
- [17] [18]) (./volumes/03shellwarm.tex
-<volumes/shell/shell01.png, id=213, 224.94037pt x 322.95656pt>
+ [19] [20]) (./volumes/03shellwarm.tex
+<volumes/shell/shell01.png, id=548, 224.94037pt x 322.95656pt>
 File: volumes/shell/shell01.png Graphic file (type png)
 
 <use volumes/shell/shell01.png>
 Package pdftex.def Info: volumes/shell/shell01.png used on input line 28.
 (pdftex.def)             Requested size: 224.9398pt x 322.95576pt.
- [19] [20 <./volumes/shell/shell01.png>]
-<volumes/shell/shell02.png, id=233, 251.58994pt x 136.86131pt>
+ [21] [22 <./volumes/shell/shell01.png>]
+<volumes/shell/shell02.png, id=566, 251.58994pt x 136.86131pt>
 File: volumes/shell/shell02.png Graphic file (type png)
 
 <use volumes/shell/shell02.png>
 Package pdftex.def Info: volumes/shell/shell02.png used on input line 50.
 (pdftex.def)             Requested size: 251.58931pt x 136.86096pt.
-) [21 <./volumes/shell/shell02.png>]
+) [23 <./volumes/shell/shell02.png>]
 (./volumes/03shellpractice.tex
-<volumes/shell/shell03.png, id=243, 218.16507pt x 222.00441pt>
+<volumes/shell/shell03.png, id=576, 218.16507pt x 222.00441pt>
 File: volumes/shell/shell03.png Graphic file (type png)
 
 <use volumes/shell/shell03.png>
 Package pdftex.def Info: volumes/shell/shell03.png used on input line 17.
 (pdftex.def)             Requested size: 218.16452pt x 222.00385pt.
- [22
+ [24
 
  <./volumes/shell/shell03.png>]
 Overfull \hbox (5.15244pt too wide) in paragraph at lines 31--32
@@ -1133,18 +1136,18 @@ Overfull \hbox (5.15244pt too wide) in paragraph at lines 31--32
 m/m/it/10 y \OT1/cmr/m/n/10 = []$\OT1/cmr/m/sl/10 ,
  []
 
-<volumes/shell/shell04.png, id=250, 217.26169pt x 205.9695pt>
+<volumes/shell/shell04.png, id=582, 217.26169pt x 205.9695pt>
 File: volumes/shell/shell04.png Graphic file (type png)
 
 <use volumes/shell/shell04.png>
 Package pdftex.def Info: volumes/shell/shell04.png used on input line 35.
 (pdftex.def)             Requested size: 217.26114pt x 205.96898pt.
- [23 <./volumes/shell/shell04.png>] [24]
-[25]) (./volumes/04choosewarm.tex [26] [27] [28]) [29]
-(./volumes/04choosepractice.tex [30
+ [25 <./volumes/shell/shell04.png>] [26]
+[27]) (./volumes/04choosewarm.tex [28] [29] [30]) [31]
+(./volumes/04choosepractice.tex [32
 
-] [31]) (./arclengths/05arclengthwarm.tex
-[32]
+] [33]) (./arclengths/05arclengthwarm.tex
+[34]
 Underfull \hbox (badness 3417) in paragraph at lines 18--18
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Arc Length at [][]$\OT1/cmtt/m/n/8 https :
  / / ximera . osu . edu / mooculus / calculus2 /
@@ -1156,26 +1159,26 @@ Underfull \hbox (badness 1038) in paragraph at lines 19--19
 /n/8 https : / / www . whitman . edu / mathematics /
  []
 
-[33]
+[35]
 Overfull \hbox (15.41446pt too wide) in paragraph at lines 38--40
 \OT1/cmr/m/it/10 The gen-eral phe-nomenon is that what was for-merly the square
  of a difference---
  []
 
-) [34] (./arclengths/05arclengthpractice.tex [35
+) [36] (./arclengths/05arclengthpractice.tex [37
 
-] [36] [37] [38])
+] [38] [39] [40])
 (./arclengths/06surfacewarm.tex
 Underfull \hbox (badness 1796) in paragraph at lines 15--15
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Sur-face Area at [][]$\OT1/cmtt/m/n/8 http
 s : / / ximera . osu . edu / mooculus / calculus2 /
  []
 
-[39]) [40] (./arclengths/06surfacepractice.tex [41
+[41]) [42] (./arclengths/06surfacepractice.tex [43
 
 ])
-(./centroids/07centroidwarm.tex [42] [43]) [44]
-(./centroids/07centroidpractice.tex [45
+(./centroids/07centroidwarm.tex [44] [45]) [46]
+(./centroids/07centroidpractice.tex [47
 
 ]
 Overfull \hbox (1.56908pt too wide) in paragraph at lines 51--52
@@ -1183,18 +1186,18 @@ Overfull \hbox (1.56908pt too wide) in paragraph at lines 51--52
 mm/m/it/10 y \OT1/cmr/m/n/10 = []$
  []
 
-[46] [47] [48]) (./techniques/integrationintro.tex) [49]
+[48] [49] [50]) (./techniques/integrationintro.tex) [51]
 (./techniques/08substitutionwarm.tex
 Underfull \hbox (badness 3942) in paragraph at lines 21--21
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Sub-sti-tu-tion at [][]$\OT1/cmtt/m/n/8 ht
 tps : / / ximera . osu . edu / mooculus / calculus1 /
  []
 
-[50
+[52
 
-] [51] [52]) [53] (./techniques/08substitutionpractice.tex [54
+] [53] [54]) [55] (./techniques/08substitutionpractice.tex [56
 
-] [55]
+] [57]
 Overfull \hbox (41.06929pt too wide) detected at line 97
 [][] [] []\OML/cmm/m/it/9 du \OT1/cmr/m/n/9 + [][] [] []\OML/cmm/m/it/9 du \OMS
 /cmsy/m/n/9 ^^@ [][] [][] []\OML/cmm/m/it/9 du \OT1/cmr/m/n/9 = [][] + [][] \OM
@@ -1208,56 +1211,52 @@ Underfull \hbox (badness 4467) in paragraph at lines 18--18
 /cmtt/m/n/8 https : / / openstax . org / books /
  []
 
-[56] [57] [58]) [59] (./techniques/09ibppractice.tex [60
+[58] [59] [60]) [61] (./techniques/09ibppractice.tex [62
 
-] [61] [62] [63]
-[64]) (./techniques/10trigonometricwarm.tex
+] [63] [64] [65]
+[66]) (./techniques/10trigonometricwarm.tex
 Underfull \hbox (badness 2591) in paragraph at lines 17--17
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 3.2: Trigono-met-ric In-te-grals at [][]$
 \OT1/cmtt/m/n/8 https : / / openstax . org / books /
  []
 
-[65]
+[67]
 Underfull \hbox (badness 2626) in paragraph at lines 18--18
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Trigono-met-ric In-te-grals at [][]$\OT1/c
 mtt/m/n/8 https : / / ximera . osu . edu / mooculus /
  []
 
-[66] [67]) [68] (./techniques/10trigonometricpractice.tex [69
+[68] [69]) [70] (./techniques/10trigonometricpractice.tex [71
 
-]
-
-LaTeX Warning: Reference `trig:reduce_example' on page 70 undefined on input li
-ne 74.
-
-[70] [71] [72] [73]) (./techniques/11trigsubwarm.tex [74]
-<techniques/images/trigsub02.png, id=814, 208.67963pt x 213.1965pt>
+] [72] [73]
+[74] [75]) (./techniques/11trigsubwarm.tex [76]
+<techniques/images/trigsub02.png, id=1131, 208.67963pt x 213.1965pt>
 File: techniques/images/trigsub02.png Graphic file (type png)
 
 <use techniques/images/trigsub02.png>
 Package pdftex.def Info: techniques/images/trigsub02.png used on input line 37.
 
 (pdftex.def)             Requested size: 289.07999pt x 295.36632pt.
- [75 <./techniques/images/trigsub02.png>]
-<techniques/images/trigsub03.png, id=821, 239.16853pt x 213.1965pt>
+ [77 <./techniques/images/trigsub02.png>]
+<techniques/images/trigsub03.png, id=1138, 239.16853pt x 213.1965pt>
 File: techniques/images/trigsub03.png Graphic file (type png)
 
 <use techniques/images/trigsub03.png>
 Package pdftex.def Info: techniques/images/trigsub03.png used on input line 60.
 
 (pdftex.def)             Requested size: 289.07999pt x 257.69853pt.
- [76 <./techniques/images/trigsub03.png>]
-<techniques/images/trigsub01.png, id=828, 208.67963pt x 213.1965pt>
+ [78 <./techniques/images/trigsub03.png>]
+<techniques/images/trigsub01.png, id=1145, 208.67963pt x 213.1965pt>
 File: techniques/images/trigsub01.png Graphic file (type png)
 
 <use techniques/images/trigsub01.png>
 Package pdftex.def Info: techniques/images/trigsub01.png used on input line 82.
 
 (pdftex.def)             Requested size: 289.07999pt x 295.36632pt.
- [77]) [78 <./techniques/images/trigsub01.png>] (./techniques/11trigsubpractice
-.tex [79
+ [79]) [80 <./techniques/images/trigsub01.png>] (./techniques/11trigsubpractice
+.tex [81
 
-] [80] [81] [82])
+] [82] [83] [84])
 (./techniques/12partialfractionswarm.tex
 Underfull \hbox (badness 10000) in paragraph at lines 19--19
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 3.4: Par-tial Frac-tions at [][]$\OT1/cmt
@@ -1270,51 +1269,51 @@ Underfull \hbox (badness 1983) in paragraph at lines 21--21
 ][]$\OT1/cmtt/m/n/8 https : / / www . whitman . edu /
  []
 
-[83]
+[85]
 Overfull \hbox (8.49794pt too wide) in paragraph at lines 50--53
 \OT1/cmr/m/it/10 This is closely re-lated to what is called the ``Heav-i-side c
 over-up method.''
  []
 
-[84] [85]) [86] (./techniques/12partialfractionspractice.tex [87
+[86] [87]) [88] (./techniques/12partialfractionspractice.tex [89
 
-] [88] [89]
-[90]) (./techniques/13finalpractice.tex [91] [92] [93] [94] [95])
-(./applications/applicationsintro.tex [96]) [97]
+] [90] [91]
+[92]) (./techniques/13finalpractice.tex [93] [94] [95] [96] [97])
+(./applications/applicationsintro.tex [98]) [99]
 (./applications/14numericalwarm.tex
 Underfull \hbox (badness 4013) in paragraph at lines 14--14
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 3.6: Nu-mer-i-cal In-te-gra-tion at [][]$
 \OT1/cmtt/m/n/8 https : / / openstax . org / books /
  []
 
-) [98
+) [100
 
-] (./applications/14numericalpractice.tex [99
+] (./applications/14numericalpractice.tex [101
 
 ])
-(./applications/15ordergrowthwarm.tex [100]) [101]
-(./applications/15ordergrowthpractice.tex [102
+(./applications/15ordergrowthwarm.tex [102]) [103]
+(./applications/15ordergrowthpractice.tex [104
 
-] [103] [104]
+] [105] [106]
 LaTeX Font Info:    Font shape `OMS/cmr/m/sl' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 105.
- [105] [106])
+ [107] [108])
 (./applications/16improperwarm.tex
 Underfull \hbox (badness 10000) in paragraph at lines 17--17
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 3.7: Im-proper In-te-grals at [][]$\OT1/c
 mtt/m/n/8 https : / / openstax . org / books /
  []
 
-[107]
+[109]
 Underfull \hbox (badness 10000) in paragraph at lines 19--19
 [][][]\OT1/cmr/m/n/8 See Com-mu-nity Cal-cu-lus: Im-proper In-te-grals at [][]$
 \OT1/cmtt/m/n/8 https : / / www . whitman . edu /
  []
 
-[108] [109]) [110] (./applications/16improperpractice.tex [111
+[110] [111]) [112] (./applications/16improperpractice.tex [113
 
-] [112] [113]
-[114]) (./applications/17probabilitywarm.tex
+] [114] [115]
+[116]) (./applications/17probabilitywarm.tex
 Overfull \hbox (8.52606pt too wide) in paragraph at lines 13--15
 \OT1/cmr/m/n/10 YouTube link: [][]$\OT1/cmtt/m/n/10 https : / / www . youtube .
  com / watch ? v = tBkFkwueDNI$[][] \OT1/cmr/m/n/10 YouTube link:
@@ -1326,33 +1325,33 @@ Underfull \hbox (badness 4713) in paragraph at lines 18--18
 [][]$\OT1/cmtt/m/n/8 https : / / ximera . osu . edu /
  []
 
-[115]
+[117]
 Underfull \hbox (badness 1810) in paragraph at lines 19--19
 [][][]\OT1/cmr/m/n/8 See Com-mu-nity Cal-cu-lus: Prob-a-bil-ity at [][]$\OT1/cm
 tt/m/n/8 https : / / www . whitman . edu / mathematics /
  []
 
-) [116] (./applications/17probabilitypractice.tex [117
+) [118] (./applications/17probabilitypractice.tex [119
 
-] [118]
+] [120]
 Overfull \hbox (14.1789pt too wide) in paragraph at lines 93--95
 []\OT1/cmr/m/sl/10 A cer-tain ran-dom vari-able $\OML/cmm/m/it/10 X$ \OT1/cmr/m
 /sl/10 takes val-ues in the in-ter-val $[]$.
  []
 
-[119] [120] [121] [122]) (./series/seriesintro.tex) [123]
+[121] [122] [123] [124]) (./series/seriesintro.tex) [125]
 (./series/18sequencewarm.tex
 Underfull \hbox (badness 10000) in paragraph at lines 19--19
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Se-quences at [][]$\OT1/cmtt/m/n/8 https :
  / / ximera . osu . edu / mooculus / calculus2 /
  []
 
-[124
+[126
 
-]) [125] (./series/18sequencepractice.tex [126
+]) [127] (./series/18sequencepractice.tex [128
 
-] [127] [128] [129] [130]
-[131] [132] [133]) (./series/19serieswarm.tex
+] [129] [130] [131] [132]
+[133] [134] [135]) (./series/19serieswarm.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 5.2: In-fi-nite Se-ries at [][]$\OT1/cmtt
 /m/n/8 https : / / openstax . org / books /
@@ -1382,15 +1381,15 @@ Underfull \hbox (badness 1552) in paragraph at lines 16--16
 /m/n/8 https : / / www . whitman . edu / mathematics /
  []
 
-[134] [135]
+[136] [137]
 Overfull \hbox (45.98099pt too wide) detected at line 58
 [] [] \OT1/cmr/m/n/10 = []  [] [] = []  [] 2[] = []  [] [] = []\OML/cmm/m/it/10
  :
  []
 
-[136]) [137] (./series/19seriespractice.tex [138
+[138]) [139] (./series/19seriespractice.tex [140
 
-] [139] [140])
+] [141] [142])
 (./series/20comparisonwarm.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 5.4: Com-par-i-son Tests at [][]$\OT1/cmt
@@ -1403,24 +1402,24 @@ Underfull \hbox (badness 1960) in paragraph at lines 16--16
 []$\OT1/cmtt/m/n/8 https : / / www . whitman . edu /
  []
 
-) [141] (./series/20comparisonpractice.tex [142
+) [143] (./series/20comparisonpractice.tex [144
 
-] [143] [144] [145] [146]
-[147]) (./series/21ratiorootwarm.tex
+] [145] [146] [147] [148]
+[149]) (./series/21ratiorootwarm.tex
 Underfull \hbox (badness 2351) in paragraph at lines 17--17
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 5.6: Ra-tio and Root Tests at [][]$\OT1/c
 mtt/m/n/8 https : / / openstax . org / books /
  []
 
-[148]
+[150]
 Underfull \hbox (badness 2318) in paragraph at lines 18--18
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Ra-tio and Root Tests at [][]$\OT1/cmtt/m/
 n/8 https : / / ximera . osu . edu / mooculus /
  []
 
-) [149] (./series/21ratiorootpractice.tex [150
+) [151] (./series/21ratiorootpractice.tex [152
 
-] [151] [152] [153])
+] [153] [154] [155])
 (./series/22integralwarm.tex
 Underfull \hbox (badness 10000) in paragraph at lines 17--17
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 5.3: The In-te-gral Test at [][]$\OT1/cmt
@@ -1433,9 +1432,9 @@ Underfull \hbox (badness 1590) in paragraph at lines 19--19
 []$\OT1/cmtt/m/n/8 https : / / www . whitman . edu /
  []
 
-) [154] (./series/22integralpractice.tex [155
+) [156] (./series/22integralpractice.tex [157
 
-] [156] [157])
+] [158] [159])
 (./series/23alternatewarm.tex
 Underfull \hbox (badness 10000) in paragraph at lines 17--17
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 5.5: Al-ter-nat-ing Se-ries at [][]$\OT1/
@@ -1448,17 +1447,17 @@ Underfull \hbox (badness 1365) in paragraph at lines 18--18
 1/cmtt/m/n/8 https : / / ximera . osu . edu / mooculus /
  []
 
-[158]
+[160]
 Underfull \hbox (badness 1888) in paragraph at lines 19--19
 [][][]\OT1/cmr/m/n/8 See Com-mu-nity Cal-cu-lus 11.4: Al-ter-nat-ing Se-ries at
  [][]$\OT1/cmtt/m/n/8 https : / / www . whitman . edu /
  []
 
-) [159] (./series/23alternatepractice.tex [160
+) [161] (./series/23alternatepractice.tex [162
 
-] [161] [162] [163] [164])
-(./series/24finalpractice.tex [165] [166] [167] [168] [169])
-(./powerseries/powerseriesintro.tex) [170] (./powerseries/25powerserieswarm.tex
+] [163] [164] [165] [166])
+(./series/24finalpractice.tex [167] [168] [169] [170] [171])
+(./powerseries/powerseriesintro.tex) [172] (./powerseries/25powerserieswarm.tex
 
 Underfull \hbox (badness 2050) in paragraph at lines 18--18
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Power Se-ries at [][]$\OT1/cmtt/m/n/8 http
@@ -1471,18 +1470,18 @@ Underfull \hbox (badness 1281) in paragraph at lines 19--19
 m/n/8 https : / / www . whitman . edu / mathematics /
  []
 
-) [171
+) [173
 
-] (./powerseries/25powerseriespractice.tex [172
+] (./powerseries/25powerseriespractice.tex [174
 
-] [173] [174] [175]
-[176] [177] [178]
+] [175] [176] [177]
+[178] [179] [180]
 Overfull \hbox (18.69032pt too wide) in paragraph at lines 220--222
 []\OT1/cmr/m/sl/10 Find the in-ter-val of con-ver-gence of the power se-ries $[
 ] []$. 
  []
 
-[179]) (./powerseries/26taylorserieswarm.tex
+[181]) (./powerseries/26taylorserieswarm.tex
 Underfull \hbox (badness 1728) in paragraph at lines 19--19
 [][][]\OT1/cmr/m/n/8 See Ximera OSU: Tay-lor Se-ries at [][]$\OT1/cmtt/m/n/8 ht
 tps : / / ximera . osu . edu / mooculus / calculus2 /
@@ -1494,7 +1493,7 @@ Underfull \hbox (badness 6173) in paragraph at lines 20--20
 \OT1/cmtt/m/n/8 https : / / www . whitman . edu /
  []
 
-) [180] (./powerseries/26taylorseriespractice.tex
+) [182] (./powerseries/26taylorseriespractice.tex
 Overfull \hbox (9.42921pt too wide) detected at line 28
 [] \OT1/cmr/m/n/10 + [](\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10
  2) + [](\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2)[] + [](\OML
@@ -1502,15 +1501,15 @@ Overfull \hbox (9.42921pt too wide) detected at line 28
 ML/cmm/m/it/10 x \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 2)[]
  []
 
-[181
+[183
 
-] [182] [183] [184]) (./powerseries/27taylorseries2warm.tex
+] [184] [185] [186]) (./powerseries/27taylorseries2warm.tex
 Overfull \hbox (8.52606pt too wide) in paragraph at lines 13--15
 \OT1/cmr/m/n/10 YouTube link: [][]$\OT1/cmtt/m/n/10 https : / / www . youtube .
  com / watch ? v = fUbBKN70Ag8$[][] \OT1/cmr/m/n/10 YouTube link:
  []
 
-[185]
+[187]
 Underfull \hbox (badness 2197) in paragraph at lines 20--20
 [][][]\OT1/cmr/m/n/8 See Cal-cu-lus and Tay-lor Se-ries at [][]$\OT1/cmtt/m/n/8
  https : / / ximera . osu . edu / mooculus / calculus2 /
@@ -1522,11 +1521,11 @@ Underfull \hbox (badness 1406) in paragraph at lines 21--21
 ][]$\OT1/cmtt/m/n/8 https : / / www . whitman . edu /
  []
 
-) [186] (./powerseries/27taylorseries2practice.tex [187
+) [188] (./powerseries/27taylorseries2practice.tex [189
 
-] [188] [189] [190]
-[191]) (./powerseries/28finalpractice.tex [192] [193] [194] [195] [196])
-(./odes/odeintro.tex [197]) [198] (./odes/29odewarm.tex
+] [190] [191] [192]
+[193]) (./powerseries/28finalpractice.tex [194] [195] [196] [197] [198])
+(./odes/odeintro.tex [199]) [200] (./odes/29odewarm.tex
 Underfull \hbox (badness 4366) in paragraph at lines 18--18
 [][][]\OT1/cmr/m/n/8 See Di-rec-tion Fields and Nu-mer-i-cal Meth-ods at [][]$\
 OT1/cmtt/m/n/8 https : / / openstax . org / books /
@@ -1544,68 +1543,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--19
 / / ximera . osu . edu / mooculus / calculus2 /
  []
 
-<odes/images/slopeX01.png, id=2115, 209.583pt x 221.77856pt>
+<odes/images/slopeX01.png, id=2397, 209.583pt x 221.77856pt>
 File: odes/images/slopeX01.png Graphic file (type png)
 
 <use odes/images/slopeX01.png>
 Package pdftex.def Info: odes/images/slopeX01.png used on input line 29.
 (pdftex.def)             Requested size: 289.07999pt x 305.92952pt.
- [199
+ [201
 
-] [200 <./odes/images/slopeX01.png>]
-<odes/images/euler01.png, id=2142, 233.07076pt x 221.77856pt>
+] [202 <./odes/images/slopeX01.png>]
+<odes/images/euler01.png, id=2422, 233.07076pt x 221.77856pt>
 File: odes/images/euler01.png Graphic file (type png)
 
 <use odes/images/euler01.png>
-Package pdftex.def Info: odes/images/euler01.png used on input line 68.
+Package pdftex.def Info: odes/images/euler01.png used on input line 69.
 (pdftex.def)             Requested size: 289.07999pt x 275.0804pt.
- [201]
-<odes/images/euler02.png, id=2152, 250.9124pt x 128.5051pt>
+ [203]
+<odes/images/euler02.png, id=2432, 250.9124pt x 128.5051pt>
 File: odes/images/euler02.png Graphic file (type png)
 
 <use odes/images/euler02.png>
-Package pdftex.def Info: odes/images/euler02.png used on input line 77.
+Package pdftex.def Info: odes/images/euler02.png used on input line 78.
 (pdftex.def)             Requested size: 289.07999pt x 148.05421pt.
 
-<odes/images/euler03.png, id=2153, 250.9124pt x 91.69257pt>
+<odes/images/euler03.png, id=2433, 250.9124pt x 91.69257pt>
 File: odes/images/euler03.png Graphic file (type png)
 
 <use odes/images/euler03.png>
-Package pdftex.def Info: odes/images/euler03.png used on input line 86.
+Package pdftex.def Info: odes/images/euler03.png used on input line 87.
 (pdftex.def)             Requested size: 289.07999pt x 105.6415pt.
- [202 <./odes/images/euler01.png> <./odes/images/euler02.png>]) [203 <./odes/im
+ [204 <./odes/images/euler01.png> <./odes/images/euler02.png>]) [205 <./odes/im
 ages/euler03.png>] (./odes/29odepractice.tex
-<odes/images/slope01.png, id=2165, 224.94037pt x 222.00441pt>
+<odes/images/slope01.png, id=2446, 224.94037pt x 222.00441pt>
 File: odes/images/slope01.png Graphic file (type png)
 
 <use odes/images/slope01.png>
 Package pdftex.def Info: odes/images/slope01.png used on input line 16.
 (pdftex.def)             Requested size: 289.07999pt x 285.30962pt.
 
-<odes/images/slope02.png, id=2166, 226.29544pt x 222.00441pt>
+<odes/images/slope02.png, id=2447, 226.29544pt x 222.00441pt>
 File: odes/images/slope02.png Graphic file (type png)
 
 <use odes/images/slope02.png>
 Package pdftex.def Info: odes/images/slope02.png used on input line 30.
 (pdftex.def)             Requested size: 289.07999pt x 283.61247pt.
- [204
+ [206
 
  <./odes/images/slope01.png>]
-<odes/images/connect01.png, id=2178, 225.16621pt x 227.1988pt>
+<odes/images/connect01.png, id=2458, 225.16621pt x 227.1988pt>
 File: odes/images/connect01.png Graphic file (type png)
 
 <use odes/images/connect01.png>
 Package pdftex.def Info: odes/images/connect01.png used on input line 44.
 (pdftex.def)             Requested size: 289.07999pt x 291.70096pt.
- [205 <./odes/images/slope02.png>]
-<odes/images/connect02.png, id=2190, 229.45724pt x 222.00441pt>
+ [207 <./odes/images/slope02.png>]
+<odes/images/connect02.png, id=2469, 229.45724pt x 222.00441pt>
 File: odes/images/connect02.png Graphic file (type png)
 
 <use odes/images/connect02.png>
 Package pdftex.def Info: odes/images/connect02.png used on input line 59.
 (pdftex.def)             Requested size: 289.07999pt x 279.71346pt.
- [206 <./odes/images/connect01.png>] [207 <./odes/images/connect02.png>]) (./od
-es/30solvewarm.tex [208]
+ [208 <./odes/images/connect01.png>] [209 <./odes/images/connect02.png>]) (./od
+es/30solvewarm.tex [210]
 Underfull \hbox (badness 6173) in paragraph at lines 14--14
 [][][]\OT1/cmr/m/n/8 See Open-Stax II 4.3: Sep-a-ra-ble Equa-tions at [][]$\OT1
 /cmtt/m/n/8 https : / / openstax . org / books /
@@ -1623,65 +1622,56 @@ Underfull \hbox (badness 7925) in paragraph at lines 15--15
 m/n/8 https : / / ximera . osu . edu / mooculus /
  []
 
-[209]) [210] (./odes/30solvepractice.tex [211
+[211]) [212] (./odes/30solvepractice.tex [213
 
-] [212] [213] [214] [215])
+] [214] [215] [216] [217])
 (./odes/31applywarm.tex
 Overfull \hbox (8.52606pt too wide) in paragraph at lines 13--15
 \OT1/cmr/m/n/10 YouTube link: [][]$\OT1/cmtt/m/n/10 https : / / www . youtube .
  com / watch ? v = 54HrJmeON24$[][] \OT1/cmr/m/n/10 YouTube link:
  []
 
-[216] <odes/images/orthoX01.png, id=2310, 224.94037pt x 222.00441pt>
+[218] <odes/images/orthoX01.png, id=2587, 224.94037pt x 222.00441pt>
 File: odes/images/orthoX01.png Graphic file (type png)
 
 <use odes/images/orthoX01.png>
 Package pdftex.def Info: odes/images/orthoX01.png used on input line 44.
 (pdftex.def)             Requested size: 289.07999pt x 285.30962pt.
- [217 <./odes/images/orthoX01.png>]
-<odes/images/orthoX02.png, id=2318, 224.94037pt x 222.00441pt>
+ [219 <./odes/images/orthoX01.png>]
+<odes/images/orthoX02.png, id=2594, 224.94037pt x 222.00441pt>
 File: odes/images/orthoX02.png Graphic file (type png)
 
 <use odes/images/orthoX02.png>
 Package pdftex.def Info: odes/images/orthoX02.png used on input line 69.
 (pdftex.def)             Requested size: 289.07999pt x 285.30962pt.
- [218 <./odes/images/orthoX02.png>] [219])
-[220] (./odes/31applypractice.tex
-<odes/images/ortho01.png, id=2335, 224.94037pt x 222.00441pt>
+ [220 <./odes/images/orthoX02.png>] [221])
+[222] (./odes/31applypractice.tex
+<odes/images/ortho01.png, id=2611, 224.94037pt x 222.00441pt>
 File: odes/images/ortho01.png Graphic file (type png)
 
 <use odes/images/ortho01.png>
 Package pdftex.def Info: odes/images/ortho01.png used on input line 22.
 (pdftex.def)             Requested size: 289.07999pt x 285.30962pt.
 
-<odes/images/ortho02.png, id=2336, 226.0696pt x 222.00441pt>
+<odes/images/ortho02.png, id=2612, 226.0696pt x 222.00441pt>
 File: odes/images/ortho02.png Graphic file (type png)
 
 <use odes/images/ortho02.png>
 Package pdftex.def Info: odes/images/ortho02.png used on input line 35.
 (pdftex.def)             Requested size: 289.07999pt x 283.88687pt.
- [221
+ [223
 
- <./odes/images/ortho01.png>] [222 <./odes/images/ortho02.png>] [223]) [224]
+ <./odes/images/ortho01.png>] [224 <./odes/images/ortho02.png>] [225]) [226]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
  (./math104online.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
+Package rerunfilecheck Info: File `math104online.out' has not changed.
+(rerunfilecheck)             Checksum: 0E8F85C66AFF97C94D70EF9CBE2D4E90;4952.
 
-
-Package rerunfilecheck Warning: File `math104online.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `math104online.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0E8F85C66AFF97C94D70EF9CBE2D4E90;4952.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1689,10 +1679,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 98.
  ) 
 Here is how much of TeX's memory you used:
- 30446 strings out of 493014
- 688742 string characters out of 6133351
- 846535 words of memory out of 5000000
- 31935 multiletter control sequences out of 15000+600000
+ 30523 strings out of 493014
+ 689753 string characters out of 6133351
+ 846215 words of memory out of 5000000
+ 32002 multiletter control sequences out of 15000+600000
  19571 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,15n,81p,938b,835s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1729,10 +1719,10 @@ st/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2016/texmf-dist
 fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2016/texmf-dist/font
 s/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on math104online.pdf (224 pages, 2625646 bytes).
+Output written on math104online.pdf (226 pages, 2635202 bytes).
 PDF statistics:
- 2730 PDF objects out of 2984 (max. 8388607)
- 2397 compressed objects within 24 object streams
- 1253 named destinations out of 1440 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3008 PDF objects out of 3580 (max. 8388607)
+ 2670 compressed objects within 27 object streams
+ 1255 named destinations out of 1440 (max. 500000)
+ 666 words of extra memory for PDF output out of 10000 (max. 10000000)
 
