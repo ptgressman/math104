@@ -7,7 +7,7 @@ x = Symbol('x')
 myPlot = plots.MyStandardPlot()
 myPlot.xlim(-65,65)
 myPlot.ylim(-65,65)
-
+#https://faculty.math.illinois.edu/~reznick/benitoescribano.pdf
 angle = 2 * pi * (sqrt(5)+1)/2
 for spotno in range(3500):
     x0 = sqrt(1+spotno) * cos(spotno * angle)
