@@ -2,6 +2,27 @@ import plots
 from sympy import *
 
 
+
+x = Symbol('x')
+myPlot = plots.MyStandardPlot()
+myPlot.xlim(-65,65)
+myPlot.ylim(-65,65)
+
+angle = 2 * pi * (sqrt(5)+1)/2
+for spotno in range(3500):
+    x0 = sqrt(1+spotno) * cos(spotno * angle)
+    y0 = sqrt(1+spotno) * sin(spotno * angle)
+    myPlot.disk(x0,y0,0.75)
+myPlot.yaxis('left')
+myPlot.xaxis('bottom')
+myPlot.xticks([-30,0,30])
+myPlot.yticks([-30,0,30])
+myPlot.show()
+myPlot.saveas('test1.png')
+myPlot.destroy()
+
+quit()
+
 deltay = 4 * pi /13
 deltath = atan(exp(2*deltay))
 x = Symbol('x')
